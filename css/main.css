@@ -43,10 +43,21 @@
 
     /* services colors */
     --color-chapel: #4f758b;
+    --color-chapel2: #3F5E6F;
+    --color-chapel3: #203039;
     --color-loft: #64a70b;
+    --color-loft2: #508609;
+    --color-loft3: #213704;
     --color-harvest: #c05131;
+    --color-harvest2: #974027;
+    --color-harvest3: #6e6259;
     --color-traditional: #862633;
+    --color-traditional2: #5e1b24;
+    --color-traditional3: #6e6259;
     --color-woodforest: #6ba4b8;
+    --color-woodforest2: #568393;
+    --color-woodforest3: #23363C;
+
 
     /* ministries */
     --color-women: #97C9BD;
@@ -175,6 +186,10 @@ a:focus {
 
 .twmc-lineheight-small {
     line-height: 1.3 !important;
+}
+
+.twmc-lineheight-medium {
+    line-height: 1.4 !important;
 }
 
 /* Typography - latest-message section */
@@ -337,7 +352,7 @@ a:focus {
 }
 
 .twmc-mbxs {
-    margin-bottom: .7rem !important;
+    margin-bottom: .5rem !important;
 }
 
 .twmc-mbs {
@@ -1309,8 +1324,8 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .twmc--btn--traditional:hover,
 .twmc--btn--traditional:focus {
-    border-color: var(--color-dark-red2);
-    background-color: var(--color-dark-red2);
+    border-color: var(--color-traditional2);
+    background-color: var(--color-traditional2);
     text-decoration: none;
     color: var(--color-white);
 
@@ -1327,13 +1342,14 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .twmc--btn--traditional-white:hover,
 .twmc--btn--traditional-white:focus {
-    background-color: var(--color-dark-orange);
-    border-color: var(--color-dark-orange);
+    background-color: var(--color-traditional3);
+    border-color: var(--color-traditional3);
     color: var(--color-white);
     text-decoration: none;
 
     transform: scale(1.05);
 }
+/* BEnd of button traditional */
 
 /* Button harvest */
 .twmc--btn--harvest {
@@ -1346,8 +1362,8 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .twmc--btn--harvest:hover,
 .twmc--btn--harvest:focus {
-    border-color: var(--color-red-orange2);
-    background-color: var(--color-red-orange2);
+    border-color: var(--color-harvest2);
+    background-color: var(--color-harvest2);
     text-decoration: none;
     color: var(--color-white);
 
@@ -1364,13 +1380,129 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .twmc--btn--harvest-white:hover,
 .twmc--btn--harvest-white:focus {
-    background-color: var(--color-dark-orange);
-    border-color: var(--color-dark-orange);
+    background-color: var(--color-harvest3);
+    border-color: var(--color-harvest3);
     color: var(--color-white);
     text-decoration: none;
 
     transform: scale(1.05);
 }
+/* End of Button harvest */
+
+/* Button Chapel */
+.twmc--btn--chapel {
+    border: 2px solid var(--color-chapel);
+    background-color: var(--color-chapel);
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--chapel:hover,
+.twmc--btn--chapel:focus {
+    border-color: var(--color-chapel2);
+    background-color: var(--color-chapel2);
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--chapel-white {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    color: var(--color-chapel);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--chapel-white:hover,
+.twmc--btn--chapel-white:focus {
+    background-color: var(--color-chapel3);
+    border-color: var(--color-chapel3);
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+/* End of button Chapel */
+
+/* Button Loft */
+.twmc--btn--loft {
+    border: 2px solid var(--color-loft);
+    background-color: var(--color-loft);
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--loft:hover,
+.twmc--btn--loft:focus {
+    border-color: var(--color-loft2);
+    background-color: var(--color-loft2);
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--loft-white {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    color: var(--color-loft);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--loft-white:hover,
+.twmc--btn--loft-white:focus {
+    background-color: var(--color-loft3);
+    border-color: var(--color-loft3);
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+/* End of button Loft */
+
+/* Button Woodforest */
+.twmc--btn--woodforest {
+    border: 2px solid var(--color-woodforest);
+    background-color: var(--color-woodforest);
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--woodforest:hover,
+.twmc--btn--woodforest:focus {
+    border-color: var(--color-woodforest2);
+    background-color: var(--color-woodforest2);
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--woodforest-white {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    color: var(--color-woodforest);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--woodforest-white:hover,
+.twmc--btn--woodforest-white:focus {
+    background-color: var(--color-woodforest3);
+    border-color: var(--color-woodforest3);
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+/* End of button Loft */
+
 
 /* Button Connect */
 @media only screen and (max-width: 1040px) {
@@ -3104,12 +3236,12 @@ a > img.twmc-home-intro__services-img2:focus {
     .twmc-socmed-icon__traditional > a > i {
         font-size: 1.6rem !important;
     }
-    
 }
 
 .twmc-socmed-icon__traditional > a > i:hover {
     color: var(--color-dark-red2);
 }
+/* End of icon traditional */
 
 /* Icon Harvest */
 .twmc-socmed-icon__harvest > a > i {
@@ -3126,7 +3258,6 @@ a > img.twmc-home-intro__services-img2:focus {
     .twmc-socmed-icon__harvest > a > i {
         font-size: 1.6rem !important;
     }
-    
 }
 
 .twmc-socmed-icon__harvest > a > i:hover {
@@ -3136,6 +3267,73 @@ a > img.twmc-home-intro__services-img2:focus {
 .twmc-intro__2col {
     gap: 1rem;
 }
+
+/* Icon chapel */
+.twmc-socmed-icon__chapel > a > i {
+    color: var(--color-chapel);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__chapel > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__chapel > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__chapel > a > i:hover {
+    color: var(--color-chapel2);
+}
+/* End of icon chapel */
+
+/* Icon loft */
+.twmc-socmed-icon__loft > a > i {
+    color: var(--color-loft);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__loft > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__loft > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__loft > a > i:hover {
+    color: var(--color-loft2);
+}
+/* End of icon loft */
+
+
+/* Icon woodforest */
+.twmc-socmed-icon__woodforest > a > i {
+    color: var(--color-woodforest);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__woodforest > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__wooodforest > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__loft > a > i:hover {
+    color: var(--color-woodforest2);
+}
+/* End of icon woodforest */
 
 
 /* Intro - Women */
