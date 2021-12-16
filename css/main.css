@@ -107,6 +107,18 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
+a {
+    color: var(--color-traditional);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-traditional);
+    text-decoration: underline;
+}
 /* ==== END OF BASE ==== */
 /* ===================== */
 
@@ -3074,7 +3086,7 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 .twmc-intro__h4 {
-    margin: 0 0 5px;
+    margin: 5px 0;
 }
 
 /* Icon Traditional */
@@ -3166,15 +3178,20 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 .twmc-intro__contact-info>p,
+.twmc-intro__contact-info>p>a,
 .twmc-intro__contact-info>i {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .twmc-intro__contact-info>p>a:hover {
     cursor: pointer;
+}
+
+.twmc-intro__contact-info>p>a {
+    line-height: 32px;
 }
 
 .twmc-icon__women {
