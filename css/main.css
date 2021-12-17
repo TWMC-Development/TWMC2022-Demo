@@ -180,6 +180,10 @@ a:focus {
     }
 }
 
+.twmc-letspac-1 {
+    letter-spacing: 1px !important;
+}
+
 .twmc-letspac-2 {
     letter-spacing: 2px !important;
 }
@@ -555,10 +559,12 @@ a:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
+    gap: 4%;
 }
 
 .twmc-flex-item--2-col {
+    /* lex-basis: 47%; */
     flex-basis: 47%;
     overflow: visible;
 }
@@ -567,7 +573,6 @@ a:focus {
     .twmc-flex-item--2-col {
         flex-basis: 100%;
     }
-    
 }
 
 .twmc-intro__img-container>img {
@@ -663,6 +668,8 @@ a:focus {
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 0 !important;
+    line-height: 1.4;
+    letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -731,6 +738,8 @@ a:focus {
     width: 100%;
     object-fit: cover;
 }
+/* End of Utilities - 2 columns flex basis */
+
 
 /* Utilities - 3 columns flex */
 /* Connect Section - harvest, women */
@@ -875,14 +884,25 @@ a:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: 2%;
     align-items: center;
 }
 
-/* Harvest podcast - button*/
+/* Harvest podcast - button right*/
 .twmc-flex-item--3-col-basis1 {
-    flex-basis: 16%;
-    /* overflow: hidden; */
+    flex-basis: 12%;
+}
+
+/* Harvest podcast - img left*/
+.twmc-flex-item--3-col-basis2 {
+    flex-basis: 32%;
+    overflow: hidden;    
+}
+
+/* Harvest podcast - text center */
+.twmc-flex-item--3-col-basis3 {
+    flex-basis: 52%;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -890,52 +910,57 @@ a:focus {
         gap: 1rem;
         flex-basis: 15%;
     }
+
+    .twmc-flex-item--3-col-basis2 {
+        gap: 1rem;
+        flex-basis: 31%;
+    }
+
+    .twmc-flex-item--3-col-basis3 {
+        gap: 1rem;
+        flex-basis: 47%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .twmc-flex-item--3-col-basis1 {
         flex-basis: auto;
     }
-}
 
-/* Harvest podcast - img */
-.twmc-flex-item--3-col-basis2 {
-    flex-basis: 32%;
-    overflow: hidden;    
-}
-
-@media only screen and (max-width: 1199px) {
-    .twmc-flex-item--3-col-basis2 {
-        gap: 1rem;
-        flex-basis: 31%;
+    .twmc-flex-item--3-col-basis1>a {
+        margin-top: .7rem;
     }
-}
 
-@media only screen and (max-width: 991px) {
     .twmc-flex-item--3-col-basis2 {
         flex-basis: 100%;
     }
-}
 
-/* Harvest podcast - text */
-.twmc-flex-item--3-col-basis3 {
-    flex-basis: 48%;
-    overflow: hidden;
-}
-
-@media only screen and (max-width: 1199px) {
-    .twmc-flex-item--3-col-basis3 {
-        gap: 1rem;
-        flex-basis: 47%;
+    .twmc-flex-item--3-col-basis2>img {
+        width: 50%;
     }
-    
-}
 
-@media only screen and (max-width: 991px) {
     .twmc-flex-item--3-col-basis3 {
         flex-basis: 100%;
     }
+
+    .twmc-flex-item--3-col-basis3>p.twmc-p.twmc-cta__p {
+        margin-top: 1.5rem;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+    .twmc-flex-item--3-col-basis2>img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-flex-item--3-col-basis2>img {
+        width: 100%;
+    }
+}
+
+
 
 /* Utilities - 3 columns flex 75% width */
 /* Home - blog list section */
@@ -3642,7 +3667,7 @@ a > img.twmc-home-intro__services-img2:focus {
 
 @media only screen and (max-width: 991px) {
     .twmc-latest-message__description {
-        margin-bottom: 1rem;
+        margin-bottom: 2.3rem;
     }
 }
 
@@ -3704,10 +3729,9 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
-/* Podcast */
+/* Podcast - Harvest*/
 #twmc-cta__harvest-podcast {
     background-color: var(--color-harvest);
-    
 }
 
 .twmc-cta__button-container {
@@ -3718,6 +3742,11 @@ a > img.twmc-home-intro__services-img2:focus {
     .twmc-cta__button-container  {
         padding: 0 0 .5rem;
     }
+}
+
+/* Podcast - Loft */
+#twmc-cta__loft-podcast {
+    background-color: var(--color-loft);
 }
 
 /* Latest video */
@@ -4914,4 +4943,15 @@ a > img.twmc-home-intro__services-img2:focus {
     left: 0; 
     width: 100%; 
     height: 100%; 
+}
+
+
+/* ==== CHAPEL ==== */
+/* CT1 Single button - renovation update */
+#cta1-chapel-single-button {
+    background-color: var(--color-chapel);
+}
+
+#cta1-traditional-single-button {
+    background-color: var(--color-traditional);
 }
