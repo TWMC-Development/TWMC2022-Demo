@@ -878,6 +878,51 @@ a:focus {
     }
 }
 
+
+/* Utilities - 3 columns squares */
+/* Harvest connect */
+.twmc-flex-container--3-col-square {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5%;
+    justify-content: start;
+}
+
+.twmc-flex-item--3-col-square {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 31%;
+    margin-bottom: 2rem;
+}
+
+.twmc-flex-img-square {
+    width: 100%;    
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--3-col-square {
+        gap: 4%;
+    }
+    .twmc-flex-item--3-col-square {
+        flex-basis: 48%
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-flex-container--3-col-square {
+        gap: 0;
+    }
+    .twmc-flex-item--3-col-square {
+        flex-basis: 100%
+        
+    }
+}
+
+
+
+
+
 /* Utilities - 3 columns flex basis*/
 /* Harvest -  podcast section */
 .twmc-flex-container--3-col-basis{
@@ -3631,6 +3676,7 @@ a > img.twmc-home-intro__services-img2:focus {
 
 
 /* ==== LATEST MESSAGE ==== */
+/* ======================== */
 /* LM - Harvest */
 .twmc-latest-message {
     background-color: var(--color-black);
@@ -3780,14 +3826,35 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
-
+/* =============================== */
 /* ==== END OF LATEST MESSAGE ==== */
 
 
 /* ==== ENEWS ==== */
+/* =============== */
+/* Enews - Chapel */
+#twmc-cta__chapel-enews {
+    background-color: var(--color-chapel);
+}
+
 /* Enews - Harvest */
 #twmc-cta__harvest-enews {
     background-color: var(--color-harvest);
+}
+
+/* Enews - Loft */
+#twmc-cta__loft-enews {
+    background-color: var(--color-loft);
+}
+
+/* Enews - Traditional */
+#twmc-cta__traditional-enews {
+    background-color: var(--color-traditional);
+}
+
+/* Enews -  Woodfoorest */
+#twmc-cta__woodforest-enews {
+    background-color: var(--color-woodforest);
 }
 
 /* Enews - Women */
@@ -3795,10 +3862,12 @@ a > img.twmc-home-intro__services-img2:focus {
     background-color: var(--color-traditional);
 }
 
+/* ====================== */
 /* ==== END OF ENEWS ==== */
 
 
 /* ==== CONNECT ==== */
+/* ================= */
 /* Connect harvest*/
 .twmc-connect {
     padding: 7rem 0;
@@ -3822,20 +3891,88 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
+/* ======================== */
 /* ==== END OF CONNECT ==== */
+
+/* ==== PASTORS ==== */
+/* ================= */
+.twmc-pastors__name,
+.twmc-pastors__title {
+    margin-bottom: 0 !important;
+    color: inherit;
+}
+
+.twmc-pastors__name {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+#staff-pastors {
+    padding: 7rem 0;
+}
+
+@media only screen and (max-width: 575px) {
+    #staff-pastors {
+        padding: 0 0 4.5rem !important;
+    }
+}
+
+.twmc-pastors__img-container {
+    text-align: center;
+}
+
+.twmc-pastors__caption {
+    position: absolute;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    line-height: 1.1;
+    opacity: 0;
+    /* animating on hover */
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.twmc-pastors:hover .twmc-pastors__caption {
+    opacity: 1;
+    transform: translate(-50%, -65%);
+}
+
+.twmc-pastors__img {
+    border-radius: 100%;
+    /* animating on hover */
+    transition: all .5s;
+}
+
+.twmc-pastors:hover .twmc-pastors__img {
+    -webkit-filter: invert(40%) grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
+      filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
+}
+
+.twmc-pastors__name-title-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* =================== */
+/* ==== END OF PASTORS */
 
 
 /* ==== LOCATION ==== */
+/* ================== */
 #harvest-location {
     background-color: var(--color-light-grey4);
 }
-
-
-
+/* ========================= */
 /* ==== END OF LOCATION ==== */
 
 
 /* ==== FEATURE BANNER ==== */
+/* ======================== */
 /* FB - Women */
 #twmc-women__feature-banner2 {
     background-image: url("https://www.thewoodlandsumc.org/Content/web/WOM_RadiantFall2021_FeatureBanner.png");
@@ -3888,12 +4025,13 @@ a > img.twmc-home-intro__services-img2:focus {
         /* max-width: 100%; */
     }
 }
-
+/* =============================== */
 /* ==== END OF FEATURE BANNER ==== */
 
 
 
 /* ==== FOOTER ==== */
+/* ================ */
 .twmc-footer {
     padding: 0 !important;
   }
@@ -3946,11 +4084,12 @@ a > img.twmc-home-intro__services-img2:focus {
 .twmc-footer__address p {
     margin-bottom: 0 !important;
 }
-    
+/* ======================= */
 /* ==== END OF FOOTER ==== */
 
 
 /* ==== INFO ==== */
+/* ============== */
 .twmc-women__info {
     margin: 0 0 3rem ;
 }
@@ -3962,14 +4101,12 @@ a > img.twmc-home-intro__services-img2:focus {
 .twmc-women__info>h3 {
     margin-block-end: 1.5rem;
 }
-
+/* ===================== */
 /* ==== END OF INFO ==== */
 
 
 /* ===== GROW SECTIONS AND PAGE ===== */
 /* ================================== */
-
-
 .grow-g__page-title {
     color: var(--color-white) !important;
     text-transform: uppercase;
