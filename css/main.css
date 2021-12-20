@@ -3912,8 +3912,9 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 #staff-pastors {
-    padding: 7rem 0;
+    background-color: var(--color-white);
 }
+
 
 @media only screen and (max-width: 575px) {
     #staff-pastors {
