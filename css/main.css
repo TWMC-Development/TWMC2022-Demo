@@ -116,7 +116,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a {
@@ -4380,7 +4380,7 @@ a > img.twmc-home-intro__services-img2:focus {
 
 .grow-g__title > h2.twmc-h2 {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Filter section */
@@ -4625,7 +4625,7 @@ a > img.twmc-home-intro__services-img2:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 2px 0;
+    margin: 5px 0;
     
     text-align: left;
 }
@@ -4748,7 +4748,7 @@ a > img.twmc-home-intro__services-img2:focus {
 
 .grow-o__local-title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 50px;
 }
 
@@ -4774,7 +4774,7 @@ a > img.twmc-home-intro__services-img2:focus {
 
 .grow-w__worship-title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
