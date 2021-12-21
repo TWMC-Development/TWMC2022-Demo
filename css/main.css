@@ -3121,6 +3121,10 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     }
 }
 
+.twmc-intro__services > h4.twmc-h4 {
+    margin-top: 9px;
+}
+
 .twmc-intro__services > p {
     margin-bottom: .6rem !important;
 }
