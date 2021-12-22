@@ -86,6 +86,16 @@
 
 /* ==== BASE ==== */
 /* ============== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i|Open+Sans:400,400i,500,500i,600,600i,700,700i');
+
+@font-face {
+    font-family: 'Icons';
+    src: url('../Assets/Icons/fonts/Icons.eot?9890p9');
+    src: url('../Assets/Icons/fonts/Icons.eot?9890p9#iefix') format('embedded-opentype'), url('../Assets/Icons/fonts/Icons.ttf?9890p9') format('truetype'), url('../Assets/Icons/fonts/Icons.woff?9890p9') format('woff'), url('../Assets/Icons/fonts/Icons.svg?9890p9#Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -121,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: var(--color-traditional);
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: 600;
 }
 
@@ -371,6 +381,16 @@ a:focus {
     padding-bottom: 1rem !important;
 }
 
+.twmc-pxxs {
+    padding-left: .7rem;
+    padding-right: .7rem;
+}
+
+.twmc-pxs {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
 /* Utilities - spacing: harvest */
 .twmc-mlxs {
     margin-left: .7rem;
@@ -394,6 +414,14 @@ a:focus {
 
 .twmc-align-center {
     text-align: center;
+}
+
+.twmc-align-left {
+    text-align: left;
+}
+
+.twmc-align-right{
+    text-align: right
 }
 
 .twmc-grow__section {
@@ -1234,6 +1262,155 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 
 /* Utilities - Accordion */
+/* El's accordion */
+
+.panel-heading {
+    padding: 0;
+}
+
+.panel-heading a {
+    border-bottom: none;
+    margin: 0;
+}
+
+.panel-heading a:hover,
+.panel-heading a:focus {
+    border-bottom: none;
+}
+
+.panel-heading a[aria-expanded="false"] {
+    color: var(--color-dark-orange);
+}
+
+.panel-heading a[aria-expanded="true"] {
+    color: var(--color-traditional);
+}
+
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f5f5;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+
+
+
+/* .panel-heading a {
+    border-bottom: none;
+}
+
+.panel-heading > h4.panel-title.twmc-h4 > a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.panel-group .panel {
+    box-shadow: none;
+    border: none;
+    border-bottom: solid 1px #f0efee;
+}
+
+.panel-group .panel .panel-heading {
+    background: none;
+    border: none;
+    padding: 10px 0;
+}
+
+.panel-group .panel .panel-heading .panel-title {
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0;
+    color: #862633;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .panel-group .panel .panel-heading .panel-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .panel-group .panel .panel-heading .panel-title {
+        font-size: 30px;
+    }
+}
+
+.panel-group .panel .panel-heading .panel-title a {
+    position: relative;
+    display: block;
+    white-space: normal;
+    line-height: 1.1;
+    padding: 0 20px 0 0;
+}
+
+.panel-group .panel .panel-heading .panel-title a:hover, .panel-group .panel .panel-heading .panel-title a:focus, .panel-group .panel .panel-heading .panel-title a:active {
+    text-decoration: none;
+    font-style: italic;
+}
+
+.panel-group .panel .panel-heading .panel-title a:after {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e90c";
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.panel-group .panel .panel-heading .panel-title a::after {
+    speak-as: none;
+}
+
+.panel-group .panel .panel-heading .panel-title a::after {
+    font-family: 'Icons', serif !important;
+}
+
+.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]::after {
+    transform: rotate(-90deg);
+}
+
+.panel-group .panel .panel-body {
+    border: none;
+    padding: 0 0 20px 0;
+}
+
+.panel-group .panel .panel-body p {
+    margin: 0 0 5px;
+}
+
+
 .panel-group .panel .panel-heading .panel-title a {
     font-size: 28px;
     font-weight: 700;
@@ -1249,6 +1426,7 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .panel-group .panel .panel-heading .panel-title a:hover, .panel-group .panel .panel-heading .panel-title a:focus, .panel-group .panel .panel-heading .panel-title a:hover {
     font-style: inherit;
+    
 }
 
 .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"] {
@@ -1256,18 +1434,54 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     font-style: inherit;
 }
 
-.panel-group .panel .panel-heading .panel-title a:after {
-    content: "\e91c";
+.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]:hover {
+    border-bottom: none;
+}
+
+.panel-group .panel .panel-heading .panel-title a::after { 
+    content: "\e198";
     transform: rotate(90deg);
     font-weight: 900;
     top: 10px;
 }
 
-.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]:after {
+a.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+a.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+
+.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]::after {
     content: "\e918";
     transform: rotate(0deg);
     font-weight: 900;
-}
+} */
+
+
+
 /* End of utilities - Accordion */
 
 /* ==== END OF UTILITIES ==== */
@@ -2535,6 +2749,11 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     text-align: center;
 }
 
+/* Hero - Staff Mark Sorensen */
+#twmc-staff-member__hero-mark-sorensen {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/933e270c82bf40f59e5a88d5464feaec_MarkSorensen_Web_2021.jpeg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1671726494&Signature=%2FVfW41l5S2Q9jwT%2FGkg4DkaJpwc%3D");
+}
+
 
 /* Hero - Advent */
 #twmc-advent__hero-cta {
@@ -3111,8 +3330,18 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     padding: 7rem 0;
 }
 
+
+
 .twmc-intro__description>h1.twmc-h1 {
     margin-top: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-intro__description {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 575px) {
