@@ -349,6 +349,21 @@ a:focus {
     margin-bottom: 0 !important;
 }
 
+.twmc-myxs {
+    margin-top: .7rem !important;
+    margin-bottom: .7rem !important;
+}
+
+.twmc-mys {
+    margin-top: 1.4rem !important;
+    margin-bottom: 1.4rem !important;
+}
+
+.twmc-mymd {
+    margin-top: 2.1rem !important;
+    margin-bottom: 2.1rem !important;
+}
+
 .twmc-mtzero {
     margin-top: 0 !important;
 }
@@ -365,6 +380,10 @@ a:focus {
     margin-top: 2.1 !important;
 }
 
+.twmc-mtlg {
+    margin-top: 2.7rem !important;
+}
+
 .twmc-mbzero {
     margin-bottom: 0 !important;
 }
@@ -379,6 +398,10 @@ a:focus {
 
 .twmc-mbm {
     margin-bottom: 2.1rem !important;
+}
+
+.twmc-mblg {
+    margin-bottom: 2.7rem !important;
 }
 
 .twmc-pbsmall {
@@ -460,7 +483,8 @@ a:focus {
 .twmc-title-stripe.twmc-grow-g-bg,
 .twmc-title-stripe.twmc-grow-r-bg,
 .twmc-title-stripe.twmc-grow-o-bg,
-.twmc-title-stripe.twmc-grow-w-bg    {
+.twmc-title-stripe.twmc-grow-w-bg,
+.twmc-title-stripe    {
     padding-top: 90px;
 }
 
@@ -5459,14 +5483,25 @@ a > img.twmc-home-intro__services-img2:focus {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-position: left center;
+    background-position: center center;
 
     color: #fff ;
 }
 
-.twmc-feature-banner-1col__img {
-    max-width: 100%;
+.twmc-feature-banner-1col__img,
+.twmc-feature-banner-1col__img-md {
+    width: 100%;
     margin: 2rem auto 0;
+}
+
+.twmc-feature-banner-1col__img > img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-feature-banner-1col__img-md > img {
+    width: 60%;
 }
 
 .twmc-feature-banner-1col__text {
@@ -5476,19 +5511,50 @@ a > img.twmc-home-intro__services-img2:focus {
     font-weight: 600;
     font-size: 1.2rem;
 
-    max-width: 70%;
+    max-width: 80%;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-feature-banner-1col__img {
+        margin: 0 auto;
+    }
+    .twmc-feature-banner-1col__text {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .twmc-feature-banner-1col__text {
         margin: 1rem auto;
         font-size: 1rem;
-
-        max-width: 100%;
+        line-height: 1.2;
+        font-weight: 500;
     }
 }
 
-/* Accordion */
+/*  Prayer and care - grief Share */
+#twmc-prayer-care__grief-share-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .4),
+        rgba(0, 0, 0, .9)
+    ), url("https://www.thewoodlandsmethodist.org/Content/web/CAR_GriefShare_FeatureBanner.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+    color: #fff ;
+}
+
+
+/* ==== END OF FEATURE BANNERS - 1 COLUMN ==== */
+
+
+
+
+/* ==== Accordion ==== */
 .twmc-panel-body {
     padding: 2rem;
 }
@@ -5498,4 +5564,6 @@ a > img.twmc-home-intro__services-img2:focus {
 .twmc-staff__details {
     padding: 1rem;
 }
+
+/* ==== End of Accordion ==== */
 
