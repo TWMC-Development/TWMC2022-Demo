@@ -485,7 +485,7 @@ a:focus {
 .twmc-title-stripe.twmc-grow-o-bg,
 .twmc-title-stripe.twmc-grow-w-bg,
 .twmc-title-stripe    {
-    padding-top: 90px;
+    padding-top: 90px !important;
 }
 
 .twmc-hero-background--650h-leftalign {
