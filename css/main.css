@@ -150,6 +150,10 @@ a:focus {
     font-size: .9rem;
 }
 
+.twmc-p-medium {
+    font-size: 1.25rem;
+}
+
 @media only screen and (max-width: 992px) {
     .twmc-h1 {
         line-height: 1;
@@ -619,6 +623,36 @@ a:focus {
     }
 }
 
+/* Utilities - 2 columns flex accordion  */
+.twmc-flex-container--2-col-accordion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.twmc-flex-item--2-col-accordion  {
+    flex-basis: 47%;
+    margin-bottom: 1rem;
+}
+
+.twmc-flex-item--2-col-accordion>p:last-child {
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-flex-item--2-col-accordion  {
+        flex-basis: 100%;
+        
+    }
+
+    .twmc-flex-item--2-col-accordion:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
 /* Utilities - 2 columns flex basis  */
 /* Home page - CTA under the Hero */
 .twmc-flex-container--2-col__basis {
@@ -810,6 +844,50 @@ a:focus {
         flex-basis: 100%
     }
 }
+
+
+/* Utilities - 3 columns flex */
+/* Staff - accordion  */
+.twmc-flex-container--3-col-accordion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3.5%;
+}
+
+.twmc-flex-item--3-col-accordion {
+    flex-basis: 31%;
+    overflow: visible;
+    
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--3-col-accordion {
+        flex-direction: row;
+        gap: 4%;
+    }
+
+    .twmc-flex-item--3-col-accordion {
+        flex-basis: 48%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-flex-container--3-col-accordion {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .twmc-flex-item--3-col-accordion {
+        flex-basis: 100%
+    }
+
+    .twmc-flex-item--3-col-accordion:last-child {
+        margin-bottom: 0;
+    }
+}
+
 
 /* Flex img */
 .twmc-flex-img--3-col {
@@ -5408,5 +5486,16 @@ a > img.twmc-home-intro__services-img2:focus {
 
         max-width: 100%;
     }
+}
+
+/* Accordion */
+.twmc-panel-body {
+    padding: 2rem;
+}
+
+
+/* Staff Page */
+.twmc-staff__details {
+    padding: 1rem;
 }
 
