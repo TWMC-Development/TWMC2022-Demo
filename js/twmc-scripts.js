@@ -1,7 +1,5 @@
 window.onload = function () {
     // mega nav
-    let i;
-
     const main_menu = document.querySelector('.twmc-header');
     const menu_btn = document.querySelector('.twmc-hamburger');
     const mobile_menu = document.querySelector('.twmc-mega-nav');
@@ -9,7 +7,6 @@ window.onload = function () {
     const menu_logo = document.querySelector('.twmc-nav__logo2');
     const menu_nav = document.querySelector('.twmc-header-nav');
 
-   
 
     menu_btn.addEventListener('click', function () {
         main_menu.classList.toggle('mega-is-active');
@@ -19,15 +16,12 @@ window.onload = function () {
         menu_nav.classList.toggle('mega-is-active');
 
         if (menu_logo.classList.contains('mega-is-active')) {
-            menu_logo.src = "https://www.thewoodlandsumc.org/Content/web/twumc-logo-fullcolor.png";
+            menu_logo.src = "https://www.thewoodlandsmethodist.org/Content/web/twumc-logo-fullcolor.png";
             
         } else {
-            menu_logo.src = "https://www.thewoodlandsumc.org/Content/web/twumc-logo.png";
-           
+            menu_logo.src = "https://www.thewoodlandsmethodist.org/Content/web/twumc-logo.png";
         }
-        
     })
-
 
 }
 
