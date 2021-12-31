@@ -1,0 +1,248 @@
+{% assign itemsPerPage = 9 %}
+{% assign pageNumber = 'Global' | PageParameter:'EventPageNumber' | Default:'1' %}
+{% assign itemStart = pageNumber | Minus: 1 | Times:itemsPerPage | Default:'0' %}
+{% assign itemEnd = pageNumber | Times:itemsPerPage %}
+{% assign eventItemOccurrenceCount = EventItemOccurrences | Size %}
+{% assign internalFilterParameter = 'Global' | PageParameter:'au' | AsInteger %}
+
+
+<!-- ===== GROUPS section ===== -->
+<section class="twmc-connect">
+	<!-- filter section -->
+	<section class="twmc-filter-section--light-grey">
+		<div class="container">
+			<!-- title -->
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="grow-g__title">
+						<h2 class="twmc-h2">Group Finder</h2>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div id="filter-button">
+						<a class="twmc--btn__grow twmc--btn__grow-traditional" role="button" data-toggle="collapse" href="#filter-content2" aria-expanded="false" aria-controls="filter-content">Filter &darr;</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- filter -->
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- grow-g__filter -->
+					<div class="grow-g__filter">
+
+						<!-- #filter-content -->
+						<div class="collapse" id="filter-content2">
+							<!-- first filter row -->
+							<div class="row">
+								<!-- Audience -->
+								<div class="col-md-4">
+									<select name="grow-audience-filter" id="grow-g__filter-audience" class="grow__form-select">
+										<option value="" selected="selected">Audience</option>
+										<option value="148">All Church</option>
+										<option value="24">Adults</option>
+										<option value="23">Children</option>
+										<option value="984">Couples</option>
+										<option value="989">Family Friendly</option>
+										<option value="988">High School</option>
+										<option value="147">Junior High</option>
+										<option value="151">Men</option>
+										<option value="1067">Missions</option>
+										<option value="1023">Music &amp; Fine Arts</option>
+										<option value="1018">Newcomer</option>
+										<option value="987">Parents</option>
+										<option value="1022">Recreation</option>
+										<option value="985">Senior Adults</option>
+										<option value="986">Singles</option>
+										<option value="997">Special Needs</option>
+										<option value="1019">Students</option>
+										<option value="152">Women</option>
+										<option value="3167">Young Adults</option>
+									</select>
+								</div>
+
+								<!-- Day -->
+								<div class="col-md-4">
+									<select name="grow-day-filter" id="grow-g__filter-day" class="grow__form-select">
+										<option value="" selected="selected">Day Of The Week</option>
+										<option value="0">Sunday</option>
+										<option value="1">Monday</option>
+										<option value="2">Tuesday</option>
+										<option value="3">Wednesday</option>
+										<option value="4">Thursday</option>
+										<option value="5">Friday</option>
+										<option value="6">Saturday</option>
+									</select>
+								</div>
+
+								<!-- Group type -->
+								<div class="col-md-4">
+									<select name="grow-topic-filter" id="grow-g__filter-topic" class="grow__form-select">
+										<option value="" selected="selected">GROW Group Type</option>
+										<option value="3291">Gather in Community: Study</option>
+										<option value="3453">Gather in Community: Formation</option>
+										<option value="3454">Gather in Community: Fellowship</option>
+										<option value="3292">Raise Up: Share</option>
+										<option value="3455">Raise Up: Mentor</option>
+										<option value="3456">Raise Up: Lead</option>
+										<option value="3293">Outward Focus: Serve</option>
+										<option value="3457">Outward Focus: Local Missions</option>
+										<option value="3458">Outward Focus: Global Missions</option>
+										<option value="3294">Walk with God: Worship</option>
+										<option value="3459">Walk with God: Prayer</option>
+										<option value="3460">Walk with God: Generosity</option>
+									</select>
+								</div>
+							</div>
+							<!-- end of first filter row -->
+
+							<!-- second filter row -->
+							<div class="row mt-2">
+								<div class="col-md-8 grow__filter-date">
+									<div class="grow__input-group">
+										<input type="text" class="grow__form-control" placeholder="mm/dd/yyyy" id="datepicker1">
+										<span class="grow__input-group-text" ><i class="fas fa-calendar-alt"></i></span>
+									</div>
+									<div class="grow__filter-to">
+										<p> to </p>
+									</div>
+									<div class="grow__input-group">
+										<input type="text" class="grow__form-control" placeholder="mm/dd/yyyy" id="datepicker2">
+										<span class="grow__input-group-text" ><i class="fas fa-calendar-alt"></i></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="twmc--btn__grow twmc--btn__grow-traditional grow__filter-date-button">Filter by date</button>
+								</div>
+							</div>
+							<!-- end of second filter row -->
+						</div>
+						<!-- end of #filter-content -->
+
+					</div>
+					<!-- end of .grow-g__filter -->
+				</div>
+				<!-- end of .cool-sm-12 -->
+			</div>
+			<!-- end of .row -->
+		</div>
+		<!-- end of container -->
+
+	</section>
+	<!-- end of filter section  -->
+
+	<!-- Gather groups cards -->
+	<section class="twmc-groups-section--light-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="twmc-flex-container--3-col">
+						{% for eventItemOccurrence in EventItemOccurrences %}
+							{% assign showEvent = true %}
+							{% assign audiences = eventItemOccurrence.EventItemOccurrence.EventItem.EventItemAudiences %}
+
+							{% if internalFilterParameter != null %}
+								{% assign showEvent = false %}
+								{% assign internalFilter = eventItemOccurrence.EventItemOccurrence | Attribute:'InternalEventTypeFilter1','Object' %}
+
+								{% if internalFilter.Id == internalFilterParameter %}
+									{% assign showEvent = true %}
+								{% endif %}
+
+								{% for audience in audiences %}
+									{% if audience.DefinedValue.Id == internalFilterParameter %}
+										{% assign showEvent = true %}
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+							{% assign growColor = eventItemOccurrence.EventItem | Attribute:'GROW Identifier','object' | Attribute:'PrimaryColor' %}
+
+							<!-- Card v1 -->
+							<div class="twmc-flex-item--3-col grow__card" id="{{ itemStart}}-{{forloop.index0}}-{{ itemEnd }}"  {% unless forloop.index0 >= itemStart and forloop.index0 < itemEnd %}style="display:none;"{% endunless %}>
+								<div class="grow__card-strip--traditional"></div>
+								<div class="grow__card-content">
+									<h3 class="grow__card-title4 text-traditional">
+										<a href="/event/{{ eventItemOccurrence.Id }}" class="grow__card-title text-traditional">{{ eventItemOccurrence.Name }}</a>
+									</h3>
+									<div class="grow__card-tag4">
+										{% for audience in audiences %}
+										<span>{{audience}}{% unless forloop.last %},{% endunless %}</span>
+										{% endfor %}
+									</div>
+									<div class="grow__card-info">
+										<i class="fas fa-calendar-alt grow__card-icon"></i>
+										<p>
+										{% if eventItemOccurrence.EventItemOccurrence.Schedule.EffectiveStartDate != eventItemOccurrence.EventItemOccurrence.Schedule.EffectiveEndDate %}
+											{{ eventItemOccurrence.EventItemOccurrence.Schedule.EffectiveStartDate  | Date: 'dddd, MMM d' }} -  {{ eventItemOccurrence.EventItemOccurrence.Schedule.EffectiveEndDate  | Date: 'MMM d'}}
+										{% else %}
+											{{ eventItemOccurrence.Date | Date: 'dddd, MMM d'}}
+										{% endif %}
+										at
+										{{ eventItemOccurrence.Time}}
+										</p>
+									</div>
+									<div class="grow__card-description">
+										<p class="mb-2"{{ eventItemOccurrence.EventItem.Summary  | Truncate:360,'...' }}</p>
+									</div>
+									<div>
+										<a href="https://www.thewoodlandsmethodist.org/event/{{ eventItemOccurrence.EventItemOccurrence.Id }}" class="twmc--btn__grow twmc--btn__grow-traditional">Details »</a>
+									</div>
+								</div>
+							</div>
+							<!-- end of card v1 -->
+
+						{% endfor %}
+
+						{% if eventItemOccurrenceCount == 0 %}
+							<div class="panel panel-default margin-t-md">
+								<div class="margin-all-md"> There are no events in this time frame.</div>
+							</div>
+						{% endif %}
+
+						<!-- if there's no group found -->
+
+					</div>
+					<!-- end of .twmc-flex-container--3-col -->
+				</div>
+				<!-- end of .col-sm-12 -->
+			</div>
+			<!-- end of row -->
+
+			<!-- pagination -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="grow-traditional__pagination">
+						{% assign pages = eventItemOccurrenceCount | DividedBy: itemsPerPage | Ceiling %}
+						{% assign startPage = pageNumber | Minus:3 %}
+						{% if startPage < 1 %}
+							{% assign startPage = 1 %}
+						{% endif %}
+						{% assign endPage = pageNumber | Plus:4 %}
+						{% if endPage >= pages %}
+							{% assign endPage = pages %}
+						{% endif %}
+
+						{% if pageNumber > 1 %}
+							<a href="?EventPageNumber={{ pageNumber | Minus:1 }}">«</a>
+						{% endif %}
+
+						{% for i in (startPage..endPage) %}
+							<a href="?EventPageNumber={{i}}" class="{% if i == pageNumber%}grow-traditional__page-active{% endif %}">{{ i }}</a>
+						{% endfor %}
+						{% if pageNumber < pages %}
+
+						<a href="?EventPageNumber={{pageNumber | Plus:1}}" class="{% if i == pageNumber%}grow-traditional__page-active{% endif %}">»</a>
+						{% endif %}
+
+					</div>
+				</div>
+			</div>
+			<!-- end of pagination -->
+		</div>
+		<!-- end of .container -->
+	</section>
+	<!-- end of gather groups cards -->
+
+</section>
+<!-- ===== end of GROUPS section ===== -->

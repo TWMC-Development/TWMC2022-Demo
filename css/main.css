@@ -426,7 +426,7 @@ a:focus {
 
 /* Utilities - spacing: harvest */
 .twmc-mlxs {
-    margin-left: .7rem;
+    margin-left: .7rem !important;
 }
 
 .twmc-mls {
@@ -1527,6 +1527,11 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.twmc--btn--small {
+    font-size: .6rem;
+    padding: .3rem .55rem;
+}
+
 /* Button outline white */
 .twmc--btn--outline-white  {
     border: 2px solid transparent;
@@ -1998,11 +2003,31 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     transition: all .3s ease-in-out;
 }
 
+/* Date filter button traditional */
+.twmc--btn__grow-traditional {
+    color: white;
+    background-color: var(--color-traditional);
+    border-color: var(--color-traditional);
+    margin-bottom: .5rem;
+
+    transition: all .3s ease-in-out;
+}
+
 /* scale up the size on hover */
 .twmc--btn__grow-g2:hover,
 .twmc--btn__grow-g2:focus {
     background-color: var(--color-periwinkle2);
     border-color: var(--color-periwinkle2);
+    text-decoration: none;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+.twmc--btn__grow-traditional:hover,
+.twmc--btn__grow-traditional:focus {
+    background-color: var(--color-traditional2);
+    border-color: var(--color-traditional2);
     text-decoration: none;
     color: white;
 
@@ -2089,18 +2114,38 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 
 /* Pagination */
 .grow-g__pagination,
-.grow-o__pagination{
+.grow-o__pagination,
+.grow-traditional__pagination{
     margin-top: 4rem;
     text-align: center;
 }
 
 .grow-g__pagination a,
-.grow-o__pagination a {
+.grow-o__pagination a,
+.grow-traditional__pagination a {
     padding: 8px 16px;
     margin: 0;
     color: var(--color-dark-grey);
     text-decoration: none;
     transition: background-color .3s;
+}
+
+/* Traditional page active */
+.grow-traditional__page-active {
+    background-color: var(--color-traditional);
+    color: var(--color-white) !important;
+}
+
+.grow-traditional__page-active:hover {
+    text-decoration: none;
+    background-color: var(--color-traditional);
+    color: var(--color-white) !important;
+}
+
+.grow-traditional__pagination a:hover:not(.grow-traditional__page-active) {
+    background-color: var(--color-traditional);
+    color: var(--color-white) !important;
+    text-decoration: none;
 }
 
 /* Grow G pagination */
@@ -4892,6 +4937,11 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 /* GROW Card v1 */
+.grow__card-strip--traditional {
+    height: 2.5rem;
+    background-color: var(--color-traditional);
+}
+
 .grow__card-strip--periwinkle {
     height: 2.5rem;
     background-color: var(--color-periwinkle);
@@ -4977,6 +5027,23 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 /* Events filter section  */
+.twmc-filter-section--light-grey {
+    background-color: var(--color-light-grey2);
+    padding: 90px 0 45px;
+}
+
+.twmc-groups-section--light-grey {
+    background-color: var(--color-light-grey2);
+    padding-bottom: 90px;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-groups-section--light-grey {
+        padding-bottom: 60px;
+    }
+}
+
+
 #grow-g__title-filter--groups {
     background-color: var(--color-periwinkle3);
     /* padding: 90px 0 60px; */
