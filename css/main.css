@@ -36,6 +36,7 @@
     --color-dark-red3: #862533;
 
     --color-light-yellow: #fefaef;
+    --color-dark-yellow: #f5b02a;
         
     --color-red-orange1: #c05131;
     --color-red-orange2: #974027;
@@ -464,6 +465,26 @@ a:focus {
     padding: 7rem 0;
 }
 
+/* .twmc-pyxxs {
+    padding: .7rem 0;
+} */
+
+.twmc-pyxs {
+    padding: .7rem 0;
+}
+
+.twmc-pys {
+    padding: 1.4rem 0;
+}
+
+.twmc-pym {
+    padding: 2.1rem 0;
+}
+
+.twmc-pylg {
+    padding: 2.8rem 0;
+}
+
 /* Utilities - Backgrounds */
 .twmc-white-bg {
     background-color: var(--color-white);
@@ -646,9 +667,23 @@ a:focus {
     height: 350px;
 }
 
+.twmc-info-2cols__card {
+    margin-bottom: 3rem;
+}
+
 @media only screen and (max-width: 991px) {
     .twmc-intro__img-container {
         margin-bottom: 1rem;
+    }
+
+    .twmc-info-2cols__card {
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-info-2cols__card {
+        margin-bottom: 2rem;
     }
 }
 
@@ -1058,10 +1093,6 @@ a:focus {
     }
 }
 
-
-
-
-
 /* Utilities - 3 columns flex basis*/
 /* Harvest -  podcast section */
 .twmc-flex-container--3-col-basis{
@@ -1143,8 +1174,6 @@ a:focus {
         width: 100%;
     }
 }
-
-
 
 /* Utilities - 3 columns flex 75% width */
 /* Home - blog list section */
@@ -1421,175 +1450,14 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     background-size: 1.25rem;
     transition: transform .2s ease-in-out;
 }
-
-
-
-
-/* .panel-heading a {
-    border-bottom: none;
-}
-
-.panel-heading > h4.panel-title.twmc-h4 > a:hover {
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.panel-group .panel {
-    box-shadow: none;
-    border: none;
-    border-bottom: solid 1px #f0efee;
-}
-
-.panel-group .panel .panel-heading {
-    background: none;
-    border: none;
-    padding: 10px 0;
-}
-
-.panel-group .panel .panel-heading .panel-title {
-    font-size: 18px;
-    font-weight: 900;
-    font-style: normal;
-    margin: 0;
-    color: #862633;
-    white-space: nowrap;
-}
-
-@media (min-width: 768px) {
-    .panel-group .panel .panel-heading .panel-title {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1700px) {
-    .panel-group .panel .panel-heading .panel-title {
-        font-size: 30px;
-    }
-}
-
-.panel-group .panel .panel-heading .panel-title a {
-    position: relative;
-    display: block;
-    white-space: normal;
-    line-height: 1.1;
-    padding: 0 20px 0 0;
-}
-
-.panel-group .panel .panel-heading .panel-title a:hover, .panel-group .panel .panel-heading .panel-title a:focus, .panel-group .panel .panel-heading .panel-title a:active {
-    text-decoration: none;
-    font-style: italic;
-}
-
-.panel-group .panel .panel-heading .panel-title a:after {
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\e90c";
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(90deg);
-}
-
-.panel-group .panel .panel-heading .panel-title a::after {
-    speak-as: none;
-}
-
-.panel-group .panel .panel-heading .panel-title a::after {
-    font-family: 'Icons', serif !important;
-}
-
-.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]::after {
-    transform: rotate(-90deg);
-}
-
-.panel-group .panel .panel-body {
-    border: none;
-    padding: 0 0 20px 0;
-}
-
-.panel-group .panel .panel-body p {
-    margin: 0 0 5px;
-}
-
-
-.panel-group .panel .panel-heading .panel-title a {
-    font-size: 28px;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: inherit;
-}
-
-@media (min-width: 768px) {
-    .panel-group .panel .panel-heading .panel-title a {
-        font-size: 28px;
-    }
-}
-
-.panel-group .panel .panel-heading .panel-title a:hover, .panel-group .panel .panel-heading .panel-title a:focus, .panel-group .panel .panel-heading .panel-title a:hover {
-    font-style: inherit;
-    
-}
-
-.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"] {
-    color: #6e6259;
-    font-style: inherit;
-}
-
-.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]:hover {
-    border-bottom: none;
-}
-
-.panel-group .panel .panel-heading .panel-title a::after { 
-    content: "\e198";
-    transform: rotate(90deg);
-    font-weight: 900;
-    top: 10px;
-}
-
-a.accordion-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 1.25rem;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
-}
-
-a.accordion-button::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-}
-
-
-.panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]::after {
-    content: "\e918";
-    transform: rotate(0deg);
-    font-weight: 900;
-} */
-
-
-
 /* End of utilities - Accordion */
+
+/* Utilities - Form */
+.twmc-panel-heading {
+    padding: 1rem;
+}
+
+/* End of Utilities - Form */
 
 /* ==== END OF UTILITIES ==== */
 /* ========================== */
@@ -1689,6 +1557,46 @@ a.accordion-button::after {
         margin-bottom: 1rem;
     }
 }
+
+/* Button outline yellow */
+.twmc--btn--outline-yellow  {
+    border: 2px solid transparent;
+    border-color: var(--color-dark-yellow);
+    color: var(--color-dark-yellow);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-yellow:hover,
+.twmc--btn--outline-yellow:focus  {
+    border: 2px solid transparent;
+    border-color: var(--color-dark-yellow);
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: var(--color-dark-yellow);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+.twmc-nav__link>.twmc--btn.twmc--btn--outline-yellow {
+    color: var(--color-dark-yellow);
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .twmc-nav__link>.twmc--btn.twmc--btn--outline-yellow {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* @media only screen and (max-width: 992px) {
+    .twmc-feature-banner-1col__img4>a {
+        margin-right: 0;
+    }
+} */
+
+
 
 /* Button mega nav */
 .twmc--btn--outline-mega  {
@@ -4354,12 +4262,22 @@ a > img.twmc-home-intro__services-img2:focus {
     background-position: center;
     background-attachment: scroll;
     color: #fff;
+    padding: 7rem 0;
+}
 
+#twmc-women__radiant-spring2022 {
+    background-image: url("https://people.thewoodlandsmethodist.org/Themes/TWUMC2018/Assets/Images/WOM_Radiant_1270x600_Bkg_blank.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    color: #fff;
     padding: 7rem 0;
 }
 
 @media only screen and (max-width: 575px) {
-    #twmc-women__feature-banner {
+    #twmc-women__feature-banner,
+    #twmc-women__radiant-spring2022 {
         padding: 4.5rem 0;
     }
 }
@@ -4396,6 +4314,78 @@ a > img.twmc-home-intro__services-img2:focus {
         font-size: 1rem;
 
         /* max-width: 100%; */
+    }
+}
+
+/* Women radiant - Spring 2022 */
+.twmc-feature-banner__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4%;
+}
+
+.twmc-feature-banner__left-content {
+    flex-basis: 54%;
+}
+
+.twmc-feature-banner__right-content {
+    flex-basis: 42%;
+}
+
+
+.twmc-feature-banner__left-content > a {
+    width: max-content;
+}
+
+.twmc-feature-banner__left-content > img {
+    max-width: 100%;
+}
+
+.twmc-feature-banner__right-content {
+    text-align: right;
+}
+
+.twmc-feature-banner__right-content > img { 
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+    .twmc-feature-banner__left-content {
+        flex-basis: 58%;
+    }
+    
+    .twmc-feature-banner__right-content {
+        flex-basis: 40%;
+    }
+
+    .twmc-feature-banner__left-content > img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-feature-banner__wrapper {
+        gap: 0;
+        flex-direction: column;
+
+        padding: 16px;
+    }
+
+    .twmc-feature-banner__right-content {
+        order: 1;
+        
+        text-align: left;
+    }
+
+    .twmc-feature-banner__right-content > img {
+        margin-bottom: 1.5rem;
+    }
+
+    .twmc-feature-banner__left-content {
+        order: 2;
     }
 }
 /* =============================== */
@@ -5458,7 +5448,7 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 
-/* ==== CHAPEL ==== */
+/* ==== CTA1 Single Button ==== */
 /* CT1 Single button - renovation update */
 #cta1-chapel-single-button {
     background-color: var(--color-chapel);
@@ -5466,6 +5456,10 @@ a > img.twmc-home-intro__services-img2:focus {
 
 #cta1-traditional-single-button {
     background-color: var(--color-traditional);
+}
+
+#cta1-missions-conf-single-button {
+    background-color: #0b5f84;
 }
 
 
@@ -5505,6 +5499,29 @@ a > img.twmc-home-intro__services-img2:focus {
     width: 35%;
 }
 
+.twmc-feature-banner-1col__img2 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-feature-banner-1col__img3 {
+    max-width: 80%;
+}
+
+.twmc-feature-banner-1col__img4 {
+    max-width: 70%;
+    text-align: right;
+}
+
+.twmc-feature-banner-1col__img4>a {
+    margin-right: 15px;
+}
+
+.twmc-feature-banner-1col__img5 {
+    width: 100vw;
+}
+
 .twmc-feature-banner-1col__text {
     margin: 2.5rem auto 1.5rem;
     letter-spacing: 2px;
@@ -5528,7 +5545,10 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 @media only screen and (max-width: 992px) {
-    .twmc-feature-banner-1col__img {
+    .twmc-feature-banner-1col__img,
+    .twmc-feature-banner-1col__img2,
+    .twmc-feature-banner-1col__img3,
+    .twmc-feature-banner-1col__img4 {
         margin: 0 auto;
     }
     .twmc-feature-banner-1col__text {
@@ -5561,6 +5581,21 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
+/* Mission - serve it up */
+#twmc-mission__serve-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .4),
+        rgba(0, 0, 0, .9)
+    ), url("https://people.thewoodlandsumc.org/Content/MIS_ServeItUp2021_FeatureBanner_BG_compressed.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #fff ;
+}
+
 /*  Prayer and care - grief Share */
 #twmc-prayer-care__grief-share-banner {
     background-image: linear-gradient(
@@ -5573,7 +5608,6 @@ a > img.twmc-home-intro__services-img2:focus {
     -moz-background-size: cover;
     background-size: cover;
     background-position: center center;
-
     color: #fff;
 }
 
@@ -5585,7 +5619,40 @@ a > img.twmc-home-intro__services-img2:focus {
     -moz-background-size: cover;
     background-size: cover;
     background-position: top right;
+    color: #fff ;
+}
 
+/* Rebelbase - Golf Tournament 2021 */
+#twmc-rebelbase__golf-2021 {
+    background-image: url("https://people.thewoodlandsmethodist.org/Content/web/REB_Golf_Tournament_2021_Feature_Banner_Background.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: top right;
+    color: #fff ;
+}
+
+/* Special needs - Happy Birthday Jesus Party */
+#twmc-special-needs__hbd-jesus-party {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("https://people.thewoodlandsmethodist.org/Content/SPN_HappyBirthday_FeatureBanner_1.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: top right;
+    color: #fff ;
+}
+
+/* CAR - Christmas Without Them */
+#twmc-care__christmas-without-them {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0)), url("https://people.thewoodlandsmethodist.org/Content/web/CAR_Christmas_Without_Them_Feature_Banner_Background.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: right center;
+    background-position: center center;
     color: #fff ;
 }
 
@@ -5597,7 +5664,6 @@ a > img.twmc-home-intro__services-img2:focus {
     -moz-background-size: cover;
     background-size: cover;
     background-position: center center;
-
     color: #fff ;
 }
 
@@ -5620,3 +5686,109 @@ a > img.twmc-home-intro__services-img2:focus {
 
 /* ==== End of Accordion ==== */
 
+
+/* ==== GRID ==== */
+/* Mission Conference */
+.twmc-mission-conf__grid {
+    grid-column: content-start / content-end;
+ 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    padding: 1.5rem;
+ }
+ 
+ .twmc-mission-conf__grid--item {
+     /* background-color: #00719C; */
+     /* color: #fff; */
+     background-color: var(--color-light-grey3);
+     color: var(--color-dark-orange);
+     padding: 1.5rem;
+ }
+ 
+ .twmc-mission-conf__grid--item>.embed-container>iframe {
+     border: none;
+ }
+ 
+ /* grid items */
+ .twmc-mission-conf__grid--item1 {
+     grid-column: 1 / span 3;
+     grid-row: 1 / span 1;
+ }
+ 
+ .twmc-mission-conf__grid--item2 {
+     grid-column: 4 / span 3;
+     grid-row: 1 / span 1;
+ }
+ 
+ .twmc-mission-conf__grid--item3 {
+     grid-column: 1 / span 2;
+     grid-row: 2 / span 1;
+ }
+ 
+ .twmc-mission-conf__grid--item4 {
+     grid-column: 3 / span 2;
+     grid-row: 2 / span 1;
+ }
+ 
+ .twmc-mission-conf__grid--item5 {
+     grid-column: 5 / span 2;
+     grid-row: 2 / span 1;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+     .twmc-mission-conf__grid {
+         grid-template-rows: repeat(3, auto);
+      }
+ 
+      /* grid items */
+     
+     .twmc-mission-conf__grid--item3 {
+         grid-column: 1 / span 3;
+         grid-row: 2 / span 1;
+     }
+     
+     .twmc-mission-conf__grid--item4 {
+         grid-column: 4 / span 3;
+         grid-row: 2 / span 1;
+     }
+     
+     .twmc-mission-conf__grid--item5 {
+         grid-column: 1 / span 3;
+         grid-row: 3 / span 1;
+     }
+ }
+ 
+ @media only screen and (max-width: 670px) {
+     .twmc-mission-conf__grid {
+         grid-template-columns: 100%;
+         grid-template-rows: repeat(5, auto);
+      }
+ 
+      /* grid items */
+     .twmc-mission-conf__grid--item1 {
+         grid-column: 1 / span 1;
+         grid-row: 1 / span 1;
+     }
+ 
+     .twmc-mission-conf__grid--item2 {
+         grid-column: 1 / span 1;
+         grid-row: 2 / span 1;
+     }
+ 
+     .twmc-mission-conf__grid--item3 {
+         grid-column: 1 / span 1;
+         grid-row: 3 / span 1;
+     }
+ 
+     .twmc-mission-conf__grid--item4 {
+         grid-column: 1 / span 1;
+         grid-row: 4 / span 1;
+     }
+ 
+     .twmc-mission-conf__grid--item5 {
+         grid-column: 1 / span 1;
+         grid-row: 5 / span 1;
+     }
+ }
