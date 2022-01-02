@@ -309,7 +309,7 @@ a:focus {
     color: var(--color-traditional);
 }
 
-/* Typography - GROW */
+/* Typography - text color */
 .text-periwinkle {
     color: var(--color-periwinkle) !important;
 }
@@ -329,6 +329,15 @@ a:focus {
 .text-canary-yellow2 {
     color: var(--color-canary-yellow2) !important;
 }
+
+.text-default {
+    color: var(--color-dark-orange) !important;
+}
+
+.text-traditional {
+    color: var(--color-traditional) !important;
+}
+
 
 /* ==== END OF TYPOGRAPHY ==== */
 /* =========================== */
@@ -598,7 +607,6 @@ a:focus {
 .twmc-flex-container--1-col{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: flex-start;
 }
   
@@ -606,6 +614,12 @@ a:focus {
     flex-basis: 100%;
     overflow: hidden;
     margin-bottom: 20px;
+}
+
+.twmc-maxwidth-80 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* filter */
@@ -796,6 +810,31 @@ a:focus {
     .twmc-flex-item--2-col-center {
         flex-basis: 100%; 
     } 
+}
+
+
+/* Utilities - 2 Columns Messages List */
+.twmc-flex-container--2-col-msg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.twmc-flex-item--2-col-msg {
+    flex-basis: 49%;
+    overflow: visible;
+
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--2-col-msg {
+        gap: 0;
+    }
+    .twmc-flex-item--2-col-msg {
+        flex-basis: 100%;
+    }
 }
 
 /* Utilities - CTA space sizing */
@@ -4127,8 +4166,26 @@ a > img.twmc-home-intro__services-img2:focus {
     margin-top: .6rem !important;
 }
 
+.twmc-latest-message__title--dark {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--color-dark-orange);
+    margin-top: .6rem !important;
+}
+
+.twmc-latest-message__title--dark > a {
+    cursor: pointer;
+}
+
+.twmc-latest-message__title--dark > a:hover,
+.twmc-latest-message__title--dark > a:focus {
+    text-decoration: underline !important;
+    opacity: .8;
+}
+
 @media only screen and (max-width: 575px) {
-    .twmc-latest-message__title {
+    .twmc-latest-message__title,
+    .twmc-latest-message__title--dark {
         margin-top: 0 !important;
         font-size: 1.8rem !important;
     }
@@ -4148,6 +4205,11 @@ a > img.twmc-home-intro__services-img2:focus {
     color: var(--color-white);
     letter-spacing: 2px;
     margin-bottom: 1.2rem;
+}
+
+.twmc-latest-message__details--dark {
+    color: var(--color-dark-orange);
+    margin-bottom: .5rem;
 }
 
 @media only screen and (max-width: 991px) {
@@ -5919,3 +5981,31 @@ a > img.twmc-home-intro__services-img2:focus {
          grid-row: 5 / span 1;
      }
  }
+
+ /* ==== MESSAGE LIST ==== */
+ .twmc-message-list__card {
+     background-color: var(--color-light-grey2);
+     border-radius: 4px;
+     padding: 1rem 2rem 2rem;
+ }
+
+ .twmc-display-inline {
+    display: inline;
+ }
+
+ 
+
+
+ /* .twmc-flex-container--2-col-msg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.twmc-flex-item--2-col-msg {
+    flex-basis: 49%;
+    overflow: visible;
+
+    margin-bottom: 1rem;
+} */
