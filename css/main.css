@@ -2862,6 +2862,29 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     text-align: center;
 }
 
+#twmc-home__hero--wht-video > video {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    z-index: 11;
+    
+}
+
+#twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text {
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 575px) {
+    #twmc-home__hero--wht-video > video {
+        height: 450px;
+    }
+}
+
+
 /* Hero - I'm New */
 #twmc-im-new__hero {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/Unsecured/8a7f2afef7e0451384ccbed27def3f59_HEADER_ALLNEW_HERE.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1670427170&Signature=621VLcgqQp0WLTvpDb5bTRB9SxY%3D&Width=1200");
