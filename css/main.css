@@ -141,6 +141,10 @@ a:focus {
     color: var(--color-traditional);
     text-decoration: underline;
 }
+
+ul > li {
+    margin-left: 1.5rem !important;
+}
 /* ==== END OF BASE ==== */
 /* ===================== */
 
@@ -2834,7 +2838,7 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 @media only screen and (max-width: 575px) {
     .twmc-hero__header {
         font-size: 45px;
-        margin-top: 300px;
+        margin-top: 280px;
     }
 }
 
@@ -2853,6 +2857,8 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     .twmc-hero__sub-header{
         font-size: 18px;
         margin-top: 250px;
+        line-height: 2;
+    
     }
 }
 
@@ -2933,6 +2939,67 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 #twmc-staff-member__hero-mark-sorensen {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/933e270c82bf40f59e5a88d5464feaec_MarkSorensen_Web_2021.jpeg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1671726494&Signature=%2FVfW41l5S2Q9jwT%2FGkg4DkaJpwc%3D");
 }
+
+/* Hero - Dr Lee Brewer */
+#twmc-staff-member__hero-drleeabrewer {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/af8c9c37a90248bdba8803e0959d332a_LeeBrewer_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672851778&Signature=vAI%2BiTXlprbfytyjzIswIISsN9A%3D");
+}
+
+/* Hero - Dr Stew Grant*/
+#twmc-staff-member__hero-drstewgrant {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/a455c7d8df9f42a7bb7f96e220cf66b4_StewGrant_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672854686&Signature=pWIfQCwYKKoKa9yq1REA7WhudQ8%3D");
+}
+
+/* Hero - Dr Bob Hayes */
+#twmc-staff-member__hero-drbobhayes {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/8c3b718725934b15834f0c663ba3e896_Bishop_Hayes_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672855247&Signature=F2yo%2F%2BKv3FIlw%2BdYt%2FYoiBJSbfE%3D");
+}
+
+/* Hero - Dr. John Hull */
+#twmc-staff-member__hero-drjohnhull {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/7c51f2caac8d4c6790970c9630e0f1b7_JohnHull_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672855815&Signature=QgHfFxuhVk7oPdB6Mm4vNzYIlAA%3D");
+}
+
+/* Hero - Rev. Joy Johnston  */
+#twmc-staff-member__hero-joyjohnston {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/01d53ef9aabd4ce780c11ca069cda53a_JoyJohnston_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672856470&Signature=9HAwL4S8FEuTuEsdRSqMwbArirI%3D");
+}
+
+/* Hero - Rev. Susan Kent */
+#twmc-staff-member__hero-susankent {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/bd3da7b9270a43c48f40244b48f91b62_SusanKent_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672857320&Signature=Ye%2Fsbm4WUTLCJ0nvsAcAAP9TxZQ%3D");
+}
+
+/* Hero - Rev. Daniel Lumpee */
+#twmc-staff-member__hero-daniellumpee {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/ae3aece7bc884b9996bb0818d5885323_Daniel_Lumpee_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672858504&Signature=payJovObefSgCKxbue9rI%2FOn9I4%3D");
+}
+
+/* Hero - Rev. Chris McLain */
+#twmc-staff-member__hero-chrismclain {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/1a31ed7cf807497a978d0e35c2da3a8e_Chris_McLain_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672858939&Signature=O6WVMqQ4%2F6Ta%2FpbGl3ydk2%2BwB80%3D");
+}
+
+/* Hero - Rev. Brent Parker */
+#twmc-staff-member__hero-brentparker {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/2eb670ab98fe4f099aff3ff630a39755_Brent_Parker_2020_web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672859424&Signature=5%2FrAzm6nzQPpdsp0znrRsEZVDa8%3D");
+}
+
+/* Hero - Rev. Rob Renfroe */
+#twmc-staff-member__hero-robrenfroe {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/03c209e04f0a446bb9d7009b76280b14_RobRenfroe_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672860037&Signature=cXtsbQH6auz3%2B0KsKFAK%2FGC0DlM%3D");
+}
+
+/* Hero - Dr. Edmund W. Robb III */
+#twmc-staff-member__hero-dredmundwrobbiii {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/3b42ad7d543c42a0b75624dbddca60e6_DrRobb_Web.jpeg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672860473&Signature=9MVI0XQ6fozLKMMeXSvBBJIohjk%3D");
+}
+
+/* Hero - Rev. Mark Swayze */
+#twmc-staff-member__hero-markswayze {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/6b6c0eae26054d50b75e691e5e411329_MarkSwayze_Web.jpg?AWSAccessKeyId=AKIAJGMGNYHDYN4O5QPQ&Expires=1672861269&Signature=Fe59qYR3lD9oleyEjPx6W24fUGM%3D");
+}
+
 
 
 /* Hero - Advent */
