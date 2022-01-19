@@ -443,43 +443,53 @@ ul > li {
 }
 
 .twmc-mls {
-    margin-left: 1.4rem;
+    margin-left: 1.4rem !important;
 }
 
 .twmc-mrxs {
-    margin-right: .7rem;
+    margin-right: .7rem !important;
 }
 
 .twmc-mtxs {
-    margin-top: .7rem;
+    margin-top: .7rem !important;
 }
 
 .twmc-mts {
-    margin-top: 1.5rem;
+    margin-top: 1.5rem !important;
 }
 
 .twmc-align-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .twmc-align-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .twmc-align-right{
-    text-align: right
+    text-align: right !important;
+}
+
+.twmc-item-justify-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-pyzero {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .twmc-py2 {
-    padding: 2.8rem 0;
+    padding: 2.8rem 0 !important;
 }
 
 .twmc-py3 {
-    padding: 4.2rem 0;
+    padding: 4.2rem 0 !important;
 }
 
 .twmc-grow__section {
-    padding:80px 0 90px;
+    padding:80px 0 90px !important;
 }
 
 .twmc-py4 {
@@ -510,9 +520,29 @@ ul > li {
     padding: 2.8rem 0;
 }
 
+.twmc-ptzero {
+    padding-top: 0 !important;
+}
+
+.twmc-pbzero {
+    padding-bottom: 0 !important;
+}
+
+.twmc-plzero {
+    padding-left: 0 !important;
+}
+
+.twmc-przero {
+    padding-right: 0 !important;
+}
+
 /* Utilities - Backgrounds */
 .twmc-white-bg {
     background-color: var(--color-white);
+}
+
+.twmc-light-grey-bg {
+    background-color: var(--color-light-grey2);
 }
 
 .twmc-grow-g-bg {
@@ -1331,50 +1361,41 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 
 /* Utilities - 3 columns flex missions cards */
-.twmc-flex-container--3-col__missions-cards{
+.twmc-flex-container--3-col__missions-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 3%;
+    /* gap: 2rem; */
+    gap: 3.5%;
 }
 
 .twmc-flex-item--3-col__missions-cards {
-    flex-basis: 31.3%;
+    flex-basis: 31%;
     overflow: visible;
     margin-bottom: 1.5rem;
+    width: 31%;
 }
 
-@media only screen and (max-width: 1199px) {
-    .twmc-flex-container--3-col__missions-cards{
-        gap: 2.5%;
-    }
-    
-    .twmc-flex-item--3-col__missions-cards {
-        flex-basis: 31.5%;
-    }
-}
-
-/* @media only screen and (max-width: 991px) {
-    .twmc-flex-container--3-col__missions-cards {
-        flex-direction: row;
-        gap: 4%;
-    }
-
+@media only screen and (max-width: 1200px) {
     .twmc-flex-item--3-col__missions-cards {
         flex-basis: 48%;
+        width: 48%;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     .twmc-flex-container--3-col__missions-cards {
         flex-direction: row;
-        gap: 0;
+        gap: 0 !important;
     }
 
     .twmc-flex-item--3-col__missions-cards {
-        flex-basis: 100%
+        flex-basis: 100%;
     }
-} */
+}
+
+
+
 
 /* Utilities - 4 columns flex */
 /* CTA E-news */
@@ -1765,6 +1786,12 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 .twmc-btn__right {
     /* margin-bottom: 0 !important; */
     margin-left: 4px;
+}
+
+@media only screen and (max-width:400px) {
+    .twmc-btn__right {
+        margin-left: 0 !important;
+    }
 }
 
 /* btn right grow */
@@ -2807,6 +2834,42 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
         grid-column: 1 / -1;
     }
 }
+
+/* New Portal Template */
+.twmc-portal-header {
+    background-color: var(--color-traditional);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.twmc-portal-content {
+    height: 86vh;
+    padding: 4rem;
+    
+}
+
+.twmc-portal-content > form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-portal-footer {
+    height: 5rem;
+    background-color: var(--color-traditional);
+}
+
+@media only screen and (max-width: 700px) {
+    .twmc-portal-content {
+        min-height: 730px;
+        padding: 3rem;
+    }
+
+    .twmc-portal-content > form {
+        width: 100%;
+    }
+}
 /* ==== END OF NAVIGATION ==== */
 /* ======================================== */
 
@@ -3322,6 +3385,12 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     }
 }
 
+/* Hero - Start Here Classes Page */
+#twmc-home__hero--wht-start-here {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/DIS_StartHere_FeatureBanner_Bckgrnd.jpg");
+    text-align: center;
+    background-position: left center;
+}
 
 /* ==== END OF HERO ==== */
 /* ======================================== */
@@ -4882,6 +4951,18 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
+@media only screen and (max-width: 330px) {
+    .grow__desc--header {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .grow__desc--header {
+        font-size: 15px;
+    }
+}
+
 .grow__desc--header-lg {
     font-size: 50px;
     font-weight: 600;
@@ -5755,6 +5836,10 @@ a > img.twmc-home-intro__services-img2:focus {
     width: 35%;
 }
 
+.twmc-feature-banner-1col__img-xs > img {
+    width: 30%;
+}
+
 .twmc-feature-banner-1col__img2 {
     max-width: 80%;
     margin-left: auto;
@@ -5936,6 +6021,17 @@ a > img.twmc-home-intro__services-img2:focus {
     background-position: center center;
     color: #fff ;
 }
+
+/* MEN - Quest The Last Hurrah - 2022 */
+#twmc-men__last-hurrah-2022 {
+    background-image: url("https://people.thewoodlandsmethodist.org/Themes/TWUMC2018/Assets/Images/MEN_Quest_FeatureBanner_Background2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #fff ;
+}
 /* ==== END OF FEATURE BANNERS - 1 COLUMN ==== */
 
 /* ==== Accordion ==== */
@@ -6068,16 +6164,39 @@ a > img.twmc-home-intro__services-img2:focus {
  }
 
 
- /* .twmc-flex-container--2-col-msg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2%;
+ .twmc-message-list__card--outline {
+     border: 2px solid var(--color-light-grey2);
+    border-radius: 4px;
+    padding: 1.5rem;
+ }
+
+.img-radius-4px {
+    border-radius: 4px;
+ }
+
+
+/* ==== MEMBER PORTAL PAGE ==== */
+
+
+@media only screen and (min-width: 768px) {
+    .nav-tabs.nav-justified > li > a.twmc-nav-tabs--list {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+        height: 60px;
+
+       font-size: .8rem;
+    }
+
+    .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:hover, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:focus {
+        border-bottom-color: #fff;
+        
+    }
+
 }
 
-.twmc-flex-item--2-col-msg {
-    flex-basis: 49%;
-    overflow: visible;
+@media only screen and (min-width: 1200px) {
+    .nav-tabs.nav-justified > li > a.twmc-nav-tabs--list {
+        height: max-content;
+    }
+}
 
-    margin-bottom: 1rem;
-} */
