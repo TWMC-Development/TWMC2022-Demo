@@ -1671,7 +1671,8 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .twmc--btn--small {
     font-size: .6rem;
-    padding: .3rem .55rem;
+    /* padding: .3rem .55rem; */
+    padding: .4rem .55rem .3rem;
 }
 
 /* Button outline white */
@@ -6176,20 +6177,34 @@ a > img.twmc-home-intro__services-img2:focus {
 
 
 /* ==== MEMBER PORTAL PAGE ==== */
+.nav-tabs.nav-justified > li > a.twmc-nav-tabs--list {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    /* height: 60px; */
+
+   font-size: .63rem;
+}
+
+.nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:hover, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:focus {
+    /* border-bottom-color: #fff; */
+    background-color: var(--color-light-grey2);
+    border-bottom-color: transparent;
+}
 
 
-@media only screen and (min-width: 768px) {
+.twmc-panel--member-portal {
+    border-color: #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+
+    background-color: var(--color-light-grey2);
+}
+
+
+@media only screen and (min-width: 992px) {
     .nav-tabs.nav-justified > li > a.twmc-nav-tabs--list {
-        border-bottom: 1px solid #ddd;
-        border-radius: 4px 4px 0 0;
-        height: 60px;
-
-       font-size: .8rem;
-    }
-
-    .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:hover, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:focus {
-        border-bottom-color: #fff;
-        
+       font-size: .6rem;
+       /* height: 55px; */
     }
 
 }
@@ -6198,5 +6213,220 @@ a > img.twmc-home-intro__services-img2:focus {
     .nav-tabs.nav-justified > li > a.twmc-nav-tabs--list {
         height: max-content;
     }
+
+    .nav-tabs.nav-justified > li > a.twmc-nav-tabs--list { 
+        font-size: .8rem;
+    }
 }
 
+@media only screen and (max-width: 767px) {
+    .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:hover, .nav-tabs.nav-justified > .active > a.twmc-nav-tabs--list:focus{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .twmc-panel--member-portal {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+}
+
+
+
+
+
+/* Flex 2 columns - member portal */
+.twmc-flex-container--2-col-member-portal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.twmc-flex-item--2-col-member-portal-left {
+    flex-basis: 23%;
+    overflow: visible;
+    /* background-color: lightblue; */
+}
+
+.twmc-flex-item--2-col-member-portal-right {
+    flex-basis: 76%;
+    overflow: visible;
+    max-width: 100%;
+    /* background-color: cornsilk; */
+}
+
+.twmc-member-portal--nav-tabs {
+    margin-left: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--2-col-member-portal {
+        gap: 0;
+    }
+    
+    .twmc-flex-item--2-col-member-portal-left,
+    .twmc-flex-item--2-col-member-portal-right {
+        flex-basis: 100%;
+    }
+
+    .twmc-flex-item--2-col-member-portal-left {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .twmc-flex-container--2-col-member-portal {
+        gap: 0;
+    }
+}
+
+/* Flex 2 columns - Member Portal Sidenav */
+.twmc-flex-container--2-col-sidenav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1%;
+}
+
+.twmc-flex-item--2-col-sidenav-left {
+    flex-basis: 30%;
+    
+}
+
+.twmc-flex-item--2-col-sidenav-right {
+    flex-basis: 69%;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-mbxs.twmc-flex-item--2-col-msidenav-right > .twmc-mbs > h3.twmc-h3 {
+        margin-top: 0;
+    }
+}
+
+
+
+/* Member portal - Bio */
+.twmc-member-portal--bio {
+    padding: 0 0 1rem;
+}
+
+.twmc-member-portal--img {
+    border-radius: 50%;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-member-portal--sidenav-btn {
+    width: 170px;
+    margin-bottom: .5rem;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .twmc-flex-container--2-col-sidenav {
+        gap: 0;
+    }
+    
+    .twmc-flex-item--2-col-sidenav-left,
+    .twmc-flex-item--2-col-sidenav-right {
+        
+        flex-basis: 100%;
+        
+    }
+
+    /* .twmc-member-portal--sidenav-btn {
+        width: 100%;
+    } */
+
+    .twmc-member-portal--bio {
+        padding: 0 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Member Portal - member Profile */
+.twmc-member-profile {
+    padding: .5rem 1rem 1rem;
+}
+
+.twmc-family-member-profiles {
+    margin: 1.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.twmc-family-member {
+    margin: .7rem 0;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    
+}
+
+.twmc-family-member--img {
+    border-radius: 50%;
+}
+
+.twmc-family-member--title {
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 1.2rem;
+    /* text-transform: uppercase; */
+}
+
+.twmc-family-member--header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+
+}
+
+.twmc-family-member--header-left,
+.twmc-family-member--header-right{
+    flex-basis: 49%;
+}
+
+.twmc-family-member--header-right {
+    text-align: right;
+}
+
+/* .twmc-member-portal--edits {
+    padding-bottom: .4rem;
+} */
+
+@media only screen and (max-width: 767px) {
+    .twmc-family-member--img {
+        width: 150px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.twmc-big-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    /* color: #fff; */
+    background-color: #b7b1ac;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.twmc-big-dropdown > label,
+.twmc-big-dropdown > label > select {
+    width: 100%;
+}
+
+
+/* .twmc-big-dropdown {
+    width: 100%;
+} */
