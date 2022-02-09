@@ -1446,44 +1446,6 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     }
 }
 
-
-/* Utilities - 3 columns flex summer splash */
-.twmc-flex-container--3-col-summer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* gap: 2rem; */
-    gap: 2%;
-}
-
-.twmc-flex-item--3-col-summer {
-    flex-basis: 32%;
-    overflow: visible;
-    margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 991px) {
-    .twmc-flex-container--3-col-summer {
-        flex-direction: row;
-        gap: 2%;
-    }
-    
-    .twmc-flex-item--3-col-summer {
-        flex-basis: 49%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .twmc-flex-container--3-col-summer {
-        gap: 0;
-    }
-
-    .twmc-flex-item--3-col-summer {
-        flex-basis: 100%;
-    }
-}
-
-
 /* Utilities - 4 columns flex */
 /* CTA E-news */
 .twmc-flex-container--4-col {
@@ -2429,43 +2391,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 }
 
 /* Button different colors */
-.twmc--btn--blue1 {
-    border: 2px solid #B9BED7;
-    background-color: #B9BED7;
-    color: var(--color-dark-orange);
-    margin-bottom: .3rem;
-
-    transition: all .3s ease-in-out;
-}
-
-.twmc--btn--blue1:hover,
-.twmc--btn--blue1:focus {
-    border-color: #C7CBDF;
-    background-color: #C7CBDF;
-    text-decoration: none;
-    color: var(--color-dark-orange);
-
-    transform: scale(1.05);
-}
-
-.twmc--btn--yellow1 {
-    border: 2px solid #F8DDAA;
-    background-color: #F8DDAA;
-    margin-bottom: .3rem;
-    color: var(--color-dark-orange);
-
-    transition: all .3s ease-in-out;
-}
-
-.twmc--btn--yellow1:hover,
-.twmc--btn--yellow1:focus {
-    border-color: #FAE9C9;
-    background-color: #FAE9C9;
-    text-decoration: none;
-    color: var(--color-dark-orange);
-
-    transform: scale(1.05);
-}
 
 
 
@@ -3538,11 +3463,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     background-position: left center;
 }
 
-#twmc-summer-splash__hero {
-    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CHI_Summer+Splash+2022+Feature+Banner+BG.png');
-    text-align: center;
-}
-
 .twmc-hero__img-text {
     padding-top: 200px;
     text-align: center;
@@ -3573,10 +3493,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 }
 
 @media only screen and (max-width: 576px) {
-    #twmc-summer-splash__hero {
-        height: 450px;
-    }
-
     .twmc-hero__img-text {
         padding-top: 190px;
     }
@@ -4812,6 +4728,8 @@ a > img.twmc-home-intro__services-img2:focus {
 
 .twmc-feature-banner__left-content {
     flex-basis: 54%;
+    display: flex;
+    flex-direction: column;
 }
 
 .twmc-feature-banner__right-content {
@@ -6074,6 +5992,13 @@ a > img.twmc-home-intro__services-img2:focus {
     width: 100vw;
 }
 
+.twmc-feature-banner-1col__img6 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .twmc-feature-banner-1col__text {
     margin: 2.5rem auto 1.5rem;
     letter-spacing: 2px;
@@ -6650,51 +6575,3 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
-/* Summer splash */
-.twmc-summer-splash--note {
-    text-align: center;
-    border-radius: 4px;
-    width: max-content;
-    margin: 1rem auto;
-    padding: 1rem .5rem .5rem;
-    background-color: #FDF4E4;
-    color: var(--color-dark-orange);
-    box-shadow: 10px 10px 10px var(--color-light-grey2);
-}
-
-@media only screen and (max-width: 576px) {
-    .twmc-summer-splash--note {
-        width: 100%;
-    }
-}
-
-.twmc-summer-splash--card-woodlands {
-    border: 2px solid #d79026;
-    border-radius: 4px;
-    padding: 1.5rem 1.5rem 2rem;
-    box-shadow: 10px 10px 10px var(--color-light-grey2);
-    background-color: var(--color-white);
-}
-
-.twmc-summer-splash--card-woodforest {
-    border: 2px solid #273A87;
-    border-radius: 4px;
-    padding: 1.5rem 1.5rem 2rem;
-    box-shadow: 10px 10px 10px var(--color-light-grey2);
-    background-color: var(--color-white);
-}
-
-.twmc-summer-splash--text-woodlands {
-    color: #d79026;
-    text-transform: uppercase;
-}
-
-.twmc-summer-splash--text-woodforest {
-    color: #273A87;
-    text-transform: uppercase;
-}
-
-.twmc-summer-splash--section1 {
-    padding: 0 0 4rem;
-    background-image: linear-gradient(to bottom, #fff, #FDF4E4);
-}

@@ -1,0 +1,249 @@
+/* ===== VARIABLES ===== */
+:root {
+    --color-summer-splash-2022--blue1: #273A87;
+    --color-summer-splash-2022--blue2: #C7CBDF;
+    --color-summer-splash-2022--blue3: #B9BED7;
+    --color-summer-splash-2022--yellow1: #d79026;
+    --color-summer-splash-2022--yellow2: #FDF4E4;
+    --color-summer-splash-2022--yellow3: #F8DDAA;
+    --color-summer-splash-2022--yellow4: #FAE9C9;
+}
+
+
+/* ===== Feature Banners ===== */
+
+
+/* ===== Summer Splash ===== */
+/* Summer splash - hero */
+#twmc-summer-splash__hero,
+#twmc-children--summer-splash {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CHI_Summer+Splash+2022+Feature+Banner+BG.png');
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-summer-splash__hero {
+        height: 450px;
+    }
+}
+
+.twmc-hero__img-text--right {
+    padding-top: 180px;
+    text-align: right;
+}
+
+.twmc-hero__img-text--right > img {
+    height: 300px;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-hero__img-text--right  {
+        padding-top: 160px;
+    }
+
+    .twmc-hero__img-text--right > img {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .twmc-hero__img-text--right > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Utilities - 3 columns flex summer splash */
+.twmc-flex-container--3-col-summer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* gap: 2rem; */
+    gap: 2%;
+}
+
+.twmc-flex-item--3-col-summer {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--3-col-summer {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .twmc-flex-item--3-col-summer {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc-flex-container--3-col-summer {
+        gap: 0;
+    }
+
+    .twmc-flex-item--3-col-summer {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-summer-splash--note {
+    text-align: center;
+    border-radius: 4px;
+    width: max-content;
+    margin: 1rem auto;
+    padding: 1rem .5rem .5rem;
+    background-color: var(--color-summer-splash-2022--yellow2);
+    color: var(--color-dark-orange);
+    box-shadow: 10px 10px 10px var(--color-light-grey2);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-summer-splash--note {
+        width: 100%;
+    }
+}
+
+.twmc-summer-splash--card-woodlands {
+    border: 2px solid var(--color-summer-splash-2022--yellow1);
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 10px 10px 10px var(--color-light-grey2);
+    background-color: var(--color-white);
+}
+
+.twmc-summer-splash--card-woodforest {
+    border: 2px solid var(--color-summer-splash-2022--blue1);
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 10px 10px 10px var(--color-light-grey2);
+    background-color: var(--color-white);
+}
+
+.twmc-summer-splash--text-woodlands {
+    color: var(--color-summer-splash-2022--yellow1);
+    text-transform: uppercase;
+}
+
+.twmc-summer-splash--text-woodforest {
+    color: var(--color-summer-splash-2022--blue1);
+    text-transform: uppercase;
+}
+
+.twmc-summer-splash--section1 {
+    padding: 0 0 4rem;
+    background-image: linear-gradient(to bottom, var(--color-white), var(--color-summer-splash-2022--yellow2));
+}
+
+/* Summer splash - buttons */
+.twmc--btn--blue1 {
+    border: 2px solid var(--color-summer-splash-2022--blue3);
+    background-color: var(--color-summer-splash-2022--blue3);
+    color: var(--color-dark-orange);
+    margin-bottom: .3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--blue1:hover,
+.twmc--btn--blue1:focus {
+    border-color: var(--color-summer-splash-2022--blue2);
+    background-color: var(--color-summer-splash-2022--blue2);
+    text-decoration: none;
+    color: var(--color-dark-orange);
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--yellow1 {
+    border: 2px solid var(--color-summer-splash-2022--yellow3);
+    background-color: var(--color-summer-splash-2022--yellow3);
+    margin-bottom: .3rem;
+    color: var(--color-dark-orange);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--yellow1:hover,
+.twmc--btn--yellow1:focus {
+    border-color: var(--color-summer-splash-2022--yellow4);
+    background-color: var(--color-summer-splash-2022--yellow4);
+    text-decoration: none;
+    color: var(--color-dark-orange);
+
+    transform: scale(1.05);
+}
+
+/* Summer splash - text */
+.twmc-text-summer-splash-blue1 {
+    color: var(--color-summer-splash-2022--blue1) !important;
+}
+
+.twmc-text-summer-splash-yellow1 {
+    color: var(--color-summer-splash-2022--yellow1) !important;
+}
+
+
+/* ===== Ash Wednesday ===== */
+#twmc-worship--ash-wednesday {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(240, 239, 238, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_AshWednesday_Background.jpg");
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(229, 229, 229, .7), rgba(255, 255, 255, .7), rgba(240, 239, 238, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_AshWednesday_Background.jpg"); */
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center left;
+    color: var(--color-white) ;
+}
+
+@media only screen and (max-width: 1200px) {
+    #twmc-worship--ash-wednesday {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(229, 229, 229, .7), rgba(255, 255, 255, .7), rgba(240, 239, 238, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_AshWednesday_Background.jpg");
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #twmc-worship--ash-wednesday {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(229, 229, 229, .7), rgba(255, 255, 255, .7), rgba(240, 239, 238, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_AshWednesday_Background.jpg");
+    }
+}
+
+.twmc-hero__img-text--right-center {
+    padding-top: 180px;
+    text-align: right;
+}
+
+.twmc-hero__img-text--right-center > img {
+    height: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-hero__img-text--right-center {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-hero__img-text--right-center {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-hero__img-text--right-center  {
+        padding-top: 160px;
+    }
+
+    .twmc-hero__img-text--right-center > img {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .twmc-hero__img-text--right-center > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
