@@ -1828,6 +1828,7 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 }
 
 
+
 /* Button outline icon */
 .twmc--btn--icon {
     padding: 5px;
@@ -4371,6 +4372,18 @@ a > img.twmc-home-intro__services-img2:focus {
         margin-bottom: 2.3rem;
     }
 }
+
+@media only screen and (max-width: 991px) {
+    .twmc-latest-message__description-bootstrap {
+        width: 100% !important;
+    }
+    
+    .twmc-latest-message__video-bootstrap {
+        width: 100% !important;
+        margin-top: 2rem;
+    }
+}
+
 
 .twmc-latest-message__serries-title {
     font-size: 2rem;
