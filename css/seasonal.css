@@ -335,7 +335,7 @@
 
 #twmc-worship--easter {
     background-color: #050a0d;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_Easter_1270x1200_BKG-2.jpg") ;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_Easter_2000x1890_BKG-2+_compressed.jpg") ;
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -602,3 +602,40 @@
     padding: .3rem .45rem .2rem;
 }
 /* ===== End of Easter ===== */
+
+
+/* ===== FEATURE BANNERS ===== */
+/* SPN - FAMILY WORSHIP */
+#twmc-feature-banner__spn-family-worship {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    /* height: 600px; */
+    height: 500px;
+}
+
+.twmc-feature-banner__wrapper2 {
+    /* height: 600px; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__spn-family-worship {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
+    }
+}
+
+
+
+
+
+/* ===== END OF FEATURE BANNERS ===== */
