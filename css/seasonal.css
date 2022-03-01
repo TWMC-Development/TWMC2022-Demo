@@ -3,6 +3,7 @@
     --color-summer-splash-2022--blue1: #273A87;
     --color-summer-splash-2022--blue2: #C7CBDF;
     --color-summer-splash-2022--blue3: #B9BED7;
+    --color-summer-splash-2022--blue4: #194761;
     --color-summer-splash-2022--yellow1: #d79026;
     --color-summer-splash-2022--yellow2: #FDF4E4;
     --color-summer-splash-2022--yellow3: #F8DDAA;
@@ -13,6 +14,91 @@
 
     --color-traditional: #862633;
 }
+
+/* ===== FEATURE BANNERS ===== */
+/* SPN - FAMILY WORSHIP */
+#twmc-feature-banner__spn-family-worship {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    /* height: 600px; */
+    height: 500px;
+}
+
+.twmc-feature-banner__wrapper2 {
+    /* height: 600px; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__spn-family-worship {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
+    }
+}
+/* End of SPN - FAMILY WORSHIP */
+
+/* REB - Summer 2022 Events */
+#twmc-students--summer-2022-events {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/REB_Summer+2022+Events+Feature+Banner+BG.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    height: 500px;
+}
+
+.twmc-feature-banner__img-btn {
+    text-align: center;
+
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-students--summer-2022-events,
+    .twmc-feature-banner__img-btn {
+        height: 450px;
+    }
+}
+
+.twmc--btn--outline-blue  {
+    border: 2px solid transparent;
+    border-color: var(--color-summer-splash-2022--blue4);
+    color: var(--color-summer-splash-2022--blue4);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-blue:hover,
+.twmc--btn--outline-blue:focus  {
+    border: 2px solid transparent;
+    border-color: var(--color-summer-splash-2022--blue4);
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: var(--color-summer-splash-2022--blue4);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+/* End of REB - Summer 2022 Events */
+
+/* ===== END OF FEATURE BANNERS ===== */
+
+
 
 /* ===== Feature Banners ===== */
 
@@ -108,6 +194,10 @@
     .twmc-summer-splash--note {
         width: 100%;
     }
+}
+
+.twmc-noboxshadow {
+    box-shadow: none !important;
 }
 
 .twmc-summer-splash--card-woodlands {
@@ -604,38 +694,63 @@
 /* ===== End of Easter ===== */
 
 
-/* ===== FEATURE BANNERS ===== */
-/* SPN - FAMILY WORSHIP */
-#twmc-feature-banner__spn-family-worship {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-attachment: scroll;
-    color: #fff;
-    
-    /* height: 600px; */
-    height: 500px;
+
+
+
+/* ===== REB - Summer 2022 Events ===== */
+
+.twmc-reb-summer--red {
+    color: #f36e62;
 }
 
-.twmc-feature-banner__wrapper2 {
-    /* height: 600px; */
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 100%;
+#twmc-students--summer-2022-events2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(251, 231, 69, .1), rgba(255,255, 255, .1)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/REB_Summer+2022+Events+Feature+Banner+BG.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    height: 650px;
+}
+
+.twmc-students--summer-2022-events2__img {
+    margin-top: 230px;
+    height: 198px;
+    width: auto;
 }
 
 @media only screen and (max-width: 992px) {
-    #twmc-feature-banner__spn-family-worship {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
+    .twmc-students--summer-2022-events2__img {
+        width: 80%;
+        height: auto;
+        margin-top: 250px;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-students--summer-2022-events2 {
+        height: 550px;
     }
+
+    .twmc-students--summer-2022-events2__img {
+        margin-top: 220px;
+    } 
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-students--summer-2022-events2 {
+        height: 450px;
+    }
+
+    .twmc-students--summer-2022-events2__img {
+        margin-top: 190px;
+        width: 90%;
+        height: auto;
+    } 
 }
 
 
 
-
-
-/* ===== END OF FEATURE BANNERS ===== */
+/* ===== End of REB - Summer 2022 Events ===== */

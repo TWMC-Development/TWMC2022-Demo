@@ -399,6 +399,36 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
     }
 }
 
+.twmc-section__pysmall-white {
+    padding: 3rem 0 !important;
+    background-color: var(--color-white);
+}
+
+.twmc-section__pysmall-lightgrey {
+    padding: 3rem 0 !important;
+    background-color: var(--color-light-grey2);
+}
+
+.twmc-section__pymed-white {
+    padding: 5rem 0 !important;
+    background-color: var(--color-white);
+}
+
+.twmc-section__pymed-lightgrey {
+    padding: 5rem 0 !important;
+    background-color: var(--color-light-grey2);
+}
+
+.twmc-section__pylarge-white {
+    padding: 7rem 0 !important;
+    background-color: var(--color-white);
+}
+
+.twmc-section__pylarge-lightgrey {
+    padding: 7rem 0 !important;
+    background-color: var(--color-light-grey2);
+}
+
 .twmc-myzero {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -3816,6 +3846,11 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     min-height: 400px;
     width: 100%;
     border: 1px solid transparent;
+
+}
+
+.twmc-intro__description-bootstrap {
+    padding-left: 1.5rem;
 }
 
 
@@ -3823,6 +3858,8 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     .twmc-intro__description-bootstrap {
         margin-bottom: 1rem;
         margin-top: 2rem;
+
+        padding-left: 1rem;
     }
 
 }
