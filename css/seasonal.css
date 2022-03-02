@@ -686,15 +686,52 @@
     }
 }
 
-.twmc--btn--extrasmall {
-    font-size: .5rem;
-    font-weight: bold;
-    padding: .3rem .45rem .2rem;
+.twmc-easter--hero {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: center;
 }
+
+.twmc-easter--hero > img {
+    height: 300px;
+    width: auto;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-easter--hero > img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .twmc-easter--hero {
+        height: 550px;
+    }
+
+    .twmc-easter--hero > img {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-easter--hero {
+        height: 450px;
+    }
+
+    .twmc-easter--hero > img {
+        height: 150px;
+        margin-bottom: 1.2rem;
+    }
+}
+
+
 /* ===== End of Easter ===== */
-
-
-
 
 
 /* ===== REB - Summer 2022 Events ===== */
@@ -750,6 +787,8 @@
         height: auto;
     } 
 }
+
+
 
 
 

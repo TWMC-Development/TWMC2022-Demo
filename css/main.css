@@ -1919,6 +1919,33 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     }
 }
 
+/* Button hero outline white */
+.twmc--btn--hero-outline-white  {
+    border: 2px solid transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--hero-outline-white:hover,
+.twmc--btn--hero-outline-white:focus  {
+    border: 2px solid transparent;
+    border-color: var(--color-white);
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--hero-outline-white {
+        font-size: .6rem;
+        padding: .45rem .6rem .4rem;
+    }
+}
+
 
 /* Button mega nav */
 .twmc--btn--outline-mega  {
