@@ -319,6 +319,8 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
     
 }
 
+
+
 .twmc-traditional__link {
     color: var(--color-traditional);
 }
@@ -357,7 +359,7 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
 }
 
 .text-woodforest {
-    color: var(--color-woodforest);
+    color: var(--color-woodforest) !important;
 }
 
 .text-uppercase {
@@ -370,6 +372,149 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
 
 /* ==== END OF TYPOGRAPHY ==== */
 /* =========================== */
+
+
+/* ==== ICONS ==== */
+/* =============== */
+/* Icon Traditional */
+.twmc-socmed-icon__traditional > a > i {
+    color: var(--color-traditional);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__traditional > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__traditional > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__traditional > a > i:hover {
+    color: var(--color-dark-red2);
+}
+/* End of icon traditional */
+
+/* Icon Harvest */
+.twmc-socmed-icon__harvest > a > i {
+    color: var(--color-harvest);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__harvest > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__harvest > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__harvest > a > i:hover {
+    color: var(--color-red-orange2);
+}
+
+.twmc-intro__2col {
+    gap: 1rem;
+}
+/* End of Icon Harvest */
+
+/* Icon chapel */
+.twmc-socmed-icon__chapel > a > i {
+    color: var(--color-chapel);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__chapel > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__chapel > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__chapel > a > i:hover {
+    color: var(--color-chapel2);
+}
+/* End of icon chapel */
+
+/* Icon loft */
+.twmc-socmed-icon__loft > a > i {
+    color: var(--color-loft);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__loft > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__loft > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__loft > a > i:hover {
+    color: var(--color-loft2);
+}
+/* End of icon loft */
+
+
+/* Icon woodforest */
+.twmc-socmed-icon__woodforest > a > i {
+    color: var(--color-woodforest);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__woodforest > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__wooodforest > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__loft > a > i:hover {
+    color: var(--color-woodforest2);
+}
+/* End of icon woodforest */
+
+
+/* Icon white */
+.twmc-socmed-icon__white > a > i {
+    color: var(--color-white);
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-socmed-icon__white > a > i:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-socmed-icon__white > a > i {
+        font-size: 1.6rem !important;
+    }
+}
+
+.twmc-socmed-icon__white > a > i:hover {
+    opacity: .8;
+}
+/* End of Icon white */
+/* ======================== */
+/* ==== END OF ICONS ==== */
 
 
 /* ==== UTILITIES ==== */
@@ -2446,6 +2591,7 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     color: white;
     background-color: var(--color-dark-grey);
     border-color: var(--color-dark-grey);
+    cursor: not-allowed;
 }
 
 p.twmc--btn__grow.twmc--btn__inactive,
@@ -4147,119 +4293,6 @@ a > img.twmc-home-intro__services-img2:focus {
     margin: 5px 0;
 }
 
-/* Icon Traditional */
-.twmc-socmed-icon__traditional > a > i {
-    color: var(--color-traditional);
-    margin-right: 10px;
-    transition: all .3s ease-in-out;
-}
-
-.twmc-socmed-icon__traditional > a > i:hover {
-    transform: scale(1.2);
-}
-
-@media only screen and (max-width: 575px) {
-    .twmc-socmed-icon__traditional > a > i {
-        font-size: 1.6rem !important;
-    }
-}
-
-.twmc-socmed-icon__traditional > a > i:hover {
-    color: var(--color-dark-red2);
-}
-/* End of icon traditional */
-
-/* Icon Harvest */
-.twmc-socmed-icon__harvest > a > i {
-    color: var(--color-harvest);
-    margin-right: 10px;
-    transition: all .3s ease-in-out;
-}
-
-.twmc-socmed-icon__harvest > a > i:hover {
-    transform: scale(1.2);
-}
-
-@media only screen and (max-width: 575px) {
-    .twmc-socmed-icon__harvest > a > i {
-        font-size: 1.6rem !important;
-    }
-}
-
-.twmc-socmed-icon__harvest > a > i:hover {
-    color: var(--color-red-orange2);
-}
-
-.twmc-intro__2col {
-    gap: 1rem;
-}
-
-/* Icon chapel */
-.twmc-socmed-icon__chapel > a > i {
-    color: var(--color-chapel);
-    margin-right: 10px;
-    transition: all .3s ease-in-out;
-}
-
-.twmc-socmed-icon__chapel > a > i:hover {
-    transform: scale(1.2);
-}
-
-@media only screen and (max-width: 575px) {
-    .twmc-socmed-icon__chapel > a > i {
-        font-size: 1.6rem !important;
-    }
-}
-
-.twmc-socmed-icon__chapel > a > i:hover {
-    color: var(--color-chapel2);
-}
-/* End of icon chapel */
-
-/* Icon loft */
-.twmc-socmed-icon__loft > a > i {
-    color: var(--color-loft);
-    margin-right: 10px;
-    transition: all .3s ease-in-out;
-}
-
-.twmc-socmed-icon__loft > a > i:hover {
-    transform: scale(1.2);
-}
-
-@media only screen and (max-width: 575px) {
-    .twmc-socmed-icon__loft > a > i {
-        font-size: 1.6rem !important;
-    }
-}
-
-.twmc-socmed-icon__loft > a > i:hover {
-    color: var(--color-loft2);
-}
-/* End of icon loft */
-
-
-/* Icon woodforest */
-.twmc-socmed-icon__woodforest > a > i {
-    color: var(--color-woodforest);
-    margin-right: 10px;
-    transition: all .3s ease-in-out;
-}
-
-.twmc-socmed-icon__woodforest > a > i:hover {
-    transform: scale(1.2);
-}
-
-@media only screen and (max-width: 575px) {
-    .twmc-socmed-icon__wooodforest > a > i {
-        font-size: 1.6rem !important;
-    }
-}
-
-.twmc-socmed-icon__loft > a > i:hover {
-    color: var(--color-woodforest2);
-}
-/* End of icon woodforest */
 
 
 /* Intro - Women */
