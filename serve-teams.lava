@@ -81,8 +81,9 @@
                                                 </div>
                                                 <div class="grow__card-info">
                                                     <i class="fas fa-church grow__card-icon"></i>
+
                                                     {% for community in communities%}
-                                                    <p class="twmc-p">{{ community }}</p>
+                                                        <span>{{ community }}{% unless forloop.last %},{% endunless %} </span>
                                                     {% endfor %}
                                                 </div>
                                                 <div>
