@@ -5838,6 +5838,24 @@ a > img.twmc-home-intro__services-img2:focus {
         padding-bottom: 60px;
     }
 }
+
+.twmc-serve__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-serve__img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-serve__img {
+        width: 100%;
+    }
+}
 /* ========================== */
 /* End of GROW O - Serve Page */
 
