@@ -513,6 +513,53 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
     opacity: .8;
 }
 /* End of Icon white */
+
+/* Home intro - socmed icon */
+.twmc-home-socmed-icon--intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+p.twmc-p.text-traditional.twmc-home-intro__socmed-text {
+    font-size: 1.3rem !important;
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 0 !important;
+}
+
+.twmc-home-intro__socmed-container {
+    text-align: center;
+}
+
+.twmc-home-intro__socmed-icons {
+    margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    p.twmc-p.text-traditional.twmc-home-intro__socmed-text {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-home-intro__socmed-container {
+        text-align: left;
+    }
+
+    p.twmc-p.text-traditional.twmc-home-intro__socmed-text {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    p.twmc-p.text-traditional.twmc-home-intro__socmed-texts {
+        font-size: .8rem !important;
+    }
+}
+
+/* End of Home intro - socmed icon */
 /* ======================== */
 /* ==== END OF ICONS ==== */
 
