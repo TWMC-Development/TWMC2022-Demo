@@ -107,6 +107,11 @@
     box-sizing: inherit;
 }
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -4056,10 +4061,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     padding: 7rem 0;
 }
 
-/* .twmc-intro__description-bootstrap > h1.twmc-h1 {
-    margin-top: 0;
-} */
-
 .twmc-intro__video-bootstrap iframe,
 .twmc-intro__video-bootstrap object,
 .twmc-intro__video-bootstrap embed  {
@@ -4073,6 +4074,11 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     padding-left: 1.5rem;
 }
 
+/* .twmc-intro__description-bootstrap-left {
+    padding-right: 1.5rem;
+} */
+
+
 
 @media only screen and (max-width: 991px) {
     .twmc-intro__description-bootstrap {
@@ -4081,6 +4087,13 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 
         padding-left: 1rem;
     }
+
+    /* .twmc-intro__description-bootstrap-left {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+
+        padding-right: 1rem;
+    } */
 
 }
 
@@ -4349,6 +4362,17 @@ a > img.twmc-home-intro__services-img2:focus {
 
 .twmc-intro__contact-container {
     padding: 0 !important;
+}
+
+.twmc-intro__contact-container-bootstrap {
+    padding-left: 1.5rem !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-intro__contact-container-bootstrap {
+        padding-left: 16px !important;
+        padding-top: 1rem;
+    }
 }
 
 .twmc-intro__contact-header {
