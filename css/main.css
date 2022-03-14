@@ -453,7 +453,7 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
 
 /* Icon loft */
 .twmc-socmed-icon__loft > a > i {
-    color: var(--color-loft);
+    color: var(--color-loft) !important;
     margin-right: 10px;
     transition: all .3s ease-in-out;
 }
@@ -469,7 +469,7 @@ i.fal.fa-praying-hands.twmc-icon__traditional-square {
 }
 
 .twmc-socmed-icon__loft > a > i:hover {
-    color: var(--color-loft2);
+    color: var(--color-loft2) !important;
 }
 /* End of icon loft */
 
@@ -6906,3 +6906,13 @@ a > img.twmc-home-intro__services-img2:focus {
     }
 }
 
+
+/* Messages page - Menu */
+.twmc-messages-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 5px;
+    justify-content: center;
+}
