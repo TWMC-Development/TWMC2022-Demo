@@ -152,6 +152,13 @@ a:focus {
 ul > li {
     margin-left: 1.5rem !important;
 }
+
+select {
+    font-weight: 700 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
 /* ==== END OF BASE ==== */
 /* ===================== */
 
@@ -6915,4 +6922,33 @@ a > img.twmc-home-intro__services-img2:focus {
 
     gap: 5px;
     justify-content: center;
+}
+
+/* ===== DESIGN SYSTEM PAGE ===== */
+.twmc-ds__wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.twmc-left-navbar {
+    /* position: fixed; */
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-right: 2px solid var(--color-dark-grey);
+}
+
+.twmc-left-navbar__links {
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+
+.twmc-right-content {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 300px;
+    padding: 1.5rem;
 }
