@@ -155,8 +155,8 @@ ul > li {
 
 select {
     font-weight: 700 !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
 
 }
 /* ==== END OF BASE ==== */
