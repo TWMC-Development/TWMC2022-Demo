@@ -36,7 +36,7 @@ iframe {
 
 
 
-<section id="chapel-latest-message" class="twmc-latest-message">
+<section id="chapel-latest-message" class="twmc-latest-message" style="background-image:linear-gradient( to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url('/GetImage.ashx?guid={{ message | Attribute:'MessageImage','RawValue' }}&width=1600&height=674&mode=crop');">
     <div class="container-fluid">
 
         <!-- title -->
