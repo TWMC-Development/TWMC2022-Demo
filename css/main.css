@@ -1870,6 +1870,12 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     
 }
 
+.twmc-flex-item—4-col__img-small {
+    width: 100%;    
+    height: 135px;    
+    object-fit: cover;
+}
+
 @media only screen and (max-width: 991px) {
     .twmc-flex-item--4-col__justify-left  {
         flex-basis: 32.65%;
@@ -2171,6 +2177,25 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     color: var(--color-dark-orange);
 
     transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1020px) {
+    .twmc--btn--outline-mega {
+        min-width: 180px;
+    }
+}
+
+
+@media only screen and (max-width: 920px) {
+    .twmc--btn--outline-mega {
+        min-width: 160px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .twmc--btn--outline-mega {
+        min-width: 150px;
+    }
 }
 
 
@@ -2937,6 +2962,13 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     text-decoration: none !important;
 }
 
+@media only screen and (max-width: 900px) {
+    .twmc-header__link,
+    .twmc-header__link--dark {
+        padding: 0 8px;
+    }
+}
+
 /* Hamburger Icon */
 .twmc-hamburger {
     position: relative;
@@ -3104,7 +3136,7 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     padding-left: 10px;
 }
 
-/* Mega Navigation Grid */
+/* ===== Mega Navigation Grid ===== */
 .twmc-mega-nav__grid,
 .twmc-mega-nav--white-bg__grid {
     display: grid;
@@ -3253,6 +3285,159 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
         grid-column: 1 / -1;
     }
 }
+/* ===== End of Mega Navigation Grid ===== */
+
+
+/* ===== Mega Navigation Grid V2 ===== */
+.twmc-mega-nav__grid2,
+.twmc-mega-nav--white-bg__grid2 {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: [buttons2-start] repeat(3, 1fr) [buttons2-end about2-start] repeat(3, 1fr) [about2-end servicesconnect2-start] repeat(3, 1fr) [servicesconnect2-end ministries2-start] repeat(3, 1fr) [ministries2-end] ;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-mega-nav__grid2,
+    .twmc-mega-nav--white-bg__grid2 {
+        gap: 0;
+    }
+}
+
+/* Navigation buttons */
+.twmc-mega-nav__buttons2,
+.twmc-mega-nav--white-bg__buttons2 {
+    grid-row: 1 / 2;
+    grid-column: buttons2-start / buttons2-end;
+
+    margin-top: 55px;
+}
+
+/* Socmed */
+.twmc-mega-nav__socmed2,
+.twmc-mega-nav--white-bg__socmed2 {
+    color: var(--color-dark-orange);
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    justify-items: flex-start;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    
+}
+
+
+/* About */
+.twmc-mega-nav__about2,
+.twmc-mega-nav--white-bg__about2 {
+    grid-column: about2-start / about2-end;
+    grid-row: 1 / 2;
+}
+
+/* Services & Connect */
+.twmc-mega-nav__services-connect2,
+.twmc-mega-nav--white-bg__services-connect2 {
+    grid-column: servicesconnect2-start / servicesconnect2-end;
+    grid-row: 1 / 2;
+}
+
+/* Ministries */
+.twmc-mega-nav__ministries2,
+.twmc-mega-nav--white-bg__ministries2{
+    grid-row: 1 / 2;
+    grid-column: ministries2-start / ministries2-end;
+}
+
+/* Grid media queries */
+@media only screen and (max-width: 1020px) {
+    .twmc-mega-nav__socmed2 {
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .twmc-mega-nav__socmed2 {
+        max-width: 160px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .twmc-mega-nav__socmed2 {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .twmc-mega-nav__grid2,
+    .twmc-mega-nav--white-bg__grid2 {
+        grid-template-rows: repeat(3, max-content);
+        grid-template-columns: [buttons2-start] 1fr [buttons2-end about2-start] 1fr [about2-end];
+    }
+
+    .twmc-mega-nav__buttons2,
+    .twmc-mega-nav--white-bg__buttons2 {
+        grid-row: 1 / 2;
+        grid-column: buttons2-start / buttons2-end;
+    }
+
+
+    .twmc-mega-nav__about2,
+    .twmc-mega-nav--white-bg__about2 {
+        grid-row: 2 / 3;
+        grid-column: buttons2-start / buttons2-end;
+    }
+
+    .twmc-mega-nav__services-connect2,
+    .twmc-mega-nav--white-bg__services-connect2 {
+        grid-row: 1 / 2;
+        grid-column: about2-start / about2-end;
+    }
+
+    .twmc-mega-nav__ministries2,
+    .twmc-mega-nav--white-bg__ministries2 {
+        grid-row: 2 / 3;
+        grid-column: about2-start / about2-end;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-mega-nav__grid2,
+    .twmc-mega-nav--white-bg__grid2 {
+        grid-template-rows: repeat(4, max-content);
+        grid-template-columns: 1fr;
+    }
+
+    .twmc-mega-nav__buttons2,
+    .twmc-mega-nav--white-bg__buttons2 {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+    }
+
+    .twmc-mega-nav__about2,
+    .twmc-mega-nav--white-bg__about2 {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+    }
+
+    .twmc-mega-nav__services-connect2,
+    .twmc-mega-nav--white-bg__services-connect2 {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+    }
+
+    .twmc-mega-nav__ministries2,
+    .twmc-mega-nav--white-bg__ministries2 {
+        grid-row: 4 / 5;
+        grid-column: 1 / -1;
+    }
+
+}
+/* ===== End of Mega Navigation Grid V2 ===== */
 
 /* New Portal Template */
 .twmc-portal-header {
