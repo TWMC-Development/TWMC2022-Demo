@@ -15,6 +15,28 @@
     --color-traditional: #862633;
 }
 
+/* ===== UTILITIES ===== */
+.twmc-mt3 {
+    margin-top: 3rem !important;
+}
+
+.twmc-mt4 {
+    margin-top: 4rem !important;
+}
+
+.twmc-mt5 {
+    margin-top: 5rem !important;
+}
+
+.twmc-mt6 {
+    margin-top: 6rem !important;
+}
+
+.twmc-mt7 {
+    margin-top: 7rem !important;
+}
+/* ===== END OF UTILITIES */
+
 /* ===== FEATURE BANNERS ===== */
 /* SPN - FAMILY WORSHIP */
 #twmc-feature-banner__spn-family-worship {
@@ -832,8 +854,71 @@
     }
 }
 
-
-
-
-
 /* ===== End of REB - Summer 2022 Events ===== */
+
+
+/* ===== National Day of Prayer ===== */
+#twmc-hero__national-day-of-prayer {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_NationalDayOfPrayer_FeatureBckGrnd.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255,255, 0.1), rgba(255, 255, 255, 1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOR_NationalDayOfPrayer_FeatureBckGrnd.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+    color: var(--color-dark-orange) !important;
+}
+
+.twmc-hero-background--650h-centeralign-flex {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 650px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twmc-hero-background--650h-centeralign-flex--img {
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-hero-background--650h-centeralign-flex {
+        height: 450px;
+    }
+
+    .twmc-hero-background--650h-centeralign-flex--img {
+        margin-top: 70px;
+    }
+}
+
+
+.twmc-cta2--center-ndop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.twmc-cta2--center-ndop>p {
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.twmc-hero-img__img95pct,
+.twmc-hero-img__img95pct>img {
+    max-width: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-hero-img__img95pct,
+    .twmc-hero-img__img95pct>img {
+        max-width: 100%;
+    }
+}
+/* ===== End of National Day of Prayer ===== */
