@@ -3458,7 +3458,7 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     line-height: 1.3;
 
     color: var(--color-white);
-    text-transform: capitalize !important;
+    /* text-transform: capitalize !important; */
 }
 
 @media only screen and (max-width: 575px) {
@@ -3544,6 +3544,40 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     top: 0;
     left: 0;
     text-align: center;
+}
+
+#twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text.mega-is-active {
+    top: 750px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text.mega-is-active {
+        top: 800px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text.mega-is-active {
+        top: 850px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text.mega-is-active {
+        top: 1450px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text.mega-is-active {
+        top: 1500px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-home__hero--wht-video>.twmc-container.twmc-hero-services__text.mega-is-active {
+        top: 2100px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -4681,7 +4715,7 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 .twmc-latest-message__title--dark {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 2rem;
     color: var(--color-dark-orange);
     margin-top: .6rem !important;
@@ -5815,7 +5849,7 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 .grow-w__worship-title {
-    text-transform: uppercase;
+    /* s */
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -7122,3 +7156,57 @@ code {
         max-width: 100%;
     }
 }
+
+
+/* ===== Confirmation ===== */
+/* Button outline dark grey */
+.twmc--btn--outline-dark-grey {
+    border: 1px solid transparent;
+    border-color: var(--color-dark-grey);
+    padding: 1rem;
+    font-size: 14px;
+    text-transform: none;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-dark-grey:hover,
+.twmc--btn--outline-dark-grey:focus  {
+    border: 1px solid transparent;
+    border-color: var(--color-dark-grey);
+    background-color: rgba(153, 153, 153, .1) !important;
+    text-decoration: none;
+
+    transform: scale(1.02);
+}
+
+.twmc--btn--outline-dark-grey > p {
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+#twmc-confirmation__registration {
+    background: linear-gradient(to bottom, rgba(221, 221, 221, .2), rgba(134, 38, 51, .2));
+    
+}
+
+#twmc-confirmation__lessons {
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-confirmation__lessons {
+        max-width: max-content;
+    }
+}
+
+.twmc-link--red {
+    color: var(--color-traditional);
+    transition: all .3s ease-in-out;
+}
+
+.twmc-link--red:hover {
+    opacity: .7;
+}
+
+/* ===== End of Confirmation ===== */
