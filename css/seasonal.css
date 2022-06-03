@@ -38,7 +38,49 @@
 /* ===== END OF UTILITIES */
 
 /* ===== FEATURE BANNERS ===== */
+/* SEN - Summer Fun */
+#twmc-feature-banner__sen-summer-fun {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SEN_Summer+Fun+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wrapper-align-center {
+    /* height: 600px; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__sen-summer-fun {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SEN_Summer+Fun+Feature+Banner+BG.png");
+    }
+
+    .twmc-feature-banner__wrapper-align-center {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__sen-summer-fun,
+    .twmc-feature-banner__wrapper-align-center {
+        height: 450px;
+    }
+}
+
+
 /* SPN - FAMILY WORSHIP */
+
 #twmc-feature-banner__spn-family-worship {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SPN_Worship_FeatureBanner.png");
     background-size: cover;
@@ -922,3 +964,397 @@
     }
 }
 /* ===== End of National Day of Prayer ===== */
+
+
+/* ===== SEN - Summer Fun ===== */
+#twmc-sen-summer-fun__hero {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SEN_Summer+Fun+Feature+Banner+BG.png');
+    text-align: center;
+}
+
+.twmc-hero__img-text--left-center {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.twmc-hero__img-text--left-center > img {
+    margin-top: 20px;
+    width: 60%;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-hero__img-text--left-center > img {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .twmc-hero__img-text--left-center > img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-hero__img-text--left-center {
+        height: 450px;
+    }
+}
+
+.twmc-sen-summer-fun__text-blue {
+    color: #017393;
+}
+
+.twmc--btn--blue2 {
+    border: 2px solid #017393;
+    background-color: #017393;
+    color: var(--color-white);
+    font-weight: bold !important;
+    margin-bottom: .3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--blue2:hover,
+.twmc--btn--blue2:focus {
+    border-color: #0081a5;
+    background-color: #0081a5;
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.05);
+}
+/* ===== End of SEN - Summer Fun ===== */
+
+/* ===== WOM Radiant Bible Study ===== */
+#twmc-feature-banner__wom-fall-radiant {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOM_Radiant_Fall_2022_1270x600.jpg");
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOM_Radiant_Fall_2022_1270x600.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wrapper-align-center2 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-end;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.twmc-feature-banner__wrapper-align-center2 > img {
+    max-width: 60%;
+}
+
+.twmc-feature-banner__wrapper-align-center2 > div {
+    width: 60%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__wom-fall-radiant {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOM_Radiant_Fall_2022_1270x600.jpg");
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .twmc-feature-banner__wrapper-align-center2 > img {
+        max-width: 600px;
+    }
+    
+    .twmc-feature-banner__wrapper-align-center2 > div {
+        width: 600px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__wom-fall-radiant {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOM_Radiant_Fall_2022_1270x600.jpg");
+    }
+
+    .twmc-feature-banner__wrapper-align-center2 {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 627px) {
+    .twmc-feature-banner__wrapper-align-center2 > div > a {
+        margin-top: 5px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__wom-fall-radiant,
+    .twmc-feature-banner__wrapper-align-center2 {
+        height: 450px;
+    }
+
+    .twmc-feature-banner__wrapper-align-center2 > img,
+    .twmc-feature-banner__wrapper-align-center2 > div {
+        max-width: 90%;
+    }
+}
+
+.twmc--btn--radiant {
+    border: 2px solid #ffc38a;
+    background-color: #ffc38a;
+    color: var(--color-dark-grey2);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--radiant:hover,
+.twmc--btn--radiant:focus {
+    opacity: .8;
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--outline-orange  {
+    border: 2px solid transparent;
+    border-color: #ffc38a;
+    color: #ffc38a;
+    background-color: rgba(255, 195, 138, .2) !important;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-orange:hover,
+.twmc--btn--outline-orange:focus  {
+    border: 2px solid transparent;
+    border-color: #ffc38a;
+    background-color: rgba(255, 195, 138, .4)  !important;
+    color: #ffc38a;
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+/* ===== End of WOM Radiant Bible Study ===== */
+
+/* ===== Hull & Renfroe ===== */
+#twmc-hull-renfroe {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/BUS_BBQBash_1270x600.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .1)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/BUS_BBQBash_1270x600.jpg');
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-hull-renfroe {
+        height: 450px;
+    }
+}
+
+
+.twmc-flex-container--3-col-hull-renfroe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 2rem; */
+    gap: 2%;
+}
+
+.twmc-flex-item--3-col-hull-renfroe {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--3-col-hull-renfroe {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .twmc-flex-item--3-col-hull-renfroe {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc-flex-container--3-col-hull-renfroe {
+        gap: 0;
+    }
+
+    .twmc-flex-item--3-col-hull-renfroe {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-hull-renfroe--cards {
+    border: 2px solid #D56161;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    background-color: var(--color-white);
+}
+
+.twmc-hull-renfroe--text {
+    color:  #D56161;
+}
+
+.twmc--btn--blue3 {
+    border: 2px solid #267888;
+    background-color: #267888;
+    color: #fff;
+    margin-bottom: .3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--blue3:hover,
+.twmc--btn--blue3:focus {
+    border-color: #408593;
+    background-color: #408593;
+    text-decoration: none;
+    color: #fff;
+
+    transform: scale(1.05);
+}
+
+/* ===== End of Hull & Renfroe ===== */
+
+
+/* ===== Prayers for Uvalde ===== */
+#twmc-hero__prayers-for-uvalde {
+    /*background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CAR_Uvalde_FeatureBanner.jpg");*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CAR_Uvalde_FeatureBanner.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center left;
+    color: var(--color-dark-orange) !important;
+}
+
+.twmc-hero-background--650h-rightalign-flex {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 650px;
+    text-align: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twmc-hero-background--650h-rightalign-flex > .twmc-container.twmc-hero-img__img50pct > img {
+    width: 50%;
+}
+
+.twmc-hero-background--650h-rightalign-flex--img2 {
+    margin-top: 70px;
+}
+
+.twmc-cta2--right-ndop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: .7rem;
+    /* max-width: 60%; */
+}
+
+.twmc-cta2--right-ndop>p {
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-hero-background--650h-rightalign-flex {
+        text-align: center;
+    }
+
+    .twmc-hero-background--650h-rightalign-flex > .twmc-container.twmc-hero-img__img50pct > img {
+        width: 70%;
+    }
+
+    .twmc-cta2--right-ndop {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-hero-background--650h-rightalign-flex > .twmc-container.twmc-hero-img__img50pct > img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-hero-background--650h-rightalign-flex {
+        height: 550px;
+    }
+
+    .twmc-hero-background--650h-rightalign-flex > .twmc-container.twmc-hero-img__img50pct > img {
+        width: 90%;
+    }
+}
+/* ===== End of Prayers for Uvalde ===== */
+
+
+/* ===== Young Adults ===== */
+#twmc-home__hero--young-adults {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CYA_YoungAdults_FeatureBanner.jpg");
+    text-align: center;
+    background-position: center center;
+}
+
+.twmc-feature-banner-1col__img-youngadults {
+    height: 650px;
+    max-width: 100%;
+}
+
+.twmc-feature-banner-1col__img-youngadults > img {
+    height: 400px;
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-feature-banner-1col__img-youngadults > img {
+        height: 350px;
+        margin-top: 165px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc-feature-banner-1col__img-youngadults > img {
+        height: 300px;
+        margin-top: 175px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-feature-banner-1col__img-youngadults {
+        height: 450px;
+    }
+
+    .twmc-feature-banner-1col__img-youngadults > img {
+        height: 220px;
+        max-width: 95%;
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-feature-banner-1col__img-youngadults > img {
+        height: 200px;
+        max-width: 95%;
+        margin-top: 140px;
+    }
+}
+
+/* ===== End of Young Adults ===== */
