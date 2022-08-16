@@ -6904,6 +6904,8 @@ a > img.twmc-home-intro__services-img2:focus {
     color: #fff ;
 }
 
+
+
 .twmc-feature-banner-1col__img,
 .twmc-feature-banner-1col__img-md {
     width: 100%;
@@ -7829,11 +7831,107 @@ code {
 
 /* ===== End of Confirmation ===== */
 
-/* ===== Mark's Blog ===== */
-/* .twmcblog__wrapper {
-    margin: 0 1rem;
-} */
 
+
+/* ===== Pastor bio 2022 ===== */
+#twmc__pastor-bio--header-img {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/pastors/ChrisMcLain_1270x800.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    height: 500px;
+
+    margin: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc__pastor-bio--header-img {
+        height: 350px;
+    }
+}
+
+/* Bio info - Red BG */
+.twmc__pastor-bio--info {
+    margin: 0;
+    padding: 0 5px;
+    background-color: var(--color-traditional);
+}
+
+.twmc__pastor-bio--name {
+    margin: 7px 0 0;
+    color: var(--color-white);
+}
+
+.twmc__pastor-bio--title {
+    margin-top: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    color: var(--color-white);
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc__pastor-bio--name {
+        margin: 7px 0 0;
+    }
+}
+
+/* Contact info */
+.twmc__pastor-bio--contact {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: flex-start;
+
+    background-color: var(--color-light-grey2);
+}
+
+.twmc__pastor-bio--phone-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.twmc__pastor-bio--phone-email>p,
+.twmc__pastor-bio--phone-email>p>a,
+.twmc__pastor-bio--phone-email>i {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.twmc__pastor-bio--phone-email>p>a:hover {
+    cursor: pointer;
+}
+
+.twmc__pastor-bio--phone-email>p>a {
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc__pastor-bio--contact {
+        flex-direction: column;
+        
+    }
+
+    .twmc__pastor-bio--phone-email>p {
+        display: flex;
+    }
+
+    .twmc__pastor-bio--phone-email>p>a {
+        line-height: 1.2;
+    }
+}
+/* ===== End of pastor bio 2022 ===== */
+
+/* ===== Pastor Blog ===== */
 .twmcblog__header-img {
     background-image: url("https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2684&q=80");
     background-repeat: no-repeat;
@@ -7947,102 +8045,160 @@ code {
     }
 }
 
-/* ===== End of Mark's Blog */
+/* ===== End of Pastor Blog ===== */
 
-/* ===== Pastor bio 2022 ===== */
-#twmc__pastor-bio--header-img {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/pastors/ChrisMcLain_1270x800.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: top center;
-    height: 500px;
+/* ===== Pastor Blog Archive ===== */
+.twmcblog__flex-container-3col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3.5%;
+}
 
-    margin: 0;
+.twmcblog__flex-item-3col {
+    flex-basis: 31%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmcblog__flex-container-3col {
+        flex-direction: row;
+        gap: 4%;
+    }
+
+    .twmcblog__flex-item-3col {
+        flex-basis: 48%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
-    #twmc__pastor-bio--header-img {
-        height: 350px;
+    .twmcblog__flex-container-3col {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .twmcblog__flex-item-3col {
+        flex-basis: 100%
     }
 }
 
-/* Bio info - Red BG */
-.twmc__pastor-bio--info {
-    margin: 0;
-    padding: 0 5px;
-    background-color: var(--color-traditional);
+/* 4 cols cards */
+.twmcblog__flex-container-4col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
 }
 
-.twmc__pastor-bio--name {
-    margin: 7px 0 0;
-    color: var(--color-white);
+.twmcblog__flex-item-4col {
+    flex-basis: 23.5%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
 }
 
-.twmc__pastor-bio--title {
-    margin-top: 0;
-    padding-top: 3px;
-    padding-bottom: 5px;
-    color: var(--color-white);
-    letter-spacing: 1px;
-}
+@media only screen and (max-width: 991px) {
+    .twmcblog__flex-container-4col {
+        flex-direction: row;
+        gap: 0;
+    }
 
-@media only screen and (max-width: 768px) {
-    .twmc__pastor-bio--name {
-        margin: 7px 0 0;
+    .twmcblog__flex-item-4col {
+        flex-basis: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* Contact info */
-.twmc__pastor-bio--contact {
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    gap: 4%;
-    justify-content: flex-start;
+@media only screen and (max-width: 576px) {
+    .twmcblog__flex-container-4col {
+        flex-direction: row;
+        gap: 0;
+    }
 
-    background-color: var(--color-light-grey2);
+    .twmcblog__flex-item-4col {
+        flex-basis: 100%;
+    }
 }
 
-.twmc__pastor-bio--phone-email {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
+.twmc-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    
 }
 
-.twmc__pastor-bio--phone-email>p,
-.twmc__pastor-bio--phone-email>p>a,
-.twmc__pastor-bio--phone-email>i {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+.twmcblog__flex-item-3col.twmc-card {
+    transition: all .3s ease-in-out;
 }
 
-.twmc__pastor-bio--phone-email>p>a:hover {
+.twmc-card:hover,
+.twmc-card:focus {
+    transform: scale(1.01);
     cursor: pointer;
 }
 
-.twmc__pastor-bio--phone-email>p>a {
-    line-height: 32px;
+.twmc-card--img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    object-fit: cover;
 }
 
-@media only screen and (max-width: 600px) {
-    .twmc__pastor-bio--contact {
-        flex-direction: column;
-        
-    }
+.twmcblog__card-img {
+    height: 250px;
+}
 
-    .twmc__pastor-bio--phone-email>p {
-        display: flex;
-    }
-
-    .twmc__pastor-bio--phone-email>p>a {
-        line-height: 1.2;
+@media only screen and (max-width: 991px) {
+    .twmcblog__card-img {
+        height: 300px;
     }
 }
-/* ===== End of pastor bio 2022 ===== */
+
+@media only screen and (max-width: 576px) {
+    .twmcblog__card-img {
+        height: 250px;
+    }
+}
+
+.twmc-card-body {
+    padding: 20px;
+}
+
+.twmcblog__card-title {
+    color: var(--color-black);
+}
+
+
+.twmcblog__card-text {
+    color: var(--color-black);
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.twmcblog__card-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4%;
+}
+
+.twmcblog__card-info-img {
+    height: 45px;
+    border-radius: 50%;
+}
+
+.twmcblog__card-info {
+    margin-bottom: 0;
+    color: var(--color-dark-orange);
+    font-weight: 400;
+}
+
+.twmcblog__card-info-text {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+/* ===== End of Pastor Blog Archive ===== */
