@@ -160,6 +160,145 @@
 }
 /* End of REB - Summer 2022 Events */
 
+/* SEN - FAll Fun 2022 */
+#twmc-feature-banner__sen-fall-fun {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SEN_Fall+Fun+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wrapper-align-center {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-feature-banner__wrapper-align-center {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__sen-fall-fun,
+    .twmc-feature-banner__wrapper-align-center {
+        height: 450px;
+    }
+}
+/* End of SEN - FAll Fun 2022 */
+
+/* REB - SHIFT NEON Feature Banner */
+#twmc-feature-banner__reb-shift-neon {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_37A3911-new-bw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+#twmc-feature-banner__reb-shift-neon2 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_37A3911-new-color.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+#twmc-feature-banner__reb-shift-neon3 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_37A41952.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+
+.twmc-feature-banner__wrapper-align-center3 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    /* max-width: 100%; */
+}
+
+.twmc-reb__title {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.twmc-feature-banner__flex-container-2col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.twmc-feature-banner__flex-item-2col {
+    flex-basis: 48%;
+    padding: 1rem 1rem 2rem;
+}
+
+@media only screen and (max-width: 991px) {
+    #twmc-feature-banner__reb-shift-neon,
+    #twmc-feature-banner__reb-shift-neon2,
+    #twmc-feature-banner__reb-shift-neon3,
+    .twmc-feature-banner__wrapper-align-center3 {
+        height: max-content;
+    }
+
+    .twmc-reb__title {
+        padding-top: 3rem;
+    }
+    
+    .twmc-feature-banner__flex-container-2col {
+        gap: 0;
+        margin-bottom: 3rem;
+    }
+
+    .twmc-feature-banner__flex-item-2col {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .twmc-reb__card a {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.twmc-reb__card {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
+
+.twmc-reb__card p {
+    font-weight: 400;
+    line-height: 1.4;
+}
+/* End of REB - SHIFT NEON Feature Banner */
 /* ===== END OF FEATURE BANNERS ===== */
 
 
@@ -1358,3 +1497,390 @@
 }
 
 /* ===== End of Young Adults ===== */
+
+
+/* ===== CAR Remembrance Service 911 ===== */
+#twmc-feature-banner__car-remembrance-service-911 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CAR_Remembrance+Service+911+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height:550px;
+    /* height: 500px; */
+}
+
+.twmc-feature-banner__wrapper3 {
+    height: 550px;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.twmc-feature-banner__img-hmed {
+    height: 300px;
+}
+
+@media only screen and (max-width: 991px) {
+    #twmc-feature-banner__car-remembrance-service-911 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CAR_Remembrance+Service+911+Feature+Banner+BG.png");
+    }
+    
+    .twmc-feature-banner__img-hmed {
+        height: 250px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__car-remembrance-service-911,
+    .twmc-feature-banner__wrapper3 {
+        height: 500px;
+    }
+
+    .twmc-feature-banner__img-hmed {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__car-remembrance-service-911,
+    .twmc-feature-banner__wrapper3 {
+        height: 450px;
+    }
+
+    .twmc-feature-banner__img-hmed {
+        height: 170px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-feature-banner__img-hmed {
+        height: 150px;
+    }
+}
+
+/* ===== End of CAR Remembrance Service 911 ===== */
+
+/* ===== MEN - Quest Encore For The Final Time  ===== */
+#twmc-feature-banner__men-encore {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MEN_Quest_Encore_FeatureBanner_BKG.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+    color: #fff ;
+}
+
+.twmc-width70 {
+    width: 70%;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-width70 {
+        width: 90%;
+    }
+}
+/* ===== End of MEN - Quest Encore For The Final Time  ===== */
+
+/* ===== DIS - Start Here: Faith ===== */
+#twmc-adultdisc__start-here-faith {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/DIS_Start+Here+Faith+Feature+Banner+BG.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: right top;
+
+    color: #fff ;
+}
+/* ===== End of DIS - Start Here: Faith ===== */
+
+/* ===== CAR - Grief Support ===== */
+#twmc-feature-banner__car-grief-support {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url("https://www.thewoodlandsmethodist.org/Content/web/CAR_GriefShare_FeatureBanner.png");
+    background-image: url("https://www.thewoodlandsmethodist.org/Content/web/CAR_GriefShare_FeatureBanner.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+    color: #fff ;
+}
+
+.twmc-width60 {
+    width: 60%;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-width60 {
+        width: 90%;
+    }
+}
+/* ===== End of CAR - Grief Support ===== */
+
+
+/* ===== MIS - Serve it up 2022 ===== */
+/* Feature banner */
+#twmc-mission__serveitup-2022 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MIS_Serve+It+Up+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+    color: #fff ;
+}
+
+.twmc-feature-banner__img.twmc-mbxs.twmc-mission__serveitup-img{
+    width: 60%;
+}
+
+.twmc-btn--w150 {
+    width: 150px;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-feature-banner__img.twmc-mbxs.twmc-mission__serveitup-img{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc--btn.twmc--btn--outline-white.twmc-letspac-2.mt-3.twmc-btn--w150{
+        margin-top: 5px !important;
+    }
+}
+/* End of feature banner */
+
+/* Hero */
+.twmc-hero-background--650h-centeralign-flex {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 650px;
+
+    color: var(--color-white);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-hero-background--650h-centeralign-flex {
+        height: 450px;
+    }
+}
+
+#twmc-missions__hero-serveitup-2022 {
+    background: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MIS_Serve+It+Up+Feature+Banner+BG.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+}
+
+.twmc-btn--w150 {
+    width: 150px;
+}
+
+.twmc-btn--w150:first-child {
+    margin-right: 3px;
+}
+
+.twmc-missions__hero-serveitup-2022--btn-wrapper {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.twmc-missions__hero-serveitup-2022--img {
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-missions__hero-serveitup-2022--img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .twmc-missions__hero-serveitup-2022--btn-wrapper {
+        margin-top: 10px;
+    }
+
+    .twmc-missions__hero-serveitup-2022--img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-btn--w150:first-child {
+        margin-right: 0;
+    }
+}
+/* End of hero */
+/* ===== End of MIS - Serve it up 2022 ===== */
+
+/* ===== Serve it Up PAGE ===== */
+.twmc-mission__serveitup-text--yellow {
+    color: #cfac68;
+}
+
+#twmc-mission__serveitup-hero {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MIS_Serve+It+Up+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    height: 650px;
+}
+
+.twmc-mission__serveitup-hero--img {
+    margin-top: 180px;
+    height: 300px;
+    width: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-students--summer-2022-events2__img {
+        width: 80%;
+        height: auto;
+        margin-top: 250px;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-students--summer-2022-events2 {
+        height: 550px;
+    }
+
+    .twmc-students--summer-2022-events2__img {
+        margin-top: 220px;
+    } 
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-students--summer-2022-events2 {
+        height: 450px;
+    }
+
+    .twmc-students--summer-2022-events2__img {
+        margin-top: 190px;
+        width: 90%;
+        height: auto;
+    } 
+}
+
+@media only screen and (max-width: 450px) {
+    #twmc-students--summer-2022-events2 {
+        height: 400px;
+    }
+
+    .twmc-students--summer-2022-events2  {
+        padding-top: 125px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #twmc-students--summer-2022-events2 {
+        height: 350px; 
+    }
+
+    .twmc-students--summer-2022-events2  {
+        padding-top: 115px;
+    }
+}
+
+
+/* ===== SEN - Fall Fun ===== */
+#twmc-sen-fall-fun__hero {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SEN_Fall+Fun+Feature+Banner+BG.png');
+    text-align: center;
+}
+
+.twmc-hero__img-text--left-center {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.twmc-hero__img-text--left-center > img {
+    margin-top: 30px;
+    width: 55%;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-hero__img-text--left-center > img {
+        width: 70%;
+    }
+    
+    .twmc-hero__img-text--left-center > img {
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .twmc-hero__img-text--left-center > img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-hero__img-text--left-center {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-hero__img-text--left-center {
+        height: 450px;
+    }
+}
+
+.twmc-sen--activity-level > a {
+    color: #6e6259;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.twmc-sen--activity-level > a:hover,
+.twmc-sen--activity-level > a:focus {
+    color: #E64D2A;
+}
+
+.twmc--btn--fall {
+    border: 2px solid #E64D2A;
+    background-color: #E64D2A;
+    color: var(--color-white);
+    font-weight: bold !important;
+    margin-bottom: .3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--fall:hover,
+.twmc--btn--fall:focus {border-color: #B53F40;
+    background-color: #B53F40;
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.05);
+}
+/* ===== End of SEN - Fall Fun ===== */
+
