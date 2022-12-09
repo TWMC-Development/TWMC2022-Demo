@@ -572,46 +572,12 @@ h2.ms-faq__title {
     margin-top: 10px !important;
 }
 
-/* ===== END OF FAQ ===== */
-
-/* ===== FOOTER ===== */
-#ms-footer {
-    background-color: var(--ms-color-dark-red1);
-    color: var(--ms-color-white);
-}
-/* ===== END OF FOOTER ===== */
-
-/* ===== BLOG ===== */
-.ms-red-stripe {
-    height: 80px;
-    background-color: var(--ms-color-dark-red1);
-}
-
-.ms-author__img {
-    width: 150px;
-    border-radius: 100%;
-}
-
-.ms-author__info {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.3;
-}
-/* ===== END OF BLOG ===== */
-
-/* ===== FAQ ===== */
 .ms-faq_q-wrapper {
     margin-bottom: 10px;
 }
 
-/* .ms-faq__a-wrapper {
-    margin-top: 10px;
-} */
-
 .well.ms-well {
     background-color: var(--ms-color-white);
-    /* border-top-left-radius: 0;
-    border-top-right-radius: 0; */
 }
 
 .ms-float-left {
@@ -672,7 +638,33 @@ h2.ms-faq__title {
     margin-bottom: 5px !important;
     color: var(--ms-color-dark-grey);
 }
+
 /* ===== END OF FAQ ===== */
+
+/* ===== FOOTER ===== */
+#ms-footer {
+    background-color: var(--ms-color-dark-red1);
+    color: var(--ms-color-white);
+}
+/* ===== END OF FOOTER ===== */
+
+/* ===== BLOG ===== */
+.ms-red-stripe {
+    height: 80px;
+    background-color: var(--ms-color-dark-red1);
+}
+
+.ms-author__img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.ms-author__info {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+/* ===== END OF BLOG ===== */
 
 /* ===== PRAYER ===== */
 .ms-flex-2col-card__container {
@@ -881,14 +873,11 @@ h2.ms-faq__title {
 }
 
 .ms-card {
-    /* border-radius: 4px; */
     background-color: #f5f5f5;
     margin-bottom: 1.5rem;
 }
 
 .ms-card__img {
-    /* border-top-left-radius: 4px;
-    border-top-right-radius: 4px; */
     width: 100%;
     object-fit: cover;
     height: 250px;
@@ -898,3 +887,240 @@ h2.ms-faq__title {
     padding: 0 1.5rem 2rem;
 }
 /* ===== END OF CTA ===== */
+
+/* ===== SURVEY RESULTS ===== */
+/* Survey - Intro */
+.ms-intro__desc-title {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .ms-intro__desc-title {
+        margin-top: 2rem;
+    }
+}
+/* End of Survey - Intro */
+
+/* Survey - CTA */
+.ms-cta {
+    padding: 2rem 0;
+    background-color: #e6e6e6;
+}
+
+.ms-cta__narrow {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .ms-cta__narrow {
+        max-width: 100%;
+    }
+}
+
+.ms-flex-container__cta-2col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.ms-flex-item__cta-2col-left {
+    flex-basis: 78%;
+    text-align: left;
+    font-weight: 400;
+}
+
+.ms-flex-item__cta-2col-right {
+    flex-basis: 20%;
+    align-self: center;
+    text-align: right;
+}
+
+@media only screen and (max-width: 992px) {
+    .ms-flex-item__cta-2col-right {
+        flex-basis: 30%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .ms-flex-container__cta-2col {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ms-flex-item__cta-2col-right {
+        align-self: flex-start;
+    }
+}
+/* End of Survey - CTA */
+
+/* Survey - Slides */
+#ms-survey-slides {
+    background-color: #160609;
+    height: 500px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center top;
+
+    color: var(--ms-color-white);
+    text-align: center;
+
+    padding: 4rem 0;
+}
+
+
+.carousel-inner.ms-slides-inner,
+.carousel-inner.ms-slides-inner > .item,
+.carousel-caption.ms-slides-caption {
+    height: 500px;
+}
+
+.carousel-caption.ms-slides-caption {
+    text-shadow: none;
+    padding-bottom: 0;
+}
+
+.carousel-inner > .item > img,
+.ms-slides__img {
+    display: none;
+}
+
+.ms-slides__content-img {
+    padding-top: 5px;
+}
+
+.ms-slides__content-desc {
+    text-align: left;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .ms-slides__content-desc {
+        padding-top: 1rem;
+    }
+}
+
+.carousel-indicators.ms-indicator {
+    display: none;
+}
+
+.ms-slides-control {
+    width: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #ms-survey-slides,
+    .carousel-inner.ms-slides-inner,
+    .carousel-inner.ms-slides-inner > .item,
+    .carousel-caption.ms-slides-caption {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #ms-survey-slides,
+    .carousel-inner.ms-slides-inner,
+    .carousel-inner.ms-slides-inner > .item,
+    .carousel-caption.ms-slides-caption {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #ms-survey-slides,
+    .carousel-inner.ms-slides-inner,
+    .carousel-inner.ms-slides-inner > .item,
+    .carousel-caption.ms-slides-caption {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #ms-survey-slides,
+    .carousel-inner.ms-slides-inner,
+    .carousel-inner.ms-slides-inner > .item,
+    .carousel-caption.ms-slides-caption  {
+        height: 750px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #ms-survey-slides,
+    .carousel-inner.ms-slides-inner,
+    .carousel-inner.ms-slides-inner > .item,
+    .carousel-caption.ms-slides-caption  {
+        height: 850px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #ms-survey-slides,
+    .carousel-inner.ms-slides-inner,
+    .carousel-inner.ms-slides-inner > .item,
+    .carousel-caption.ms-slides-caption  {
+        height: 900px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-caption.ms-slides-caption {
+        right: 10%;
+        left: 010%;
+    }
+}
+/* End of Survey - Slides */
+
+/* Survey - Tables */
+.ms-survey-accordion__img {
+    text-align: center;
+    margin: 1.5rem 0;
+    
+}
+
+.ms-survey-accordion__img > img {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table > thead > tr > th.ms-table-header,
+.table > tbody > tr.ms-table-row__last {
+    background-color: var(--ms-color-light-grey2);
+    border: none;
+    color: var(--ms-color-black);
+    padding-bottom: 7px;
+}
+
+.table > tbody > tr > td.ms-table-data:last-child {
+    text-align: right;
+}
+
+.table > tbody > tr.ms-table-row__last {
+    background-color: var(--ms-color-light-grey3);
+    color: var(--ms-color-black);
+}
+
+@media only screen and (max-width: 400px) {
+    .table > thead > tr > th.ms-table-header,
+    .table > tbody > tr > td.ms-table-data {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .table > thead > tr > th.ms-table-header,
+    .table > tbody > tr > td.ms-table-data {
+        font-size: 11px;
+    }
+}
+
+/* End of Survey - Tables */
+
+/* ===== END OF SURVEY RESULTS ===== */
+

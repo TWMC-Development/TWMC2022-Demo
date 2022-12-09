@@ -35,6 +35,7 @@
 .twmc-mt7 {
     margin-top: 7rem !important;
 }
+
 /* ===== END OF UTILITIES */
 
 /* ===== FEATURE BANNERS ===== */
@@ -209,38 +210,12 @@
     padding: auto 0;
 }
 
-#twmc-feature-banner__reb-shift-neon2 {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_37A3911-new-color.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    color: #fff;
-    
-    height: 600px;
-    padding: auto 0;
-}
-
-#twmc-feature-banner__reb-shift-neon3 {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_37A41952.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    color: #fff;
-    
-    height: 600px;
-    padding: auto 0;
-}
-
-
 .twmc-feature-banner__wrapper-align-center3 {
     height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:flex-start;
-    /* max-width: 100%; */
 }
 
 .twmc-reb__title {
@@ -262,8 +237,6 @@
 
 @media only screen and (max-width: 991px) {
     #twmc-feature-banner__reb-shift-neon,
-    #twmc-feature-banner__reb-shift-neon2,
-    #twmc-feature-banner__reb-shift-neon3,
     .twmc-feature-banner__wrapper-align-center3 {
         height: max-content;
     }
@@ -299,7 +272,358 @@
     line-height: 1.4;
 }
 /* End of REB - SHIFT NEON Feature Banner */
+
+/* REB - Forge */
+#twmc-feature-banner__reb-forge {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/reb_forge-page-web-graphic-bg--compressed.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.reb-forge__img-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__reb-forge,
+    .reb-forge__img-wrapper  {
+        height: 450px;
+    }
+}
+
+/* Button outline neon green */
+.twmc--btn--outline-neongreen  {
+    border: 2px solid transparent;
+    border-color: #C8FD01 !important;
+    color: #C8FD01;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-neongreen:hover,
+.twmc--btn--outline-neongreen:focus  {
+    border: 2px solid transparent;
+    border-color: var(--color-white);
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
+.twmc-nav__link>.twmc--btn.twmc--btn--outline-neongreen {
+    color: var(--color-white);
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .twmc-nav__link>.twmc--btn.twmc--btn--outline-neongreen {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Forge - Resources */
+.twmc--btn--forge-green2 {
+    border: 2px solid #DCFD5D;
+    background-color: #DCFD5D;
+    color: var(--color-dark-orange);
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.twmc--btn--forge-green2:hover,
+.twmc--btn--forge-green:focus {
+    border: 2px solid #A0CA01;
+    background-color: #A0CA01;
+    color: var(--color-dark-orange);
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc--btn--forge-green2 {
+        margin-left: 0.1rem;
+    }
+}
+
+.twmc-cta__forge-header {
+    color: #fff !important;
+}
+
+.twmc--btn--w260 {
+    width: 260px;
+}
+
+@media only screen and (max-width: 300px) {
+    .twmc--btn--w260 {
+        width: 100%;
+    }
+    
+}
+/* End of REB - Forge */
+
+/* MAR - Re-engage */
+#twmc-feature-banner__mar-reengange {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MAR_ReEngage_FeatureBanner_1270x600.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MAR_ReEngage_FeatureBanner_1270x600.png");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__image-wrapper--left-align {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__mar-reengange,
+    .twmc-feature-banner__image-wrapper--left-align {
+        height: 450px;
+    }
+
+    #twmc-feature-banner__mar-reengange {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/MAR_ReEngage_FeatureBanner_1270x600.png");
+    }
+}
+/* End of MAR - Re-engage */
+
+/* CAR - Christmas without them */
+#twmc-feature-banner__car-christmas-without-them {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CAR_Christmas+Without+Them+Feature+Banner+Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 550px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wrapper-align-right {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-feature-banner__wrapper-align-right {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__car-christmas-without-them,
+    .twmc-feature-banner__wrapper-align-right {
+        height: 450px;
+    }
+}
+
+/* Red button */
+.twmc--btn--outline-red {
+    border: 2px solid transparent;
+    border-color: #D6041D;
+    color: #D6041D;
+    background-color: rgba(255, 255, 255, .3);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-red:hover,
+.twmc--btn--outline-red:focus  {
+    border: 2px solid transparent;
+    border-color: #D6041D;
+    background-color: rgba(255, 255, 255, .4) !important;
+    color: #D6041D;
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+.twmc-feature-banner__wrapper-align-right > a.twmc--btn.twmc--btn--outline-red.twmc-letspac-2.twmc-mtxs {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-feature-banner__wrapper-align-right > a.twmc--btn.twmc--btn--outline-red.twmc-letspac-2.twmc-mtxs {
+        margin-right: 8px;
+    }
+    
+    .twmc--btn--outline-red {
+        padding: 7px 15px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .twmc-feature-banner__wrapper-align-right > a.twmc--btn.twmc--btn--outline-red.twmc-letspac-2.twmc-mtxs {
+        margin-right: 5px;
+    }
+    
+}
+/* End of CAR - Christmas without them */
+
+
+
+/* WOM - Radiant Spring 2023 */
+#twmc-wom__radiant2023 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOM_Radiant+Spring+2023+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+    color: #fff ;
+}
+
+.twmc-wom__radiant2023-title {
+    color: #C83138;
+    text-shadow: 2px 4px 20px #000;
+    letter-spacing: 2px;
+}
+
+
+.twmc-feature-banner__img.twmc-mbxs.twmc-wom__radiant2023-img {
+    width: 60%;
+}
+
+.twmc-btn--w150 {
+    width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-wom__radiant2023-title {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-feature-banner__img.twmc-mbxs.twmc-wom__radiant2023-img{
+        width: 90%;
+    }
+
+    .twmc-wom__radiant2023-title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-wom__radiant2023-title {
+        font-size: 18px;
+    }
+}
+
+.twmc--btn--radiant2023 {
+    border: 2px solid #DAD3BA;
+    background-color: #DAD3BA;
+    color: var(--color-dark-orange);
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.twmc--btn--radiant2023:hover,
+.twmc--btn--radiant2023:focus {
+    border: 2px solid #E1DCC8;
+    background-color: #E1DCC8;
+    color: var(--color-dark-orange);
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--radiant2023 {
+        padding: 0.5rem 0.8rem 0.4rem;
+        font-size: .7rem;
+    }
+}
+/* End of WOM - Radiant Spring 2023 */
+
+/* SEN - Miles Pike Event */
+#twmc-feature-banner__sen-miles-pike{
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/SEN_Miles+Pike_FeatureBanner_Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 550px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wrapper-align-centercenter {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__sen-miles-pike {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .7), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/WOM_Radiant+Spring+2023+Feature+Banner+BG.png"));
+    }
+
+    .twmc-feature-banner__wrapper-align-centercenter {
+        max-width: 100%;
+        
+    }
+
+    .twmc-feature-banner__wrapper-align-centercenter > img {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__sen-miles-pike,
+    .twmc-feature-banner__wrapper-align-centercenter {
+        height: 450px;
+    }
+
+    .twmc-feature-banner__wrapper-align-centercenter > img {
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--featbanner {
+        padding: .5rem .6rem;
+        font-size: .7rem;
+    }
+}
+/* End of SEN - Miles Pike Event */
+
 /* ===== END OF FEATURE BANNERS ===== */
+
+
+
 
 
 
@@ -1883,4 +2207,453 @@
     transform: scale(1.05);
 }
 /* ===== End of SEN - Fall Fun ===== */
+
+/*  ===== ADVENT 2022 ===== */
+/* =================== */
+
+/* UTILITIES */
+.twmc-advent22__red {
+    color: #b22b3c;
+}
+
+.twmc-advent22__green {
+    color: #0f5d07;
+}
+
+/* ADVENT EVENTS */
+.twmc-flex__card-info {
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+/* Rectangle images */
+.twmc-flex-img--3-col-rect {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-flex-img--3-col-rect {
+        height: auto;
+    }
+}
+
+.twmc-advent-event__info {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+/* BUTTON */
+/* Button outline white */
+.twmc--btn--outline-white  {
+    border: 2px solid transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-white:hover,
+.twmc--btn--outline-white:focus  {
+    border: 2px solid transparent;
+    border-color: var(--color-white);
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+.twmc-nav__link>.twmc--btn.twmc--btn--outline-white {
+    color: var(--color-white);
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .twmc-nav__link>.twmc--btn.twmc--btn--outline-white {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Button advent green */
+.twmc--btn--advent2022__green {
+    border: 2px solid #0f5d07;
+    background-color: #0f5d07;
+    color: #fbfbfa;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--advent2022__green:hover,
+.twmc--btn--advent2022__green:focus {
+    border-color: #3F7D39;
+    background-color: #3F7D39;
+    text-decoration: none;
+    color: #fbfbfa;
+    cursor: pointer;
+
+    transform: scale(1.05);
+}
+
+/* Button advent red */
+.twmc--btn--advent2022__red {
+    border: 2px solid #b22b3c;
+    background-color: #b22b3c;
+    color: #fbfbfa;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--advent2022__red:hover,
+.twmc--btn--advent2022__red:focus {
+    border-color: #C15563;
+    background-color: #C15563;
+    text-decoration: none;
+    color: #fbfbfa;
+    cursor: pointer;
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--advent2022__red-hero {
+    margin: 1.5rem 0 .8rem;
+    width: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--advent2022__red-hero {
+        margin-top: .4rem;
+        margin-bottom: 0;
+        padding: .45rem 0 !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--advent2022__red-hero {
+        max-width: 100%;
+    }
+}
+
+/* Button Advent White */
+.twmc--btn--advent2022__white {
+    border: 2px solid #fbfbfa;
+    background-color: #fbfbfa;
+    color: #b22b3c;
+    /* margin-bottom: 1rem; */
+    letter-spacing: 1.5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--advent2022__white:hover,
+.twmc--btn--advent2022__white:focus {
+    border-color: #fbfbfa;
+    background-color: rgba(251, 251, 250, .6);
+    text-decoration: none;
+    cursor: pointer;
+
+    transform: scale(1.05);
+}
+
+
+/*  HERO */
+#twmc-advent__hero {
+    background-image: linear-gradient(to bottom, rgba(157, 52, 49, 0.7), rgba(157, 52, 49, 0),  rgba(157, 52, 49, 0), rgba(157, 52, 49, 0), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/advent2022/WOR_Advent+2022+Web+Graphic+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 650px;
+
+    color: var(--color-white);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twmc-advent__hero-btn-wrapper {
+    width: 878px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-advent__hero-btn-wrapper {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .twmc-advent22__hero-text > img {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #twmc-advent__hero {
+        height: 450px;
+    }
+}
+
+/* CTA Christmas Services */
+#twmc-advent__cta-services {
+    background-color: #b22b3c;
+    color: #fbfbfa;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* INTRO */
+.twmc-advent22__intro {
+    background-color: #e0e0e0;
+    color: #6e6259;
+    font-weight: 600;
+}
+
+.twmc-advent22__intro-text {
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-advent22__intro-text {
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-advent22__intro-text {
+        font-size: .93rem;
+    }
+}
+
+/* Iframe embed responsive */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; overflow: 
+    hidden; max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* CHRISTMAS EVENTS */
+.twmc-advent22__card {
+    padding: 1rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-advent22__card2 {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-advent__events > .container > .row > .col-sm-12 > .twmc-flex-container--3-col > .twmc-flex-item--3-col {
+        flex-basis: 100%;
+    }
+}
+
+
+/* CHRISTMAS SERVICES */
+.twmc-card__border-lightgrey {
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #f3f3f3;
+    margin-bottom: 1rem;
+}
+
+.twmc-card__bg-lightgrey2 {
+    background-color: #f9f9f9;
+}
+
+.twmc-membership__flex-container-2col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.twmc-membership__flex-item-2col {
+    flex-basis: 49%;
+    overflow: visible;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-membership__flex-container-2col {
+        gap: 0%;
+    }
+
+    .twmc-membership__flex-item-2col {
+        flex-basis: 100%;
+        margin: .5rem 0;
+    }
+
+    
+}
+
+/* Emotional support */
+.twmc-flex-container--2-col-2percent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    gap: 3%;
+}
+
+.twmc-flex-item--2-col-2percent {
+    flex-basis: 48%;
+    overflow: visible;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-item--2-col-2percent {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.twmc-flex-img--2-col {
+    height: 350px;
+    /* max-width: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-flex-img--2-col {
+        height: 250px;
+    }
+}
+
+.twmc-advent__nursery-title {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.twmc-img__small {
+    height: 30px;
+}
+
+/* Volunteer */
+#twmc-advent__volunteer {
+    background-image:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .6)
+      ), url("https://people.thewoodlandsmethodist.org/Content/web/WOR_Advent_2021_Background_1270x600.jpg");
+
+    color: #fff;
+    padding: 3rem 0;
+}
+
+/* Home page - Advent hero */
+.twmc-advent22__hero-text {
+    text-align: center;
+    width: 878px;
+    color: #b22b3c;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pulsating {
+    animation: pulsating 2.5s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+
+@keyframes pulsating {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+.twmc-advent22__hero-link {
+    font-family: 'Corinthia', cursive;
+    font-size: 46px;
+    color: #0f5d07;
+    font-weight: 900;
+}
+
+.twmc-advent22__hero-link:hover,
+.twmc-advent22__hero-text:hover {
+    color: #b22b3c;
+    opacity: .7;
+}
+
+@media only screen and (max-width: 1100px) {
+    .twmc-advent22__hero-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-advent22__hero-text {
+        font-size: 20px;
+    }
+
+    .twmc-advent22__hero-link {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-advent22__hero-text {
+        font-size: 17px;
+    }
+
+    .twmc-advent22__hero-link {
+        font-size: 37px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-advent22__hero-text {
+        font-size: 14px;
+    }
+
+    .twmc-advent22__hero-link {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-advent22__hero-text {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    .twmc-advent22__hero-link {
+        font-size: 28px;
+    }
+}
+/* ===== END OF ADVENT 2022 ===== */
+/* ============================== */
 
