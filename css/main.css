@@ -6904,7 +6904,16 @@ a > img.twmc-home-intro__services-img2:focus {
     color: #fff ;
 }
 
+#twmc-adultdisc__start-here-faith {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/DIS_Start+Here+Faith+Feature+Banner+BG.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: right top;
 
+    color: #fff ;
+}
 
 .twmc-feature-banner-1col__img,
 .twmc-feature-banner-1col__img-md {
@@ -7831,107 +7840,8 @@ code {
 
 /* ===== End of Confirmation ===== */
 
-
-
-/* ===== Pastor bio 2022 ===== */
-#twmc__pastor-bio--header-img {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/pastors/ChrisMcLain_1270x800.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: top center;
-    height: 500px;
-
-    margin: 0;
-}
-
-@media only screen and (max-width: 576px) {
-    #twmc__pastor-bio--header-img {
-        height: 350px;
-    }
-}
-
-/* Bio info - Red BG */
-.twmc__pastor-bio--info {
-    margin: 0;
-    padding: 0 5px;
-    background-color: var(--color-traditional);
-}
-
-.twmc__pastor-bio--name {
-    margin: 7px 0 0;
-    color: var(--color-white);
-}
-
-.twmc__pastor-bio--title {
-    margin-top: 0;
-    padding-top: 3px;
-    padding-bottom: 5px;
-    color: var(--color-white);
-    letter-spacing: 1px;
-}
-
-@media only screen and (max-width: 768px) {
-    .twmc__pastor-bio--name {
-        margin: 7px 0 0;
-    }
-}
-
-/* Contact info */
-.twmc__pastor-bio--contact {
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    gap: 4%;
-    justify-content: flex-start;
-
-    background-color: var(--color-light-grey2);
-}
-
-.twmc__pastor-bio--phone-email {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
-}
-
-.twmc__pastor-bio--phone-email>p,
-.twmc__pastor-bio--phone-email>p>a,
-.twmc__pastor-bio--phone-email>i {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.twmc__pastor-bio--phone-email>p>a:hover {
-    cursor: pointer;
-}
-
-.twmc__pastor-bio--phone-email>p>a {
-    line-height: 32px;
-}
-
-@media only screen and (max-width: 600px) {
-    .twmc__pastor-bio--contact {
-        flex-direction: column;
-        
-    }
-
-    .twmc__pastor-bio--phone-email>p {
-        display: flex;
-    }
-
-    .twmc__pastor-bio--phone-email>p>a {
-        line-height: 1.2;
-    }
-}
-/* ===== End of pastor bio 2022 ===== */
-
 /* ===== Pastor Blog ===== */
+
 .twmcblog__header-img {
     background-image: url("https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2684&q=80");
     background-repeat: no-repeat;
@@ -8045,7 +7955,7 @@ code {
     }
 }
 
-/* ===== End of Pastor Blog ===== */
+/* ===== End of Pastor Blog */
 
 /* ===== Pastor Blog Archive ===== */
 .twmcblog__flex-container-3col {
@@ -8083,43 +7993,6 @@ code {
     }
 }
 
-/* 4 cols cards */
-.twmcblog__flex-container-4col {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2%;
-}
-
-.twmcblog__flex-item-4col {
-    flex-basis: 23.5%;
-    overflow: visible;
-    margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 991px) {
-    .twmcblog__flex-container-4col {
-        flex-direction: row;
-        gap: 0;
-    }
-
-    .twmcblog__flex-item-4col {
-        flex-basis: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .twmcblog__flex-container-4col {
-        flex-direction: row;
-        gap: 0;
-    }
-
-    .twmcblog__flex-item-4col {
-        flex-basis: 100%;
-    }
-}
 
 .twmc-card {
     border-radius: 8px;
@@ -8146,18 +8019,6 @@ code {
 
 .twmcblog__card-img {
     height: 250px;
-}
-
-@media only screen and (max-width: 991px) {
-    .twmcblog__card-img {
-        height: 300px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .twmcblog__card-img {
-        height: 250px;
-    }
 }
 
 .twmc-card-body {
@@ -8201,4 +8062,103 @@ code {
     line-height: 1.3;
 }
 
-/* ===== End of Pastor Blog Archive ===== */
+/* ===== ENd of Pastor Blog Archive ===== */
+
+/* ===== Pastor bio 2022 ===== */
+#twmc__pastor-bio--header-img {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/pastors/ChrisMcLain_1270x800.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    height: 500px;
+
+    margin: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc__pastor-bio--header-img {
+        height: 350px;
+    }
+}
+
+/* Bio info - Red BG */
+.twmc__pastor-bio--info {
+    margin: 0;
+    padding: 0 5px;
+    background-color: var(--color-traditional);
+}
+
+.twmc__pastor-bio--name {
+    margin: 7px 0 0;
+    color: var(--color-white);
+}
+
+.twmc__pastor-bio--title {
+    margin-top: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    color: var(--color-white);
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc__pastor-bio--name {
+        margin: 7px 0 0;
+    }
+}
+
+/* Contact info */
+.twmc__pastor-bio--contact {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: flex-start;
+
+    background-color: var(--color-light-grey2);
+}
+
+.twmc__pastor-bio--phone-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.twmc__pastor-bio--phone-email>p,
+.twmc__pastor-bio--phone-email>p>a,
+.twmc__pastor-bio--phone-email>i {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.twmc__pastor-bio--phone-email>p>a:hover {
+    cursor: pointer;
+}
+
+.twmc__pastor-bio--phone-email>p>a {
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc__pastor-bio--contact {
+        flex-direction: column;
+        
+    }
+
+    .twmc__pastor-bio--phone-email>p {
+        display: flex;
+    }
+
+    .twmc__pastor-bio--phone-email>p>a {
+        line-height: 1.2;
+    }
+}
+/* ===== End of pastor bio 2022 ===== */
+

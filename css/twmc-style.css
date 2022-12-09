@@ -238,34 +238,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Typography - women */
-.twmc-text__women {
-    color: var(--color-women2);
-}
-
-.twmc-text__women2 {
-    color: var(--color-women2);
-}
-
-.twmc-icon__women {
-    color: var(--color-women);
-    margin-right: 10px;
-}
-
-.twmc-icon__women:hover {
-    color: var(--color-women2);
-}
-
-.twmc-women__link {
-    color: var(--color-women2);
-}
-
-.twmc-women__link:hover,
-.twmc-women__link:focus {
-    color: var(--color-women3);
-    text-decoration: underline;
-}
-
 /* Typography - traditional */
 .twmc-icon__traditional {
     color: var(--color-traditional);
@@ -330,6 +302,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .twmc-white-bg {
     background-color: var(--color-white);
+}
+
+.twmc-underline--light-grey2 {
+    border-bottom: 1px solid var(--color-light-grey2);
+    padding-bottom: 5px;
 }
 
 /* Utilities - harvest icon */
@@ -405,8 +382,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 1rem; */
-
 }
 
 .twmc-flex-item--2-col__video {
@@ -429,18 +404,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
 }
 
-
 /* Utilities - CTA space sizing */
 .twmc-cta {
-    /* padding: 3rem 0; */
     padding: 2rem 0;
     text-align: center;
 }
-
-/* .twmc-cta2 {
-    padding: 1.5rem 0;
-    text-align: center;
-} */
 
 /* CTA podcast */
 .twmc-cta__p {
@@ -517,8 +485,6 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-
-
 /* Utilities - 3 columns flex */
 /* Connect Section - harvest, women */
 .twmc-flex-container--3-col{
@@ -559,7 +525,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .twmc-flex-img--3-col {
     height: 300px;
-    /* max-width: 100%; */
     width: 100%;
     object-fit: cover;
 }
@@ -694,156 +659,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
-/* Utilities - 3 columns flex box */
-/* Connect boxes */
-/* I changed the name from .twmc-flex-container_3-col-box .twmc-flex-item_3-col-box to: */
-.twmc-flex-container--3-col-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 5px;
-}
-
-.twmc-flex-item--3-col-box {
-    flex-basis: 33%;
-    align-content: center;
-    overflow: hidden;
-}
-
-.twmc-flex-item--3-col-box a {
-    text-decoration: none;
-}
-
-.twmc-flex-item--3-col-box a:hover {
-    text-decoration: none;
-}
-
-.twmc-flex-item--3-col-box:hover [class*="twmc-flex-content-box__3-col-"], 
-.twmc-flex-item--3-col-box:focus [class*="twmc-flex-content-box__3-col-"]{
-    transform: scale(1.1);
-}
-
-@media (max-width: 1027px) {
-    .twmc-flex-container--3-col-box {
-        justify-content: space-around;
-    }
-    .twmc-flex-item--3-col-box {
-        flex-basis: 49%;
-    }
-}
-
-@media (max-width: 768px) {
-    .twmc-flex-container--3-col-box{
-        flex-direction: column;
-    }
-    .twmc-flex-item--3-col-box {
-        flex-basis: 100%;
-    }
-}
-
-.twmc-flex-link_3-col-box {
-    color:#fff;
-}
-
-.twmc-flex-link_3-col-box:hover,
-.twmc-flex-link_3-col-box:focus {
-    opacity: 0.7;
-    transition: all 0.3s ease-in-out;
-}
-
-
-/* Flex what for ???? Women's rectangles??? */
-.twmc-flex-content-box__3-col {
-    display: flex;
-    min-height: 400px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    color: white;
-    font-size: 24px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-
-/* Utilities - 3 columns flex box */
-/* Connect boxes2 - which one??? */
-.twmc-flex-container-box__3-col {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* gap: 5px; */
-}
-
-.twmc-flex-item-box__3-col {
-    flex-basis: 33.333333%;
-    align-content: center;
-    overflow: hidden;
-}
-
-.twmc-flex-item-box__3-col a {
-    text-decoration: none;
-}
-
-.twmc-flex-item-box__3-col a:hover {
-    text-decoration: none;
-}
-
-.twmc-flex-item-box__3-col:hover [class*="twmc-flex-content-box__3-col-"], 
-.twmc-flex-item-box__3-col:focus [class*="twmc-flex-content-box__3-col-"]{
-    transform: scale(1.1);
-}
-
-@media (max-width: 1027px) {
-    .twmc-flex-container-box__3-col {
-        justify-content: space-around;
-    }
-    .twmc-flex-item-box__3-col {
-        flex-basis: 50%;
-    }
-}
-
-@media (max-width: 768px) {
-    .twmc-flex-container-box__3-col {
-        flex-direction: column;
-    }
-    .twmc-flex-item-box__3-col {
-        flex-basis: 100%;
-    }
-}
-
-/* flex-link */
-.twmc-flex-link-box__3-col {
-    color:#fff;
-}
-
-.twmc-flex-link-box__3-col:hover,
-.twmc-flex-link-box__3-col:focus {
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
-.twmc-flex-content-box__3-col {
-    display: flex;
-    /* min-height: 400px; */
-    min-height: 250px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    color: white;
-    font-size: 24px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-
 /* Utilities - 4 columns flex */
 /* CTA E-news */
 .twmc-flex-container--4-col {
@@ -903,7 +718,6 @@ h1, h2, h3, h4, h5, h6 {
         flex-basis: 100%;
     }
 }
-
 
 /* Utilities - 4 columns flex justify content center */
 /* Harvest page: pastors */
@@ -1213,7 +1027,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 /* Button hero scroll down arrow */
 .twmc-scroll-arrow__link {
     position: absolute;
@@ -1230,8 +1043,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: .5;
 }
 
-
-
 /* Button Enews */
 .twmc--btn--outline-white.twmc-btn-enews {
     width: 100%;
@@ -1242,7 +1053,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0 !important;
     }
 }
-
 
 /* Button outline footer section */
 .twmc-footer__cta-button {
@@ -1264,25 +1074,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Button women - green */
-.twmc--btn--women {
-    border: 2px solid var(--color-women);
-    background-color: var(--color-women);
-    color: var(--color-white);
-    
-    transition: all .3s ease-in-out;
-}
-
-.twmc--btn--women:hover,
-.twmc--btn--women:focus {
-    border: 2px solid var(--color-women2);
-    background-color: var(--color-women2);
-    text-decoration: none;
-    color: var(--color-white);
-
-    transform: scale(1.05);
-}
-
+/* ==== Button GROW ==== */
 .twmc--btn__grow {
     display: inline-block;
     font-weight: 600 !important;
@@ -1307,7 +1099,6 @@ h1, h2, h3, h4, h5, h6 {
     .twmc--btn__grow {
         font-size: .6rem !important;
     }
-    
 }
 
 .twmc--btn__grow-outline-grey2 {
@@ -1370,8 +1161,6 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 
     transform: scale(1.05);
-    
-    
 }
 
 .twmc--btn__grow-g3 {
@@ -1460,9 +1249,7 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 .grow-g__details > span {
     font-size: 18;
 }
-
-
-
+/* ======================== */
 /* ==== END OF BUTTONS ==== */
 
 
@@ -1470,7 +1257,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 /* Form Enews */
 .twmc-form__group {
     display: inline-block;
-    /* width: 24.5%; */
     width: 24%;
     text-align: left;
     margin-right: 4px;
@@ -1658,12 +1444,10 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     display: inline-block;
     width: 45px;
     cursor: pointer;
-
     appearance: none;
     background: none;
     outline: none;
     border: none;
-
     vertical-align: middle;
     padding-left: 15px;
     
@@ -1691,12 +1475,10 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     display: inline-block;
     width: 45px;
     cursor: pointer;
-
     appearance: none;
     background: none;
     outline: none;
     border: none;
-
     vertical-align: middle;
     padding-left: 15px;
     
@@ -1753,12 +1535,9 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     left: 100%;
     width: 100%;
     height: max-content;
-
     display: block;
     z-index: 98;
     background-color: var(--color-light-grey5);
-    
-    /* padding-top: 90px; */
     padding-top: 75px;
     padding-bottom: 60px;
     transition: all .3s ease-in-out;
@@ -1789,7 +1568,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 .twmc-mega-nav--white-bg__h3 {
     padding: 30px 0 10px;
     color: var(--color-dark-orange);
-    
 }
 
 @media only screen and (max-width: 576px) {
@@ -1813,7 +1591,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     color: var(--color-traditional);
     text-decoration: none;
     padding-left: 10px;
-    
 }
 
 .twmc-nav__link3 {
@@ -1879,7 +1656,7 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 .twmc-mega-nav--white-bg__buttons {
     grid-row: 1 / 2;
     grid-column: buttons-start / buttons-end;
-    
+
     margin-top: 45px;
 }
 
@@ -1911,7 +1688,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 .twmc-mega-nav--white-bg__icon:hover {
     transform: scale(1.2);
 }
-
 
 /* Grid media queries */
 @media only screen and (max-width: 800px) {
@@ -1946,9 +1722,7 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     }
 }
 
-
 @media only screen and (max-width: 576px) {
-
     .twmc-mega-nav__grid,
     .twmc-mega-nav--white-bg__grid {
         grid-template-rows: repeat(4, max-content);
@@ -2006,7 +1780,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 
 /* Home Hero Maroon*/
 #twmc-home__hero {
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(160, 76, 76, 0.7)), url("https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80"); */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(134, 38, 51, 1)), url("https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -2060,7 +1833,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
 
 /* Home Hero Black*/
 #twmc-home__hero--black {
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(160, 76, 76, 0.7)), url("https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80"); */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -2189,7 +1961,6 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
         margin-top: 250px;
     }
 }
-
 
 /* ==== END OF HERO ==== */
 /* ======================================== */
@@ -3285,8 +3056,12 @@ p.twmc--btn__grow:hover.twmc--btn__inactive:hover {
     }
 
     .twmc-intro__2col > .twmc-home-intro__services:nth-child(2) {
-        margin-top: -1rem !important;
+        margin-top: -.6rem !important;
     }
+}
+
+.twmc-home-intro__services-time-notes {
+    font-size: 12px;
 }
 
 .twmc-home-intro__services > h3.twmc-h3 {
@@ -3957,71 +3732,6 @@ a > img.twmc-home-intro__services-img2:focus {
 }
 
 /* ==== END OF CONNECT ==== */
-
-
-/* ==== CONNECT BOXES ==== */
-/* Women - connect box section. It will be replaced with GROW */
-.twmc-flex-content-box__3-col-1 {
-    background: linear-gradient(
-        rgba(62, 82, 78, 0.7), 
-        rgba(62, 82, 78, 0.7)
-      ),
-    url('https://images.unsplash.com/photo-1622037022824-0c71d511ef3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') center center no-repeat; 
-    background-size: cover;
-    
-}
-
-.twmc-flex-content-box__3-col-2 {
-    background: linear-gradient(
-      rgba(62, 82, 78, 0.7), 
-      rgba(62, 82, 78, 0.7)
-      ),
-      url('https://images.unsplash.com/photo-1536704382439-da99b6ccc0cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1267&q=80') center center no-repeat; 
-    background-size: cover;
-    
-}
-
-.twmc-flex-content-box__3-col-3 {
-    background: linear-gradient(
-      rgba(62, 82, 78, 0.7), 
-      rgba(62, 82, 78, 0.7)
-      ),
-      url('https://images.unsplash.com/photo-1498192467103-290f567eb3a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=800') center center no-repeat; 
-    background-size: cover;
-    
-}
-
-.twmc-flex-content-box__3-col-4 {
-    background: linear-gradient(
-      rgba(62, 82, 78, 0.7), 
-      rgba(62, 82, 78, 0.7)
-      ),
-      url('https://images.unsplash.com/photo-1499389042463-c4adc501cba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1267&q=80') center center no-repeat; 
-    background-size: cover;
-    
-}
-
-.twmc-flex-content-box__3-col-5 {
-    background: linear-gradient(
-      rgba(62, 82, 78, 0.7), 
-      rgba(62, 82, 78, 0.7)
-      ),
-      url('https://images.unsplash.com/photo-1581832097732-8565eff3d361?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center center no-repeat; 
-    background-size: cover;
-    
-}
-
-.twmc-flex-content-box__3-col-6 {
-    background: linear-gradient(
-      rgba(62, 82, 78, 0.7), 
-      rgba(62, 82, 78, 0.7)
-      ),
-      url('https://images.unsplash.com/photo-1503148626300-b02d431c5b08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1491&q=80') center center no-repeat; 
-    background-size: cover;
-    
-}
-/* end of women */
-/* ==== END OF CONNECT BOXES ==== */
 
 
 /* ==== LOCATION ==== */
