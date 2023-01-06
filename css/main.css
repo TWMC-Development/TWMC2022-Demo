@@ -5276,7 +5276,8 @@ a > img.twmc-home-intro__services-img2:focus {
     background-color: var(--color-black);
     padding: 6.5rem 0 7rem;
     /* height: auto; */
-    background-image: url("https://people.thewoodlandsmethodist.org/Content/web/twmc-latest-message__lubo-minar-B-gb_8fgmz8-unsplash__compressed.jpg");
+    /* background-image: url("https://people.thewoodlandsmethodist.org/Content/web/twmc-latest-message__lubo-minar-B-gb_8fgmz8-unsplash__compressed.jpg"); */
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .7) ), url("https://rockrms-assets2.s3.amazonaws.com/images/ContentChannelItemImages/a789bac0b3c34e8c9d28fcfb34e7125e_footer-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -5319,7 +5320,7 @@ a > img.twmc-home-intro__services-img2:focus {
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--color-white);
-    margin-top: .6rem !important;
+    /* margin-top: .6rem !important; */
 }
 
 @media only screen and (max-width: 575px) {
@@ -5393,6 +5394,7 @@ a > img.twmc-home-intro__services-img2:focus {
         font-size: .8rem !important;
     }
 }
+
 
 /* Podcast - Harvest*/
 #twmc-cta__harvest-podcast {
@@ -8399,191 +8401,6 @@ code {
 }
 /* ===== END OF WHAT WE BELIEVE ===== */
 
-
-/* ===== REB - Forge ===== */
-/* Forge - Hero */
-#twmc__reb-forge {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/reb_forge-page-web-graphic-bg.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-attachment: scroll;
-}
-
-.twmc__reb-forge--text-wrapper {
-    height: 650px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.twmc__reb-forge--text-wrapper > img {
-    max-width: 100%;
-}
-
-.twmc__reb-forge--text-wrapper > h2 {
-    width: 100%;
-    margin-left: 10px;;
-    font-weight: 600;
-    margin-top: 10px;
-    text-align: center;
-}
-
-@media only screen and (max-width: 992px) {
-    .twmc__reb-forge--text-wrapper > h2 {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .twmc__reb-forge--text-wrapper {
-        height: 450px;
-        padding-bottom: 30px;
-    }
-}
-
-/* Forge - Intro */
-.twmc-forge__description-bootstrap {
-    padding-left: 1.5rem;
-}
-
-.twmc-forge__intro-heading {
-    color: var(--color-dark-orange);
-    margin-top: 0 !important;
-}
-
-@media only screen and (max-width: 1200px) {
-    .twmc-forge__intro-heading {
-        margin-top: 2rem !important;
-    }
-
-    .twmc-forge__description-bootstrap {
-        padding-left: 1rem;
-    }
-}
-
-/* Forge - CTA */
-.twmc-cta__forge {
-    background-color: #060606;
-}
-
-.twmc-cta__forge-header {
-    color: #fff !important;
-}
-
-.twmc--btn--w260 {
-    width: 260px;
-}
-
-@media only screen and (max-width: 300px) {
-    .twmc--btn--w260 {
-        width: 100%;
-    }
-    
-}
-
-/* Forge - Resources */
-.twmc-forge__resources-intro {
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-@media only screen and (min-width: 1400px) {
-    .twmc-forge__resources-intro {
-        max-width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.twmc--btn--forge-green {
-    border: 2px solid #DCFD5D;
-    background-color: #DCFD5D;
-    color: var(--color-dark-orange);
-    transition: all .3s ease-in-out;
-    font-weight: 700;
-}
-
-.twmc--btn--forge-green:hover,
-.twmc--btn--forge-green:focus {
-    border: 2px solid #A0CA01;
-    background-color: #A0CA01;
-    color: var(--color-dark-orange);
-    transition: all .3s ease-in-out;
-}
-
-.twmc-cta__forge-narrow {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.twmc-forge__resources-img2 {
-    max-width: 360px;
-}
-
-.twmc-forge__resources-wrapper2 {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media only screen and (min-width: 1400px) {
-    .twmc-forge__resources-wrapper2 {
-        max-width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .twmc-cta__forge-narrow {
-        max-width: 95%;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .twmc-cta__forge-narrow {
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .twmc-forge__resources-img2 {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* Resources - Flex */
-.twmc-forge__resources-flex-container {
-    display: flex;
-    flex-direction: row;
-    gap: 4%;
-}
-
-@media only screen and (max-width: 992px) {
-    .twmc-forge__resources-flex-container {
-        flex-direction: column;
-        gap: 0;
-    }
-}
-
-.twmc-forge__resources-heading {
-    color: var(--color-dark-orange);
-    margin-top: 0 !important;
-}
-
-@media only screen and (max-width: 992px) {
-    .twmc-forge__resources-heading {
-        margin-top: 2rem !important;
-    }
-}
-/* ===== End of REB - Forge ===== */
-
 /* ===== I'M NEW ===== */
 #twmc-im-new__hero2023 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/COM_Traditional_venue-32-1200x800.jpg");
@@ -8672,7 +8489,7 @@ code {
 }
 
 #twmc-im-new__map {
-    height: 500px;
+    height: 600px;
     width: 50%;
 }
 
@@ -8750,3 +8567,4 @@ code {
     box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
 }
 /* ===== END OF ONLINE CHURCH ===== */
+
