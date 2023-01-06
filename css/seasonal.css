@@ -2910,27 +2910,21 @@
     color: var(--color-white);
 }
 
-.twmc-hero__text-left {
+.twmc-hero__text-center {
     height: 650px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-left: 7%;
 }
 
-.twmc-hero__text-left > img.img-responsive {
+.twmc-hero__text-center > img.img-responsive {
     height: 450px;
 }
 
-@media only screen and (max-width: 992px) {
-    .twmc-hero__text-left {
-        align-items: center;
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    .twmc-hero__text-left > img.img-responsive {
+    .twmc-hero__text-center > img.img-responsive {
         max-width: 90%;
         height: auto;
     }
@@ -2939,17 +2933,17 @@
 
 @media only screen and (max-width: 575px) {
     #twmc-stewardship__hero2023,
-    .twmc-hero__text-left {
+    .twmc-hero__text-center {
         height: 450px;
     }
 
-    .twmc-hero__text-left > img.img-responsive {
+    .twmc-hero__text-center > img.img-responsive {
         height: 250px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .twmc-hero__text-left > img.img-responsive {
+    .twmc-hero__text-center > img.img-responsive {
         max-width: 90%;
         height: auto;
     }
@@ -3008,6 +3002,26 @@
     background-color: #A20000;
     color: var(--color-white);
     transform: scale(1.02);
+}
+
+.twmc--btn--stewardship-inactive {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.6rem 1rem;
+    font-size: .75rem;
+
+    color: white;
+    background-color: var(--color-dark-grey);
+    border-color: var(--color-dark-grey);
+    cursor: not-allowed;
 }
 
 @media only screen and (max-width: 576px) {
