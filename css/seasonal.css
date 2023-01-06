@@ -2923,6 +2923,12 @@
     height: 450px;
 }
 
+@media only screen and (max-width: 992px) {
+    .twmc-hero__text-left {
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .twmc-hero__text-left > img.img-responsive {
         max-width: 90%;
