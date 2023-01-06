@@ -2952,17 +2952,34 @@
 /* End of Stewardship Hero */
   
 /* Stewardship Intro */
+@media only screen and (max-width: 992px) {
+    .twmc-stewardship__intro-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-stewardship__intro-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-stewardship__intro-img {
+        width: 100%;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+}
+
+
 .twmc-stewardship__intro-button-wrapper {
     display: flex;
     flex-direction: row;
     gap: 4%;
     justify-content: center;
-}
-
-@media only screen and (max-width: 992px) {
-    .twmc-stewardship__intro-button-wrapper {
-        margin-bottom: 3rem;
-    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -3113,13 +3130,15 @@
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 992px) {
-    .twmc-stewardship__plants-content-left--img {
-        margin: auto auto 2rem;
-    }
+.twmc-stewardship__plants-content-left--img {
+    margin: 0 0 2rem auto;
 }
 
 @media only screen and (max-width: 500px) {
+    .twmc-stewardship__plants-content-left--img {
+        margin: auto auto 1.5rem;
+    }
+
     .twmc-stewardship__plants-flex-container {
         flex-direction: column;
         gap: 0;
@@ -3136,6 +3155,7 @@
 
     .twmc-stewardship__plants-left {
         text-align: center;
+        margin-bottom: 1.5rem;
     }
 }
 /* End of Plants flex */
