@@ -2916,7 +2916,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 7%;
 }
 
 .twmc-hero__text-center > img.img-responsive {
@@ -2928,6 +2927,10 @@
         max-width: 90%;
         height: auto;
     }
+
+    /* .twmc-hero__text-center {
+        margin-left: 7%;
+    } */
 }
 
 
@@ -2946,6 +2949,42 @@
     .twmc-hero__text-center > img.img-responsive {
         max-width: 90%;
         height: auto;
+    }
+}
+
+
+.twmc-stewardship-btn__hero {
+    width: 230px;
+}
+
+.twmc-stewardship__hero2023-buttons {
+    margin-top: 1rem;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .twmc-stewardship__hero2023-buttons {
+        margin-left: -7%;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    .twmc-stewardship__hero2023-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .twmc-stewardship-btn__hero {
+        min-width: 250px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--stewardship.twmc-stewardship-btn__hero {
+        margin-bottom: 0;
     }
 }
 
@@ -3666,4 +3705,26 @@
 }
 
 /* End of Stewardship Invests */
+
+/* Stewardship CTA */
+#twmc-stewardship__cta {
+    padding: 1rem 0;
+    background-color: #ca0000;
+    color: #fff;
+    text-align: center;
+}
+
+.twmc-stewardship__cta-link {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.twmc-stewardship__cta-link:hover,
+.twmc-stewardship__cta-link:focus {
+    color: #000;
+}
+
+/* End of Stewardship CTA */
+
+
 /* ===== END OF STEWARDSHIP 2023 ===== */
