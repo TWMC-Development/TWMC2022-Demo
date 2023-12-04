@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Splash</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://people.thewoodlandsmethodist.org/Themes/TWMC2022/Styles/bootstrap.css?v1.0.21">
+    <link rel="stylesheet" href="https://people.thewoodlandsmethodist.org/Themes/TWMC2022/Styles/theme.css?1.0.21">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/seasonal.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/43e21bc55b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <style>
+        /* ===== SUMMER SPLASH 2023 ===== */
+        #twmc-summerspalsh2023__hero {
+            background-color: #007cc2;
+            background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CHI_SummerSplash_FeatureBanner_BG.png');
+            text-align: center;
+            background-position: bottom center;
+        }
+
+        #twmc-summerspalsh2023__content {
+            background-color: #007cc2;
+            color: #fff;
+            padding: 5rem 0;
+        }
+
+        .twmc-summerspalsh2023__hero-img-text {
+            /* padding-top: 150px; */
+            height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .twmc-summerspalsh2023__hero-img-text>img {
+            max-width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .twmc-summerspalsh2023__hero-img-text>img {
+                max-width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+
+            #twmc-summerspalsh2023__hero,
+            .twmc-summerspalsh2023__hero-img-text {
+                height: 450px;
+            }
+        }
+
+        /* Utilities - 3 columns flex summer splash */
+        .twmc-flex-container--3-col-summer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 2%;
+        }
+
+        .twmc-flex-item--3-col-summer {
+            flex-basis: 32%;
+            overflow: visible;
+            margin-bottom: 1.5rem;
+        }
+
+        @media only screen and (max-width: 991px) {
+            .twmc-flex-container--3-col-summer {
+                flex-direction: row;
+                gap: 2%;
+            }
+
+            .twmc-flex-item--3-col-summer {
+                flex-basis: 49%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .twmc-flex-container--3-col-summer {
+                gap: 0;
+            }
+
+            .twmc-flex-item--3-col-summer {
+                flex-basis: 100%;
+            }
+        }
+
+        .twmc-summerspalsh2023--card {
+            border: 2px solid #fff;
+            border-radius: 4px;
+            padding: 1.5rem 1.5rem 2rem;
+            box-shadow: 5px 10px 20px #01B6DE;
+            background-color: var(--color-white);
+
+            color: var(--color-dark-orange);
+        }
+
+        .twmc-summerspalsh2023--text-thewoodlands {
+            color: #F0659B;
+        }
+
+        .twmc-summerspalsh2023--text-woodforest {
+            color: #44B7D4;
+        }
+
+        .twmc-summerspalsh2023--text-yellow {
+            color: #CA990E;
+        }
+
+        .twmc--btn--summerspalsh2023-thewoodlands {
+            border: 2px solid #F0659B;
+            background-color: #FDEAF1;
+            color: #F0659B;
+            margin-bottom: .3rem;
+            font-weight: 700;
+
+            transition: all .3s ease-in-out;
+        }
+
+        .twmc--btn--summerspalsh2023-thewoodlands:hover,
+        .twmc--btn--summerspalsh2023-thewoodlands:focus {
+            border-color: #F0659B;
+            background-color: #FCDFEA;
+            text-decoration: none;
+            color: #F0659B;
+
+            transform: scale(1.04);
+        }
+
+        .twmc--btn--summerspalsh2023-woodforest {
+            border: 2px solid #3692AA;
+            background-color: #E5F5F9;
+            color: #3692AA;
+            margin-bottom: .3rem;
+            font-weight: 700;
+
+            transition: all .3s ease-in-out;
+        }
+
+        .twmc--btn--summerspalsh2023-woodforest:hover,
+        .twmc--btn--summerspalsh2023-woodforest:focus {
+            border-color: #3692AA;
+            background-color: #D7F0F6;
+            text-decoration: none;
+            color: #3692AA;
+
+            transform: scale(1.04);
+        }
+
+        .twmc--btn--summerspalsh2023-yellow {
+            border: 2px solid #CA990E;
+            background-color: #FDF6DF;
+            color: #CA990E;
+            margin-bottom: .3rem;
+            font-weight: 700;
+
+            transition: all .3s ease-in-out;
+        }
+
+        .twmc--btn--summerspalsh2023-yellow:hover,
+        .twmc--btn--summerspalsh2023-yellow:focus {
+            border-color: #CA990E;
+            background-color: #FDF6DF;
+            text-decoration: none;
+            color: #CA990E;
+
+            transform: scale(1.04);
+        }
+
+        .twmc--btn--summerspalsh2023-inactive {
+            border: 2px solid #444;
+            background-color: #eee;
+            color: #444;
+            margin-bottom: .3rem;
+            font-weight: 700;
+
+            cursor: not-allowed;
+        }
+
+        .twmc--btn--summerspalsh2023-inactive:hover,
+        .twmc--btn--summerspalsh2023-inactive:focus {
+            border-color: #444;
+            background-color: #eee;
+            text-decoration: none;
+            color: #444;
+            cursor: not-allowed;
+        }
+
+        p.twmc-p {
+            font-weight: 600;
+        }
+
+        /* ===== END OF SUMMER SPLASH 2023 ===== */
+    </style>
+
+
+
+    <main>
+
+
+        <!-- Content -->
+        <section id="twmc-summerspalsh2023__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h4 class="twmc-h4 twmc-lineheight-small">Summer fun is on the way!! NextGen Kids, Rec Ministry
+                            and 56 Ministry has an amazing Summer planned for your children. Register and join us for
+                            the camps and activities listed below. Don’t miss out on good fun with great friends!
+                        </h4>
+                        <br>
+                        <h4>Registration opens March 1</h4>
+                        <br>
+                        <p class="twmc-p"><em>Age levels are for the upcoming 2023-2024 school year. Children must be
+                                age listed as of 9/1/2024.</em></p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <!-- May -->
+                        <div class="text-center twmc-mtlg twmc-mbm">
+                            <h3 class="twmc-h3">MAY</h3>
+                        </div>
+
+                        <div class="twmc-flex-container--3-col-summer">
+                            <!-- 56 Day Camp -->
+                            <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                                <p class="twmc-p">
+                                    <strong class="twmc-summerspalsh2023--text-thewoodlands">56 Day Camp</strong>
+                                    <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands
+                                        Campus</span>
+                                </p>
+                                <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                    <i class="fas fa-school twmc-mrxs"></i>5th &verbar; 6th Grade
+                                    <br><i class="fas fa-clock twmc-mrxs"></i>May 29 &dash; May 31 &verbar; 10:00 a.m.
+                                    &dash; 2:00 p.m.
+                                    <br><i class="fas fa-money-bill twmc-mrxs"></i>$75
+                                </p>
+                                <p class="twmc-p">We will praise and worship, play games and spend time in fellowship
+                                    with friends.</p>
+                                <p class="twmc-p-small"><em>REGISTRATION IS OPEN</em></p>
+                                <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=3822"
+                                    class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                                    target="_blank">Register here</a>
+                            </div>
+
+                            <!-- Soccer Camp -->
+                            <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                                <p class="twmc-p">
+                                    <strong class="twmc-summerspalsh2023--text-woodforest">Soccer Camp</strong>
+                                    <br><span class="twmc-summerspalsh2023--text-woodforest">Woodforest Campus</span>
+                                </p>
+                                <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                    <i class="fas fa-school twmc-mrxs"></i>PreK4 &dash; 4th Grade
+                                    <br><i class="fas fa-clock twmc-mrxs"></i> May 28 &dash; May 31 &verbar; 9:00 a.m.
+                                    &dash; Noon
+                                    <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                                </p>
+                                <p class="twmc-p">Soccer Camp is a day camp for children who want to learn more about
+                                    soccer in a fun and positive environment.</p>
+                                <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                                <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4559"
+                                    class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-woodforest twmc-letspac-2"
+                                    target="_blank">Register here</a>
+                            </div>
+                        </div>
+
+                        <div class="twmc-flex-item--3-col-summer ">
+
+                        </div>
+                    </div>
+
+
+                    <!-- June-->
+                    <div class="text-center twmc-mtlg twmc-mbm">
+                        <h3 class="twmc-h3">JUNE</h3>
+                    </div>
+
+                    <!-- Vacation Bible School -->
+                    <div class="twmc-flex-container--3-col-summer">
+
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-thewoodlands">Vacation Bible School</strong>
+                                <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                            </p>
+                            <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                <i class="fas fa-school twmc-mrxs"></i>Kinder &dash; 4th Grade
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 4 &dash; 7 &verbar; 9:00 a.m. &dash;
+                                Noon
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$30
+                            </p>
+                            <p class="twmc-p">Through three days of fun activities, engaging lessons and God’s Word,
+                                we’ll help kids understand how they can share God’s love with the people around them.
+                            </p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4021"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+                        <!-- Cheer Camp -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-woodforest">Cheer Camp</strong>
+                                <br><span class="twmc-summerspalsh2023--text-woodforest">Woodforest Campus</span>
+                            </p>
+                            <p class="twmc-p">
+                                <i class="fas fa-school twmc-mrxs"></i>PreK4 &dash; 6th Grade
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 17 &dash; 20 &verbar; 9:00 a.m. &dash;
+                                Noon
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                            </p>
+                            <p class="twmc-p">Cheer Camp is a day camp for children who want to learn more about cheer
+                                in a fun and positive environment.</p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4563"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-woodforest twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+
+                        <!-- Basketball Camp -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-woodforest">Basketball Camp</strong>
+                                <br><span class="twmc-summerspalsh2023--text-woodforest">Woodforest Campus</span>
+                            </p>
+                            <p class="twmc-p">
+                                <i class="fas fa-school twmc-mrxs"></i>Kinder &dash; 6th Grade
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 17 &dash; 20 &verbar; 9:00 a.m. &dash;
+                                Noon
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                            </p>
+                            <p class="twmc-p">Basketball Camp is a day camp for children who want to learn more about
+                                basketball in a fun and positive environment. </p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4562"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-woodforest twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+                        <!-- Dance Camp -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-thewoodlands">Dance Camp</strong>
+                                <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                            </p>
+                            <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                <i class="fas fa-school twmc-mrxs"></i>PreK4 &dash; 6th Grade
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 24 &dash; 27 &verbar; 9:00 a.m. &dash;
+                                Noon
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                            </p>
+                            <p class="twmc-p">Dance Camp is a day camp for children who want to learn more about dance
+                                in a fun and positive environment.</p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4561"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+                        <!-- Soccer Camp -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-thewoodlands">Soccer Camp</strong>
+                                <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                            </p>
+                            <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                <i class="fas fa-school twmc-mrxs"></i>PreK4 &dash; 4th Grade
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 24 &dash; 27 &verbar; 9:00 a.m. &dash;
+                                Noon
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                            </p>
+                            <p class="twmc-p">Soccer Camp is a day camp for children who want to learn more about soccer
+                                in a fun and positive environment.</p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4560"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+
+                        <!-- WOW! Science Camp -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-thewoodlands">WOW! Science Camp</strong>
+                                <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                            </p>
+                            <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                <i class="fas fa-school twmc-mrxs"></i>Age 3 (by 1/1/2024) &dash; 4th Grade Graduates
+                                <br><em>Find special needs class information at <a
+                                        href="https://www.wowsciencecamp.com/tadpolesform.asp"
+                                        class="twmc-summerspalsh2023--text-thewoodlands"
+                                        target="_blank">wowsciencecamp.com</a></em>
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 10 &dash; 14 &verbar; 9:00 a.m. &dash;
+                                Noon OR 1:30 &dash; 4:30 p.m.
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$165 per child &verbar; Early bird
+                                discount available the first two days of registration
+                            </p>
+                            <p class="twmc-p">This day camp strives to instill in children a love and appreciation for
+                                nature, science and the God-given diversities of the world in which we live.</p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://www.wowsciencecamp.com/regsiter_all.html"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+                        <!-- WOW! Science Camp -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-thewoodlands">WOW! Science Camp</strong>
+                                <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                            </p>
+                            <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                                <i class="fas fa-school twmc-mrxs"></i>Age 3 (by 1/1/2024) &dash; 4th Grade Graduates
+                                <br><em>Find special needs class information at <a
+                                        href="https://www.wowsciencecamp.com/tadpolesform.asp"
+                                        class="twmc-summerspalsh2023--text-thewoodlands"
+                                        target="_blank">wowsciencecamp.com</a></em>
+                                <br><i class="fas fa-clock twmc-mrxs"></i> June 17 &dash; 21 &verbar; 9:00 a.m. &dash;
+                                Noon OR 1:30 &dash; 4:30 p.m.
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$165 per child &verbar; Early bird
+                                discount available the first two days of registration
+                            </p>
+                            <p class="twmc-p">This day camp strives to instill in children a love and appreciation for
+                                nature, science and the God-given diversities of the world in which we live.</p>
+                            <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                            <a href="https://www.wowsciencecamp.com/regsiter_all.html"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                                target="_blank">Register here</a>
+                        </div>
+
+
+                        <!-- 56 Mission Mondays -->
+                        <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                            <p class="twmc-p">
+                                <strong class="twmc-summerspalsh2023--text-thewoodlands">56 Mission Mondays</strong>
+                                <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                            </p>
+                            <p class="twmc-p">
+                                <i class="fas fa-school twmc-mrxs"></i>5th &verbar; 6th Grade
+                                <br><i class="fas fa-clock twmc-mrxs"></i> Mondays &dash; June 24 &amp; July 29
+                                <br><i class="fas fa-money-bill twmc-mrxs"></i>$5 per Monday
+                            </p>
+                            <p class="twmc-p">Join us for different service events that will connect you to Christ as
+                                you serve His kingdom in amazing new ways!</p>
+                            <!-- <a href="#" class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2" target="_blank">Register here</a> -->
+                            <p href="#"
+                                class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-inactive twmc-letspac-2">
+                                Registration opening soon</p>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            <!-- JULY/AUGUST -->
+            <div class="text-center twmc-mtlg twmc-mbm">
+                <h3 class="twmc-h3">JULY/AUGUST</h3>
+            </div>
+
+            <div class="twmc-flex-container--3-col-summer">
+
+                <!-- Parkour + Tae Kwon Do Camp -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">Parkour + Taekwondo
+                            Camp</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                        <i class="fas fa-school twmc-mrxs"></i>K &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 1 &dash; 3 &verbar; 8:30 a.m. &dash;
+                        12-30 p.m.
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                    </p>
+                    <p class="twmc-p">A day camp for children who want to learn more about kicking combinations
+                        and techniques, as well as Parkour skills/moves, in a fun and positive environment.</p>
+                    <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                    <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=3696"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+
+                <!-- Vacation Bible School -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-woodforest">Vacation Bible School</strong>
+                        <br><span class="twmc-summerspalsh2023--text-woodforest">Woodforest Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>Kinder &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 10 &dash; 12 &verbar; 9:00 a.m. &dash;
+                        12:30 p.m.
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$15
+                    </p>
+                    <p class="twmc-p">Through three days of fun activities, engaging lessons and God’s Word,
+                        we’ll help kids understand how they can share God’s love with the people around them.
+                    </p>
+                    <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                    <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=3868"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-woodforest twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+                <!-- 56 Camp Canopy -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-yellow">56 Camp Canopy</strong>
+                        <br><span class="twmc-summerspalsh2023--text-yellow">Carolina Creek Christian
+                            Camp</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>5th &verbar; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 7 &dash; 10
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$400 (Early Bird) &verbar; $450 (After
+                        May 1)
+                    </p>
+                    <p class="twmc-p">A three-day overnight camp full of incredible fun, adventure, worship and
+                        community.</p>
+                    <p class="twmc-p-small"><em>REGISTRATION IS OPEN</em></p>
+                    <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=3823"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-yellow twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+
+                <!-- MAD Camp (Music, Art, Drama) -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">MAD Camp (Music, Art,
+                            Drama)</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>1st &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 8 &dash; 12 &verbar; 8:00 &dash; 11:30
+                        a.m.
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$150
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 10 &dash; 14 &verbar; 1:00 &dash; 4:30
+                        p.m.
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$150
+                    </p>
+                    <p class="twmc-p">MAD Camp is a day camp, sponsored by the Children’s Choir and Music
+                        Ministry, that focuses on music and drama, with some arts and crafts projects as well.
+                    </p>
+                    <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                    <a href="https://thewoodlandsmethodist.org/page/1805?returnurl=/Registration%3FRegistrationInstanceId%3D4612%26EventOccurrenceID%3D"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2 my-2"
+                        target="_blank">Morning camp registration</a>
+                    <a href="https://thewoodlandsmethodist.org/page/1805?returnurl=/Registration%3FRegistrationInstanceId%3D4612%26EventOccurrenceID%3D"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2 my-2"
+                        target="_blank">Afternoon camp registration</a>
+                </div>
+
+
+
+                <!-- Smile VBS -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">Smile VBS</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>PK4 &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 15 &dash; 17 &verbar; 10:00 a.m. &dash;
+                        Noon
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$20
+                    </p>
+                    <p class="twmc-p">A VBS designed specifically for children with special needs. The
+                        sensory-friendly environment includes fewer transitions, smaller groups and more
+                        Hands-on experiences. Each child will have a one-on-one buddy during camp.
+                    </p>
+                    <p class="twmc-p-small"><em>REGISTRATION IS OPEN</em></p>
+                    <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=3773"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+                <!-- 56 Mystery Bash -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">56 Mystery Bash</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>5th &verbar; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> August 18
+                        <!-- <br><i class="fas fa-money-bill twmc-mrxs"></i>TBA -->
+
+                    </p>
+                    <p class="twmc-p">A surprise fun activity that will be announced the week of the event.
+                    </p>
+                    <p class="twmc-p"><em>Registration and cost available Summer 2023. Please check back!</em>
+                    </p>
+                    <!-- <a href="#" class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2" target="_blank">Register here</a> -->
+                    <!-- <p href="#" class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-inactive twmc-letspac-2">Coming soon</p> -->
+                </div>
+
+                <!-- Camp Gladiator Victory  -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">Camp Gladiator Victory</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>K &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 8 &dash; 11 &verbar; 8:30 a.m.
+                        &dash; 3:30 p.m.
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$299
+                    </p>
+                    <p class="twmc-p">A week full of competition, theme parties, rock wall climbing, obstacle
+                        courses and more!</p>
+                    <p class="twmc-p-small"><em>REGISTRATION IS OPEN</em></p>
+                    <a href="https://cgvictory.campmanagement.com/p/request_for_info_m.php?action=enroll"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+                <!-- Parkour + Tae Kwon Do Camp -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">Parkour + Taekwondo
+                            Camp</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p twmc-summerspalsh2023--card-infoicon">
+                        <i class="fas fa-school twmc-mrxs"></i>K &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 15 &dash; 19 &verbar; 9:00 a.m. &dash;
+                        Noon
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                    </p>
+                    <p class="twmc-p">A day camp for children who want to learn more about kicking combinations
+                        and techniques, as well as Parkour skills/moves, in a fun and positive environment.</p>
+                    <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                    <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4564"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+
+                <!-- Camp Gladiator Victory  -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-woodforest">Camp Gladiator Victory</strong>
+                        <br><span class="twmc-summerspalsh2023--text-woodforest">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>K &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 29 &dash; Aug 1 &verbar; 8:30 a.m.
+                        &dash; 3:30 p.m.
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$299
+                    </p>
+                    <p class="twmc-p">A week full of competition, theme parties, rock wall climbing, obstacle
+                        courses and more!</p>
+                    <p class="twmc-p-small"><em>REGISTRATION IS OPEN</em></p>
+                    <a href="https://cgvictory.campmanagement.com/p/request_for_info_m.php?action=enroll"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-woodforest twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+                <!-- Cheer Camp -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">Cheer Camp</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>PreK4 &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 22 &dash; 25 &verbar; 9:00 a.m. &dash;
+                        Noon
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                    </p>
+                    <p class="twmc-p">Cheer Camp is a day camp for children who want to learn more about cheer
+                        in a fun and positive environment.</p>
+                    <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                    <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4566"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+
+
+                <!-- Basketball Camp -->
+                <div class="twmc-flex-item--3-col-summer twmc-summerspalsh2023--card">
+                    <p class="twmc-p">
+                        <strong class="twmc-summerspalsh2023--text-thewoodlands">Basketball Camp</strong>
+                        <br><span class="twmc-summerspalsh2023--text-thewoodlands">The Woodlands Campus</span>
+                    </p>
+                    <p class="twmc-p">
+                        <i class="fas fa-school twmc-mrxs"></i>K &dash; 6th Grade
+                        <br><i class="fas fa-clock twmc-mrxs"></i> July 22 &dash; 25 &verbar; 9:00 a.m. &dash;
+                        Noon
+                        <br><i class="fas fa-money-bill twmc-mrxs"></i>$125
+                    </p>
+                    <p class="twmc-p">Basketball Camp is a day camp for children who want to learn more about
+                        basketball in a fun and positive environment.</p>
+                    <p class="twmc-p-small"><em>REGISTRATION OPENS MARCH 1</em></p>
+                    <a href="https://people.thewoodlandsmethodist.org/Registration?RegistrationInstanceId=4565"
+                        class="twmc--btn twmc--btn--small twmc--btn--summerspalsh2023-thewoodlands twmc-letspac-2"
+                        target="_blank">Register here</a>
+                </div>
+
+
+
+
+                <p class="twmc-p">*children will only be allowed to participate in one VBS.</p>
+
+            </div>
+
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- End of content -->
+        <!-- End of content -->
+
+
+        <!-- footer -->
+        <footer class="twmc-footer">
+            <div class="twmc-footer__cta">
+                <div class="twmc-container">
+                    <div class="twmc-footer__button-container">
+                        <a href="https://www.thewoodlandsumc.org/help"
+                            class="twmc--btn twmc--btn--outline-white twmc-footer__cta-button" target="_blank">Find Help
+                            &amp; Support</a>
+                        <a href="https://thewoodlandsumc.org/myaccount"
+                            class="twmc--btn twmc--btn--outline-white twmc-footer__cta-button" target="_blank">My
+                            Account</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="twmc-footer__address">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="twmc-p">2200 Lake Woodlands Drive &#124; The Woodlands, Texas 77380 &#124;
+                                281.297.5900 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- end of footer -->
+    </main>
+
+
+    <!-- JQuery -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a768a77f8f.js" crossorigin="anonymous"></script>
+    <script src="./js/twmc-scripts.js"></script>
+</body>
+
+</html>
