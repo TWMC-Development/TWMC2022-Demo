@@ -420,6 +420,23 @@ a:hover::before{
     font-size: .8rem;
 }
 
+.lh-1 {
+    line-height: 1 !important;
+}
+
+.lh-sm {
+    line-height: 1.25 !important;
+}
+
+.lh-base {
+    line-height: 1.5 !important;
+}
+
+.lh-lg {
+    line-height: 2 !important;
+}
+
+
 /* Section titles */
 .section-title-large-white {
     text-transform: uppercase;
