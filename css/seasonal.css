@@ -13,7 +13,12 @@
     --color-light-grey2: #f0efee;
 
     --color-traditional: #862633;
-}
+
+    /* Stewardship2024 */
+    --navy: #324665;
+    --lavender: #aea2ca;
+    --white: #ffffff;
+    }
 
 /* ===== UTILITIES ===== */
 .twmc-mt3 {
@@ -670,41 +675,7 @@
     }
 }
 
-/* Utilities - 3 columns flex summer splash */
-.twmc-flex-container--3-col-summer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* gap: 2rem; */
-    gap: 2%;
-}
 
-.twmc-flex-item--3-col-summer {
-    flex-basis: 32%;
-    overflow: visible;
-    margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 991px) {
-    .twmc-flex-container--3-col-summer {
-        flex-direction: row;
-        gap: 2%;
-    }
-    
-    .twmc-flex-item--3-col-summer {
-        flex-basis: 49%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .twmc-flex-container--3-col-summer {
-        gap: 0;
-    }
-
-    .twmc-flex-item--3-col-summer {
-        flex-basis: 100%;
-    }
-}
 
 .twmc-summer-splash--note {
     text-align: center;
@@ -905,16 +876,19 @@
     .twmc-lent--hero  {
         padding-top: 140px;
     }
+
 }
 
 .twmc--btn--outline-lent-hero  {
     border: 2px solid transparent;
     border-color: #6E6967;
     color: #6E6967;
-    min-width: 200px;
-    max-width: 100%;
+    /* min-width: 200px;
+    max-width: 100%; */
+    width: 200px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
 
     transition: all .3s ease-in-out;
 }
@@ -932,7 +906,7 @@
     .twmc--btn--outline-lent-hero  {
         min-width: 100px;
         margin-bottom: 5px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
     
         font-size: .7rem;
     }
@@ -942,6 +916,61 @@
     }
 }
 
+.twmc-lent__hero-text-wrapper {
+    width: 55%;
+    float: right;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.twmc-lent__hero-text {
+    color: #856f67;
+    text-align: center;
+}
+
+@media only screen  and (max-width: 991px) {
+    .twmc-lent__hero-text-wrapper {
+        width: 80%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen  and (max-width: 768px) {
+    .twmc-lent__hero-text-wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen  and (max-width: 576px) {
+    .twmc-lent__hero-text-wrapper {
+        height: 450px;
+    }
+
+    .twmc-lent__hero-text {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen  and (max-width: 400px) {
+    .twmc-lent__hero-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen  and (max-width: 300px) {
+    .twmc-lent__hero-text-wrapper {
+        width: 95%;
+    }
+
+    .twmc-lent__hero-text {
+        font-size: 16px;
+    }
+}
 /* ===== End of Ash Wednesday ===== */
 
 
@@ -3049,6 +3078,9 @@
 
     min-width: 190px;
     max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .twmc--btn--stewardship:hover,
@@ -3079,6 +3111,36 @@
     border-color: var(--color-dark-grey);
     cursor: not-allowed;
 }
+
+.twmc--btn--stewardship--white {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.6rem 1rem;
+    font-size: .75rem;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #ca0000;
+    transition: all .3s ease-in-out;
+    min-width: 190px;
+    max-width: 90%;
+  }
+
+  .twmc--btn--stewardship--white:hover,
+  .twmc--btn--stewardship--white:focus {
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #ca0000;
+    transform: scale(1.02);
+  }
 
 @media only screen and (max-width: 576px) {
     .twmc--btn--stewardship {
@@ -3717,6 +3779,7 @@
 .twmc-stewardship__cta-link {
     color: #fff;
     text-decoration: underline !important;
+    transition: all .3s ease-in-out;
 }
 
 .twmc-stewardship__cta-link:hover,
@@ -3728,3 +3791,4749 @@
 
 
 /* ===== END OF STEWARDSHIP 2023 ===== */
+
+/* ===== Iglesia Vision Internacional worship ===== */
+#twmc-home__cta-iglesia {
+    padding: 1rem 0;
+    background-color: var(--color-traditional);
+    color: #fff;
+    text-align: center;
+}
+
+.twmc-home__cta-iglesia-link {
+    color: #fff;
+    text-decoration: underline !important;
+    transition: all .3s ease-in-out;
+}
+
+.twmc-home__cta-iglesia-link:hover,
+.twmc-home__cta-iglesia-link:focus {
+    color: #fff;
+    opacity: .7;
+
+}
+/* ===== End of Iglesia Vision Internacional worship ===== */
+
+/* ===== Live Stream Worship Service Announcement ===== */
+.twmc-im-new__flex-container--2-col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+.twmc-im-new__flex-item--2-col {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-im-new__flex-item--2-col {
+        flex-basis: 100%;
+    }
+}
+
+.announcement-card {
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+}
+
+/* ===== End of Live Stream Worship Service Announcement ===== */
+
+/* ===== Feature Banner - Lenten Lectio Divina ===== */
+#twmc-feature-banner__dis-lenten2023 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/DIS_LentenPrayerSeries_FeatureBanner_BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__dis-lenten2023-wrapper {
+    height: 600px;
+    width: 50%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 7%;
+    padding: 2rem 0;
+    color: #49210D;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__dis-lenten2023 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, .4), rgba(255, 255, 255, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/DIS_LentenPrayerSeries_FeatureBanner_BG.png");
+
+    }
+
+    .twmc-feature-banner__dis-lenten2023-wrapper {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__dis-lenten2023,
+    .twmc-feature-banner__dis-lenten2023-wrapper {
+        height: 450px;
+    }
+
+    #twmc-feature-banner__dis-lenten2023 {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, .4), rgba(255, 255, 255, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/DIS_LentenPrayerSeries_FeatureBanner_BG.png");
+
+    }
+
+    .twmc-feature-banner__dis-lenten2023-wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-feature-banner__dis-lenten2023-wrapper {
+        width: 90%;
+    }
+}
+
+.twmc--btn--outline--lectio2023 {
+    border: 2px solid transparent;
+    border-color: #49210D;
+    color: #49210D;
+    background-color: rgba(255, 255, 255, .2);
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline--lectio2023:hover,
+.twmc--btn--outline--lectio2023:focus  {
+    border: 2px solid transparent;
+    border-color: #49210D;
+    background-color: rgba(255, 255, 255, .4);
+    color: #49210D;
+    text-decoration: none;
+
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--outline--lectio2023 {
+        padding: 0.4rem .8rem;
+        font-size: .7rem;
+    }
+}
+/* ===== End of Feature Banner - Lenten Lectio Divina ===== */
+
+
+
+/* ===== 55+ Time For Fun ===== */
+#twmc-55-timeforfun__hero {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/55%2B_TimeForFun_FeatureBanner_BG.png');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.twmc-55-timeforfun__hero-text-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.twmc-55-timeforfun__hero-text-wrapper > img {
+    height: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-55-timeforfun__hero {
+        background-image: linear-gradient(to bottom, rgba(0, 124, 194, 0), rgba(0, 124, 194, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/55%2B_TimeForFun_FeatureBanner_BG.png");
+    }
+
+    .twmc-55-timeforfun__hero-text-wrapper {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-55-timeforfun__hero,
+    .twmc-55-timeforfun__hero-text-wrapper {
+        height: 450px;
+    }
+
+    .twmc-55-timeforfun__hero-text-wrapper > img {
+        height: 250px;
+    }
+}
+
+.twmc-55-timeforfun__text-blue {
+    color: #147281;
+}
+
+.twmc--btn--tff-blue {
+    border: 2px solid #147281;
+    background-color: #147281;
+    color: #fff;
+    font-weight: bold !important;
+    margin-bottom: .3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--tff-blue:hover,
+.twmc--btn--tff-blue:focus {
+    border-color: #438E9A;
+    background-color: #438E9A;
+    text-decoration: none;
+    color: #fff;
+
+    transform: scale(1.05);
+}
+
+.twmc-55-timeforfun--flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.twmc-55-timeforfun--flex-item {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 1rem;
+}
+
+.twmc-55-timeforfun__card {
+    border-radius: 4px;
+    padding: 1.5rem;
+    background-color: #F4F7F9;
+}
+
+.twmc-55-timeforfun__text-small {
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-55-timeforfun--flex-container {
+        gap: 0;
+    }
+
+    .twmc-55-timeforfun--flex-item {
+        flex-basis: 100%;
+    }
+}
+
+/* Time For Fun Feature Banner */
+#twmc-feature-banner__55-timeforfun {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/55%2B_TimeForFun_FeatureBanner_BG.png');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.twmc-feature-banner__55-timeforfun-wrapper {
+    height: 600px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.twmc-feature-banner__55-timeforfun-wrapper > img {
+    height: 350px;
+}
+
+.twmc-feature-banner__55-timeforfun-wrapper > h5.twmc-h5 {
+    width: 50%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__55-timeforfun {
+        background-image: linear-gradient(to bottom, rgba(0, 124, 194, 0), rgba(0, 124, 194, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/55%2B_TimeForFun_FeatureBanner_BG.png");
+    }
+
+    .twmc-feature-banner__55-timeforfun-wrapper {
+        align-items: center;
+    }
+
+    .twmc-feature-banner__55-timeforfun-wrapper > h5.twmc-h5 {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__55-timeforfun,
+    .twmc-feature-banner__55-timeforfun-wrapper {
+        height: 500px;
+    }
+
+    .twmc-feature-banner__55-timeforfun-wrapper > img {
+        height: 250px;
+    }
+}
+/* ===== End of 55+ Time For Fun ===== */
+
+/* ===== REB - Missions Auction & Dinner ===== */
+#twmc-reb__auction-dinner-featurebanner {
+    background-color: #007cc2;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/SM+Auction+and+Dinner+-+1270x600+BKG+(1).jpg');
+    text-align: center;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-reb__btn-auction-dinner-white {
+    border: 2px solid white;
+    background-color: white;
+    color: #464646;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.twmc-reb__btn-auction-dinner-white:hover,
+.twmc-reb__btn-auction-dinner-white:focus {
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #464646;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-reb__auction-dinner-featurebanner {
+        height: 450px;
+    }
+
+    .twmc-reb__btn-auction-dinner-white {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+}
+
+.twmc-feature-banner__img.twmc-mbxs.twmc-reb__auction-dinner-img {
+    width: 70%;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-feature-banner__img.twmc-mbxs.twmc-reb__auction-dinner-img{
+        width: 90%;
+    }
+}
+/* ===== End  of REB - Missions Auction & Dinner ===== */
+
+/* ===== Easter 2023 ===== */
+#twmc-worship--easter2023 {
+    background-color: #000;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+#twmc-worship--easter2023 > img {
+    height: 650px;
+}
+
+.twmc-worship--easter2023-hero-img2 {
+    display: none;
+}
+
+
+/* Easter 2023 hero with button */
+.twmc-worship--easter2023-hero-button-wrapper {
+    position: absolute;
+    bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height: 600px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #twmc-worship--easter2023{
+        height: 550px;
+    }
+
+    #twmc-worship--easter2023 > img {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height:500px;
+    }
+
+    .twmc-worship--easter2023-hero-button-wrapper {
+        bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height:450px;
+    }
+    .twmc-worship--easter2023-hero-button-wrapper {
+        bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #twmc-worship--easter2023,
+    #twmc-worship--easter2023 > img {
+        height: 250px;
+    }
+
+    .twmc-worship--easter2023-hero-button-wrapper {
+        bottom: .7rem;
+    }
+}
+
+.twmc-easter2023-section {
+    padding: 3.2rem 0 3rem;
+    text-align: center;
+}
+
+.twmc-easter2023--title {
+    color: #E07A26;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-easter2023--title {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-easter2023--title {
+        font-size: 22px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-easter2023-section {
+        padding: 2.2rem 0 2rem;
+    }
+}
+
+.twmc-easter2023-section p {
+    line-height: 1.4;
+}
+
+.twmc-easter2023--hero-btn  {
+    border: 3px solid transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, .3) !important;
+    letter-spacing: 2px;
+    padding: 0.65rem 2rem 0.6rem;
+    font-weight: 900;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc-easter2023--hero-btn:hover,
+.twmc-easter2023--hero-btn:focus  {
+    border: 3px solid transparent;
+    border-color: var(--color-white);
+    background-color: rgba(0, 0, 0, .4) !important;
+    color: var(--color-white);
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-easter2023--hero-btn {
+        font-size: .6rem;
+        /* padding: .45rem .6rem .4rem; */
+        padding: .45rem 2rem .4rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-easter2023--hero-btn {
+        font-size: .5rem;
+        padding: .4rem 2rem .35rem;
+    }
+}
+
+.twmc-easter2023-notice {
+    background-color: var(--color-traditional);
+    color: #fff;
+    padding: 1.7rem 0;
+}
+
+.twmc-easter2023-notice h4.twmc-h4 {
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-easter2023-notice {
+        padding: 1.4rem 0;
+    }
+}
+/* ===== End of Easter 2023 ===== */
+
+/* ===== WOR - Prayer Conference Behind Closed Door Feature Banner ===== */
+#twmc-wor__behindcloseddoor-featurebanner {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/WOR_Prayer+Conference+BCD+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-wor__behindcloseddoor__img-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.twmc-wor__behindcloseddoor__img-wrapper > img {
+    width: 80%;
+}
+
+.twmc-wor__behindcloseddoor-btn {
+    border: 2px solid #FFEBC4;
+    background-color: #FFEBC4;
+    color: #464646;
+
+    transition: all .3s ease-in-out;
+    margin-left: .5rem;
+}
+
+.twmc-wor__behindcloseddoor-btn:hover,
+.twmc-wor__behindcloseddoor-btn:focus {
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #464646;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #twmc-wor__behindcloseddoor-featurebanner,
+    .twmc-wor__behindcloseddoor__img-wrapper  {
+        height: 450px;
+    }
+
+    .twmc-wor__behindcloseddoor__img-wrapper > img {
+        width: 90%;
+    }
+
+    .twmc-wor__behindcloseddoor-btn {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .twmc-wor__behindcloseddoor__img-wrapper > img {
+        width: 100%;
+    }
+
+    .twmc-wor__behindcloseddoor-btn {
+        margin-left: .3rem;
+    }
+}
+/* ===== End of WOR - Prayer Conference Behind Closed Door Feature Banner ===== */
+
+
+/* ===== MEN - Men's Conference ===== */
+#twmc-men__conference-2023 {
+    background-color: #007cc2;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MEN_TheWay_FeatureBannerBG.png');
+    text-align: center;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.twmc-men__conference-2023--p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+
+}
+
+.twmc-btn__feat-banner-white {
+    border: 2px solid white;
+    background-color: white;
+    color: #464646;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc-btn__feat-banner-white:hover,
+.twmc-btn__feat-banner-white:focus {
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #464646;
+    transform: scale(1.02);
+}
+
+.twmc-reb__summerevents2023-featurebanner > img {
+    width: 80%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-men__conference-2023 {
+        height: 500px;
+    }
+
+    .twmc-btn__feat-banner-white  {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+
+    .twmc-men__conference-2023--p {
+        margin-bottom: 1rem;
+    
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-men__conference-2023 {
+        height: 450px;
+    }
+
+}
+/* ===== End of MEN - Men's Conference ===== */
+
+/* ===== CAR - National day of Prayer ==== */
+#twmc-car__nat-day-prayer {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/WOR_NationalDayOfPrayer_FeatureBanner_BG.png');
+    text-align: center;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F2E46;
+}
+
+.twmc-feat-banner__title,
+.twmc-feat-banner__text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.twmc-feat-banner__title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.twmc-feat-banner__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.twmc-btn__feat-banner-red {
+    border: 2px solid var(--color-traditional);
+    background-color: var(--color-traditional);
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc-btn__feat-banner-red:hover,
+.twmc-btn__feat-banner-red:focus {
+    border: 2px solid #6B1E29;
+    background-color: #6B1E29;
+    color: var(--color-white);
+    transform: scale(1.02);
+}
+
+
+@media only screen and (max-width: 992px) {
+    .twmc-feat-banner__title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .twmc-feat-banner__text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-car__nat-day-prayer {
+        height: 550px;
+    }
+
+    .twmc-feat-banner__title {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .twmc-feat-banner__text {
+        font-size: .8rem;
+    }
+
+    .twmc-feature-banner-1col__img {
+        width: 100%;
+    }
+
+    .twmc-feature-banner-1col__img > img,
+    .twmc-feat-banner__title,
+    .twmc-feat-banner__text {
+        width: 100%;
+    }
+
+    .twmc-btn__feat-banner-red  {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-car__nat-day-prayer {
+        height: 450px;
+    }
+
+    .twmc-feat-banner__title {
+        font-size: 1rem;
+        margin-bottom: 6px;
+        letter-spacing: normal;
+    }
+
+    .twmc-feat-banner__text {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-feat-banner__title {
+        font-size: .9rem;
+    }
+
+    .twmc-feat-banner__text {
+        font-size: .7rem;
+    }
+}
+/* ===== End of CAR - National day of Prayer ==== */
+
+/* ===== Young Adults Events ===== */
+#twmc-young-adults__events {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/CYA_YoungAdults_FeatureBanner.jpg');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.twmc-young-adults__events--hero-text-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-young-adults__events--hero-text-wrapper > img {
+    height: 350px;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-young-adults__events,
+    .twmc-young-adults__events--hero-text-wrapper {
+        height: 450px;
+    }
+
+    .twmc-young-adults__events--hero-text-wrapper > img {
+        height: 250px;
+    }
+}
+
+.twmc-young-adults__events--text {
+    color: #323232;
+}
+
+.twmc--btn--ya-dark-grey {
+    border: 2px solid #202020;
+    background-color: #202020;
+    color: #fff;
+    font-weight: bold !important;
+    margin-bottom: .3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--ya-dark-grey:hover,
+.twmc--btn--ya-dark-grey:focus {
+    border-color: #282828;
+    background-color: #282828;
+    text-decoration: none;
+    color: #fff;
+
+    transform: scale(1.05);
+}
+
+/* Flex */
+.twmc-young-adults__events--flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.twmc-young-adults__events--flex-item {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 1rem;
+}
+
+.twmc-young-adults__events--card {
+    border-radius: 4px;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+}
+
+.twmc-young-adults__events--text-small {
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-young-adults__events--flex-container {
+        gap: 0;
+    }
+
+    .twmc-young-adults__events--flex-item {
+        flex-basis: 100%;
+    }
+}
+/* ===== Young Adults Events ===== */
+
+/* ===== CAR An Evening with Carole Ward ===== */
+#twmc-feature-banner__car-carole-ward {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CAR_AnEventingWithCaroleWard_FeatureBannerBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__car-carole-ward--wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+
+    /* color: #6D6C3C; */
+    color: #575630;
+}
+
+.twmc-feature-banner__car-carole-ward--wrapper > img {
+    background-image: linear-gradient(to bottom, rgba(109, 108, 60, 1), rgba(109, 108, 60, 1));
+    padding: 2rem;
+    border-radius: 30px;
+    margin-bottom: 8px;
+}
+
+.twmc-feature-banner__car-carole-ward--wrapper > h5.twmc-h5 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* btn CAR green */
+.twmc--btn--outline-car-green  {
+    border: 2px solid transparent;
+    border-color: #575630;
+    color: #575630;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-car-green:hover,
+.twmc--btn--outline-car-green:focus  {
+    border: 2px solid transparent;
+    border-color: #575630;
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: #575630;
+    text-decoration: none;
+
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-feature-banner__car-carole-ward--wrapper {
+        max-width: 50%;
+    }
+
+    .twmc-feature-banner__car-carole-ward--wrapper > img {
+        padding: 1.3rem;
+    }
+
+    .twmc-feature-banner__car-carole-ward--wrapper > h5.twmc-h5 {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__car-carole-ward {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(219, 175, 126, .6)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CAR_AnEventingWithCaroleWard_FeatureBannerBG.png");
+    }
+
+    .twmc-feature-banner__car-carole-ward--wrapper {
+        max-width: 100%;        
+    }
+
+    .twmc-feature-banner__car-carole-ward--wrapper > img {
+        background-image: linear-gradient(to bottom, rgba(109, 108, 60, .7), rgba(109, 108, 60, .7));
+    }
+
+    .twmc-feature-banner__car-carole-ward--wrapper > h5.twmc-h5 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__car-carole-ward,
+    .twmc-feature-banner__car-carole-ward--wrapper {
+        height: 450px;
+    }
+
+    .twmc-feature-banner__car-carole-ward--wrapper > img {
+        padding: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--featbanner {
+        padding: .5rem .6rem;
+        font-size: .7rem;
+    }
+}
+/* ===== End of CAR An Evening with Carole Ward ===== */
+
+/* ===== YAM Summer Events Feature Banner ===== */
+#twmc-feature-banner__yam-summer-events {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/YAM_Summer+Events+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__yam-summer-events-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.twmc-feature-banner__yam-summer-events-wrapper > a.twmc--btn.twmc--btn--outline-white.twmc-letspac-2.twmc-mts {
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-feature-banner__yam-summer-events-wrapper {
+        max-width: 100%;        
+        align-items: center;
+    }
+
+    .twmc-feature-banner__yam-summer-events-wrapper > a.twmc--btn.twmc--btn--outline-white.twmc-letspac-2.twmc-mts {
+        margin-left: 0;
+    }
+    
+
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__yam-summer-events,
+    .twmc-feature-banner__yam-summer-events-wrapper {
+        height: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--featbanner {
+        padding: .5rem .6rem;
+        font-size: .7rem;
+    }
+}
+
+/* ===== End of YAM Summer Events Feature Banner ===== */
+
+
+/* ===== Men's Conference - 2023 ===== */
+#twmc-mensconference2023--hero {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MEN_TheWay_FeatureBannerBG.png');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.twmc-hero--text-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-hero--text-wrapper > img {
+    height: 350px;
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-mensconference2023--hero,
+    .twmc-hero--text-wrapper {
+        height: 450px;
+    }
+
+    .twmc-hero--text-wrapper > img {
+        height: 250px;
+    }
+}
+
+#twmc-mensconference2023--video {
+    background-color: #B7996F;
+    color: #333;
+}
+
+#twmc-mensconference2023--desc {
+    background-color: #fafafa;
+}
+
+.twmc-mensconference2023--info {
+    padding-left: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconference2023--info {
+        padding-left: 0;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Flex */
+.mensconf2023-flex-container--2-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.mensconf2023-flex-item--2-col {
+    flex-basis: 49%;
+    overflow: visible;
+}
+
+@media only screen and (max-width: 768px) {
+    .mensconf2023-flex-container--2-col {
+        gap: 0;
+    }
+
+    .mensconf2023-flex-item--2-col {
+        flex-basis: 100%;
+    }
+}
+
+/* Card */
+.twmc-lightgrey-card {
+    background-color: #eee;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.twmc-mensconference2023--bio-img {
+    height: 150px;
+}
+
+/* ===== End of Men's Conference - 2023 ===== */
+
+/* ===== WOM Radiant Fall Bible Study 2023 ===== */
+#twmc-feature-banner__wom-radiantfall2023 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/WOM_RadientFall_FeatureBannerBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wom-radiantfall2023-wrapper {
+    height: 600px;
+    width: 50%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 7%;
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.twmc-feature-banner__wom-radiantfall2023-wrapper > img {
+    max-width: 90%;
+}
+
+.twmc-feature-banner__wom-radiantfall2023-wrapper > .twmc--btn.twmc--btn--outline--radiantfall2023.twmc-letspac-2.mt-3  {
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__wom-radiantfall2023 {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/WOM_RadientFall_FeatureBannerBG.png");
+        
+    }
+
+    .twmc-feature-banner__wom-radiantfall2023-wrapper {
+        width: 90%;
+        align-items: flex-end;
+    }
+
+    .twmc-feature-banner__wom-radiantfall2023-wrapper > .twmc--btn.twmc--btn--outline--radiantfall2023.twmc-letspac-2.mt-3  {
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__wom-radiantfall2023 {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/WOM_RadientFall_FeatureBannerBG.png");
+        
+    }
+    
+    .twmc-feature-banner__wom-radiantfall2023-wrapper {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__wom-radiantfall2023,
+    .twmc-feature-banner__wom-radiantfall2023-wrapper {
+        height: 450px;
+    }
+}
+
+.twmc--btn--outline--radiantfall2023 {
+    border: 2px solid transparent;
+    border-color: #FDE9A3;
+    color: #FDE9A3;
+    /* background-color: rgba(255, 255, 255, .2); */
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline--radiantfall2023:hover,
+.twmc--btn--outline--radiantfall2023:focus  {
+    border: 2px solid transparent;
+    border-color: #FDDD6D;
+    background-color: rgba(255, 255, 255, .1);
+    color: #FDDD6D;
+    text-decoration: none;
+
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--outline--radiantfall2023 {
+        padding: 0.4rem .8rem;
+        font-size: .7rem;
+    }
+}
+
+/* ===== WOM Radiant Fall Bible Study 2023 ===== */
+
+/* ===== MEN Quest Fall 2023 ===== */
+#twmc-feature-banner__men-quest2023 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MEN_Quest+Bros+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__men-quest2023-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.twmc-feature-banner__men-quest2023-wrapper > .twmc-mts > a.twmc--btn.twmc--btn--quest2023.twmc-letspac-2.twmc--btn--featbanner.mb-2 {
+    margin-left: 7px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .twmc-feature-banner__men-quest2023-wrapper > img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-feature-banner__men-quest2023-wrapper {
+        max-width: 90% !important;       
+        align-items: flex-start !important;
+    }
+
+    #twmc-feature-banner__men-quest2023 {
+        background-position: top right;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-feature-banner__men-quest2023-wrapper {
+        max-width: 100% !important;       
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__men-quest2023,
+    .twmc-feature-banner__men-quest2023-wrapper {
+        height: 450px;
+    }
+
+    .twmc-feature-banner__men-quest2023-wrapper {
+        max-width: 100% !important;       
+        align-items: flex-start !important;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--featbanner {
+        padding: .5rem .6rem;
+        font-size: .7rem;
+    }
+}
+.twmc--btn--quest2023 {
+    border: 2px solid #fcddb1;
+    background-color: #fcddb1;
+    color: #502c18;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--quest2023:hover,
+.twmc--btn--quest2023:focus {
+    border-color: #FDE4C1;
+    background-color: #FDE4C1;
+    text-decoration: none;
+    color: #502c18;
+
+    transform: scale(1.01);
+}
+/* ===== End of MEN Quest Fall 2023 ===== */
+
+/* ===== MAR - Marriage and Parenting Conference ===== */
+#twmc-feature-banner__mar-map-conference {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MAR_MAP+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    color: #fff;
+    
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__mar-map-conference-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.twmc-feature-banner__mar-map-conference-wrapper > a.twmc--btn.twmc--btn--map-conference.twmc-letspac-2.twmc-mts {
+    margin-left: 7px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .twmc-feature-banner__mar-map-conference-wrapper > img {
+        height: 400px;
+    }
+
+    #twmc-feature-banner__mar-map-conference,
+    .twmc-feature-banner__mar-map-conference-wrapper {
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__mar-map-conference {
+        background-position: top right;
+    }
+
+    .twmc-feature-banner__mar-map-conference-wrapper {
+        max-width: 90% !important;       
+        align-items: flex-start !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__mar-map-conference {
+        background-position: top left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-feature-banner__mar-map-conference-wrapper {
+        max-width: 100% !important;       
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__mar-map-conference,
+    .twmc-feature-banner__mar-map-conference-wrapper {
+        height: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--featbanner {
+        padding: .5rem .6rem;
+        font-size: .7rem;
+    }
+}
+
+.twmc--btn--map-conference {
+    border: 2px solid #464f52;
+    background-color: #464f52;
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--map-conference:hover,
+.twmc--btn--map-conference:focus {
+    border-color: #383F42;
+    background-color: #383F42;
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.01);
+}
+
+/* LANDING PAGE */
+#mar-map-conference--hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MAR+Marriage+and+Parenting+Conference+Hero+BG+1270x800.jpg");
+    /* text-align: center; */
+}
+
+#mar-map-conference--hero.hero--img__align-right > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+  width: 50%;
+  margin-left: 7%;
+}
+
+.hero--img__align-right {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    /* background-position: center bottom; */
+    background-position: top right;
+    height: 600px;
+
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero--img__align-right {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+    .hero--img__align-right {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  #mar-map-conference--hero.hero--img__align-right > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .hero--img__align-right {
+    background-position: left center;
+  }
+
+  #mar-map-conference--hero.hero--img__align-right > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+    width: 100%;
+  }
+}
+
+.mar-map-intro--desc > h2.twmc-h2 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .mar-map-intro--desc > h2.twmc-h2 {
+        margin-top: 2rem;
+    }
+}
+
+.twmc-lightgrey-card {
+    background-color: #eee;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mar-map--bio-img {
+    height: 150px;
+}
+
+.lineheight-small {
+    line-height: 1.4;
+}
+
+.background-mar-map {
+    background-color: #258500;
+}
+
+.twmc--btn--map-conference2 {
+    border: 2px solid #258500;
+    background-color: #258500;
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--map-conference2:hover,
+.twmc--btn--map-conference2:focus {
+    border-color: #1E6A00;
+    background-color: #1E6A00;
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.01);
+}
+/* ===== End of MAR - Marriage and Parenting Conference ===== */
+
+
+
+/* ===== Shabat Series ===== */
+#twmc--shabbat2023-hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/HAR_Shabbat_Message_BG.jpg");
+    text-align: center;
+}
+
+.hero--img__text-wrapper > img.img-responsive-center {
+    max-width: 80%;
+}
+
+.twmc-card__bg-lightgrey-rectangle {
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.twmc-vid__title {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-vid__title {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-card__bg-lightgrey-rectangle {
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-card__bg-lightgrey-rectangle {
+        padding: 1.5rem;
+    }
+
+    .btn--shabbat2023 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-card__bg-lightgrey-rectangle {
+        padding: 1.5rem 1rem;
+    }
+}
+/* ===== End of Shabat Series ===== */
+
+/* ===== Serve It Up 2023 ===== */
+#twmc--serveitup2023-hero {
+    background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.3), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MIS_Serve+It+Up+2023+Feature+Banner+BG.png");
+    text-align: center; 
+    text-align: center;
+    background-position: top right;
+}
+
+.hero--img__text-wrapper > img.twmc--serveitup2023-hero--text-img {
+    max-width: 60% !important;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc--serveitup2023-hero {
+        background-position: center center;
+    }
+
+    .hero--img__text-wrapper > img.twmc--serveitup2023-hero--text-img {
+        max-width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc--serveitup2023-hero {
+        background-position: center left;
+    }
+}
+
+/* ===== End of Serve It Up 2023 ===== */
+
+/* ===== Flex card float design ===== */
+.grids--flex-container-3col-float {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.grids--flex-item--3-col-float {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .grids--flex-container-3col-float {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .grids--flex-item--3-col-float {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grids--flex-container-3col-float {
+        gap: 0;
+    }
+
+    .grids--flex-item--3-col-float {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-card-float {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 5px 10px 20px #ccc;
+    background-color: var(--color-white);
+}
+
+
+/* ===== Flex card float design ===== */
+
+/* ===== MIS - Serve it up 2023 ===== */
+#twmc-feature-banner__mis-siu2023 {
+    background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.3), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MIS_Serve+It+Up+2023+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    /* background-position: center center; */
+    background-position: top right;
+    color: #fff ;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__mis-siu2023 {
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__mis-siu2023 {
+        background-position: center left;
+    }
+}
+
+
+.twmc--btn--siu2023 {
+    border: 2px solid #F5E8DC;
+    background-color: #F5E8DC;
+    color: #502c18;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--siu2023:hover,
+.twmc--btn--siu2023:focus {
+    border-color: #F9F1E9;
+    background-color: #F9F1E9;
+    text-decoration: none;
+    color: #502c18;
+
+    transform: scale(1.01);
+}
+/* ===== MIS - Serve it up 2023 ===== */
+
+/* ===== MIS Conference 2023 ===== */
+#twmc-hero__home-misconference2023 {
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_ConferenceHeaderBanner.png"); */
+    background-image: linear-gradient(to right, rgba(184, 67, 13, 1), rgba(184, 67, 13, 1),  rgba(184, 67, 13, .4), rgba(184, 67, 13, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_ConferenceHeaderBanner.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center right;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#twmc-hero__home-misconference2023 > .container-fluid.hero--img__text-wrapper {
+    width: 100%;
+    margin-left: 7%;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-hero__home-misconference2023 > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    #twmc-hero__home-misconference2023 > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #twmc-hero__home-misconference2023 > .container-fluid.hero--img__text-wrapper {
+        margin-left: 3%;
+    }
+}
+
+
+/* ===== MIS Mission Quiz ===== */
+#twmc-cta__mis-quiz {
+    background-image: url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, .15)), url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .twmc--btn-misquiz {
+    width: 210px;
+  }
+  /* ===== End of MIS Mission Quiz ===== */
+
+/* ===== MIS Missions Conference 2024 ===== */
+
+#twmc--missionconference2024-hero {
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_Mission+Conference+2024+BACKGROUND.png");
+    text-align: center;
+    
+    background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.4), rgba(184, 67, 13, .4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_Mission+Conference+2024+BACKGROUND.png");
+    text-align: center; */
+
+    background-image: linear-gradient(to right, rgba(184, 67, 13, 1), rgba(184, 67, 13, 1),  rgba(184, 67, 13, .4), rgba(184, 67, 13, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_Mission+Conference+2024+BACKGROUND.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.hero--img-tagline-wrapper {
+    height: 600px;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--img-tagline-wrapper > img.img-responsive-center {
+    max-width: 75%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero--img-tagline-wrapper > img.img-responsive-center {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--img-tagline-wrapper > img.img-responsive-center {
+        max-width: 90%;
+    }
+}
+
+.twmc-card-float {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 5px 10px 20px #ccc;
+    background-color: var(--color-white);
+}
+
+.twmc-miscon2024__card-title {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-miscon2024__card-title {
+        margin-top: 1.5rem;
+    }
+    
+}
+
+.twmc--btn--miscon2024 {
+    border: 2px solid #B8430D;
+    background-color: #B8430D;
+    color: #fff;
+    transition: all .3s ease-in-out;
+   
+}
+
+.twmc--btn--miscon2024:hover,
+.twmc--btn--miscon2024:focus {
+    border: 2px solid #93360A;
+    background-color: #93360A;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+#twmc-missionsconference2024--win {
+    background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.5), rgba(184, 67, 13, .5)), url("https://images.unsplash.com/photo-1476018040064-32e98fec7648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+#twmc-missionsconference2024--disciple {
+    background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.5), rgba(184, 67, 13, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/getty-images-RwfGlB-4vVQ-unsplash.jpg");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+#twmc-missionsconference2024--help {
+    background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.5), rgba(184, 67, 13, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/WGO+723+Children+laughing+during+story+V2+RESIZED.jpg");
+    /* background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.5), rgba(184, 67, 13, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/Serve+It+Up+Volunteer+RESIZED.jpg"); */
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+/* Flex */
+.grids--flex-container-3col-justifycenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%;
+}
+
+.grids--flex-item-3col-justifycenter {
+    flex-basis: 31.33%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .grids--flex-container-3col-justifycenter {
+        flex-direction: row;
+        gap: 4%;
+    }
+
+    .grids--flex-item-3col-justifycenter {
+        flex-basis: 48%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-missionsconference2024--win {
+        background-position: center right;
+    }
+
+    .grids--flex-container-3col-justifycenter {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .grids--flex-item-3col-justifycenter {
+        flex-basis: 100%
+    }
+}
+
+.twmc-card-transparent {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+/* Counter */
+.twmc-counter-num {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+.twmc-counter-text {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+
+  .counter-letter {
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  
+  .counter-myButton {
+    background-color: transparent;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 12px 20px;
+    text-decoration: none;
+  }
+  .counter-myButton:hover {
+    background-color: transparent;
+    color: #ce903f;
+    border-color: #ce903f;
+    text-decoration: none;
+  }
+  .counter-myButton:active {
+    position: relative;
+    top: 1px;
+  }
+  
+/* End of Counter */
+
+
+.twmc-miscon2024__intro-desc > h2.twmc-h2 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-miscon2024__intro-desc > h2.twmc-h2 {
+        margin-top: 2rem;
+    }
+}
+
+/* Home page hero */
+#twmc--home-missionconference2024-hero {
+    background-image: linear-gradient(to right, rgba(184, 67, 13, 1), rgba(184, 67, 13, 0.9),  rgba(184, 67, 13, .4), rgba(184, 67, 13, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_Mission+Conference+2024+BACKGROUND.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.twmc--missionconference2024-img-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.twmc-feature-banner__img.twmc-mbxs.twmc--missionconference2024-img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-feature-banner__img.twmc-mbxs.twmc--missionconference2024-img {
+        width: 90%;
+    }
+}
+/* ===== End of MIS Missions Conference 2024 ===== */
+
+/* ===== MIS Global Missions ===== */
+#twmc--globalmissions-hero {
+    background-image: linear-gradient(to right, rgba(184, 67, 13, 1), rgba(184, 67, 13, 1),  rgba(184, 67, 13, .4), rgba(184, 67, 13, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/larm-rmah-AEaTUnvneik-unsplashV2+3000x2000.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.hero--img-tagline-wrapper {
+    height: 600px;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--img-tagline-wrapper > img.img-responsive-center {
+    max-width: 75%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero--img-tagline-wrapper > img.img-responsive-center {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--img-tagline-wrapper > img.img-responsive-center {
+        max-width: 90%;
+    }
+}
+
+.twmc-card-float--img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ===== En of MIS Global Missions ===== */
+
+/* =====  Caine Luncheon & Worship 2023 ===== */
+#twmc--caine2023-hero {
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/DIS_WOM_Christine+Caine+Events_FeatureBannerBG.png"); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(204, 204, 204, .1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/DIS_WOM_Christine+Caine+Events_FeatureBannerBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+}
+
+.hero--img-tagline-wrapper {
+    height: 600px;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--img-tagline-wrapper > img.img-responsive-center {
+    max-width: 75%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero--img-tagline-wrapper > img.img-responsive-center {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--img-tagline-wrapper > img.img-responsive-center {
+        max-width: 90%;
+    }
+}
+
+.twmc-boots2col--desc > h2.twmc-h2 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-boots2col--desc > h2.twmc-h2 {
+        margin-top: 2rem;
+    }
+}
+
+/* .twmc--caine2023-content-img1,
+.twmc--caine2023-content-desc1,
+.twmc--caine2023-content-img2,
+.twmc--caine2023-content-desc2 {
+    margin-bottom: 4rem;
+} */
+
+.twmc--caine2023-content-card {
+    margin-bottom: 3rem;
+}
+
+.twmc--caine2023-card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc--caine2023-content-img2 {
+        order: 1;
+    }
+
+    .twmc--caine2023-content-desc2 {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--caine2023-card-img {
+        height: 300px;
+    }
+}
+
+/* ===== MIS Masterpiece Showcase ====== */
+#twmc-mis__masterpieceshowcase2023 {
+    background-color: #007cc2;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MIS_MasterpieceShowcase_FeatureBannerBG.png');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C19223;
+}
+
+.twmc-mis__masterpieceshowcase2023--p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+
+}
+
+/* Showcase */
+.twmc-btn__mis-showcase {
+    border: 2px solid #C19223;
+    background-color: #C19223;
+    color: #fff;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc-btn__mis-showcase:hover,
+.twmc-btn__mis-showcase:focus {
+    border: 2px solid #CDA84F;
+    background-color: #CDA84F;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.twmc-reb__summerevents2023-featurebanner > img {
+    width: 80%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-mis__masterpieceshowcase2023 {
+        height: 500px;
+    }
+
+    .twmc-btn__mis-showcase  {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+
+    .twmc-mis__masterpieceshowcase2023--p {
+        margin-bottom: 1rem;
+    
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-mis__masterpieceshowcase2023 {
+        height: 450px;
+    }
+
+}
+/* ===== End of MIS Masterpiece Showcase ====== */
+
+/* ===== BUS Staff Appreciation 2023 ===== */
+/* Hero */
+#twmc-staffappreciation2023--hero {
+
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/BUS_StaffGiftProgram_FeatureBanner_1270x600.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.hero--img-tagline-wrapper-lg {
+    height: 600px;
+    /* padding: 3rem 0; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--img-tagline-wrapper-lg > img.img-responsive-center {
+    /* max-width: 75%; */
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero--img-tagline-wrapper-lg > img.img-responsive-center {
+        /* max-width: 60%; */
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--img-tagline-wrapper-lg > img.img-responsive-center {
+        max-width: 90%;
+    }
+}
+
+/* Staff Cards */
+.twmc-staffappreciation2023--h2,
+.twmc-staffappreciation2023--p-orange  {
+    color: #C25622;
+}
+
+/* Flex 2 cols*/
+.staffapp2023-flex-container--2-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.staffapp2023-flex-item--2-col {
+    flex-basis: 49%;
+    overflow: visible;
+}
+
+@media only screen and (max-width: 768px) {
+    .staffapp2023-flex-container--2-col {
+        gap: 0;
+    }
+
+    .staffapp2023-flex-item--2-col {
+        flex-basis: 100%;
+    }
+}
+
+/* Flex 3 cols */
+.grids--flex-container-3col-flat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.grids--flex-item--3-col-flat {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .grids--flex-container-3col-flat {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .grids--flex-item--3-col-flat {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grids--flex-container-3col-flat {
+        gap: 0;
+    }
+
+    .grids--flex-item--3-col-flat {
+        flex-basis: 100%;
+    }
+}
+
+
+/* Card */
+.twmc-yellow-card {
+    background-color: #FDFAED;
+    /* border: 3px solid #C25622;
+    border: 3px solid #F36C2B; */
+    border: 3px solid #F89C50;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.staffapp2023--bio-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.staffapp2023--bio-img-wrapper
+.staffapp2023--bio-img-wrapper > .staffapp2023-img-normal:hover {
+    display: none;
+}
+
+.staffapp2023--bio-img {
+    height: 200px;
+    /* border: 1px solid #F89C50; */
+}
+
+.staffapp2023-img-normal {
+    display: block;
+}
+
+.staffapp2023-img-fun {
+    display: none;
+}
+
+/* Button */
+.twmc--btn--staffapp2023 {
+    border: 2px solid #C25622;
+    background-color: #C25622;
+    color: var(--color-white);
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--staffapp2023:hover,
+.twmc--btn--staffapp2023:focus {
+    border-color: #9B451B;
+    background-color: #9B451B;
+    text-decoration: none;
+    color: var(--color-white);
+
+    transform: scale(1.03);
+}
+
+
+/* Image toggle */
+.twmc-img-toggle {
+    display: block;
+    width: 100%;
+    /* border: 1px #000 solid; */
+  }
+  .twmc-img-toggle:hover .twmc-img-toggle__images--two .twmc-img-toggle__image {
+    opacity: 1;
+    filter: blur(0);
+  }
+  .twmc-img-toggle__images {
+    position: relative;
+  }
+  .twmc-img-toggle__images img {
+    /* width: 100%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .twmc-img-toggle__images--two .twmc-img-toggle__image + .twmc-img-toggle__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+    filter: blur(5px);
+    transition: all 0.3s ease;
+  }
+
+  /* Card Collapsible */
+  .staffapp2023-collapsible {
+    background-color: #FAF1CA;
+    /* background-color: var(--color-light-grey2); */
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .twmc-staffappreciation2023--p {
+    line-height: 1.4;
+    font-size: 15px;
+}
+ 
+
+/* CTA */
+.twmc-staffappreciation2023--cta {
+    background-color: #F9EDBD;
+    padding: 2rem 0;
+}
+/* ===== End of BUS Staff Appreciation 2023 ===== */
+
+/* ===== Caine - Feature Banner ===== */
+#twmc--caine2023--featurebanner {
+    background-color: #fff;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/DIS_WOM_Christine+Caine+Events_FeatureBannerBG.png');
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #C19223; */
+}
+
+.twmc--caine2023--featurebanner--p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc--caine2023--featurebanner {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc--caine2023--featurebanner {
+        height: 450px;
+    }
+
+    .twmc--caine2023--featurebanner--p {
+        width: 90%;
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .twmc--caine2023--featurebanner-img-wrapper > img {
+        width: 90%;
+    }
+
+}
+
+
+.twmc--caine-featbanner-text {
+    max-width: 100%;
+}
+/* ===== Caine - Feature Banner ===== */
+
+/* ===== Advent 2023 ===== */
+/* Snow */
+.snow {
+	background: none;
+	/* font-family: Androgyne; */
+	background-image: 
+	url('https://4.bp.blogspot.com/-RGdg1HwjcN0/V0MfveH5tnI/AAAAAAAAV9U/JuZAFpkJmHkhrLHTY3Nzt--f1_D4QUDRACLcB/s1600/s1.png'),	url('https://3.bp.blogspot.com/-lLYG_aPYaWI/V0MfvZui2cI/AAAAAAAAV9Q/ivLLay21G6IKLLGEI-bHgpzmPRHFubhwgCLcB/s1600/s2.png'), 
+	url('https://3.bp.blogspot.com/-mPW9Z5fvV5w/V0MfvZ1kmnI/AAAAAAAAV9Y/qU7_F2J0XP4bXNi3rIyV55Y1z9RyTRoqQCLcB/s1600/s3.png');
+	height: 100%;
+	/* left: 0;
+	position: absolute;
+	top: 0; */
+    
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 12s linear infinite;
+	-moz-animation: snow 12s linear infinite;
+	-ms-animation: snow 12s linear infinite;
+	animation: snow 12s linear infinite;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+/* Hero */
+#twmc-advent2023--hero {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent2023/WOR_Advent+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.hero--img-tagline-wrapper-lg.twmc-advent2023--hero-text {
+    height: 600px;
+    /* padding: 3rem 0; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--img-tagline-wrapper-lg.twmc-advent2023--hero-text > img.img-responsive-center {
+    /* max-width: 75%; */
+    max-width: 70%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero--img-tagline-wrapper-lg.twmc-advent2023--hero-text > img.img-responsive-center {
+        /* max-width: 60%; */
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--img-tagline-wrapper-lg.twmc-advent2023--hero-text > img.img-responsive-center {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #twmc-advent2023--hero,
+    .hero--img-tagline-wrapper-lg.twmc-advent2023--hero-text {
+        height: 450px;
+    }
+}
+
+/* Hero text repositioning because of the use of snow animation */
+/* .twmc-advent2023--hero-text {
+    margin-top: 89px;
+} */
+
+.twmc-advent2023--intro {
+    padding: 3rem 0 2.5rem;
+    background-color: #3F4B43;
+    color: #F9FAFA;
+    text-align: justify;
+}
+
+.twmc-advent2023--intro p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Iframe embed responsive */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; overflow: 
+    hidden; max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* CHRISTMAS EVENTS */
+.twmc-advent23__card {
+    padding: 1rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-advent23__card {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-advent__events > .container > .row > .col-sm-12 > .twmc-flex-container--3-col > .twmc-flex-item--3-col {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-advent-event__info {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+/* Typography */
+.twmc-advent22__red {
+    color: #b22b3c;
+}
+
+.twmc-advent22__green {
+    color: #0f5d07;
+}
+
+
+/* Button advent red */
+.twmc--btn--advent2022__red {
+    border: 2px solid #b22b3c;
+    background-color: #b22b3c;
+    color: #fbfbfa;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--advent2022__red:hover,
+.twmc--btn--advent2022__red:focus {
+    border-color: #C15563;
+    background-color: #C15563;
+    text-decoration: none;
+    color: #fbfbfa;
+    cursor: pointer;
+
+    transform: scale(1.05);
+}
+
+.twmc--btn--advent2022__red-hero {
+    margin: 1.5rem 0 .8rem;
+    width: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--advent2022__red-hero {
+        margin-top: .4rem;
+        margin-bottom: 0;
+        padding: .45rem 0 !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc--btn--advent2022__red-hero {
+        max-width: 100%;
+    }
+}
+
+/* Christmas Services */
+.card-xmas2023-container--2-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.card-xmas2023-item--2-col {
+    flex-basis: 49%;
+    overflow: visible;
+    /* flex-grow: 2; */
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-xmas2023-container--2-col {
+        gap: 0;
+    }
+
+    .card-xmas2023-item--2-col {
+        flex-basis: 100%;
+    }
+}
+
+.card-xmas2023-green {
+    background-color: #F4F8F4;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+.card-xmas2023-red {
+    background-color: #FAF4F4;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+.lh-1 {
+    line-height: 1 !important;
+}
+
+.lh-sm {
+    line-height: 1.25 !important;
+}
+
+
+/* ====== End of Advent 2023 ===== */
+
+/* ===== CAR - Christmas Without Them ===== */
+#twmc-car--christmaswithoutthem2023 {
+    background-color: #fff;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CAR_Christmas+Without+Them+Feature+Banner+BG2.png');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CAR_Christmas+Without+Them+Feature+Banner+BG2.png");
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #C19223; */
+}
+
+.twmc-car--christmaswithoutthem2023--p {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #684663;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-car--christmaswithoutthem2023 {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-car--christmaswithoutthem2023 {
+        height: 450px;
+    }
+
+    .twmc-car--christmaswithoutthem2023--p {
+        width: 90%;
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .twmc-car--christmaswithoutthem2023-img-wrapper > img {
+        width: 90%;
+    }
+
+}
+
+/* Button advent red */
+.twmc--btn--xmaswt2023 {
+    border: 2px solid #B7203B;
+    background-color: #B7203B;
+    color: #fbfbfa;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--xmaswt2023:hover,
+.twmc--btn--xmaswt2023:focus {
+    border-color: #C15563;
+    background-color: #C15563;
+    text-decoration: none;
+    color: #fbfbfa;
+    cursor: pointer;
+
+    transform: scale(1.05);
+}
+/* ===== End of CAR - Christmas Without Them ===== */
+
+/* ===== MUS - Lessons and Carols ===== */
+#twmc-mus--lessonsandcarols2023 {
+    background-color: #fff;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MUS_Lessons+and+Carols+Feature+Banner+BG.png');
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/MUS_Lessons+and+Carols+Feature+Banner+BG.png"); */
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-mus--lessonsandcarols2023--p {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #fff;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-mus--lessonsandcarols2023 {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-mus--lessonsandcarols2023 {
+        height: 450px;
+    }
+
+    .twmc-mus--lessonsandcarols2023--p {
+        width: 90%;
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .twmc-mus--lessonsandcarols2023-img-wrapper > img {
+        width: 90%;
+    }
+
+}
+
+/* ===== End of MUS - Lessons and Carols ===== */
+
+
+
+/* ===== REB Summer Events 2023 ===== */
+#twmc-reb-summerevents2023__hero {
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/Summer+EventsFEATURE+BANNER_+Size_+1270x600+BKG.jpg');
+    background-image: linear-gradient(to bottom, rgba(71, 124, 142, .4), rgba(71, 124, 142, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/Summer+EventsFEATURE+BANNER_+Size_+1270x600+BKG.jpg");
+    text-align: center;
+    background-position: bottom left;
+}
+
+#twmc-reb-summerevents2023__content {
+    padding: 5rem 0;
+    /* background-image: linear-gradient(to bottom,  #E7EDF1, #FFF5D5); */
+}
+
+.twmc-reb-summerevents2023__hero-img-text {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.twmc-reb-summerevents2023__hero-img-text > img {
+    max-width: 80%;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-reb-summerevents2023__hero-img-text > img {
+        max-width: 90%;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-reb-summerevents2023__hero,
+    .twmc-reb-summerevents2023__hero-img-text {
+        height: 450px;
+    }
+
+    #twmc-reb-summerevents2023__content {
+        padding: 3rem 0;
+    }
+}
+
+/* Utilities - 3 columns flex summer splash */
+.twmc-flex-container--3-col-summer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.twmc-flex-item--3-col-summer {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--3-col-summer {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .twmc-flex-item--3-col-summer {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc-flex-container--3-col-summer {
+        gap: 0;
+    }
+
+    .twmc-flex-item--3-col-summer {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-reb-summerevents2023--card {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 5px 10px 20px #ccc;
+    background-color: var(--color-white);
+
+    color: var(--color-dark-orange);
+}
+
+.twmc-reb-summerevents2023--text {
+    color: #518096;
+}
+
+.twmc-reb-summerevents2023--text-yellow {
+    color: #FFC600;
+}
+
+
+.twmc--btn--reb-summerevents2023 {
+    border: 2px solid #518096;
+    background-color: #E7EDF1;
+    color: #518096;
+    margin-bottom: .3rem;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--reb-summerevents2023:hover,
+.twmc--btn--reb-summerevents2023:focus {
+    border-color: #518096;
+    background-color: #E1E9ED;
+    text-decoration: none;
+    color: #518096;
+
+    transform: scale(1.04);
+}
+
+.twmc--btn-200 {
+    min-width: 200px;
+    max-width: 100%;
+}
+
+.twmc--btn-250 {
+    min-width: 250px;
+    max-width: 100%;
+}
+
+p.twmc-p {
+    font-weight: 600;
+}
+
+
+/* Summer Events Feature Banner */
+#twmc-reb__summerevents2023-featurebanner {
+    background-color: #007cc2;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/Summer+EventsFEATURE+BANNER_+Size_+1270x600+BKG.jpg');
+    text-align: center;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-reb__btn-auction-dinner-white {
+    border: 2px solid white;
+    background-color: white;
+    color: #464646;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.twmc-reb__btn-auction-dinner-white:hover,
+.twmc-reb__btn-auction-dinner-white:focus {
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #464646;
+    transform: scale(1.02);
+}
+
+.twmc-reb__summerevents2023-featurebanner > img {
+    width: 80%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-reb__summerevents2023-featurebanner {
+        height: 450px;
+    }
+
+    .twmc-reb__btn-auction-dinner-white {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-reb__summerevents2023-featurebanner {
+        height: 400px;
+    }
+
+}
+/* ===== End of REB Summer Events 2023 ===== */
+
+/* ===== FORGE 2024 ===== */
+#twmc-feature-banner__forge2024 {
+    background-image: url("https://twmc-png.s3.us-east-2.amazonaws.com/REB_FORGE+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: top right;
+    color: #fff ;
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__forge2024 {
+        background-position: center center;
+    }
+}
+
+.twmc--btn--forge-green2 {
+    border: 2px solid #DCFD5D;
+    background-color: #DCFD5D;
+    color: var(--color-dark-orange);
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.twmc--btn--forge-green2:hover,
+.twmc--btn--forge-green:focus {
+    border: 2px solid #A0CA01;
+    background-color: #A0CA01;
+    color: var(--color-dark-orange);
+    transition: all .3s ease-in-out;
+}
+
+/* Hero */
+#twmc__reb-forge2024 {
+    background-image: url("https://twmc-png.s3.us-east-2.amazonaws.com/REB_FORGE+Feature+Banner+BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: scroll;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc__reb-forge2024 {
+        background-position: center center;
+    }
+}
+
+/* Text */
+.twmc-forge__resources-heading,
+.twmc-forge__intro-heading {
+    color: #333;
+}
+/* ===== End of FORGE 2024 ===== */
+
+/* ===== SUMMER SPLASH 2023 ===== */
+#twmc-summerspalsh2023__hero {
+    background-color: #007cc2;
+    background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CHI_SummerSplash_FeatureBanner_BG.png');
+    text-align: center;
+    background-position: bottom center;
+}
+
+
+
+#twmc-summerspalsh2023__content {
+    background-color: #007cc2;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.twmc-summerspalsh2023__hero-img-text {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.twmc-summerspalsh2023__hero-img-text > img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-summerspalsh2023__hero-img-text > img {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-summerspalsh2023__hero,
+    .twmc-summerspalsh2023__hero-img-text {
+        height: 450px;
+    }
+}
+
+/* Utilities - 3 columns flex summer splash */
+.twmc-flex-container--3-col-summer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.twmc-flex-item--3-col-summer {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--3-col-summer {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .twmc-flex-item--3-col-summer {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc-flex-container--3-col-summer {
+        gap: 0;
+    }
+
+    .twmc-flex-item--3-col-summer {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-summerspalsh2023--card {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 5px 10px 20px #01B6DE;
+    background-color: var(--color-white);
+
+    color: var(--color-dark-orange);
+}
+
+.twmc-summerspalsh2023--text-thewoodlands {
+    color: #F0659B;
+}
+
+.twmc-summerspalsh2023--text-woodforest {
+    color: #44B7D4;
+}
+
+.twmc-summerspalsh2023--text-yellow {
+    color: #CA990E;
+}
+
+.twmc--btn--summerspalsh2023-thewoodlands {
+    border: 2px solid #F0659B;
+    background-color: #FDEAF1;
+    color: #F0659B;
+    margin-bottom: .3rem;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--summerspalsh2023-thewoodlands:hover,
+.twmc--btn--summerspalsh2023-thewoodlands:focus {
+    border-color: #F0659B;
+    background-color: #FCDFEA;
+    text-decoration: none;
+    color: #F0659B;
+
+    transform: scale(1.04);
+}
+
+.twmc--btn--summerspalsh2023-woodforest {
+    border: 2px solid #3692AA;
+    background-color: #E5F5F9;
+    color: #3692AA;
+    margin-bottom: .3rem;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--summerspalsh2023-woodforest:hover,
+.twmc--btn--summerspalsh2023-woodforest:focus {
+    border-color: #3692AA;
+    background-color: #D7F0F6;
+    text-decoration: none;
+    color: #3692AA;
+
+    transform: scale(1.04);
+}
+
+.twmc--btn--summerspalsh2023-yellow {
+    border: 2px solid #CA990E;
+    background-color: #FDF6DF;
+    color: #CA990E;
+    margin-bottom: .3rem;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--summerspalsh2023-yellow:hover,
+.twmc--btn--summerspalsh2023-yellow:focus {
+    border-color: #CA990E;
+    background-color: #FDF6DF;
+    text-decoration: none;
+    color: #CA990E;
+
+    transform: scale(1.04);
+}
+
+.twmc--btn--summerspalsh2023-inactive {
+    border: 2px solid #444;
+    background-color: #eee;
+    color: #444;
+    margin-bottom: .3rem;
+    font-weight: 700;
+
+    cursor: not-allowed;
+}
+
+.twmc--btn--summerspalsh2023-inactive:hover,
+.twmc--btn--summerspalsh2023-inactive:focus {
+    border-color: #444;
+    background-color: #eee;
+    text-decoration: none;
+    color: #444;
+    cursor: not-allowed;
+}
+
+p.twmc-p {
+    font-weight: 600;
+}
+
+/* Feature Banner for Children page */
+#twmc-chi__summersplash-featurebanner {
+    background-color: #007cc2;
+    /* background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CHI_SummerSplash_FeatureBanner_BG.png'); */
+    background-image: linear-gradient(to bottom, rgba(0, 124, 194, 0), rgba(0, 124, 194, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CHI_SummerSplash_FeatureBanner_BG.png");
+    text-align: center;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-btn-summersplash2023--yellow {
+    border: 2px solid #FFCC18;
+    background-color: #FFCC18;
+    color: #00639B;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.twmc-btn-summersplash2023--yellow:hover,
+.twmc-btn-summersplash2023--yellow:focus {
+    border: 2px solid #FDF6DF;
+    background-color: #FDF6DF;
+    color: #00639B;
+}
+
+.twmc-summersplash2023--h4 {
+    color: #fff;
+    text-shadow: #00639B 2px 0 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-chi__summersplash-featurebanner {
+        height: 450px;
+    }
+
+    .twmc-btn-summersplash2023--yellow {
+        padding: .4rem .8rem;
+        font-size: .6rem;
+    }
+
+    .twmc-summersplash2023--h4 {
+        font-size: 14px;
+    }
+}
+
+.twmc-summerspalsh2023--card-infoicon {
+    font-size: .95rem;
+}
+
+/* ===== END OF SUMMER SPLASH 2023 ===== */
+
+/* ===== MEN - QUEST SPRING 2024 ==== */
+#men-featurebanner--questspring2024 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/MEN_Quest+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #fff ;
+    /* height: 600px; */
+    height: 500px;
+}
+
+/* .questspring2024--img {
+    margin-top: 1rem;
+} */
+
+@media only screen and (min-width: 1200px) {
+    #men-featurebanner--questspring2024 {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #men-featurebanner--questspring2024 {
+        height: 450px;
+    }
+}
+
+/* Button */
+.twmc--btn--questspring2024 {
+    border: 2px solid #F0B201;
+    background-color: #F0B201;
+    color: #32423A;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    padding: .5rem 1rem !important;
+}
+
+.twmc--btn--questspring2024:hover,
+.twmc--btn--questspring2024:focus {
+    border: 2px solid #F3C134;
+    background-color: #F3C134;
+    color: #32423A;
+    transition: all .3s ease-in-out;
+}
+
+/* Quest Hero  */
+#questspring2024--hero {
+    background-color: #121518;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/MEN_Quest+Feature+Banner+BG.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #fff ;
+    height: 600px;
+}
+
+.questspring2024--hero-img {
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 576px) {
+    #questspring2024--hero {
+        height: 450px;
+    }
+}
+
+/* Intro */
+.quest-intro {
+    background-color: #121618;
+    color: #fff;
+    text-align: center;
+}
+
+.text-quest2024 {
+    color:  #d19e07;
+}
+/* ===== END OF MEN - QUEST SPRING 2024 ==== */
+
+
+/* ===== HOME Hero - Stewardship 2024 ===== */
+#twmc-hero__home-stewardship2024 {
+    /* background-image: linear-gradient(to right, rgba(59, 78, 108, 0.5), rgba(59, 78, 108, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_stewardship2024/Stewardship+-+Home+Hero+BACKGROUND.png"); */
+    background-image: linear-gradient(to right, rgba(59, 78, 108, 0.5), rgba(59, 78, 108, 0.2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_stewardship2024/VisionNight_Sorensen_1438x634.png");
+    
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top right;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#twmc-hero__home-stewardship2024 > .container-fluid.hero--img__text-wrapper {
+    width: 50%;
+    margin-left: 7%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#twmc-hero__home-stewardship2024 > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.stewardship2024-hero--text {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+    #twmc-hero__home-stewardship2024 {
+        height: 500px;
+    }
+
+    #twmc-hero__home-stewardship2024 > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+        max-width: 80%;
+    }
+
+    .stewardship2024-hero--text {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .stewardship2024-hero--text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-hero__home-stewardship2024 {
+        /* background-image: linear-gradient(to bottom, rgba(59, 78, 108, 0.7), rgba(59, 78, 108, 0.5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_stewardship2024/Stewardship+-+Home+Hero+BACKGROUND+mobile2.png"); */
+        background-image: linear-gradient(to bottom, rgba(59, 78, 108, 0.8), rgba(59, 78, 108, 0.7)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_stewardship2024/VisionNight_Sorensen_mobile2.png");
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_stewardship2024/VisionNight_Sorensen_mobile2.png"); */
+        
+        height: 450;
+    }
+
+    #twmc-hero__home-stewardship2024 > .container-fluid.hero--img__text-wrapper {
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    #twmc-hero__home-stewardship2024 > .container-fluid.hero--img__text-wrapper > img.img-responsive {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #twmc-hero__home-stewardship2024 > .container-fluid.hero--img__text-wrapper {
+        margin-left: 3%;
+    }
+}
+
+/* button */
+.stewardship2024-hero--buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-stw-hero {
+    background-color: white;
+    color: #324665;
+    border: 2px solid #324665;
+    border-radius: 9.5px;
+    padding: .5rem 3rem;
+    font-size: .8rem;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.05rem; */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    min-width: 175px;
+    max-width: 255px;
+  }
+
+  .btn-stw-hero:hover {
+    background-color: rgba(174, 162, 202, 0.95);
+    transform: scale(1.02);
+    color: #333;
+  }
+
+  @media only screen and (min-width: 1500px) {
+        .stewardship2024-hero--buttons-wrapper {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .stewardship2024-hero--buttons-wrapper {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .btn-stw-hero {
+            width: 150px;
+        }
+      }
+
+    @media only screen and (max-width:768px) {
+        .stewardship2024-hero--buttons-wrapper {
+            gap: 1%;
+        }
+
+        .btn-stw-hero {
+            margin-top: 10px;
+            width: 175px;
+        }
+    }
+
+  /* HERO V2 - With CTA */
+  #stewardship2024-hero--cta {
+    background-image: url("https://s3.us-east-2.amazonaws.com/rockrms-assets/images/stewardship-2024/assets/Backgrounds/Generous_Background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+
+  .stewardship2024-hero--cta-wrapper {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stewardship2024-hero--cta-wrapper > p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .stewardship2024-hero--cta-wrapper > a.btn.btn-stw-hero {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .stewardship2024-hero--cta-wrapper > p {
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .stewardship2024-hero--cta-wrapper > p {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .stewardship2024-hero--cta-wrapper {
+      flex-direction: column;
+    }
+    
+    .stewardship2024-hero--cta-wrapper > p {
+      margin-right: 0;
+      margin-bottom: 6px;
+    }
+  }
+  
+  
+  /* ===== HOME Hero - Stewardship 2024 ===== */
+
+  #twmc-hero__home-stewardship2024-blue {
+    background-image: url("https://s3.us-east-2.amazonaws.com/rockrms-assets/images/stewardship-2024/assets/Backgrounds/Generous_Background.jpg");   
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#twmc-hero__home-stewardship2024-blue > .container-fluid.hero--img__text-wrapper {
+    max-width: 540px;
+}
+
+.stewardship2024-hero--text2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.stewardship2024-hero--text3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .stewardship2024-hero--text2,
+    .stewardship2024-hero--text3 {
+        font-size: 18px;
+    }
+
+    .stewardship2024-hero--text2 {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-hero__home-stewardship2024-blue {
+        height: 400px;
+    }
+
+    #twmc-hero__home-stewardship2024-blue > .container-fluid.hero--img__text-wrapper {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+    .stewardship2024-hero--text2,
+    .stewardship2024-hero--text3 {
+        font-size: 16px;
+    }
+}
+
+/* button */
+.stewardship2024-hero--buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-stw-hero {
+    background-color: white;
+    color: #324665;
+    border: 2px solid #324665;
+    border-radius: 9.5px;
+    padding: .5rem 3rem;
+    font-size: .8rem;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.05rem; */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    min-width: 175px;
+    max-width: 255px;
+  }
+
+  .btn-stw-hero:hover {
+    background-color: rgba(174, 162, 202, 0.95);
+    transform: scale(1.02);
+    color: #333;
+  }
+
+    @media only screen and (max-width: 1200px) {
+        .stewardship2024-hero--buttons-wrapper {
+            width: 100%;
+        }
+    }
+    /*
+    @media only screen and (max-width: 992px) {
+        .btn-stw-hero {
+            width: 150px;
+        }
+      } */
+
+    @media only screen and (max-width:768px) {
+        .stewardship2024-hero--buttons-wrapper {
+            gap: 1%;
+        }
+
+        .btn-stw-hero {
+            margin-top: 10px;
+            width: 200px;
+        }
+    }
+
+/* CTA */
+#stewardship2024-hero--cta {
+    background-image: url("https://s3.us-east-2.amazonaws.com/rockrms-assets/images/stewardship-2024/assets/Backgrounds/Generous_Background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  .cta-top-border {
+    border-top: 2px solid white;
+    width: 100%;
+  }
+
+  .stewardship2024-hero--cta-wrapper {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stewardship2024-hero--cta-wrapper > p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .stewardship2024-hero--cta-wrapper > a.btn.btn-stw-hero {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .stewardship2024-hero--cta-wrapper > p {
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .stewardship2024-hero--cta-wrapper > p {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .stewardship2024-hero--cta-wrapper {
+      flex-direction: column;
+    }
+    
+    .stewardship2024-hero--cta-wrapper > p {
+      margin-right: 0;
+      margin-bottom: 6px;
+    }
+  }
+  
+
+
+  /* CTA Campus closed */
+  #campus-closed {
+    background-color: #E0794D;
+    
+  }
+
+ .campus-closed--text {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0;
+    line-height: 1.3;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .campus-closed--text {
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .campus-closed--text {
+      font-size: 16px;
+    }
+  }
+
+/* ===== End of HOME Hero - Stewardship Campus Closed ===== */
+
+/* ===== HOME Hero - Stewrdship Blue with Video ===== */
+/* Flex */
+.stew-flex-container--2-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.stew-flex-item--2-col {
+    flex-basis: 47%;
+    overflow: visible;
+}
+
+@media only screen and (max-width:992px) {
+    .stew-flex-container--2-col {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .stew-flex-item--2-col {
+        flex-basis: 100%;
+    }
+
+}
+
+#twmc-hero__home-stewardship2024-blue-video {
+    background-image: url("https://s3.us-east-2.amazonaws.com/rockrms-assets/images/stewardship-2024/assets/Backgrounds/Generous_Background.jpg");   
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    /* height: 600px; */
+}
+
+.stew-hero {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.stew-hero--left-col > img.img-responsive.mb-3 {
+    /* max-width: 540px; */
+    max-width: 90%;
+}
+
+@media only screen and (max-width: 992px) {
+    .stew-hero {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .stew-hero--right-col,
+    .stew-hero--left-col {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stew-hero--right-col {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .stew-hero--right-col,
+    .stew-hero--left-col {
+        max-width: 90%;
+    }
+
+    .stew-hero--left-col > img.img-responsive.mb-3 {
+        max-width: 100%;
+    }
+}
+
+/* Logo and Description */
+.stew-hero--left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media only screen and (max-width: 992px) {
+    .stew-hero--left-col {
+        margin-bottom: 3rem;
+    }
+
+}
+
+/* Video */
+.stewardship2024-hero--text4 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.7px;
+    margin-top: 0.75rem;
+}
+
+.stewardship2024-hero--text5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 0.3rem;
+}
+
+/* button */
+.stewardship2024-hero--buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 1400px) {
+    .stewardship2024-hero--buttons-wrapper {
+        max-width: 500px;
+    }
+}
+
+.btn-stw-hero2 {
+    background-color: white;
+    color: #324665;
+    border: 2px solid #324665;
+    border-radius: 9.5px;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    min-width: 175px;
+    max-width: 255px;
+  }
+
+  .btn-stw-hero2:hover {
+    background-color: rgba(174, 162, 202, 0.95);
+    transform: scale(1.02);
+    color: #333;
+  }
+
+    @media only screen and (max-width: 1200px) {
+        .stewardship2024-hero--buttons-wrapper {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 992px) {
+        .btn-stw-hero2 {
+            width: 200px;
+            margin-top: .5rem;
+        }
+      }
+
+    @media only screen and (max-width:768px) {
+        .stewardship2024-hero--buttons-wrapper {
+            gap: 1%;
+        }
+
+        .btn-stw-hero2 {
+            margin-top: 10px;
+            width: 200px;
+        }
+    }
+
+/* CTA */
+#stewardship2024-hero--cta {
+    background-image: url("https://s3.us-east-2.amazonaws.com/rockrms-assets/images/stewardship-2024/assets/Backgrounds/Generous_Background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  .cta-top-border {
+    border-top: 2px solid white;
+    width: 100%;
+  }
+
+  .stewardship2024-hero--cta-wrapper {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stewardship2024-hero--cta-wrapper > p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .stewardship2024-hero--cta-wrapper > a.btn.btn-stw-hero2 {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .stewardship2024-hero--cta-wrapper > p {
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .stewardship2024-hero--cta-wrapper > p {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .stewardship2024-hero--cta-wrapper {
+      flex-direction: column;
+    }
+    
+    .stewardship2024-hero--cta-wrapper > p {
+      margin-right: 0;
+      margin-bottom: 6px;
+    }
+  }
+  
+
+
+/* ===== End of HOME Hero - Stewrdship Blue with Video ===== */
+
+
+
+
+
+
+
+/* ===== WOM Radiant Spring 2024  ===== */
+#twmc-feature-banner__wom-radiant-spring-2024 {
+    background-image: url('https://wom-radiant-spring-2024.s3.us-east-2.amazonaws.com/WOM_Radiant+Spring+2024_FeatureBanner_BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: scroll;
+    color: #fff;
+    height: 600px;
+    padding: auto 0;
+}
+
+.twmc-feature-banner__wom-radiant-spring-2024-wrapper {
+    height: 600px;
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-feature-banner__wom-radiant-spring-2024-wrapper > img {
+    align-items: center;
+
+}
+
+.twmc-feature-banner__wom-radiant-spring-2024-wrapper > .twmc--btn.twmc--btn--outline--radiant-spring-2024.twmc-letspac-2.mt-3  {
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-feature-banner__wom-radiant-spring-2024 {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)), url("https://wom-radiant-spring-2024.s3.us-east-2.amazonaws.com/WOM_Radiant+Spring+2024_FeatureBanner_BG.png");
+        
+    }
+
+    .twmc-feature-banner__wom-radiant-spring-2024-wrapper {
+        width: 90%;
+        /* align-items: flex-end; */
+        align-items: center;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-feature-banner__wom-radiant-spring-2024 {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("https://wom-radiant-spring-2024.s3.us-east-2.amazonaws.com/WOM_Radiant+Spring+2024_FeatureBanner_BG.png");
+        
+    }
+    
+    .twmc-feature-banner__wom-radiant-spring-2024-wrapper {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-feature-banner__wom-radiant-spring-2024,
+    .twmc-feature-banner__wom-radiant-spring-2024-wrapper {
+        height: 500px;
+        width: 100%
+    }
+}
+
+.twmc--btn--outline--radiant-spring-2024 {
+    border: 2px solid transparent;
+    border-color: #f4974d;
+    color: #f4974d;
+    /* background-color: rgba(255, 255, 255, .2); */
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline--radiant-spring-2024:hover,
+.twmc--btn--outline--radiant-spring-2024:focus  {
+    border: 2px solid transparent;
+    border-color: #d27e3b;
+    background-color: rgba(255, 255, 255, .1);
+    color: #d27e3b;
+    text-decoration: none;
+
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--outline--radiant-spring-2024 {
+        padding: 0.4rem .8rem;
+        font-size: .7rem;
+    }
+}
+
+/* Intro */
+.radiant-intro {
+    /* background-color: #F4974C; 
+    color: #202020; */
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.rad-intro-text {
+    text-align: left;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rad-intro-img--small {
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .rad-intro-text {
+        height: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .rad-intro-img--small {
+        height: 120px;
+    }
+}
+
+/* Radiant info */
+.rad-flex-info--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-color: #F0EFEE;
+}
+
+.rad-flex-info--item-left {
+    flex-basis: 30%;
+    padding: 3rem;
+    align-self: center;
+}
+
+.rad-flex-info--item-right {
+    flex-basis: 70%;
+    padding: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .rad-flex-info--container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rad-flex-info--item-left {
+        flex-basis: 100%;
+        padding: 1.5rem 3rem 1rem;
+    }
+
+    .rad-flex-info--item-right {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .rad-flex-info--item-left {
+        padding: 1.5rem 2rem 1rem;
+    }
+
+    .rad-flex-info--item-right {
+        padding: 2rem;
+    }
+}
+/* ===== WOM Radiant Fall Bible Study 2024 ===== */
+
+
+/* ===== Ash Wednesday 2024 =====  */
+/* Ash Wednesday Button  */
+.twmc--btn--lent  {
+    border: 2px solid #6E6967;
+    background-color: #6E6967;
+    color: #fff;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--lent:hover,
+.twmc--btn--lent:focus {
+    background-color: rgba(110,105,103, .2) !important;
+    text-decoration: none;
+    color: #6E6967;
+
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 576px){ 
+    .twmc--btn--lent  {
+        min-width: 100px;
+        margin-bottom: 5px;
+        /* margin-right: 5px; */
+        font-size: .7rem;
+    }
+}
+
+/* Ash Wednesday Hero */
+#twmc-hero-ashwednesday2024 {
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(240, 239, 238, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/WOR_AshWednesday_Background.jpg"); */
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/WOR_AshWednesday_Background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center left;
+    color: #fff ;
+    height: 650px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #twmc-hero-ashwednesday2024 {
+        background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0.3), rgba(255, 255, 255, 0.8), rgba(229, 229, 229, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/WOR_AshWednesday_Background.jpg");
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-hero-ashwednesday2024 {
+        background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0.3), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(229, 229, 229, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/WOR_AshWednesday_Background.jpg");
+        height: 450px;
+    }
+}
+
+.twmc-lent__hero-text-wrapper {
+    width: 55%;
+    float: right;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen  and (max-width: 991px) {
+    .twmc-lent__hero-text-wrapper {
+        width: 80%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen  and (max-width: 768px) {
+    .twmc-lent__hero-text-wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen  and (max-width: 576px) {
+    .twmc-lent__hero-text-wrapper {
+        height: 450px;
+    }
+}
+
+@media only screen  and (max-width: 300px) {
+    .twmc-lent__hero-text-wrapper {
+        width: 95%;
+    }
+}
+
+.twmc-lent--brown {
+    color: #524C4B;
+}
+
+/* cards */
+.twmc-card--box-shadow {
+    padding:  1.5rem 2rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-card--box-shadow2 {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 25%);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-card--box-shadow {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Utilities - 2 Columns Messages List */
+.twmc-flex-container--2-col-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.twmc-flex-item--2-col-center {
+    flex-basis: 49%;
+    overflow: visible;
+
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .twmc-flex-container--2-col-center {
+        gap: 0;
+    }
+    .twmc-flex-item--2-col-center {
+        flex-basis: 100%;
+    }
+}
+
+/* Christmas Services */
+.card-small-container--2-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.card-small-item--2-col {
+    flex-basis: 49%;
+    overflow: visible;
+    /* flex-grow: 2; */
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-small-container--2-col {
+        gap: 0;
+    }
+
+    .card-small-item--2-col {
+        flex-basis: 100%;
+    }
+}
+
+.card-content-lightgrey {
+    background-color: #f6f6f6;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+/* ===== End of Ash Wednesday 2024 =====  */
+
+/* ===== Easter 2024 ===== */
+/* Hero */
+#twmc-hero__easter2024 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/est_bg.png");   
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#twmc-hero__easter2024 > .container-fluid.hero--img__text-wrapper {
+    max-width: 50%;
+    padding-bottom: 6rem;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  #twmc-hero__easter2024{
+    height: 500px;
+  }
+
+  #twmc-hero__easter2024 > .container-fluid.hero--img__text-wrapper {
+    max-width: 60%;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #twmc-hero__easter2024{
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/est_bg_mobile5.png");
+  }
+
+  #twmc-hero__easter2024 > .container-fluid.hero--img__text-wrapper {
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #twmc-hero__easter2024 {
+      height: 400px;
+  }
+
+  #twmc-hero__easter2024 > .container-fluid.hero--img__text-wrapper {
+      padding-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  #twmc-hero__easter2024 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/est_bg_mobile6.png");
+  }
+
+  #twmc-hero__easter2024 > .container-fluid.hero--img__text-wrapper  {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #twmc-hero__easter2024 {
+      height: 300px;
+  }
+
+  #twmc-hero__easter2024 > .container-fluid.hero--img__text-wrapper  {
+    max-width: 90%;
+  }
+
+}
+/* End of Hero */
+
+/* Intro */
+#twmc-easter2024-intro {
+    background-color: #71853A;
+    color: #E8E7DF;
+    text-align: justify;
+
+}
+
+.twmc-easter2024-intro--text {
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.twmc-card--box-shadow-green {
+    padding:  1.5rem 2rem;
+    box-shadow: 0 2px 20px rgb(113 133 58 / 20%);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-card--box-shadow-green {
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+/* End of Intro */
+
+/* Buttons */
+.twmc--btn--easter2024 {
+    border: 2px solid #71853A;
+    background-color: #71853A;
+    color: #f5f5f5;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--easter2024:hover,
+.twmc--btn--easter2024:focus {
+    border-color: #5A6A2E;
+    background-color: #5A6A2E;
+    text-decoration: none;
+    color: #f5f5f5;
+
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-h3 {
+        font-size: 1.2rem !important;
+    }
+}
+
+.twmc--btn--tag {
+    display: inline-block;
+    color: #333;
+    font-size: .5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: var(--color-light-grey2);
+    border: 1px solid var(--color-light-grey2);
+    border-radius: .25rem;
+    padding: .3rem .45rem .2rem;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+/* End of Buttons */
+
+/* Holy Week */
+.text-easter2024--green {
+    color: #71853A;
+}
+
+a.text-easter2024--green:hover,
+a.text-easter2024--green:focus {
+    color: #5A6A2E;
+
+}
+
+.twmc-easter2024--ribbon {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_patterns-stock/spikes.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://www.toptal.com/designers/subtlepatterns/uploads/brushed_alu.png");
+    
+}
+
+.twmc-easter2024--ribbon2 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_patterns-stock/symphony.png");
+}
+
+.twmc-easter2024--ribbon3 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2148999007.jpg?size=626&ext=jpg&uid=R34955440&ga=GA1.1.1722712058.1706907268&semt=ais");
+}
+
+/* Cards 2024 */
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-ribbon-card--inner-wrapper {
+    padding: 3rem 3rem 2rem;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-ribbon-card--inner-wrapper {
+        padding: 2rem 2rem 1rem;
+    }
+}
+
+
+/* ===== End of Easter 2024 ===== */
+
+
+/* ===== Rhythms Resources ===== */
+/* Hero */
+#twmc-rhythms2024-hero {
+    background-image: url("https://images.unsplash.com/photo-1543157145-f78c636d023d?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");   
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#twmc-rhythms2024-hero > .container-fluid.hero--img__text-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    #twmc-rhythms2024-hero > .container-fluid.hero--img__text-wrapper {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-rhythms2024-hero {
+        height: 500px;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-rhythms2024-hero {
+        height: 450px;
+        padding-bottom: 0;
+    }
+
+    #twmc-rhythms2024-hero > .container-fluid.hero--img__text-wrapper {
+        max-width: 95%;
+    }
+}
+/* End of Hero */
+
+/* Intro */
+#twmc-rhythms2024-intro {
+    background-color: #f0c7c8;
+    color: #333;
+
+}
+
+.twmc-rhythms2024-intro--text {
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+/* End of Intro */
+
+/* Cards 2024 */
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-ribbon-card--inner-wrapper {
+    padding: 3rem 3rem 2rem;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-ribbon-card--inner-wrapper {
+        padding: 2rem 2rem 1rem;
+    }
+}
+
+.twmc-rhythms2024--ribbon {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_patterns-stock/symphony.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_patterns-stock/seigaiha.png");
+}
+/* End of Cards 2024 */
+
+/* Adoration */
+
+
+/* End of Adoration */
+
+/* ===== End of Rhythms Resources ===== */
