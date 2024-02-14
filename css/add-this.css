@@ -1,4 +1,15 @@
-body {
+:root {
+    --primary-color: #248503;
+    --darker-shade: #1E6B03;
+    --lighter-shade: #4CAF50;
+    --secondary-color: #FFC107;
+    --accent-color: #E91E63;
+    --translucent: rgba(66, 255, 3, 0.3);
+
+  }
+  
+
+.body {
     background-color: #000;
     background-image: radial-gradient(circle at center, #00ff00, #f8f8f8);
     animation: glow 5s infinite alternate;
@@ -12,3 +23,71 @@ body {
         box-shadow: 0 0 20px #00ff00, 0 0 90px #00ff00, 0 0 150px #00ff00;
     }
 }
+
+.img-circle {
+    border-radius: 50%;
+    width: 180px; 
+    height: 180px; 
+    object-fit: cover;
+  }
+
+  .border-2 {
+    border: 8px solid var(--translucent);
+  }
+
+  .border-0 {
+    border: 0px;
+  }
+
+  .fst-italic {
+    font-style: italic;
+  }
+
+  .bg-green-translucent {
+    background-color: rgba(66, 255, 3, 0.3);
+
+    
+  }
+
+  .twmc--btn--map-conference2 {
+    background-color: rgba(66, 255, 3, 0.3);
+    color: #333;
+    border:#333
+  }
+
+  .hero-text {
+    font-size: 4em; /* Increased font size */
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #000; /* Cursor effect */
+    animation: animated-text 4s steps(17, end) 1s 1 normal both,
+               animated-cursor 600ms steps(17, end) infinite;
+  }
+
+  @keyframes animated-text {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    80% {
+      width: 100%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes animated-cursor {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
