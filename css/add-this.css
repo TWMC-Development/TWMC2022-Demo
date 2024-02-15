@@ -141,7 +141,7 @@
   grid-template-columns: repeat(auto-fit, minmax(calc(50% - 1rem), 1fr));
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .grid-2  {      grid-template-columns: repeat(auto-fit, minmax(calc(50% - 1rem), 1fr));
   }
   .vh-0 {
@@ -165,3 +165,7 @@
   max-height: 0;
 }
 
+.nudge-down{
+  position: relative;
+  top: 8px;
+}
