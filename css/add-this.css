@@ -169,3 +169,15 @@
   position: relative;
   top: 8px;
 }
+
+._grid-1x3 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;  
+}
+
+@media (max-width: 576px) {
+  ._grid-1x3 {
+    grid-template-columns: 1fr;  
+  }
+}

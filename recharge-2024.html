@@ -36,7 +36,6 @@
 
     <!-- Script -->
     <script src="/js/script2023.js"></script>
-
   </head>
   <body>
     <!-- ===== NAVBAR ===== -->
@@ -1192,68 +1191,78 @@
     <!-- End of Guest speakers -->
 
     <!-- script for toggle function  -->
-   <!-- script for toggle function  -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Initial setup to hide only the Saturday containers
-    var saturdayContainers = document.querySelectorAll('.container-fluid.saturday');
-    saturdayContainers.forEach(function(saturdayContainer) {
-      saturdayContainer.classList.add('hidden');
-    });
+    <!-- script for toggle function  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initial setup to hide only the Saturday containers
+        var saturdayContainers = document.querySelectorAll(
+          ".container-fluid.saturday"
+        );
+        saturdayContainers.forEach(function (saturdayContainer) {
+          saturdayContainer.classList.add("hidden");
+        });
 
-    // Function to toggle display based on selected day and add outline
-    var filterButtons = document.querySelectorAll('.filter-button');
-    filterButtons.forEach(function(filterButton) {
-      filterButton.addEventListener('click', function(e) {
-        e.preventDefault();
+        // Function to toggle display based on selected day and add outline
+        var filterButtons = document.querySelectorAll(".filter-button");
+        filterButtons.forEach(function (filterButton) {
+          filterButton.addEventListener("click", function (e) {
+            e.preventDefault();
 
-        // Check if the clicked day is already showing
-        var targetDay = this.dataset.target;
-        var targetContainers = document.querySelectorAll(`.container-fluid.${targetDay}`);
-        var isAlreadyShowing = !targetContainers[0].classList.contains('hidden');
+            // Check if the clicked day is already showing
+            var targetDay = this.dataset.target;
+            var targetContainers = document.querySelectorAll(
+              `.container-fluid.${targetDay}`
+            );
+            var isAlreadyShowing =
+              !targetContainers[0].classList.contains("hidden");
 
-        if (!isAlreadyShowing) {
-          // Hide opposite day
-          var oppositeDay = targetDay === 'friday' ? 'saturday' : 'friday';
-          var oppositeContainers = document.querySelectorAll(`.container-fluid.${oppositeDay}`);
-          oppositeContainers.forEach(function(oppositeContainer) {
-            oppositeContainer.classList.add('hidden');
+            if (!isAlreadyShowing) {
+              // Hide opposite day
+              var oppositeDay = targetDay === "friday" ? "saturday" : "friday";
+              var oppositeContainers = document.querySelectorAll(
+                `.container-fluid.${oppositeDay}`
+              );
+              oppositeContainers.forEach(function (oppositeContainer) {
+                oppositeContainer.classList.add("hidden");
+              });
+
+              // Toggle visibility of the clicked day
+              targetContainers.forEach(function (targetContainer) {
+                targetContainer.classList.toggle("hidden");
+              });
+
+              // Add outline to the clicked day
+              filterButtons.forEach(function (btn) {
+                btn.classList.remove("selected-day");
+              });
+              this.classList.add("selected-day");
+            }
           });
+        });
 
-          // Toggle visibility of the clicked day
-          targetContainers.forEach(function(targetContainer) {
-            targetContainer.classList.toggle('hidden');
-          });
+        // Start with Friday showing
+        var fridayContainers = document.querySelectorAll(
+          ".container-fluid.friday"
+        );
+        fridayContainers.forEach(function (fridayContainer) {
+          fridayContainer.classList.remove("hidden");
+        });
 
-          // Add outline to the clicked day
-          filterButtons.forEach(function(btn) {
-            btn.classList.remove('selected-day');
-          });
-          this.classList.add('selected-day');
-        }
+        // Add initial outline to Friday
+        filterButtons.forEach(function (btn) {
+          btn.classList.remove("selected-day");
+        });
+        document
+          .querySelector('.filter-button[data-target="friday"]')
+          .classList.add("selected-day");
       });
-    });
+    </script>
+    <!-- end script for toggle function -->
 
-    // Start with Friday showing
-    var fridayContainers = document.querySelectorAll('.container-fluid.friday');
-    fridayContainers.forEach(function(fridayContainer) {
-      fridayContainer.classList.remove('hidden');
-    });
-
-    // Add initial outline to Friday
-    filterButtons.forEach(function(btn) {
-      btn.classList.remove('selected-day');
-    });
-    document.querySelector('.filter-button[data-target="friday"]').classList.add('selected-day');
-  });
-</script>
-<!-- end script for toggle function -->
-
-    
     <!-- end script for toggle function -->
 
     <!-- breakout section  -->
-    <section class="pt-6 pb-3 center-everything">
+    <section class="pt-4 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
@@ -1277,140 +1286,241 @@
                 >
               </p>
             </span>
-            <!-- friday card -->
+            <!-- Friday card -->
             <div class="container-fluid p-2 hidden friday">
               <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10 col-sm-offset-1">
                   <div
-                    class="card twmc-lightgrey-card rounded pt-2 pb-3 border-0"
+                    class="card p-4 rounded pt-4 pb-3 border-0 _grid-1x3"
+                    style="background-color: rgb(255, 160, 0, 0.1); color: #333"
                   >
-                    <div class="card-body d-flex justify-content-between">
-                      <div>
-                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
-                        <div class="d-flex justify-content-left">
-                          <span
-                            class="badge badge-secondary p-2 px-3"
-                            style="
-                              font-size: 14px;
-                              background-color: rgb(0, 122, 204, 0.3);
-                              color: #333;
-                            "
-                            >Harvest Foyer
-                          </span>
-                        </div>
-                      </div>
-                      <div class="pl-5">
-                        <h4 class="  ">Doors Open/Registration</h4>
-                        <p class="  ">
-                          some info about registrationhere goes some info about
-                          registration
-                        </p>
+                    <!-- 1/3 side -->
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
                       </div>
                     </div>
-                    <div class="card-body d-flex justify-content-between">
-                      <div>
-                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
-                        <div class="d-flex justify-content-left">
-                          <span
-                            class="badge badge-secondary p-2 px-3"
-                            style="
-                              font-size: 14px;
-                              background-color: rgb(0, 122, 204, 0.3);
-                              color: #333;
-                            "
-                            >Harvest Foyer
-                          </span>
-                        </div>
-                      </div>
-                      <h4 class="nudge-down">Doors Open/Registration</h4>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
                     </div>
-                    <div class="card-body d-flex justify-content-between">
-                      <div>
-                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
-                        <div class="d-flex justify-content-left">
-                          <span
-                            class="badge badge-secondary p-2 px-3"
-                            style="
-                              font-size: 14px;
-                              background-color: rgb(0, 122, 204, 0.3);
-                              color: #333;
-                            "
-                            >Harvest Foyer
-                          </span>
-                        </div>
+
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
                       </div>
-                      <h4 class="nudge-down">Doors Open/Registration</h4>
+                    </div>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
+                    </div>
+
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
+                    </div>
+
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
+                    </div>
+
+                    <!-- Another 1/3 side -->
+                    <div>
+                      <p class="text-center">6:30 - 6:45 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Remaining 2/3 side -->
+                    <div class="text-left">
+                      <p>Worship</p>
+                      <p>Bristol House</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- End of Friday card -->
 
             <!-- Saturday card -->
 
             <div class="container-fluid p-2 hidden saturday">
               <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-10 col-sm-offset-1">
                   <div
-                    class="card twmc-lightgrey-card rounded pt-2 pb-3 border-0"
+                    class="card p-4 rounded pt-4 pb-3 border-0 _grid-1x3"
+                    style="background-color: rgb(0, 122, 204, 0.1); color: #333"
                   >
-                    <div class="card-body d-flex justify-content-between">
-                      <div>
-                        <h4 style="font-weight: 600">SATURDAY 5:30p.m. - 6:30p.m.</h4>
-                        <div class="d-flex justify-content-left">
-                          <span
-                            class="badge badge-secondary p-2 px-3"
-                            style="
-                              font-size: 14px;
-                              background-color: rgb(0, 122, 204, 0.3);
-                              color: #333;
-                            "
-                            >Harvest Foyer
-                          </span>
-                        </div>
-                      </div>
-                      <div class="pl-5">
-                        <h4 class="  ">Doors Open/Registration</h4>
-                        <p class="  ">
-                          some info about registrationhere goes some info about
-                          registration
-                        </p>
+                    <!-- 1/3 side -->
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
                       </div>
                     </div>
-                    <div class="card-body d-flex justify-content-between">
-                      <div>
-                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
-                        <div class="d-flex justify-content-left">
-                          <span
-                            class="badge badge-secondary p-2 px-3"
-                            style="
-                              font-size: 14px;
-                              background-color: rgb(0, 122, 204, 0.3);
-                              color: #333;
-                            "
-                            >Harvest Foyer
-                          </span>
-                        </div>
-                      </div>
-                      <h4 class="nudge-down">Doors Open/Registration</h4>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
                     </div>
-                    <div class="card-body d-flex justify-content-between">
-                      <div>
-                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
-                        <div class="d-flex justify-content-left">
-                          <span
-                            class="badge badge-secondary p-2 px-3"
-                            style="
-                              font-size: 14px;
-                              background-color: rgb(0, 122, 204, 0.3);
-                              color: #333;
-                            "
-                            >Harvest Foyer
-                          </span>
-                        </div>
+
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
                       </div>
-                      <h4 class="nudge-down">Doors Open/Registration</h4>
+                    </div>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
+                    </div>
+
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
+                    </div>
+
+                    <div>
+                      <p class="text-center">5:30 - 6:30 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 2/3 side -->
+                    <div class="text-left">
+                      <p>Doors Open/Registration</p>
+                      <p>Food Provided</p>
+                    </div>
+
+                    <!-- Another 1/3 side -->
+                    <div>
+                      <p class="text-center">6:30 - 6:45 p.m.</p>
+                      <div class="d-flex justify-content-center">
+                        <span
+                          class="badge badge-secondary p-2 px-3"
+                          style="
+                            font-size: 14px;
+                            background-color: rgb(0, 122, 204, 0.3);
+                            color: #333;
+                          "
+                          >Harvest Foyer</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Remaining 2/3 side -->
+                    <div class="text-left">
+                      <p>Worship</p>
+                      <p>Bristol House</p>
                     </div>
                   </div>
                 </div>
