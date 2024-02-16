@@ -36,6 +36,7 @@
 
     <!-- Script -->
     <script src="/js/script2023.js"></script>
+
   </head>
   <body>
     <!-- ===== NAVBAR ===== -->
@@ -474,7 +475,7 @@
         <img
           src="https://s3.us-east-2.amazonaws.com/rockrms-assets/icons/starish.png "
           class="mar-map--bio-img"
-          style="position: relative; top: 560px; right: 30px; max-height: 40px"
+          style="position: relative; top: 340px; right: 30px; max-height: 40px"
         />
       </div>
     </section>
@@ -1190,37 +1191,92 @@
     </section>
     <!-- End of Guest speakers -->
 
+    <!-- script for toggle function  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initial setup to hide all cards
+        var containerFluids = document.querySelectorAll('.container-fluid');
+        containerFluids.forEach(function(containerFluid) {
+          containerFluid.classList.add('hidden');
+        });
+    
+        // Function to toggle display based on selected day and add outline
+        var filterButtons = document.querySelectorAll('.filter-button');
+        filterButtons.forEach(function(filterButton) {
+          filterButton.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            // Check if the clicked day is already showing
+            var targetDay = this.dataset.target;
+            var targetContainers = document.querySelectorAll(`.container-fluid.${targetDay}`);
+            var isAlreadyShowing = !targetContainers[0].classList.contains('hidden');
+    
+            if (!isAlreadyShowing) {
+              // Hide opposite day
+              var oppositeDay = targetDay === 'friday' ? 'saturday' : 'friday';
+              var oppositeContainers = document.querySelectorAll(`.container-fluid.${oppositeDay}`);
+              oppositeContainers.forEach(function(oppositeContainer) {
+                oppositeContainer.classList.add('hidden');
+              });
+    
+              // Toggle visibility of the clicked day
+              targetContainers.forEach(function(targetContainer) {
+                targetContainer.classList.toggle('hidden');
+              });
+    
+              // Add outline to the clicked day
+              filterButtons.forEach(function(btn) {
+                btn.classList.remove('selected-day');
+              });
+              this.classList.add('selected-day');
+            }
+          });
+        });
+    
+        // Start with Friday showing
+        var fridayContainers = document.querySelectorAll('.container-fluid.friday');
+        fridayContainers.forEach(function(fridayContainer) {
+          fridayContainer.classList.remove('hidden');
+        });
+    
+        // Add initial outline to Friday
+        filterButtons.forEach(function(btn) {
+          btn.classList.remove('selected-day');
+        });
+        document.querySelector('.filter-button[data-target="friday"]').classList.add('selected-day');
+      });
+    </script>
+    
+    
+    <!-- end script for toggle function -->
+
     <!-- breakout section  -->
-    <section class="pt-6 pb-3 vh-100 center-everything">
+    <section class="pt-6 pb-3 center-everything">
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
-            <h2 class="twmc-h3 text-center">Breakout Schedule</h2>
+            <h2 class="twmc-h3 text-center">Agenda</h2>
             <span class="text-center">
               <p class="font-weight">
                 Filter by date |
                 <a
-                  href=" "
-                  class="twmc--btn"
-                  target="_blank"
+                  href="#"
+                  class="twmc--btn filter-button"
+                  data-target="friday"
                   style="background-color: rgb(255, 160, 0, 0.3); color: #333"
                   >Friday</a
                 >
                 <a
-                  href=" "
-                  class="twmc--btn"
-                  target="_blank"
-                  style="
-                    background-color: rgb(0, 122, 204, 0.3);
-
-                    color: #333;
-                  "
-                  >Saturday
-                </a>
+                  href="#"
+                  class="twmc--btn filter-button"
+                  data-target="saturday"
+                  style="background-color: rgb(0, 122, 204, 0.3); color: #333"
+                  >Saturday</a
+                >
               </p>
             </span>
             <!-- friday card -->
-            <div class="container-fluid p-2">
+            <div class="container-fluid p-2 hidden friday">
               <div class="row">
                 <div class="col-sm-12">
                   <div
@@ -1228,7 +1284,7 @@
                   >
                     <div class="card-body d-flex justify-content-between">
                       <div>
-                        <h4 style="font-weight: 600;">5:30p.m. - 6:30p.m.</h4>
+                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
                         <div class="d-flex justify-content-left">
                           <span
                             class="badge badge-secondary p-2 px-3"
@@ -1241,16 +1297,17 @@
                           </span>
                         </div>
                       </div>
-                      <div class=" pl-5 ">
-                      <h4 class="  ">Doors Open/Registration</h4>
-                      <p class="  "> some info about registrationhere goes some info about registration</p>
-                      
-                      
-                    </div>
+                      <div class="pl-5">
+                        <h4 class="  ">Doors Open/Registration</h4>
+                        <p class="  ">
+                          some info about registrationhere goes some info about
+                          registration
+                        </p>
+                      </div>
                     </div>
                     <div class="card-body d-flex justify-content-between">
                       <div>
-                        <h4 style="font-weight: 600;">5:30p.m. - 6:30p.m.</h4>
+                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
                         <div class="d-flex justify-content-left">
                           <span
                             class="badge badge-secondary p-2 px-3"
@@ -1267,7 +1324,7 @@
                     </div>
                     <div class="card-body d-flex justify-content-between">
                       <div>
-                        <h4 style="font-weight: 600;">5:30p.m. - 6:30p.m.</h4>
+                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
                         <div class="d-flex justify-content-left">
                           <span
                             class="badge badge-secondary p-2 px-3"
@@ -1286,9 +1343,79 @@
                 </div>
               </div>
             </div>
+            <!-- End of Friday card -->
 
-            <!-- saturday card -->
+            <!-- Saturday card -->
+
+            <div class="container-fluid p-2 hidden saturday">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div
+                    class="card twmc-lightgrey-card rounded pt-2 pb-3 border-0"
+                  >
+                    <div class="card-body d-flex justify-content-between">
+                      <div>
+                        <h4 style="font-weight: 600">SATURDAY 5:30p.m. - 6:30p.m.</h4>
+                        <div class="d-flex justify-content-left">
+                          <span
+                            class="badge badge-secondary p-2 px-3"
+                            style="
+                              font-size: 14px;
+                              background-color: rgb(0, 122, 204, 0.3);
+                              color: #333;
+                            "
+                            >Harvest Foyer
+                          </span>
+                        </div>
+                      </div>
+                      <div class="pl-5">
+                        <h4 class="  ">Doors Open/Registration</h4>
+                        <p class="  ">
+                          some info about registrationhere goes some info about
+                          registration
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between">
+                      <div>
+                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
+                        <div class="d-flex justify-content-left">
+                          <span
+                            class="badge badge-secondary p-2 px-3"
+                            style="
+                              font-size: 14px;
+                              background-color: rgb(0, 122, 204, 0.3);
+                              color: #333;
+                            "
+                            >Harvest Foyer
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="nudge-down">Doors Open/Registration</h4>
+                    </div>
+                    <div class="card-body d-flex justify-content-between">
+                      <div>
+                        <h4 style="font-weight: 600">5:30p.m. - 6:30p.m.</h4>
+                        <div class="d-flex justify-content-left">
+                          <span
+                            class="badge badge-secondary p-2 px-3"
+                            style="
+                              font-size: 14px;
+                              background-color: rgb(0, 122, 204, 0.3);
+                              color: #333;
+                            "
+                            >Harvest Foyer
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="nudge-down">Doors Open/Registration</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- End of Saturday card -->
         </div>
       </div>
     </section>
