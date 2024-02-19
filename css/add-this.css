@@ -5,6 +5,8 @@
     --secondary-color: #FFC107;
     --accent-color: #E91E63;
     --translucent: rgba(66, 255, 3, 0.3);
+    --hot-green:  #c3fac2;
+    --text-black: #333;
 
   }
   
@@ -98,7 +100,7 @@
 
 .grid-4 {
   display: grid;
-  gap: 1rem;
+  gap: .5rem;
   grid-template-columns: repeat(auto-fit, minmax(calc(25% - 1rem), 1fr));
 }
 
@@ -180,4 +182,31 @@
   ._grid-1x3 {
     grid-template-columns: 1fr;  
   }
+}
+
+
+.outlined-attn {
+  background-color: var(--hot-green);
+  color: var(--text-black);
+  font-size: 12px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.img-circle-sm {
+  border-radius: 50%;
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover;
+}
+
+.border-1 {
+  border: 3px solid var(--translucent);
+}
+
+.nudge-down-3 {
+  position: relative;
+  top: 22px;
 }
