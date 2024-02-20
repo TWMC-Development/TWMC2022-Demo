@@ -11,11 +11,13 @@
 
   }
   
-.body {
+  .body {
     background-color: #000;
     background-image: radial-gradient(circle at center, #00ff00, #f8f8f8);
     animation: glow 5s infinite alternate;
-}
+    font-family: 'Playfair Display', serif;  
+    font-weight: 700;  
+  }
 
 .img-circle {
     border-radius: 50%;
@@ -23,6 +25,12 @@
     height: 180px; 
     object-fit: cover;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;  
+    font-weight: 700;  
+  }
+
 
   .border-2 {
     border: 8px solid var(--translucent);
@@ -217,4 +225,17 @@
   border-bottom: 2px solid var(--accent-2);  
   padding-bottom: 10px;   
 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 700; 
+}
+
+.tracking-wide {
+  letter-spacing: 0.1em;
+}
+
+.larger {
+  font-size: 1.5em;
 }
