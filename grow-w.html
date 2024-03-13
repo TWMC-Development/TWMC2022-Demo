@@ -152,56 +152,197 @@
         </section>
         <!-- end of page title -->
 
-        <!-- grow navigation -->
-        <section class="twmc-connect">
-            <div class="container-fluid">
+        <!-- Intro -->
+        <style>
+        /* === GROW Squares small === */
+        .square-container-small {
+            padding: 0 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .square-small {
+            width: 100px;
+            height: 100px;
+            text-transform: uppercase;
+            color: white;
+            margin: 5px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            transition: all .4s ease-in-out; 
+        }
+        
+        .square:hover,
+        .square-small:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        
+        .grow-intro-text {
+            padding-left: 10px;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .square-small {
+                width: 75px;
+                height: 75px;
+                margin: 4px;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .square-container-small {
+                justify-content: center;
+                margin-top: 2.5rem;
+            }
+        
+            .grow-intro-text {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (max-width: 576px) {
+            .square-container-small {
+                margin-top: 1.7rem;
+            }
+        }
+        
+        @media only screen and (max-width: 400px) {
+            .square-small {
+                width: 56px;
+                height: 56px;
+                margin: 2px;
+            }
+        }
+        
+        /* Square colors - small */
+        .square-g-small {
+            background-color: var(--color-periwinkle);
+        }
+        
+        .square-g-small:hover {
+            background-color: var(--color-periwinkle2);
+            
+        }
+        
+        .square-r-small {
+            background-color: var(--color-watermelon);
+        }
+        
+        .square-r-small:hover {
+            background-color: var(--color-watermelon2);
+        }
+        
+        .square-o-small {
+            background-color: var(--color-paris-green);
+        }
+        
+        .square-o-small:hover {
+            background-color: var(--color-paris-green2);
+        }
+        
+        .square-w-small {
+            background-color: var(--color-canary-yellow);
+        }
+        
+        .square-w-small:hover {
+            background-color: var(--color-canary-yellow2);
+        }
+        
+        .square-active-small {
+            pointer-events: none;
+        }
+        
+        .square-g-small > h2,
+        .square-r-small > h2, 
+        .square-o-small > h2, 
+        .square-w-small > h2,
+        .square-active-small > h2  {
+            font-size: 50px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .square-g-small > h2,
+            .square-r-small > h2, 
+            .square-o-small > h2, 
+            .square-w-small > h2 {
+                font-size: 40px;
+            }
+        }
+        
+        @media only screen and (max-width: 400px) {
+            .square-g-small > h2,
+            .square-r-small > h2, 
+            .square-o-small > h2, 
+            .square-w-small > h2 {
+                font-size: 30px;
+            }
+        }
+        
+        /* === End of GROW Squares small === */
+        </style>
+        
+        <section class="twmc-section__pymed-white">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <div class="square-container">
-                            <a href="./grow-g.html" class="square__link">
-                                <div class="square square-g">
+                    <div class="col-sm-6">
+                        <div class="embed-container"><iframe src="https://player.vimeo.com/video/827787010" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"></iframe></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="square-container-small">
+                            <a href="/gather" class="square__link">
+                                <div class="square-small square-g-small">
                                     <h2>g</h2>
                                 </div>
                             </a>
-        
-                            <a href="./grow-r.html" class="square__link">
-                                <div class="square square-r">
-                                    <h2>
-                                        <h2>r</h2>
-                                    </h2>
+                            <a href="/raise" class="square__link">
+                                <div class="square-small square-r-small">
+                                    <h2>r</h2>
                                 </div>
                             </a>
-        
-                            <a href="./grow-o.html" class="square__link">
-                                <div class="square square-o">
+                            
+                            <a href="/outward" class="square__link">
+                                <div class="square-small square-o-small">
                                     <h2>o</h2>
                                 </div>
                             </a>
-        
-                            <!-- active O button, no link -->
-                            <div class="square square-w square-active">
+                            <!-- Active W button, no link -->
+                            <div class="square-small square-w-small square-active-small">
                                 <h2>w</h2>
                             </div>
                         </div>
-                        <div class="grow-g__intro-text">
+                            
+        
+                        <div class="grow-intro-text">
                             <p>Each day is an opportunity to grow in our relationship with God. Our faith journey is a walk where we commit to following Jesus closely through worship, prayer and spiritual disciplines (practices). Our relationship with God is deeply personal, but it's also communal. We worship with our lives, and we also worship together on the weekends. We pray personally, but there is also great power in praying together. When we walk closely with God throughout our faith journey, evidence of life transformation is noticeable to us and others.</p>
                         </div>
                     </div>
-
-                    
                 </div>
-               
-                    
-
-               
-                
             </div>
-
         </section>
-        <!-- end of grow navigation -->
+        <!-- End of intro -->
 
         <!-- worship videos -->
-        <section id="grow-w__worship" class="twmc-grow__section">
+        <style>
+            @media only screen and (max-width:400px) {
+            .twmc-btn__right {
+                margin-left: 0 !important;
+            }
+        }
+        </style>
+        
+        <section id="grow-w__worship" class="twmc-grow__section twmc-p">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-8 col-sm-offset-2">
@@ -211,9 +352,9 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-
+        
                         <div class="twmc-flex-container--2-col__video ">
-
+        
                             <!-- traditional -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">TRADITIONAL</h3>
@@ -225,7 +366,7 @@
                                 <a href="#mapModalTraditional" data-toggle="modal" data-target="#mapModalTraditional" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a>
                                 <a href="https://twumc.online.church/" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a>
                             </div>
-
+        
                             <!-- traditional map modal -->
                             <div class="modal fade  twmc-modal-map" id="mapModalTraditional" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelTraditional">
                                 <div class="modal-dialog" role="document">
@@ -240,7 +381,7 @@
                                 </div>
                                 </div>
                             </div>
-
+        
                             <!-- chapel -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">CHAPEL</h3>
@@ -252,7 +393,7 @@
                                 <a href="#mapModalChapel" data-toggle="modal" data-target="#mapModalChapel" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a>
                                 <!-- <a href="#" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a> -->
                             </div>
-
+        
                             <!-- chapel map modal -->
                             <div class="modal fade  twmc-modal-map" id="mapModalChapel" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelChapel">
                                 <div class="modal-dialog" role="document">
@@ -267,7 +408,7 @@
                                 </div>
                                 </div>
                             </div>
-
+        
                             <!-- harvest -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">CONTEMPORARY AT HARVEST</h3>
@@ -279,7 +420,7 @@
                                 <a href="#mapModalHarvest" data-toggle="modal" data-target="#mapModalHarvest" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a>
                                 <a href="https://harvesttwumc.online.church/" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a>
                             </div>
-
+        
                             <!-- harvest map modal -->
                             <div class="modal fade" id="mapModalHarvest" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelHarvest">
                                 <div class="modal-dialog" role="document">
@@ -294,7 +435,7 @@
                                 </div>
                                 </div>
                             </div>
-
+        
                             <!-- loft -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">MODERN AT LOFT</h3>
@@ -306,7 +447,7 @@
                                 <a href="#mapModalLoft" data-toggle="modal" data-target="#mapModalLoft" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a>
                                 <a href="https://loftchurch.online.church/" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a>
                             </div>
-
+        
                             <!-- loft map modal -->
                             <div class="modal fade" id="mapModalLoft" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelLoft">
                                 <div class="modal-dialog" role="document">
@@ -321,35 +462,7 @@
                                 </div>
                                 </div>
                             </div>
-
-
-                            <!-- woodforest -->
-                            <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
-                                <h3 class="twmc-h3 grow-w__worship-title">CONTEMPORARY / WOODFOREST</h3>
-                                <div class='embed-container'>
-                                    <iframe src='https://player.vimeo.com/video/646148987' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                                </div>
-                                <p class="twmc-p mt-4">You’re invited to worship with this “front porch” community of believers at the Church at Woodforest. We love to share our uplifting worship music and engaging Bible teaching with families and individuals of all ages. Join us on Sunday morning and be inspired for the rest of your week... <a href="https://thewoodlandsmethodist.org/woodforest" class="twmc-nav__link3 grow-w--text-color-canary-yellow2">Learn&nbsp;more&nbsp;&rarr;</a></p> 
-                                <p><strong>Sundays at 9:30 and 11:00 a.m.</strong></p>
-                                <a href="#mapModalWoodforest" data-toggle="modal" data-target="#mapModalWoodforest" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a>
-                                <a href="https://woodforest.online.church/" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a>
-                            </div>
-
-                            <!-- woodforest map modal -->
-                            <div class="modal fade" id="mapModalWoodforest" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelWoodforest">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h3 class="twmc-h3" id="mapModalLabelWoodforest">Woodforest</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                    <img src="https://www.thewoodlandsmethodist.org/themes/TWUMC2018/Assets/images/CAW_RockMap_Update.png" alt="Worship Community Location Map" class="img-responsive">
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
+        
                             <!-- espanol -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">EN ESPAÑOL</h3>
@@ -361,7 +474,7 @@
                                 <a href="#mapModalEspanol" data-toggle="modal" data-target="#mapModalEspanol" class="twmc--btn__grow twmc--btn__grow-w">Dirección</a>
                                 <!-- <a href="#" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Ver en línea</a> -->
                             </div>
-
+        
                             <!-- espanol map modal -->
                             <div class="modal fade" id="mapModalEspanol" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelEspanol">
                                 <div class="modal-dialog" role="document">
@@ -376,8 +489,8 @@
                                 </div>
                                 </div>
                             </div>
-
-
+        
+        
                             <!-- students -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">STUDENTS</h3>
@@ -389,7 +502,7 @@
                                 <a href="#mapModalStudents" data-toggle="modal" data-target="#mapModalStudents" class="twmc--btn__grow twmc--btn__grow-w ">Locate venue</a>
                                 <a href="#" class="twmc--btn__grow twmc--btn__grow-w  twmc-btn__right">Watch Online</a>
                             </div>
-
+        
                             <!-- students map modal -->
                             <div class="modal fade" id="mapModalStudents" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelStudents">
                                 <div class="modal-dialog" role="document">
@@ -404,7 +517,7 @@
                                 </div>
                                 </div>
                             </div>
-
+        
                             <!-- children -->
                             <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
                                 <h3 class="twmc-h3 grow-w__worship-title">CHILDREN</h3>
@@ -416,7 +529,7 @@
                                 <a href="#mapModalChildren" data-toggle="modal" data-target="#mapModalChildren" class="twmc--btn__grow twmc--btn__grow-w ">Locate venue</a>
                                 <a href="#" class="twmc--btn__grow twmc--btn__grow-w  twmc-btn__right">Watch Online</a>
                             </div>
-
+        
                             <!-- children map modal -->
                             <div class="modal fade" id="mapModalChildren" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelChildren">
                                 <div class="modal-dialog" role="document">
@@ -431,9 +544,66 @@
                                 </div>
                                 </div>
                             </div>
-
+        
+        
+                            <!-- woodforest -->
+                            <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
+                                <h3 class="twmc-h3 grow-w__worship-title">WOODFOREST</h3>
+                                <div class='embed-container'>
+                                    <iframe src='https://player.vimeo.com/video/646148987' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                </div>
+                                <p class="twmc-p mt-4">You’re invited to worship with this “front porch” community of believers at the Church at Woodforest. We love to share our uplifting worship music and engaging Bible teaching with families and individuals of all ages. Join us on Sunday morning and be inspired for the rest of your week... <a href="https://thewoodlandsmethodist.org/woodforest" class="twmc-nav__link3 grow-w--text-color-canary-yellow2">Learn&nbsp;more&nbsp;&rarr;</a></p> 
+                                <p><strong>Sundays at 9:30 and 11:00 a.m.</strong></p>
+                                <a href="#mapModalWoodforest" data-toggle="modal" data-target="#mapModalWoodforest" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a>
+                                <a href="https://woodforest.online.church/" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a>
+                            </div>
+        
+                            <!-- woodforest map modal -->
+                            <div class="modal fade" id="mapModalWoodforest" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelWoodforest">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="twmc-h3" id="mapModalLabelWoodforest">Woodforest</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                    <img src="https://www.thewoodlandsmethodist.org/themes/TWUMC2018/Assets/images/CAW_RockMap_Update.png" alt="Worship Community Location Map" class="img-responsive">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+        
+                            <!-- montgomery -->
+                            <div class="twmc-flex-item--2-col__video grow-w__worship-video-container">
+                                <h3 class="twmc-h3 grow-w__worship-title">THE CHURCH AT MONTGOMERY</h3>
+                                <div class="embed-container">
+                                    <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_cam-montgomery/CAM_I'm+New.jpg" alt="" class="img-responsive">
+                                </div>
+                                <p class="twmc-p mt-4">The Church at Montgomery is a campus of the Woodlands Methodist Church. Worship gatherings are held in the Worship Center at Oak Hills Junior High at 19190 Keenan Cut Off Rd.in Montgomery, TX. Worship services are filled with live worship music and engaging Bible teaching. Families and individuals of all ages are invited to join this community of believers... <a href="https://thewoodlandsmethodist.org/montgomery" class="twmc-nav__link3 grow-w--text-color-canary-yellow2">Learn&nbsp;more&nbsp;&rarr;</a></p> 
+                                <p><strong>Sundays at 9:30</strong></p>
+                                <a href="https://maps.app.goo.gl/4uyk6H9RBQYVooq66" class="twmc--btn__grow twmc--btn__grow-w" target="_blank">Locate venue</a>
+                                <!-- <a href="#mapModalMontgomery" data-toggle="modal" data-target="#mapModalMontgomery" class="twmc--btn__grow twmc--btn__grow-w">Locate venue</a> -->
+                                <!-- <a href="https://woodforest.online.church/" class="twmc--btn__grow twmc--btn__grow-w twmc-btn__right">Watch Online</a> -->
+                            </div>
+        
+                            <!-- montgomery map modal -->
+                            <!-- <div class="modal fade" id="mapModalMontgomery" tabindex="-1" role="dialog" aria-labelledby="mapModalLabelMontgomery">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h3 class="twmc-h3" id="mapModalLabelMontgomery">Woodforest</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                    <img src="https://www.thewoodlandsmethodist.org/themes/TWUMC2018/Assets/images/CAW_RockMap_Update.png" alt="Worship Community Location Map" class="img-responsive">
+                                    </div>
+                                </div>
+                                </div>
+                            </div> -->
+                            
+        
                         </div>
-
+        
                     </div>
                 </div>
             </div>
