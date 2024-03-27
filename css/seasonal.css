@@ -10456,3 +10456,12 @@ p.twmc-prayerconf2024-date {
     text-align: center;
 }
 /* ===== End of Recreation - Fitness ===== */
+
+/* ===== Utilities ===== */
+.twmc-icon-wrapper2 {
+    width: 22px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 6px;
+}
+/* ===== End of Utilities ===== */
