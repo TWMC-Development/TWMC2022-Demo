@@ -1971,8 +1971,23 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 .twmc-staff__group {
     margin-top: 1rem;
-    padding: 1rem;
-    background-color: #f4f4f4;
+    padding: 1.5rem 2rem;
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    background-color: #fafafa;
+
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://www.toptal.com/designers/subtlepatterns/uploads/crossword.png");
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("https://www.toptal.com/designers/subtlepatterns/uploads/gplaypattern.png");  */
+
+    /* background-size: cover; */
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-staff__details {
+        margin-bottom: 1rem;
+    }
 }
 /* End of utilities - Accordion */
 
