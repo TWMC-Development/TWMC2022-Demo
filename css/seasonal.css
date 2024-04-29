@@ -10360,9 +10360,9 @@ p.twmc-prayerconf2024-date {
 
 .twmc--btn--nextgen56-club-dark2:hover,
 .twmc--btn--nextgen56-club-dark2:focus {
-    border-color: #FFFFDD;
+    border-color: #F4DB95;
     background-color: #FFFFDD;
-    color: #337E98;
+    color: #9C8C5F;
     text-decoration: none;
 
     transform: scale(1.01);
@@ -10465,3 +10465,193 @@ p.twmc-prayerconf2024-date {
     margin-right: 6px;
 }
 /* ===== End of Utilities ===== */
+
+/* ===== Foundation 2024 ===== */
+/* Feature banner */
+#twmc-featbanner--foundation2024 {
+    background-color: #E6E4E3;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_foundation/FND_FoundationLuncheon_FeatureBannerBG2.png");
+    text-align: left;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.twmc-featbanner--foundation2024-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    text-align: left;
+
+    margin-left: 37%;
+    margin-right: auto;
+}
+
+.twmc-featbanner--foundation2024-textimg {
+    display: none;
+    max-width: 100%;
+}
+
+.twmc-featbanner--foundation2024-textimg2 {
+    height: 204px;
+    max-width: 100%;
+} 
+
+.twmc-featbanner--foundation2024-btn {
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 1245px) {
+    .twmc-featbanner--foundation2024-wrapper2 {
+        margin-left: 470px;
+    
+    }
+
+    .twmc-featbanner--foundation2024-textimg2 {
+        height: auto;
+        width: 80%;
+    } 
+
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: 6px;
+    }
+    
+}
+
+@media only screen and (max-width: 1020px) {
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: 5px;
+    }
+
+    .twmc-featbanner--foundation2024-textimg2 {
+        width: 85%;
+    } 
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc-featbanner--foundation2024 {
+        height: 550px;
+    
+    }
+
+    .twmc-featbanner--foundation2024-wrapper2 {
+        margin-left: 430px;
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-featbanner--foundation2024 {
+        background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_foundation/FND_FoundationLuncheon_FeatureBannerBG.png");
+        height: 450px;
+    }
+
+    .twmc-featbanner--foundation2024-wrapper2 {
+        margin-left: 70px;
+        
+    }
+
+    .twmc-featbanner--foundation2024-textimg2 {
+        display: none;
+    }
+
+    .twmc-featbanner--foundation2024-textimg {
+        display: block;
+        height: 160px;
+        width: auto;
+    }
+
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: 170px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #twmc-featbanner--foundation2024 {
+        background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_foundation/FND_FoundationLuncheon_FeatureBannerBG_Mobile.png");
+        height: 450px;
+    }
+
+    .twmc-featbanner--foundation2024-textimg {
+        width: 85%;
+        height: auto;
+    } 
+
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .twmc-featbanner--foundation2024-wrapper2 {
+        margin-left: 50px;
+        
+    }
+
+    .twmc-featbanner--foundation2024-textimg {
+        width: 95%;
+        height: auto;
+    } 
+
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: 29%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-featbanner--foundation2024-wrapper2 {
+        margin-left: 45px;
+        
+    }
+
+    .twmc-featbanner--foundation2024-textimg {
+        width: 95%;
+        height: auto;
+    } 
+
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #twmc-featbanner--foundation2024 {
+        background-position: center;
+    }
+
+    .twmc-featbanner--foundation2024-wrapper2 {
+        margin-left: 0%;
+    }
+
+    .twmc-featbanner--foundation2024-textimg {
+        width: 95%;
+        height: auto;
+    } 
+
+    .twmc-featbanner--foundation2024-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #twmc-featbanner--foundation2024 {
+        background-image: linear-gradient(45deg, rgba(230, 228, 227, 1), rgba(230, 228, 227, 0.5), rgba(255, 255, 255, 1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_foundation/FND_FoundationLuncheon_FeatureBannerBG_Mobile.png");
+        background-position: center right;
+    }
+
+}
+/* End of feature banner */
+
+/* ===== End of Foundation 2024 ===== */

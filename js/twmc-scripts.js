@@ -47,12 +47,48 @@ window.onload = function () {
 
 
  // Accordion Panel
- $('.panel').on('show.bs.collapse', function (e) {debugger;
-    $(this).find('.twmc-accordion-plus-minus').removeClass('fas fa-plus').addClass('fas fa-minus');
- });
- $('.panel').on('hide.bs.collapse', function (e) {debugger;
-    $(this).find('.twmc-accordion-plus-minus').removeClass('fas fa-minus').addClass('fas fa-plus');
- });
+//  $('.panel').on('show.bs.collapse', function (e) {debugger;
+//     $(this).find('.twmc-accordion-plus-minus').removeClass('fas fa-plus').addClass('fas fa-minus');
+//  });
+//  $('.panel').on('hide.bs.collapse', function (e) {debugger;
+//     $(this).find('.twmc-accordion-plus-minus').removeClass('fas fa-minus').addClass('fas fa-plus');
+//  });
+
+
+// $(document).ready(function(){
+//     // When any accordion panel is shown
+//     $('#accordion-staff').on('shown.bs.collapse', function (e) {
+//         // Target the specific panel that was opened and change its icon to 'minus'
+//         var panelHeading = $(e.target).prev('.panel-heading');
+//         panelHeading.find('.fa-plus').removeClass('fa-plus').addClass('fa-minus');
+//     });
+
+//     // When any accordion panel is hidden
+//     $('#accordion-staff').on('hidden.bs.collapse', function (e) {
+//         // Target the specific panel that was closed and change its icon to 'plus'
+//         var panelHeading = $(e.target).prev('.panel-heading');
+//         panelHeading.find('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+//     });
+// });
+
+$(document).ready(function(){
+  // When any accordion panel is shown
+  $('.panel.panel-default').on('shown.bs.collapse', function (e) {
+      // Target the specific panel that was opened and change its icon to 'minus'
+      var panelHeading = $(e.target).prev('.panel-heading');
+      panelHeading.find('.fa-plus').removeClass('fa-plus').addClass('fa-minus');
+  });
+
+  // When any accordion panel is hidden
+  $('.panel.panel-default').on('hidden.bs.collapse', function (e) {
+      // Target the specific panel that was closed and change its icon to 'plus'
+      var panelHeading = $(e.target).prev('.panel-heading');
+      panelHeading.find('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+  });
+});
+
+
+
 
 
 
@@ -62,8 +98,7 @@ window.onload = function () {
  * Copyright 2021 Google LLC.
  * SPDX-License-Identifier: Apache-2.0
  */
-// The following example creates five accessible and
-// focusable markers.
+
 function initMap() {
     const map = new google.maps.Map(document.getElementById("twmc-im-new__map"), {
       zoom: 11,
@@ -74,6 +109,7 @@ function initMap() {
     const churches = [
       [{ lat: 30.167720471761445, lng: -95.4682576446734 }, "The Woodlands Methodist Church"],
       [{ lat: 30.28995341492246, lng: -95.57744445974375 }, "The Church at Woodforest"],
+      [{ lat: 30.3276154, lng: -95.6611099 }, "The Church at Montgomery"],
     ];
     // Create an info window to share between markers.
     const infoWindow = new google.maps.InfoWindow();
