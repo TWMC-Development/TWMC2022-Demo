@@ -513,7 +513,7 @@
       .twmc-modal {
         display: none;
         position: fixed;
-        z-index: 1050;
+        z-index: 1041;
         top: -100%;
         left: 50%;
         transform: translateX(-50%);
@@ -698,6 +698,14 @@
 
         $("#myModal").modal("hide");
       }
+
+      document
+        .querySelector(".dropdown-toggle.navbar-bottom-link")
+        .addEventListener("click", function () {
+          console.log("Burger clicked");
+          const dropdown = this.parentElement; // Get the parent element of the button
+          dropdown.classList.toggle("open"); // Toggle the .open class
+        });
     </script>
     <!-- End of script for modal -->
 
