@@ -699,15 +699,43 @@
         $("#myModal").modal("hide");
       }
 
+      //   end logic for coockie modal //
+
+      // start logic for dropdown menu fix //
       document
-        .querySelector(".dropdown-toggle.navbar-bottom-link")
+        .querySelector(".navbar-toggle.navbar-bottom-hamburger")
         .addEventListener("click", function () {
-          console.log("Burger clicked");
-          const dropdown = this.parentElement; // Get the parent element of the button
-          dropdown.classList.toggle("open"); // Toggle the .open class
+          const target = document.querySelector(
+            this.getAttribute("data-target")
+          ); // Get the target element
+          const isOpen = target.classList.contains("in"); // Check if the target is currently open
+          if (isOpen) {
+            target.classList.remove("in"); // If open, close the dropdown
+          } else {
+            target.classList.add("in"); // If closed, open the dropdown
+          }
         });
+      // end logic for dropdown menu fix //
+      // start logic for mobile dropdown fix
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".navbar-toggle.navbar-bottom-hamburger")
+          .addEventListener("click", function (event) {
+            const targetId = this.getAttribute("data-target");
+            const target = document.getElementById(targetId);
+            if (target) {
+              const isOpen = target.classList.contains("in");
+              if (isOpen) {
+                target.classList.remove("in");
+              } else {
+                target.classList.add("in");
+              }
+            }
+            event.stopPropagation();
+          });
+      });
+      // end logic for mobile dropdown fix
     </script>
-    <!-- End of script for modal -->
 
     <!-- Footer -->
     <section class="footer-wrapper-twmc py-5">
