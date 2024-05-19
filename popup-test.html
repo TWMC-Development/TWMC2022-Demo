@@ -702,6 +702,19 @@
       //   end logic for coockie modal //
 
       // start logic for dropdown menu fix //
+
+      document
+        .querySelector(".dropdown-toggle.navbar-bottom-link")
+        .addEventListener("click", function () {
+          console.log("Burger clicked");
+          const dropdown = this.parentElement;
+          dropdown.classList.toggle("open");
+        });
+
+      // start logic for dropdown menu fix //
+
+      // start logic for mobile dropdown fix
+
       document
         .querySelector(".navbar-toggle.navbar-bottom-hamburger")
         .addEventListener("click", function () {
@@ -715,8 +728,6 @@
             target.classList.add("in"); // If closed, open the dropdown
           }
         });
-      // end logic for dropdown menu fix //
-      // start logic for mobile dropdown fix
       document.addEventListener("DOMContentLoaded", function () {
         document
           .querySelector(".navbar-toggle.navbar-bottom-hamburger")
