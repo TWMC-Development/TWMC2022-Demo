@@ -721,11 +721,11 @@
           const target = document.querySelector(
             this.getAttribute("data-target")
           ); // Get the target element
-          const isOpen = target.classList.contains("in"); // Check if the target is currently open
+          const isOpen = target.classList.contains("in");
           if (isOpen) {
-            target.classList.remove("in"); // If open, close the dropdown
+            target.classList.remove("in");
           } else {
-            target.classList.add("in"); // If closed, open the dropdown
+            target.classList.add("in");
           }
         });
       document.addEventListener("DOMContentLoaded", function () {
@@ -746,6 +746,27 @@
           });
       });
       // end logic for mobile dropdown fix
+
+      //  start location dropdown fix mobile
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector("#dropdownMenu1")
+          .addEventListener("click", function () {
+            const dropdownMenu = this.nextElementSibling;  
+            if (dropdownMenu) {
+              const isOpen = dropdownMenu.classList.contains("show");  
+              if (isOpen) {
+                dropdownMenu.classList.remove("show");
+                this.setAttribute("aria-expanded", "false");
+              } else {
+                dropdownMenu.classList.add("show");
+                this.setAttribute("aria-expanded", "true");
+              }
+            }
+          });
+      });
+
+      //  end location dropdown fix mobile
     </script>
 
     <!-- Footer -->
