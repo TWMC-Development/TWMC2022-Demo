@@ -10655,3 +10655,1612 @@ p.twmc-prayerconf2024-date {
 /* End of feature banner */
 
 /* ===== End of Foundation 2024 ===== */
+
+
+/* ===== Transition -  Venue Change 2024 ===== */
+/* HERO */
+#transition2024--hero {
+    background-color: var(--color-dark-grey2);
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/WOR_VenueTransition_Hero_2000x800.png");   */
+    /* background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/WOR_VenueTransition_Hero_2000x800.png");  */
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/WOR_VenueTransition_Hero_2000x800.png"); 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    /* height: 600px; */
+
+    border-bottom: 7px solid var(--color-traditional);
+}
+
+.trans-hero {
+   padding: 7rem 0;
+}
+
+.trans-hero--title {
+    color: #333;
+    /* text-transform: uppercase; */
+    margin-top: 0;
+}
+
+.trans-hero--text-wrapper {
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trans-hero--text {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+@media only screen and (max-width: 992px) {
+    #transition2024--hero {
+        height: max-content;
+    }
+
+    .trans-hero {
+        padding: 5rem 0;
+    }
+
+    .trans-hero--video-wrapper,
+    .trans-hero--text-wrapper {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .trans-hero--video-wrapper {
+        text-align: center;
+    }
+
+    .trans-hero--title {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .trans-hero {
+        padding: 4rem 0;
+    }
+
+    .trans-hero--video-wrapper,
+    .trans-hero--text-wrapper {
+        max-width: 90%;
+    }
+} 
+
+
+/* Flex */
+.trans-flex-container--2-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.trans-flex-item--2-col {
+    flex-basis: 48%;
+    overflow: visible;
+}
+
+.trans-flex--left {
+    max-width: 90%;
+}
+
+@media only screen and (max-width:992px) {
+    .trans-flex-container--2-col {
+        /* flex-direction: column; */
+        gap: 0;
+    }
+
+    .trans-flex-item--2-col {
+        flex-basis: 100%;
+        height: max-content;
+    }
+
+}
+/* End of flex */
+
+
+
+
+/* Button */
+.trans-hero--buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-trans-hero {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 9.5px;
+    padding: .5rem 1.2rem;
+    font-size: .8rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    min-width: 175px;
+    max-width: max-content;
+    text-transform: uppercase;
+  }
+
+.btn-trans-hero:hover {
+    background-color: #eee;
+    transform: scale(1.02);
+    color: #333;
+}
+
+  @media only screen and (min-width: 1500px) {
+        .trans-hero--buttons-wrapper {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .trans-hero--buttons-wrapper {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        /* .btn-trans-hero {
+            width: 150px;
+        } */
+      }
+
+    @media only screen and (max-width:768px) {
+        .trans-hero--buttons-wrapper {
+            gap: 1%;
+        }
+
+        .btn-trans-hero {
+            margin-top: 10px;
+            /* width: 175px; */
+        }
+    }
+/* End of button */
+/* END OF HERO */
+
+/* INTRO */
+#transition2024--intro {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* END OF INTRO */
+
+/* SCHEDULE */
+/* #transition2024--schedule {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/WOR_VenueTransition_Background_2000x800.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+#transition2024--schedule {
+    height: max-content;
+    position: relative;
+}
+
+.transition2024--schedule-bg {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.transition2024--schedule-wrapper {
+   z-index: 3;
+   position: relative;
+}
+
+
+
+/* Masonry */
+.trans-masonry-card {
+    background: #fff; 
+    border: 2px solid #333; 
+    /* border: 2px solid var(--color-traditional); */
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 0.5rem; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    /* box-shadow: 0 2px 5px rgba(134,38,51,0.1);  */
+    margin-bottom: 15px;
+}
+
+.trans-flex-container--masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2%;
+}
+
+.trans-flex-item--masonry {
+    flex-basis: 49%;
+    overflow: visible;
+}
+
+.trans-inner-flex {
+    padding: 0 1rem 0.5rem;
+}
+
+.trans-text--change {
+    color: #862633;
+
+}
+
+.trans-masonry-card--stripe {
+    background-color: #eee; 
+    padding: 1.5rem 1.2rem; 
+    margin: -1.5rem; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+    text-align: center;
+    /* border-top: 5px solid var(--color-traditional); */
+    border-bottom: 5px solid var(--color-traditional);
+}
+
+.trans-schedule-title {
+    margin-top: 1.5rem;
+    /* margin-bottom: 0.5rem; */
+}
+
+@media only screen and (max-width: 992px) {
+    .trans-flex-item--masonry p.twmc-p {
+        font-size: 0.8rem;
+    }
+
+    .trans-flex-container--masonry {
+        gap: 1%;
+    }
+
+    .trans-flex-item--masonry {
+        flex-basis: 49.5%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .trans-flex-container--masonry {
+        gap: 0;
+        justify-content: center;
+    }
+
+    .trans-flex-item--masonry {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .trans-masonry-card {
+        padding: 1rem 1rem 0.5rem;
+    }
+
+    .trans-masonry-card--stripe {
+        background-color: #eee; 
+        padding: 1rem; 
+        margin: -1rem; 
+    }
+}
+/* End of masonry */
+
+.trans-livestream {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    letter-spacing: 1px; 
+    font-weight: 600;
+    width: fit-content; 
+    padding: 2px 30px; 
+    margin: 0 auto;
+}
+
+/* END OF SCHEDULE */
+
+
+/* FAQ */
+#transition2024--faq {
+    background-color: #862633;
+    
+}
+
+/* END OF FAQ */
+
+
+
+
+/* ===== End of Transition -  Venue Change 2024 ===== */
+
+/* ===== BUTTON INACTIVE ===== */
+/* button inactive */
+.twmc--btn__inactive {
+    border: 2px solid var(--color-dark-grey);
+    color: white;
+    background-color: var(--color-dark-grey);
+    border-color: var(--color-dark-grey);
+    cursor: not-allowed;
+}
+
+.twmc--btn__inactive-outline-white  {
+    border: 2px solid white;
+    color: #fff;
+    cursor: not-allowed;
+}
+/* ===== END OF BUTTON INACTIVE ===== */
+
+
+/* ===== FAITH GROWS HERE ===== */
+/* Hero */
+#twmc-faithgrowshere--hero {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 60, 0, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/TRAD_Faith+Grows+Here_background.jpg");
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.twmc-featbanner--faithgrowshere-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--faithgrowshere-wrapper > img {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .twmc-featbanner--faithgrowshere-wrapper > img {
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #twmc-faithgrowshere--hero {
+        height: 450px;
+        padding: 4rem 0;
+    }
+  }
+
+/* End of Hero */
+
+
+/* Steps card */
+.twmc-faithgrowshere-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+}
+
+.twmc-faithgrowshere--ribbon {
+    /* background-image: linear-gradient(to bottom, rgba(111, 148, 79, 0.3), rgba(255, 255, 255, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/Propagation+Wall+Skewed+-+Cropped.jpg"); */
+    /* background-position: top center;
+    background-size: cover; */
+    background-color: #A2A29E;
+}
+
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-ribbon-card--inner-wrapper {
+    padding: 3rem 3rem 2rem;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-ribbon-card--inner-wrapper {
+        padding: 2rem 2rem 1rem;
+    }
+}
+
+
+.twmc-faithgrowshere--ribbon-inner {
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+.twmc-ribbon-card--inner-wrapper--gap {
+    margin-top: -5px;
+}
+
+
+/* =====END OF FAITH GROWS HERE ====== */
+
+/* ====== NextGen Sports ===== */
+/* Hero */
+#twmc-nextgensports--hero {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen/REC_NextGenSports_FeatureBannerBG.png");
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #twmc-nextgensports--hero {
+        background-position: top left;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-nextgensports--hero {
+        height: 450px;
+        padding: 4rem 0;
+    }
+}
+
+.twmc-featbanner--nextgensports-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--nextgensports-wrapper > img {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .twmc-featbanner--nextgensports-wrapper > img {
+        width: 90%;
+    }
+  }
+
+/* End of Hero */
+
+/* Typography */
+.text-nextgensports-blue {
+    color: #1D2959;
+}
+
+.text-nextgensports-red {
+    color: #840029;
+}
+
+.nextgensports--text-link-darkblue {
+    color: #1D2959;
+}
+
+.nextgensports--text-link-darkblue:hover {
+    color: #6E7695;
+}
+
+.nextgensports--text-link-blue {
+    color: #BAC6F5;
+}
+
+.nextgensports--text-link-blue:hover {
+    color: #959EC4;
+}
+/* End of Typography */
+
+/* CTA */
+#twmc-cta__nextgensports {
+    background-color: #172147;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .twmc-cta--text {
+    color: #EEF0E5;
+  }
+
+  .twmc--btn-misquiz {
+    width: 210px;
+  }
+/* End of CTA */
+
+
+  /* Programs */
+  #twmc-nextgensports--prog-nav {
+    text-align: center;
+  }
+
+  .nav-pills--nextgensports {
+    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-pills--nextgensports > .nav-pills > li.active > a {
+      background-color: var(--color-traditional);
+      color: #fff;
+      padding: 10px 15px;
+  }
+
+  .nav-pills--nextgensports .nav-pills > li > a {
+      background-color: #E1E2E9;
+      color: var(--color-dark-grey2);
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+
+  .nav-pills--nextgensports ul.nav.nav-pills > li {
+      margin-left: 0 !important;
+  }
+
+  #twmc-nextgensports--programs {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen/NextGen+Sports+-+Programs+BG+2500W+A15.png");
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Flex */
+  .twmc-nextgensports--flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+
+.twmc-nextgensports--flex-item {
+    flex-basis: 49%;
+    /* flex-grow: 1; */
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-nextgensports--flex-item {
+        flex-basis: 100%;
+    }
+}
+  /* End of programs */
+
+  /* Card */
+  .twmc-nextgensports--card {
+    /* background-color: #f3f3f3; */
+    background-color: #F0F1F4;
+    padding: 1.5rem 1.7rem 3rem;
+  }
+  /* End of Cards */
+
+  /* Button */
+  .twmc--btn--w150 {
+    width: 150px;
+}
+
+  .twmc--btn--ngsports-240 {
+      width: 240px;
+  }
+
+  .twmc--btn--ngsports-240:hover {
+    opacity: 0.85;
+    transition: all ease-in-out 0.4s;
+}
+
+  @media only screen and (max-width: 576px) {
+      .nav-pills--nextgensports > ul.nav.nav-pills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+/* End of buttons */
+
+/* Important dates */
+#twmc-nextgensports--imp-dates {
+    background-color: #D0D2DD;
+}
+/* End of important dates */
+
+/* Info Accordion */
+#twmc-nextgensports--info-accordion {
+    background-color: #1D2959;
+}
+/* End of Info Accordion */
+  
+/* ===== End of NextGen Sports ===== */
+
+/* ===== Adult Discipleship ===== */
+/* HERO */
+#twmc-adultdiscipleship24--hero {
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 60, 0, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/TRAD_Faith+Grows+Here_background.jpg"); */
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/HERO+BACKGROUND+DEFAULT.png");
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-featbanner--adultdiscipleship24-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--faithgrowshere-wrapper > img {
+    max-width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .twmc-featbanner--faithgrowshere-wrapper > img {
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #twmc-adultdiscipleship24--hero {
+        height: 450px;
+        padding: 4rem 0;
+    }
+  }
+
+/* END OF HERO */
+
+/* CTA */
+#twmc-cta__adultdiscipleship24 {
+    background-color: #222;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .twmc-cta--text {
+    color: #EEF0E5;
+  }
+
+  .twmc--btn-misquiz {
+    width: 210px;
+  }
+/* END OF CTA */
+
+/* FORMATION */
+#twmc-adultdisc--formation {
+    background-color: #f2f2f2;
+}
+
+
+/* Flex */
+.twmc-adultdisc--flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    gap: 2%;
+  }
+
+  .twmc-adultdisc--flex-item {
+    flex-basis: 49%;
+    padding: 40px 40px 60px;
+    height: 400px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .twmc-adultdisc--flex-item {
+      flex-basis: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .twmc-adultdisc--flex-item {
+      padding: 30px 30px 40px;
+    }
+  }
+  /* End of flex */
+  
+  /* Cards */
+  .twmc-adultdisc--card-innercontent {
+    margin-top: auto;
+  }
+
+.twmc-adultdisc--card-homegroups {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://s3.us-east-2.amazonaws.com/rockrms-assets/images/Home-Groups-Feature-Banner-BG.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.twmc-adultdisc--card-band {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://s3.us-east-2.amazonaws.com/rockrms-assets/images/Home-Groups-Feature-Banner-BG.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.twmc-adultdisc--card-mentors {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://s3.us-east-2.amazonaws.com/rockrms-assets/images/Home-Groups-Feature-Banner-BG.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.twmc-adultdisc--card-societies {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://s3.us-east-2.amazonaws.com/rockrms-assets/images/Home-Groups-Feature-Banner-BG.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.twmc-adultdisc--card-studiesclasses {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/ministries-hero/HEADER_ALLDISCIPLESHIP.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.twmc-adultdisc--card-series {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/ministries-hero/HEADER_ALLDISCIPLESHIP.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+.twmc-adultdisc--card-men {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/ministries-hero/HEADER_ALLDISCIPLESHIP.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+.twmc-adultdisc--card-women {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/ministries-hero/HEADER_ALLDISCIPLESHIP.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+  
+  /* End of cards */
+
+
+  /* Buttons */
+  .btn-default-dark {
+      background-color: #000;
+      color: #fff;
+      border: 2px solid #000;
+      border-radius: 9.5px;
+      padding: .5rem 1.2rem;
+      font-size: .8rem;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+      min-width: 175px;
+      max-width: max-content;
+      text-transform: uppercase;
+    }
+
+  .btn-default-dark:hover {
+      background-color: #111;
+      transform: scale(1.02);
+      color: #fff;
+  }
+
+  /* End of buttons */
+
+  /* Discipleship */
+  #twmc-adultdisc--discipleship {
+    background-color: #333;
+  }
+  /* End of discipleship */
+
+  /* END OF FORMATION */
+
+/* ===== End of Adult Discipleship ===== */
+
+
+/* ===== MEN - Mens Conference 2024 ===== */
+/* HERO */
+#twmc-mensconf2024--hero {
+    background-color: #E5EDF1;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_Conference_Web_Clouds.png");
+    text-align: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.twmc-mensconf2024--hero-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 650px;
+
+    z-index: 1;
+}
+
+.twmc-mensconf2024--hero-foreground {
+    z-index: 3;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_Conference_Web_Landscape_H1080.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+   
+} 
+
+.twmc-mensconf2024--hero-wrapper {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+
+    color: #BAC6CA;
+    position: absolute;
+    top: 0;
+}
+
+.twmc-mensconf2024--hero-wrapper > img {
+    height: 380px;
+    width: auto;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4rem;
+}
+
+.twmc-mensconf2024--hero-wrapper2 {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 4;
+    margin-right: auto; 
+    padding-bottom: 150px;
+
+    position: absolute;
+    top: 0;
+}
+
+.twmc-mensconf2024--hero-wrapper2 > img {
+    width: 90%;
+    max-width: 100%;
+}
+
+.twmc-mensconf2024--gather-mobile {
+    display: none;
+}
+
+.twmc-mensconf2024--hero-wrapper3 {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.twmc-mensconf2024--hawk {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10%;
+    animation: animatehawk 15s linear infinite;
+    animation-delay: -2s;
+}
+
+
+
+/* animatehawk */
+@keyframes animatehawk {
+    0% {
+        opacity: 0.5;
+        top: 2%;
+        left: -10%;
+        transform: translateX(20px);
+      }
+      20% {
+        opacity: 1;
+        transform: translateX(-20px);
+      }
+      40% {
+        top: 65%;
+        left: 50%;
+        transform: translateX(-20px);
+      }
+      60% {
+        transform: translateX(-20px);
+      }
+      80% {
+        transform: translateX(-20px);
+      }
+      100% {
+        top: 100%;
+        left: 120%;
+        transform: translateX(-20px);
+      }
+  }
+
+
+
+
+  @media only screen and (max-width: 992px) {
+    .twmc-mensconf2024--hero-wrapper {
+        padding-top: 80px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper > img {
+        width: 90%;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 > img {
+        width: 70%;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 {
+        padding-bottom: 100px;
+    }
+
+    .twmc-mensconf2024--gather-desktop {
+        display: none;
+    }
+
+    .twmc-mensconf2024--gather-mobile {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconf2024--hero-wrapper {
+        padding-top: 130px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper > img {
+        width: 90%;
+        height: auto;
+    }
+
+    .twmc-mensconf2024--hawk > img {
+        width: 50px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc-mensconf2024--hero,
+    .twmc-mensconf2024--hero-parent,
+    .twmc-mensconf2024--hero-foreground,
+    .twmc-mensconf2024--hero-wrapper,
+    .twmc-mensconf2024--hero-wrapper2 {
+        height: 450px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper3 {
+        height: 300px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper {
+        padding-top: 80px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper > img {
+        width: 90%;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 {
+        padding-bottom: 90px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 > img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-mensconf2024--hero-wrapper {
+        padding-top: 120px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper > img {
+        width: 90%;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 > img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-mensconf2024--hero-wrapper {
+        padding-top: 140px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper > img {
+        width: 100%;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    #twmc-mensconf2024--hero,
+    .twmc-mensconf2024--hero-parent,
+    .twmc-mensconf2024--hero-foreground,
+    .twmc-mensconf2024--hero-wrapper,
+    .twmc-mensconf2024--hero-wrapper2 {
+        height: 800px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper  {
+        padding-top: 150px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 {
+        padding-bottom: 200px;
+    }
+    
+
+    .twmc-mensconf2024--hero-wrapper2 > img {
+        width: 70%;
+        max-width: 90%;
+    }
+
+    .twmc-mensconf2024--hero-wrapper3  {
+        height: 600px;
+    }
+
+    .twmc-mensconf2024--hawk > img.img-responsive {
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .twmc-mensconf2024--hero-wrapper  {
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .twmc-mensconf2024--hero-wrapper  {
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #twmc-mensconf2024--hero,
+    .twmc-mensconf2024--hero-parent,
+    .twmc-mensconf2024--hero-foreground,
+    .twmc-mensconf2024--hero-wrapper,
+    .twmc-mensconf2024--hero-wrapper2 {
+        height: 900px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper  {
+        padding-top: 120px;
+    }
+
+    .twmc-mensconf2024--hero-wrapper > img {
+        width: max-content;
+        max-width: 90%;
+    }
+
+    .twmc-mensconf2024--hero-wrapper2 > img {
+        width: 60%;
+        max-width: 90%;
+    }
+}
+/* END OF HERO*/
+
+/* INTRO */
+.twmc-mensconf2024--separator1 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_ConferenceWeb_PageTear2-edited4.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -115px;
+    z-index: 10;
+    max-width: 100%;
+    height: 200px;
+
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_ConferenceWeb_PageTear1.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -45px;
+    z-index: 10;
+    max-width: 100%;
+    height: 200px; */
+}
+
+.twmc-mensconf2024--intro-section-container-up {
+    position: relative;
+    top: -80px;
+}
+
+.twmc-mensconf2024--intro-section {
+    /* background-color: #488aa9; */
+    /* background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.2), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.9)); */
+    background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.2), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.8));
+    color: #1a1d1a;
+    text-align: center;
+}
+
+
+/* END OF INTRO */
+
+/* TYPOGRAPHY */
+.twmc-conf-intro {
+    width: max-content;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-mensconf2024--intro-date .twmc-conf-intro {
+    max-width: 100%;
+    /* color: #488aa9; */
+    color: #3A80A3;
+}
+
+.twmc-mensconf2024--intro-title {
+    /* color: #488aa9;  */
+    color: #3A80A3;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.twmc-mensconf2024--intro-subtitle {
+    color: #3A80A3; 
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.twmc-mensconf2024--intro-speaker-light {
+    color: #E9C5BD;
+    color: #E7C4AA;
+    line-height: 1.3;
+}
+
+.twmc-mensconf2024--text-brown {
+    color: #81684e;
+}
+
+.twmc-mensconf2024--text-brown2 {
+    color: #67533E;
+}
+
+.twmc-mensconf2024--text-blue {
+    color: #3A80A3;
+}
+
+.twmc-mensconf2024--text-blue2 {
+    color: #2E6682;
+}
+
+.mensconf2024--text-link-blue {
+    color: #2E6682;
+}
+
+.mensconf2024--text-link-blue:hover {
+    color: #3A80A3;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconf2024--intro-title {
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-mensconf2024--intro-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* END OF TYPOGRAPHY */
+
+/* BUTTON */
+.twmc--btn--mensconf2024-dark {
+    border: 2px solid #81684e;
+    background-color: #81684e;
+    /* color: #f2f2f2; */
+    color: #fff;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--mensconf2024-dark:hover,
+.twmc--btn--mensconf2024-dark:focus {
+    border-color: #67533E;
+    background-color: #67533E;
+    text-decoration: none;
+    color: #fff;
+
+    transform: scale(1.01);
+}
+
+.twmc--btn--mensconf2024-dark2 {
+    border: 2px solid #1a1d1a;
+    background-color: #1a1d1a;
+    /* color: #f2f2f2; */
+    color: #fff;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--mensconf2024-dark2:hover,
+.twmc--btn--mensconf2024-dark2:focus {
+    border-color: #e6ecd9;
+    background-color: #e6ecd9;
+    text-decoration: none;
+    color: #1a1d1a;
+
+    transform: scale(1.01);
+}
+
+.twmc--btn--mensconf2024-blue {
+    border: 2px solid #3A6E87;
+    background-color: #3A6E87;
+    /* color: #f2f2f2; */
+    color: #fff;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--mensconf2024-blue:hover,
+.twmc--btn--mensconf2024-blue:focus {
+    border-color: #255268;
+    background-color: #255268;
+    text-decoration: none;
+    color: #fff;
+
+    transform: scale(1.01);
+}
+
+
+/* END OF BUTTON */
+
+/* SCHEDULE */
+#twmc-mensconf2024--schedule {
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(72, 138, 169, 0.2), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.9)); */
+    /* color: #1a1d1a; */
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(230, 236, 217, 0.4), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 1)); */
+
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(230, 236, 217, 0.4), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/Topo+Lines+A35+W2000.png");
+    background-position: center center;
+    background-size: cover;
+    
+    /* color: #67533E; */
+    color: #3A80A3;
+}
+
+.twmc-mensconf2024--schedule-title {
+    text-align: center;
+}
+
+.twmc-mensconf2024--sched-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.twmc-mensconf2024--sched-item {
+    flex-basis: 49%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.twmc-mensconf2024-schedule-subtitle {
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconf2024--sched-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .twmc-mensconf2024--sched-item {
+        flex-basis: 100%;
+        margin-bottom: 0;
+    }
+
+    /* .twmc-mensconf2024--schedule-title {
+        text-align: left;
+        margin-left: 1.8rem;
+    } */
+
+    .twmc-mensconf2024-icon-wrapper {
+        width: max-content;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .twmc-mensconf2024-schedule-subtitle {
+        text-align: center;
+        margin-left: -3.5rem;
+    }
+}
+
+/* END OF SCHEDULE */
+
+/* DESCRIPTION SPEAKERS */
+#twmc-mensconf2024--desc-speakers {
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(230, 236, 217, 0.4), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 1)); */
+    background-color: #fff;
+    color: #3A80A3;
+    /* color: #67533E; */
+}
+
+/* Flex */
+.twmc-mensconf2024-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.twmc-mensconf2024-flex-item {
+    flex-basis: 49%;
+    overflow: visible;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconf2024-flex-container {
+        gap: 0;
+    }
+
+    .twmc-mensconf2024-flex-item {
+        flex-basis: 100%;
+    }
+}
+/* Enf of Flex */
+
+/* Card */
+.twmc-mensconf2024-card {
+    /* background-color: #E4EDF3; */
+    background-color: #f6f7ef;
+    background-color: #EAE8E5;
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.twmc-mensconf2024--bio-img {
+    height: 150px;
+    border: 4px solid #A2AFB0;
+    border: 4px solid #2E6682;
+}
+
+.twmc-speaker-card--bio-img {
+    height: 150px;
+}
+
+.twmc-modal-body-mensconf2024 {
+    padding: 1.5rem 2rem;
+    background-color: #E4EDF3;
+    color: #255268;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.twmc-modal-header-mensconf2024 {
+    background-color: #255268;
+    color: #D9EEF1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.twmc-icon-wrapper {
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+}
+/* End of Card */
+/* END OF DESCRIPTION SPEAKERS */
+
+
+/* FAQ */
+.twmc-mensconf2024--separator2 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_ConferenceWeb_PageTear2-edited4.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -150px;
+    z-index: 10;
+    max-width: 100%;
+    height: 200px;
+}
+
+.twmc-mensconf2024--intro-section-container-up2 {
+    position: relative;
+    top: -120px;
+}
+
+#twmc-mensconf2024--faq {
+    /* background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.1), rgba(234, 232, 229, 0.8), rgba(103, 83, 62, 0.2)); */
+    background-color: rgba(72, 138, 169, 0.1);
+}
+
+/* END OF FAQ */
+
+/* PROMOTIONAL PACKS */
+#twmc-mensconf2024--promo-section {
+    background-color: #0F303B;
+    background: linear-gradient(to bottom, rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.5)), linear-gradient(to right, rgba(72, 138, 169, 0.6), rgba(255, 255, 255, 0.2), rgba(103, 83, 62, 0.6));
+    color: #BAC6CA;
+}
+
+/* END OF PROMOTIONAL PACKS */
+/* ===== End of MEN - Mens Conference 2024 ===== */
+
+
+/* ====== RADIANT FALL 2024 ===== */
+/* BUTTON */
+.twmc--btn--prayerconf2024-light {
+    border: 2px solid #254C52;
+    background-color: #254C52;
+    color: #F0EFE8;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--prayerconf2024-light:hover,
+.twmc--btn--prayerconf2024-light:focus {
+    border-color: #4A8F8A;
+    background-color: #4A8F8A;
+    text-decoration: none;
+    color: #F0EFE8;
+
+    transform: scale(1.01);
+}
+/* END OF BUTTON */
+
+/* FEATURE BANNER */
+#twmc-featbanner--radiantfall2024 {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+    text-align: center;
+    background-position: left center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5.5rem 0 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--radiantfall2024-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Text img */
+  .radiantfall2024-feat-text1 {
+    max-width: 100%;
+  }
+
+  .radiantfall2024-feat-text2 {
+    display: none;
+  }
+
+  @media only screen and (max-width: 576px) {
+    #twmc-featbanner--radiantfall2024 {
+      height: 550px;
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .radiantfall2024-feat-text1 {
+      display: none;
+    }
+
+    .radiantfall2024-feat-text2 {
+      display: block;
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width:400px) {
+    #twmc-featbanner--radiantfall2024 {
+      height: 550px;
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .radiantfall2024-feat-text2 {
+      display: block;
+      width: 90%;
+    }
+  }
+  /* End of text img */
+/* END OF FEATURE BANNER */
+
+
+/* HERO */
+
+/* END OF HERO */
+
+/* ====== END OF RADIANT FALL 2024 ===== */

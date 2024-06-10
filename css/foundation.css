@@ -605,6 +605,75 @@
 }
 /* END OF SUPPORT */
 
+/* CTA - Foundation Partner */
+#twmc-cta--foundationpartner {
+    padding: 2rem 0;
+    background-color: #DBD5D5;
+    background: linear-gradient(45deg, #DBD5D5, #f9f9f9);
+}
+
+.cta-foundationpartner--flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-foundationpartner-img {
+    width: 150px;
+    border: 5px solid var(--color-traditional) ;
+    border-radius: 50%;
+}
+
+/* Foundation partner - letter */
+#twmc-cta--foundationpartner-letter {
+    padding: 2rem 0;
+    background-color: #DBD5D5;
+    background: linear-gradient(45deg, #DBD5D5, #f9f9f9);
+    border-bottom: 5px solid var(--color-traditional);
+    border-top: 5px solid var(--color-traditional);
+}
+
+.cta-foundationpartner-img-tan {
+    width: 150px;
+    border: 5px solid #F6F5F5 ;
+    border-radius: 50%;
+}
+
+.cta--foundationpartner-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-foundationpartner-img2 {
+    width: 100px;
+    border: 5px solid var(--color-traditional) ;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+    #twmc-cta--foundationpartner {
+        padding: 2.5rem 0;
+    }
+
+    .cta-foundationpartner--flex-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cta-foundationpartner--flex-img {
+        margin-bottom: 10px;
+    }
+
+    .cta-foundationpartner--flex-info {
+        text-align: center;
+    }
+}
+
+/* End of CTA - Foundation Partner */
+
 /* ===== END OF FOUNDATION 2024 ===== */
 
 

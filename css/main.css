@@ -2701,6 +2701,7 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
 
 /* button inactive */
 .twmc--btn__inactive {
+    border: 2px solid var(--color-dark-grey);
     color: white;
     background-color: var(--color-dark-grey);
     border-color: var(--color-dark-grey);
@@ -8749,6 +8750,16 @@ code {
 
 .twmc--btn--w150 {
     width: 150px;
+}
+
+.twmc--btn--w240 {
+    width: 240px;
+}
+
+@media only screen and (max-width: 300px) {
+    .twmc--btn--w240 {
+        width: 100%;
+    }
 }
 
 .twmc--btn--w260 {

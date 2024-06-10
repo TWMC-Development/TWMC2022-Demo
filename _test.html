@@ -157,8 +157,37 @@
 
         
         <!-- TEST CONTENT -->
-
+         
+      
+      
         
+      
+      <div id="video-container">
+        The YouTube video will be embedded here:
+      </div>
+      
+      <script>
+        const apiKey = 'AIzaSyAEePtXyZ16cHL_Hty0xTj5wK8x5mydbfE';
+        const videoUrl = 'https://www.youtube.com/watch?v=A45VErCakxo&ab';
+        
+        const urlParams = new URLSearchParams(new URL(videoUrl).search);
+        const videoId = urlParams.get('v');
+        
+        if (videoId) {
+          const apiUrl = 'https://www.googleapis.com/youtube/v3/videos?part=player&id=' + videoId + '&key=' + apiKey;
+          
+          fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+              const playerUrl = data.items[0].player.embedHtml;
+              document.getElementById('video-container').innerHTML = playerUrl;
+            })
+            .catch(error => console.error('Error:', error));
+        } else {
+          console.error('Invalid video URL');
+        }
+      </script>
+
        
         
         <div class="text-center">
@@ -1058,7 +1087,7 @@ Confirmation Service Bulletin – <i>coming soon</i></li>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse ms-navbar-collapse" id="bs-example-navbar-collapse-1">
                 
-                <ul class="nav navbar-nav navbar-right ms-navbar__link-wrapper">
+                <ul class="nav navbar-nav  ms-navbar__link-wrapper">
                     <li class="ms-navbar__link"><a href="#">Prayer</a></li>
                     <li class="ms-navbar__link"><a href="#">Media</a></li>
                     <li class="ms-navbar__link"><a href="#">Articles</a></li>
@@ -1100,7 +1129,190 @@ Confirmation Service Bulletin – <i>coming soon</i></li>
     </div><!-- /.container-fluid -->
   </nav>
   
-
+        <!-- GROW Gather -->
+        
+        
+       
+        
+        <div class="py-5">
+        
+            <div class="container padding-t-lg" style="background-color: transparent;" id="eventList-{{randomCode}}">
+                <div class="col-sm-9">
+                    <div class="grow-g__title">
+                        <h2>
+                            Events</h2>
+                    </div>
+                </div>
+            
+                <div class="col-sm-3">
+                    <div id="filter-button">
+            
+                        <a class="twmc--btn__grow twmc--btn__grow-g2 buttonColor" role="button" data-toggle="collapse"
+                            href="#event-filters-{{randomCode}}" aria-expanded="true" aria-controls="filter-content"
+                            style="color: white; font-weight: bold;">Filter <i class="far fa-chevron-down"
+                                style="color: white; font-weight: bold;" aria-hidden="true"></i></a>
+            
+                    </div>
+                </div>
+            </div>
+        
+            <div class="Small Groups Filters section">
+                <div id="event-filters-{{randomCode}}" class="container grow-g__filter collapse {% if expanded %}in{% endif %}" aria-expanded="true">
+                    <div class="hidden-print ">
+            
+                        <div class="row margin-b-md">
+                            <div class="col-md-6">
+                                <select class="grow__form-select form-control" name="{{AudienceParameter}}">
+                                    {% definedvalue where:'DefinedTypeId == "{{ audienceDefinedTypeId }}" && IsActive =="True"' sort:'Order' securityenabled:'false'%}
+                                    <option value="">Audience
+                                        {% for value in definedvalueItems %}
+                                                <option value="{{ value.Id }}" {% if value.Id == audienceId %}selected="Selected"{% endif %}>{{value.Value}}
+                                        {% endfor %}
+                                        {% enddefinedvalue %}
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+            
+                                <select class="grow__form-select form-control" name="{{DayOfWeekParameter}}">
+                                    <option value="" selected="selected">Day of the Week
+                                        {% assign now = 'Now' | Date:'MM/dd/yyyy' |  NextDayOfTheWeek:'Sunday'%}
+                                        {% for i in (0..6) %}
+                                        {% assign dayOption = now | DateAdd:i,'d' | Date:'ddd' %}
+                                    <option value="{{ dayOption }}" {% if dayOption == selectedDay%}selected="Selected"{% endif %}>{{ now | DateAdd:i,'d' | Date:'ddd' }}
+            
+                                        {% endfor %}
+                                </select>
+                            </div>
+                            {% comment %}
+                            <div class="col-md-4">
+                                <select class="grow__form-select form-control" name="{{TopicParameter}}">
+                                    {% definedvalue where:'DefinedTypeId == "{{ topicDefinedTypeId }}" && IsActive =="True"' sort:'Order'%}
+                                    <option value=""  selected="selected">{{ topicLabel }}
+                                        {% for value in definedvalueItems %}
+                                    <option value="{{ value.Guid }}" {% if value.Guid == selectedTopic %}selected="Selected"{% endif %}>{{value.Value}}
+                                        {% endfor %}
+                                        {% enddefinedvalue %}
+                                </select>
+                            </div>
+                            {% endcomment %}
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </div>
+        
+            <section >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="twmc-flex-container--3-col">
+            
+                            
+                
+            
+                                <!-- Events card -->
+            
+                                {% for i in (itemStart..itemEnd) %}
+                                {% assign event = eventListObject[i] %}
+            
+                                <div class="twmc-flex-item--3-col grow__card">
+                                    <div class="grow__card-strip--traditional"></div>
+                                    <div class="grow__card-content">
+                                        <h3 class="grow__card-title4 text-traditional">
+                                            <a href="event/{{ event.EventItemOccurrenceId }}"
+                                                class="grow__card-title4 text-traditional">{{ event.EventName }}</a>
+                                        </h3>
+                                        <div class="grow__card-tag4">
+                                            {% assign eventaudiences = event.AudienceNames | Split:',' %}
+                                            {% for audience in eventaudiences %}
+                                            <span>{{audience }}{% unless forloop.last %},{% endunless %}</span>
+                                            {% endfor %}
+            
+            
+                                        </div>
+                                        <div class="grow__card-info">
+                                            <i class="fas fa-calendar-alt grow__card-icon" aria-hidden="true"></i>
+                                            <p>
+                                                {% if event.EffectiveEndDate and event.EffectiveEndDate != '' and event.EffectiveEndDate != event.EffectiveStartDate %}
+                                                {{ event.EffectiveStartDate | Date: 'dddd, MMM d'}} -
+                                                {{ event.EffectiveEndDate | Date: 'MMM d'}}
+                                                {% else %}
+                                                {{ event.Date | Date: 'dddd, MMM d' }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                        <div class="grow__card-info">
+                                            <i class="fas fa-map-marker-alt grow__card-icon" aria-hidden="true"></i>
+                                            <p>{{ event.Campus }}{% if event.Location and event.Location != '' %} |
+                                                {{event.Location }}{% endif %}</p>
+                                        </div>
+                                        <div class="grow__card-info">
+                                            <i class="far fa-clock grow__card-icon" aria-hidden="true"></i>
+                                            <p>{{ event.Time }}</p>
+                                        </div>
+                                        <div class="grow__card-description">
+                                            <p class="mb-2">{{ event.Summary  | Truncate:360,'...' }}</p>
+                                        </div>
+            
+                                        <div>
+                                            <a href="event/{{ event.EventItemOccurrenceId }}"
+                                                class="twmc--btn__grow twmc--btn__grow-traditional">Details &raquo;</a>
+                                        </div>
+            
+                                    </div>
+                                </div>
+            
+                                {% endfor %}
+                        </div>
+                                <!-- pagination -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="grow-traditional__pagination">
+                                            {% assign pages = eventListSize | DividedBy: itemsPerPage | Ceiling %}
+                                            {% assign startPage = pageNumber | Minus:3 %}
+                                            {% if startPage < 1 %}
+                                            {% assign startPage = 1 %}
+                                            {% endif %}
+                                            {% assign endPage = pageNumber | Plus:4 %}
+                                            {% if endPage >= pages %}
+                                            {% assign endPage = pages %}
+                                            {% endif %}
+                                            {% if pageNumber > 1 %}
+                                            <a href="?{{PageNumberParameter}}={{ pageNumber | Minus:1 }}">«</a>
+                                            {% endif %}
+                                            {% for i in (startPage..endPage) %}
+                                            <a href="?{{PageNumberParameter}}={{i}}"
+                                                class="{% if i == pageNumber%}grow-traditional__page-active{% endif %}">{{ i }}</a>
+                                            {% endfor %}
+            
+                                            {% if pageNumber < pages %}
+                                            <a href="?{{PageNumberParameter}}={{pageNumber | Plus:1}}"
+                                                class="{% if i == pageNumber%}grow-traditional__page-active{% endif %}">»</a>
+                                            {% endif %}
+            
+                                        </div>
+                                    </div>
+            
+            
+                        {% else %}
+                            
+                    
+                                
+                        {% endif %}
+            
+                            </div>
+                            <!-- end of .twmc-flex-container--3-col -->
+                        </div>
+                        <!-- end of .col-sm-12 -->
+                    </div>
+                    <!-- end of row -->
+            
+                    <!-- end of .container -->
+            </section>
+        
+        </div>
+        
 
         <!-- END OF TEST CONTENT -->
 
