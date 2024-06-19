@@ -276,12 +276,96 @@
 
     <!-- Main -->
     <main>
+      <!-- Men's Conference 2024 -->
+       <style>
+      #twmc-featbanner--mensconf2024 {
+         background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/MEN_Mens+Conference+Feature+Banner+BG.png");
+
+        text-align: center;
+        background-position: left center;
+        background-size: cover;
+
+        height: 650px;
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .twmc-featbanner--mensconf2024-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Text img */
+      .mensconf2024-feat-text {
+        max-width: 75%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .mensconf2024-feat-text {
+          max-width: 90%;
+        }
+      }
+
+
+      @media only screen and (max-width: 576px) {
+        #twmc-featbanner--mensconf2024 {
+          height: 550px;
+          padding: 3.5rem 0 2.5rem;
+        }
+      }
+
+      @media only screen and (max-width:400px) {
+        #twmc-featbanner--mensconf2024 {
+          height: 550px;
+          padding: 2.5rem 0;
+        }
+      }
+      /* End of text img */
+
+      /* Button */
+      .twmc--btn--radiant2024 {
+         border: 2px solid #254C52;
+         background-color: #254C52;
+         color: #EBEEE9;
+         font-weight: 700;
+
+         transition: all .3s ease-in-out;
+     }
+
+     .twmc--btn--radiant2024:hover,
+     .twmc--btn--radiant2024:focus {
+         border-color: #254C52;
+         background-color: rgba(37, 76, 82, 0.2);
+         text-decoration: none;
+         color: #254C52;
+
+         transform: scale(1.01);
+     }
+
+      /* End of button */
+   </style>
+   <section id="twmc-featbanner--mensconf2024">
+     <div class="container twmc-featbanner--mensconf2024-wrapper">
+       <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_Conference_Web_TextCompass.png" alt="Grow In Your Faith" class="img-responsive mensconf2024-feat-text">
+       <a href="/mensconference2024" class="twmc--btn twmc--btn--mensconf2024-blue mt-2" download="">Learn more</a>
+     </div>
+   </section>
+      <!-- Men's Conference 2024 -->
+
+
       <!-- Radiant Fall 2024 -->
       <style>
         #twmc-featbanner--radiantfall2024 {
-           background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+           /* background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png"); */
+            background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+
            text-align: center;
-           background-position: left center;
+           background-position: right center;
            background-size: cover;
  
            height: 650px;
@@ -338,31 +422,32 @@
          /* End of text img */
  
          /* Button */
-         .twmc--btn--prayerconf2024-light {
-             border: 2px solid #254C52;
-             background-color: #254C52;
-             color: #F0EFE8;
-             font-weight: 700;
- 
-             transition: all .3s ease-in-out;
-         }
- 
-         .twmc--btn--prayerconf2024-light:hover,
-         .twmc--btn--prayerconf2024-light:focus {
-             border-color: #4A8F8A;
-             background-color: #4A8F8A;
-             text-decoration: none;
-             color: #F0EFE8;
- 
-             transform: scale(1.01);
-         }
+         .twmc--btn--radiant2024 {
+            border: 2px solid #254C52;
+            background-color: #254C52;
+            color: #EBEEE9;
+            font-weight: 700;
+
+            transition: all .3s ease-in-out;
+        }
+
+        .twmc--btn--radiant2024:hover,
+        .twmc--btn--radiant2024:focus {
+            border-color: #254C52;
+            background-color: rgba(37, 76, 82, 0.2);
+            text-decoration: none;
+            color: #254C52;
+
+            transform: scale(1.01);
+        }
+
          /* End of button */
       </style>
       <section id="twmc-featbanner--radiantfall2024">
         <div class="container twmc-featbanner--radiantfall2024-wrapper">
           <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerTITLE.png" alt="Grow In Your Faith" class="img-responsive radiantfall2024-feat-text1">
           <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerTITLE2.png" alt="Grow In Your Faith" class="img-responsive radiantfall2024-feat-text2">
-          <a href="/prayerconference" class="twmc--btn twmc--btn--prayerconf2024-light  mt-1" target="_blank">Learn more</a>
+          <a href="/prayerconference" class="twmc--btn twmc--btn--radiant2024  mt-1" target="_blank">Learn more</a>
         </div>
       </section>
       <!-- End of Radiant Fall 2024 -->

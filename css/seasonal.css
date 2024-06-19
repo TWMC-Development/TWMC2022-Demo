@@ -11828,16 +11828,6 @@ p.twmc-prayerconf2024-date {
     z-index: 10;
     max-width: 100%;
     height: 200px;
-
-    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/MEN_ConferenceWeb_PageTear1.png");
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top: -45px;
-    z-index: 10;
-    max-width: 100%;
-    height: 200px; */
 }
 
 .twmc-mensconf2024--intro-section-container-up {
@@ -11846,8 +11836,6 @@ p.twmc-prayerconf2024-date {
 }
 
 .twmc-mensconf2024--intro-section {
-    /* background-color: #488aa9; */
-    /* background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.2), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.9)); */
     background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.2), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.8));
     color: #1a1d1a;
     text-align: center;
@@ -11914,7 +11902,8 @@ p.twmc-prayerconf2024-date {
     color: #2E6682;
 }
 
-.mensconf2024--text-link-blue:hover {
+.mensconf2024--text-link-blue:hover,
+.mensconf2024--text-link-blue:focus {
     color: #3A80A3;
 }
 
@@ -11930,6 +11919,17 @@ p.twmc-prayerconf2024-date {
     }
 }
 
+.lineheight-1-1 {
+    line-height: 1.1;
+}
+
+.lineheight-1-2 {
+    line-height: 1.2;
+}
+
+.lineheight-1-3 {
+    line-height: 1.3;
+}
 /* END OF TYPOGRAPHY */
 
 /* BUTTON */
@@ -11993,15 +11993,32 @@ p.twmc-prayerconf2024-date {
     transform: scale(1.01);
 }
 
+.twmc--btn--mensconf2024-lightblue {
+    border: 2px solid #E4EDF3;
+    background-color: #E4EDF3;
+    /* color: #f2f2f2; */
+    color: #333;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--mensconf2024-lightblue:hover,
+.twmc--btn--mensconf2024-lightblue:focus {
+    border-color: #DDE9F0;
+    background-color: #DDE9F0;
+    text-decoration: none;
+    color: #333;
+
+    transform: scale(1.01);
+}
+
+
 
 /* END OF BUTTON */
 
 /* SCHEDULE */
 #twmc-mensconf2024--schedule {
-    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(72, 138, 169, 0.2), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 0.9)); */
-    /* color: #1a1d1a; */
-    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(230, 236, 217, 0.4), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 1)); */
-
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(230, 236, 217, 0.4), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 1)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_mens-conference/mensconf2024/Topo+Lines+A35+W2000.png");
     background-position: center center;
     background-size: cover;
@@ -12035,6 +12052,7 @@ p.twmc-prayerconf2024-date {
     .twmc-mensconf2024--sched-container {
         margin-left: auto;
         margin-right: auto;
+        text-align: left;
     }
 
     .twmc-mensconf2024--sched-item {
@@ -12050,7 +12068,8 @@ p.twmc-prayerconf2024-date {
     .twmc-mensconf2024-icon-wrapper {
         width: max-content;
         text-align: left;
-        margin-left: auto;
+        /* margin-left: auto; */
+        margin-left: 15%;
         margin-right: auto;
     }
 
@@ -12060,14 +12079,24 @@ p.twmc-prayerconf2024-date {
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .twmc-mensconf2024-icon-wrapper {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-mensconf2024-icon-wrapper {
+        margin-left: 0;
+    }
+}
+
 /* END OF SCHEDULE */
 
 /* DESCRIPTION SPEAKERS */
 #twmc-mensconf2024--desc-speakers {
-    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(230, 236, 217, 0.4), rgba(230, 236, 217, 0.4), rgba(255, 255, 255, 1)); */
     background-color: #fff;
     color: #3A80A3;
-    /* color: #67533E; */
 }
 
 /* Flex */
@@ -12119,7 +12148,8 @@ p.twmc-prayerconf2024-date {
     padding: 1.5rem 2rem;
     background-color: #E4EDF3;
     color: #255268;
-    height: 80vh;
+    min-height: max-content !important;
+    max-height: 70vh;
     overflow-y: auto;
 }
 
@@ -12135,6 +12165,8 @@ p.twmc-prayerconf2024-date {
     display: inline-block;
     text-align: center;
 }
+
+
 /* End of Card */
 /* END OF DESCRIPTION SPEAKERS */
 
@@ -12158,11 +12190,110 @@ p.twmc-prayerconf2024-date {
 }
 
 #twmc-mensconf2024--faq {
-    /* background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.1), rgba(234, 232, 229, 0.8), rgba(103, 83, 62, 0.2)); */
-    background-color: rgba(72, 138, 169, 0.1);
+    background-image: linear-gradient(180deg, rgba(205, 213, 216, 0.4), rgba(72, 138, 169, 0.1), rgba(234, 232, 229, 0.8), rgba(103, 83, 62, 0.2));
 }
 
 /* END OF FAQ */
+
+/* HOTEL RECOMMENDATIONS */
+/* Flex */
+.twmc-mensconf2024--flex3col-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+.twmc-mensconf2024--flex3col-item {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconf2024--flex3col-item {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .twmc-mensconf2024--flex3col-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Cards */
+.twmc-mensconf2024-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+    border-radius: 8px;
+}
+
+.twmc-mensconf2024--ribbon {
+    background-color: #A2A29E;
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.twmc-mensconf2024--ribbon1 {
+    background-image: url("https://cache.marriott.com/is/image/marriotts7prod/fi-houtw-king-suite-exks-31051-22070:Classic-Hor?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px");
+}
+
+.twmc-mensconf2024--ribbon2 {
+    background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/HOULD/hould-living-8462-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px");
+}
+
+.twmc-mensconf2024--ribbon3 {
+    background-image: url("https://www.hilton.com/im/en/IAHTWES/2284585/guestroom-1-1095502-embassy-suites-the-woodland-hughes-landing.jpg?impolicy=crop&cw=5760&ch=3274&gravity=NorthWest&xposition=0&yposition=282&rw=760&rh=432");
+}
+
+.twmc-mensconf2024--ribbon4 {
+    background-image: url("https://www.hilton.com/im/en/IAHSPHW/496593/1-king-bed-studio-suite-1053708.tif?impolicy=crop&cw=4874&ch=3333&gravity=NorthWest&xposition=62&yposition=0&rw=740&rh=506");
+}
+
+.twmc-mensconf2024--ribbon5 {
+    background-image: url("https://cms.druryhotels.com/media/463607/0093_nkx_deluxe-king-guestroom.jpg?anchor=center&mode=crop&width=659&height=422&rnd=132072494630000000");
+}
+
+
+
+
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-mensconf2024-ribbon-card--inner-wrapper {
+    padding: 1.5rem 1.5rem 1.9rem;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-mensconf2024--ribbon {
+        height: 250px;
+    }
+}
+
+.twmc-mensconf2024--ribbon-inner {
+    margin: 0;
+}
+/* End of cards */
+
+.twmc-icon-wrapper2 {
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* END OF HOTEL RECOMMENDATIONS */
 
 /* PROMOTIONAL PACKS */
 #twmc-mensconf2024--promo-section {
@@ -12171,27 +12302,181 @@ p.twmc-prayerconf2024-date {
     color: #BAC6CA;
 }
 
+/* Promotional Pack */
+.twmc-promopack--wrapper2 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-promopack-header2 {
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+    .twmc-promopack--wrapper {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.twmc-promopack--flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.twmc-promopack--flex-item2left {
+    flex-basis: 30%;
+}
+
+.twmc-mensconf2024--promo-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twmc-promopack--flex-item2right {
+    flex-basis: calc(100% - 30% - 30px);
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-promopack--flex-container2 {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .twmc-promopack--flex-item2left,
+    .twmc-promopack--flex-item2right {
+        align-self: center;
+        text-align: center;
+    }
+
+    .twmc-promopack-header2 {
+        margin-top: 2rem;
+    }
+}
+
+
+.twmc-mensconf2024--promo-img {
+    max-width: 300px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-mensconf2024--promo-img {
+        width: 70%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .twmc-mensconf2024--promo-img {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 /* END OF PROMOTIONAL PACKS */
+
+
+/* MINISTRY PROMO */
+#twmc-mensconf2024--ministrypromo {
+    background-color: ​#0a161b;
+    background: linear-gradient(45deg, rgba(10, 22, 27, 1), rgba(24, 53, 66, 1) 55%);
+    color: #E4EDF3;
+}
+
+
+
+/* END OF MINISTRY PROMO */
 /* ===== End of MEN - Mens Conference 2024 ===== */
 
 
 /* ====== RADIANT FALL 2024 ===== */
+/* TYPOGRAPHY */
+.radiantfall2024-text--green {
+    color: #254C52;
+}
+
+.radiantfall2024-textlink--green {
+    color: #0D5565;
+}
+
+.radiantfall2024-textlink--green:hover,
+.radiantfall2024-textlink--green:focus {
+    color: #4A8F8A;
+}
+
+.radiantfall2024-textlink--lightgreen {
+    color: #4A8F8A;
+}
+
+.radiantfall2024-textlink--lightgreen:hover,
+.radiantfall2024-textlink--lightgreen:focus {
+    color: #6EA5A1;
+}
+
+
+.radiantfall2024-tag--green {
+    display: inline-block;
+    color: #333;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: #DBE9D6;
+    border: 1px solid #DBE9D6;
+    border-radius: .25rem;
+    padding: .3rem .55rem .2rem;
+    letter-spacing: 1px;
+    cursor: not-allowed;
+}
+/* END OF TYPOGRAPHY */
+
 /* BUTTON */
-.twmc--btn--prayerconf2024-light {
+.twmc--btn--radiant2024 {
     border: 2px solid #254C52;
     background-color: #254C52;
-    color: #F0EFE8;
+    color: #EBEEE9;
     font-weight: 700;
 
     transition: all .3s ease-in-out;
 }
 
-.twmc--btn--prayerconf2024-light:hover,
-.twmc--btn--prayerconf2024-light:focus {
-    border-color: #4A8F8A;
-    background-color: #4A8F8A;
+.twmc--btn--radiant2024:hover,
+.twmc--btn--radiant2024:focus {
+    border-color: #254C52;
+    background-color: rgba(37, 76, 82, 0.2);
     text-decoration: none;
-    color: #F0EFE8;
+    color: #254C52;
+
+    transform: scale(1.01);
+}
+
+.twmc--btn--radiant2024-outline {
+    border: 2px solid #254C52;
+    background-color: transparent;
+    color: #254C52;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--radiant2024-outline:hover,
+.twmc--btn--radiant2024-outline:focus {
+    border-color: #254C52;
+    background-color: rgba(37, 76, 82, 0.1);
+    text-decoration: none;
+    color: #254C52;
 
     transform: scale(1.01);
 }
@@ -12199,9 +12484,10 @@ p.twmc-prayerconf2024-date {
 
 /* FEATURE BANNER */
 #twmc-featbanner--radiantfall2024 {
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+    /* background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png"); */
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
     text-align: center;
-    background-position: left center;
+    background-position: right center;
     background-size: cover;
 
     height: 650px;
@@ -12231,7 +12517,7 @@ p.twmc-prayerconf2024-date {
   @media only screen and (max-width: 576px) {
     #twmc-featbanner--radiantfall2024 {
       height: 550px;
-      padding: 3.5rem 0 2.5rem;
+      padding: 2.5rem 0;
     }
 
     .radiantfall2024-feat-text1 {
@@ -12263,4 +12549,416 @@ p.twmc-prayerconf2024-date {
 
 /* END OF HERO */
 
+
+/* INTRO + SCHEDULE */
+#twmc-radiant2024--intro-schedule {
+    /* background: linear-gradient(180deg, rgba(248, 244, 233, 0.7), rgba(255, 255, 255, 1) 70.71%); */
+    background: linear-gradient(180deg, rgba(235, 238, 233, 0.7), rgba(255, 255, 255, 1) 70.71%);
+}
+
+#modalRadiant {
+    width: 700px;
+    margin-left: -350px;
+}
+
+@media only screen and (max-width: 768px) {
+    #modalRadiant {
+        width: 90%;
+        margin-left: -45%;
+    }
+}
+
+.twmc-modal-body-radiant2024 {
+    padding: 1.5rem 2rem;
+    background-color: #E4EDF3;
+    color: #254C52;
+    min-height: max-content !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.twmc-modal-header-radiant2024 {
+    background-color: #254C52;
+    color: #EBEEE9;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ /* Flex */
+ .twmc-radiantfall2024--flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.twmc-radiantfall2024--flex-item {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-radiantfall2024--flex-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Card */
+.twmc-radiantfall2024--card {
+background-color: #FAF9F2;
+padding: 1.7rem 2rem;
+}
+/* End of Card */
+/* END OF INTRO + SCHEDULE */
+
+
+/* CURRENT SERIES */
+#twmc-radiant2024--serries {
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(210, 226, 213, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_OceanBG_A10.jpg");
+    background-position: center center;
+    background-size: cover;
+
+}
+
+/* Flex */
+.twmc-radiant2024--flex3col-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+.twmc-radiant2024--flex3col-item {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .twmc-radiant2024--flex3col-item {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-radiant2024--flex3col-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Cards */
+.twmc-radiant2024-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+}
+
+.twmc-radiant2024--ribbon {
+    background-color: #A2A29E;
+    background-size: cover;
+}
+
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-radiant2024-ribbon-card--inner-wrapper {
+    padding: 1.5rem 1.5rem 1.9rem;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-mensconf2024--ribbon {
+        height: 250px;
+    }
+}
+
+.twmc-mensconf2024--ribbon-inner {
+    margin: 0;
+}
+/* End of cards */
+
+.twmc-icon-wrapper2 {
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+/* END OF CURRENT SERIES */
+
+/* RADIANT MOMS OF SPECIAL NEEDS */
+#twmc-radiant2024--momspecialneeds {
+    /* background-color: #E5E8E1; */
+    background-color: #DFE6E2;
+    background-color: #E5EBE8;
+}
+/* END OF RADIANT MOMS OF SPECIAL NEEDS */
+
+/* INFO */
+#twmc-radiant2024--info {
+    background-color: #254C52;
+    color: #EBEEE9;
+}
+
+.twmc-radiant2024--info-card {
+    background-color: rgba(235,238,233, 0.1);
+    border: 1px solid #EBEEE9;
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1.2rem;
+}
+
+/* END OF INFO */
+
 /* ====== END OF RADIANT FALL 2024 ===== */
+
+
+/* ===== HAR - COMMUNITY DINNER 2024 ===== */
+/* TYPOGRAPHY */
+.twmc-comdinner2024--restaurant-subtitle {
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 0.8;
+}
+/* END OF TYPOGRAPHY */
+
+/* BUTTON */
+.twmc--btn--radiant2024-outline {
+    border: 2px solid #254C52;
+    background-color: transparent;
+    color: #254C52;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--radiant2024-outline:hover,
+.twmc--btn--radiant2024-outline:focus {
+    border-color: #254C52;
+    background-color: rgba(37, 76, 82, 0.1);
+    text-decoration: none;
+    color: #254C52;
+
+    transform: scale(1.01);
+}
+/* END OF BUTTON */
+
+/* HERO/FEATURE BANNER */
+#twmc-featbanner--comdinner2024 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+    text-align: center;
+    background-position: right center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 4.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--comdinner2024-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Text img */
+  /* .radiantfall2024-feat-text1 {
+    max-width: 100%;
+  }
+
+  .radiantfall2024-feat-text2 {
+    display: none;
+  } */
+
+  @media only screen and (max-width: 576px) {
+    #twmc-featbanner--comdinner2024 {
+      height: 550px;
+      padding: 2.5rem 0;
+    }
+
+    /* .radiantfall2024-feat-text1 {
+      display: none;
+    }
+
+    .radiantfall2024-feat-text2 {
+      display: block;
+      width: 80%;
+    } */
+  }
+
+  @media only screen and (max-width:400px) {
+    #twmc-featbanner--comdinner2024 {
+      height: 550px;
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    /* .radiantfall2024-feat-text2 {
+      display: block;
+      width: 90%;
+    } */
+  }
+  /* END OF HERO/FEATURE BANNER */
+
+
+/* RESTAURANTS */
+/* Flex */
+.twmc-comdinner2024--flex3col-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+.twmc-comdinner2024--flex3col-item {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-comdinner2024--flex3col-item {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-comdinner2024--flex3col-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Cards */
+.twmc-comdinner2024-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+    border-radius: 8px;
+}
+
+.twmc-comdinner2024--ribbon {
+    background-color: #A2A29E;
+    background-size: cover;
+    /* height: 200px; */
+    height: 250px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* .twmc-comdinner2024--ribbon1 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/Bellagreen2.jpg");
+} */
+
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-comdinner2024-ribbon-card--inner-wrapper {
+    padding: 1.5rem 1.5rem 1.9rem;
+    text-align: left;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-comdinner2024--ribbon {
+        height: 250px;
+    }
+}
+
+.twmc-comdinner2024--ribbon-inner {
+    margin: 0;
+}
+
+.twmc-icon-wrapper {
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+}
+
+.twmc-icon-wrapper2 {
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+.twmc-comdinner2024-card--title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+}
+  
+
+.twmc-comdinner2024-card--address {
+    font-size: 14px;
+    line-height: 1;
+    color: #3A80A3;
+}
+
+a.twmc-comdinner2024-card--address:hover,
+a.twmc-comdinner2024-card--address:focus {
+    color: #2E6682;
+}
+
+.twmc-card-icon-md {
+    font-size: 1.5rem;
+}
+
+.twmc-card-icon--inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.twmc-card-icon--inline-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.twmc-comdinner2024-card--desc {
+    line-height: 1.3;
+}
+
+.twmc-comdinner2024-seats--num {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.twmc-comdinner2024-seats--text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* flex */
+.twmc-seats-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4%;
+
+}
+
+.twmc-seats-flex-item {
+    flex-basis: 48%;
+}
+/* End of cards */
+/* END OF RESTAURANTS */
+
+
+/* ===== END OF HAR - COMMUNITY DINNER 2024 ===== */

@@ -1347,6 +1347,46 @@ a.icon-button-white > i:focus {
     }
 }
 
+/* Hero Video 800h */
+.hero--video-section-800h {
+    height: 800px;
+    text-align: center;
+    position: relative;
+}
+
+.hero--video-section-800h > video {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: 11;
+}
+
+.hero--video__text-wrapper-800h {
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero--video__text-wrapper-800h > img.img-responsive {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+    .hero--video-section-800h,
+    .hero--video-section-800h > video,
+    .hero--video__text-wrapper-800h {
+        height: 550px;
+    }
+}
+
 /* ===== END OF HERO ===== */
 /* ================= */
 
