@@ -335,21 +335,107 @@
     </section>
     <!-- End of Intro -->
 
-    <!-- CTA Give Online -->
-    <section id="twmc-cta--give-online">
+    <!-- CTA Estate Planning Workshop -->
+    <style>
+      #cta-estate {
+        background-color: #B2C3CF;
+        padding: 3rem 0;
+      }
+
+      .cta-estate--img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+      }
+
+      #twmc-cta--estate {
+          padding: 2rem 0;
+          background-color: #B2C3CF;
+          background: linear-gradient(45deg, #B2C3CF, #f9f9f9);
+      }
+
+      .cta-estate--flex-container {
+          display: flex;
+          flex-direction: row;
+          gap: 4%;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .cta-estate-img {
+          width: 150px;
+          border: 5px solid #576671 ;
+          border-radius: 50%;
+      }
+
+      @media only screen and (max-width: 991px) {
+        #twmc-cta--estate {
+            padding: 2.5rem 0;
+        }
+
+        .cta-estate--flex-container {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .cta-estate--flex-img {
+            margin-bottom: 10px;
+        }
+
+        .cta-estate--flex-info {
+            text-align: center;
+        }
+    }
+
+    .cta-estate-text {
+      color: #465560;
+    }
+
+    .twmc--btn--estate {
+        border: 2px solid #465560;
+        background-color: #465560;
+        color: #EBEEE9;
+        font-weight: 700;
+
+        transition: all .3s ease-in-out;
+    }
+
+    .twmc--btn--estate:hover,
+    .twmc--btn--estate:focus {
+        border-color: #465560;
+        background-color: rgba(178, 195, 207, 0.2); 
+        text-decoration: none;
+        color: #465560;
+
+        transform: scale(1.01);
+    }
+    </style>
+
+    <section id="twmc-cta--estate">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 cta-foundation--giveonline">
-            <h3 class="twmc-h3 mt-3 mb-2">GIVE ONLINE</h3>
-            <p class="twmc-p text-center"><strong>Easily make one-time or recurring gifts online as a business or as an individual.</strong></p>
-            <a class="twmc--btn twmc--btn--traditional my-2" href="/foundation-give" target="_blank">Make a Donation</a>
+          <div class="col-sm-8 col-sm-offset-2 cta-foundationpartner--flex-container">
+            <div class="cta-estate--flex-img">
+              <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_foundation/GinaPrice-300x300.jpg" alt="Gina Price" class="img-circle cta-estate-img">
+            </div>
+            <div class="cta-estate--flex-info">
+              <h4 class="twmc-h4 text-uppercase cta-estate-text">Estate Planning Workshop</h4>
+              <p class="twmc-p cta-foundationluncheon-date">
+                <span class="twmc-icon-wrapper"><i class="fas fa-calendar-alt" aria-hidden="true"></i></span> Tuesday, October 29 &verbar; 4:00 p.m. 
+                <br><span class="twmc-icon-wrapper"><i class="fa-solid fa-location-dot"></i></span> Jones Library &verbar; The Woodlands Campus
+                <br><span class="twmc-icon-wrapper"><i class="fa-solid fa-podium"></i></span> Gina A. Price &verbar; Attorney
+                <br><span class="twmc-icon-wrapper"><i class="fa-solid fa-money-bill"></i></span> No cost to attend
+              </p>
+              <div>
+                <a class="twmc--btn twmc--btn--estate twmc--btn--small" href="#" target="_blank">Learn more</a>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End of CTA Give Online -->
-
-    
+    <!-- End of CTA Estate Planning Workshop -->
 
     <!-- How to give -->
     <section class="py-6">

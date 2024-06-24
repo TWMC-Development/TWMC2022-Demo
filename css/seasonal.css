@@ -10249,7 +10249,7 @@ p.twmc-prayerconf2024-date {
 
 /* ===== End of Prayer Conference 2024 ===== */
 
-/* =====  56 Club ===== */
+/* =====  Club 56 ===== */
 /* Feature banner */
 
 /* Hero */
@@ -10385,6 +10385,16 @@ p.twmc-prayerconf2024-date {
 
     transform: scale(1.01);
 }
+
+/* Incative button */
+.twmc--btn--inactive-outline {
+    border: 2px solid #444;
+    background-color: #eee;
+    color: #444;
+    padding: 0.6rem 0.6rem 0.5rem;
+    font-weight: 700;
+    cursor: not-allowed;
+}
 /* End of Buttons */
 
 /* Card */
@@ -10402,7 +10412,7 @@ p.twmc-prayerconf2024-date {
 /* End of Card */
 
 
-/* ===== End of NextGen 56 - Club ===== */
+/* ===== End of NextGen Club 56 ===== */
 
 
 /* ===== Recreation - Fitness ===== */
@@ -12726,24 +12736,37 @@ padding: 1.7rem 2rem;
     font-weight: 600;
     font-size: 0.8;
 }
+
+.twmc-comdinner2024--text-orangedark {
+    color: #990003;
+}
+
+.twmc-comdinner2024--link-orangedark {
+    color: #990003;
+}
+
+.twmc-comdinner2024--link-orangedark:hover,
+.twmc-comdinner2024--link-orangedark:focus {
+    color: #b42418;
+}
 /* END OF TYPOGRAPHY */
 
 /* BUTTON */
-.twmc--btn--radiant2024-outline {
-    border: 2px solid #254C52;
+.twmc--btn--comdinner2024-outline {
+    border: 2px solid #990003;
     background-color: transparent;
-    color: #254C52;
+    color: #990003;
     font-weight: 700;
 
     transition: all .3s ease-in-out;
 }
 
-.twmc--btn--radiant2024-outline:hover,
-.twmc--btn--radiant2024-outline:focus {
-    border-color: #254C52;
-    background-color: rgba(37, 76, 82, 0.1);
+.twmc--btn--comdinner2024-outline:hover,
+.twmc--btn--comdinner2024-outline:focus {
+    border-color: #990003;
+    background-color: rgba(250, 234, 230, 0.3);
     text-decoration: none;
-    color: #254C52;
+    color: #990003;
 
     transform: scale(1.01);
 }
@@ -12811,6 +12834,11 @@ padding: 1.7rem 2rem;
 
 
 /* RESTAURANTS */
+#twmc-comdinner2024--restaurants {
+    background-color: #E5E8E1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(252, 243, 235, 0.4) 70.71%);
+}
+
 /* Flex */
 .twmc-comdinner2024--flex3col-container {
     display: flex;
@@ -12905,13 +12933,13 @@ padding: 1.7rem 2rem;
 
 .twmc-comdinner2024-card--address {
     font-size: 14px;
-    line-height: 1;
-    color: #3A80A3;
+    line-height: 1.3;
+    color: #990003;
 }
 
 a.twmc-comdinner2024-card--address:hover,
 a.twmc-comdinner2024-card--address:focus {
-    color: #2E6682;
+    color: #c23222;
 }
 
 .twmc-card-icon-md {
