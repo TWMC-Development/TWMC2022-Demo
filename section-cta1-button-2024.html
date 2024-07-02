@@ -396,14 +396,89 @@
 
 
       <!-- HAR -->
+       <style>
+        .twmc-cta--transition2024 {
+        padding: 2.2rem 0;
+        text-align: center;
+        background-color: var(--color-traditional);
+        /* background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/_new_WOR_VenueTransition_Hero_2000x800.jpg'); */
+        background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/_new_WOR_VenueTransition_Hero_2000x800.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #f2f2f2;
+    }
+
+    .twmc-cta--transition2024-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-trans-hero {
+        background-color: white;
+        color: #333;
+        border: 2px solid #333;
+        border-radius: 9.5px;
+        padding: .5rem 1.2rem;
+        font-size: .8rem;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        min-width: 175px;
+        max-width: max-content;
+        text-transform: uppercase;
+      }
+
+    .btn-trans-hero:hover {
+        background-color: #eee;
+        transform: scale(1.02);
+        color: #333;
+    }
+
+    @media only screen and (max-width:768px) {
+        .btn-trans-hero {
+            margin-top: 10px;
+        }
+    }
+
+
+    .twmc-cta--transition2024-wrapper a.btn.btn-trans-hero {
+      margin: 0 auto;
+    }
+
+        .buttons-wrap {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .btn-trans-cta {
+          min-width: 218px;
+        }
+       </style>
+
       <section class="twmc-cta--transition2024" >
         <div class="twmc-container">
           <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 align-center twmc-cta--transition2024-wrapper">
+            <div class="col-sm-8 col-sm-offset-2 align-center ">
               <h4 class="twmc-h4 mb-2">
                 Starting August 11, Harvest Contemporary worship will be held at 9:00 a.m. in the Sanctuary and 11:00 a.m. in Harvest Worship Center.
               </h4>
-              <a href="/worship" class="btn btn-trans-hero" target="_blank">Check Updated Schedule</a>
+              <div class="buttons-wrap">
+                <a href="/worship" class="btn btn-trans-hero btn-trans-cta" target="_blank">Check Updated Schedule</a>
+                <a href="/harvest-venuechange-volunteers" class="btn btn-trans-hero btn-trans-cta" target="_blank">Volunteers needed</a>
+              </div>
+              
             </div>
           </div>
         </div>

@@ -4030,7 +4030,7 @@
     font-size: .9rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .twmc-55-timeforfun--flex-container {
         gap: 0;
     }
@@ -11308,7 +11308,27 @@ p.twmc-prayerconf2024-date {
   
 /* ===== End of NextGen Sports ===== */
 
-/* ===== Adult Discipleship ===== */
+/* ===== Adult Discipleship 2024 ===== */
+/* MODAL */
+.twmc-modal-body-adultdisc2024 {
+    padding: 1.5rem 2rem;
+    background-color: #f2f2f2;
+    color: #fff;
+    min-height: max-content !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.twmc-modal-header-adultdisc2024 {
+    background-color: #333;
+    color: #D9EEF1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* END OF MODAL */
+
+
 /* HERO */
 #twmc-adultdiscipleship24--hero {
     /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 60, 0, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/TRAD_Faith+Grows+Here_background.jpg"); */
@@ -11350,6 +11370,102 @@ p.twmc-prayerconf2024-date {
   }
 
 /* END OF HERO */
+
+/* INTRO */
+/* Flex */
+.adultdisc-flex-container--2-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.adultdisc-flex-item--2-col {
+    flex-basis: 48%;
+    overflow: visible;
+}
+
+.adultdisc-flex--left {
+    max-width: 90%;
+}
+
+@media only screen and (max-width:992px) {
+    .adultdisc-flex-container--2-col {
+        /* flex-direction: column; */
+        gap: 0;
+    }
+
+    .adultdisc-flex-item--2-col {
+        flex-basis: 100%;
+        height: max-content;
+    }
+
+}
+/* End of flex */
+
+.adultdisc-hero {
+    padding: 7rem 0;
+ }
+ 
+ .adultdisc-hero--title {
+     color: #333;
+     /* text-transform: uppercase; */
+     margin-top: 0;
+ }
+ 
+ .adultdisc-hero--text-wrapper {
+     width: 100%;
+     text-align: center;
+ 
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ .adultdisc-hero--text {
+     color: #333;
+     font-size: 1.1rem;
+     line-height: 1.3;
+ }
+
+@media only screen and (max-width: 992px) {
+    #transition2024--hero {
+        height: max-content;
+    }
+
+    .adultdisc-hero {
+        padding: 5rem 0;
+    }
+
+    .adultdisc-hero--video-wrapper,
+    .adultdisc-hero--text-wrapper {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .adultdisc-hero--video-wrapper {
+        text-align: center;
+    }
+
+    .adultdisc-hero--text {
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .adultdisc-hero {
+        padding: 4rem 0;
+    }
+
+    .adultdisc-hero--video-wrapper,
+    .adultdisc-hero--text-wrapper {
+        max-width: 90%;
+    }
+} 
+/* END OF INTRO */
 
 /* CTA */
 #twmc-cta__adultdiscipleship24 {
@@ -11396,6 +11512,7 @@ p.twmc-prayerconf2024-date {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-grow: 1;
   }
 
   @media only screen and (max-width: 768px) {
@@ -11484,6 +11601,18 @@ p.twmc-prayerconf2024-date {
 
 
   /* Buttons */
+  .twmc-adultdisc--btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .twmc-adultdisc--btn-wrapper {
+      flex-direction: column;
+    }
+  }
+
   .btn-default-dark {
       background-color: #000;
       color: #fff;
@@ -11503,11 +11632,77 @@ p.twmc-prayerconf2024-date {
       text-transform: uppercase;
     }
 
-  .btn-default-dark:hover {
+  .btn-default-dark:hover,
+  .btn-default-dark:focus{
       background-color: #111;
       transform: scale(1.02);
       color: #fff;
   }
+
+  /* .adultdisc-hero--buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.btn-trans-hero {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 9.5px;
+    padding: .5rem 1.2rem;
+    font-size: .8rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    min-width: 175px;
+    max-width: max-content;
+    text-transform: uppercase;
+  }
+
+.btn-trans-hero:hover {
+    background-color: #eee;
+    transform: scale(1.02);
+    color: #333;
+}
+
+    /* @media only screen and (min-width: 1500px) {
+        .adultdisc-hero--buttons-wrapper {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .adultdisc-hero--buttons-wrapper {
+            width: 100%;
+        }
+    } */
+
+    @media only screen and (max-width: 992px) {
+        /* .btn-trans-hero {
+            width: 150px;
+        } */
+        }
+
+    @media only screen and (max-width:768px) {
+        /* .adultdisc-hero--buttons-wrapper {
+            gap: 1%;
+        } */
+
+        .btn-trans-hero {
+            margin-top: 10px;
+        }
+    }
 
   /* End of buttons */
 
@@ -11519,7 +11714,7 @@ p.twmc-prayerconf2024-date {
 
   /* END OF FORMATION */
 
-/* ===== End of Adult Discipleship ===== */
+/* ===== End of Adult Discipleship 2024 ===== */
 
 
 /* ===== MEN - Mens Conference 2024 ===== */
@@ -12774,7 +12969,7 @@ padding: 1.7rem 2rem;
 
 /* HERO/FEATURE BANNER */
 #twmc-featbanner--comdinner2024 {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_CommunityDinner_FeatureBanner.png");
     text-align: center;
     background-position: right center;
     background-size: cover;
@@ -12794,43 +12989,63 @@ padding: 1.7rem 2rem;
     justify-content: center;
   }
 
-  /* Text img */
-  /* .radiantfall2024-feat-text1 {
-    max-width: 100%;
-  }
+    /* Text img */
+    .comdinner2024-feat-text1 {
+        max-width: 80%;
+      }
+    
+      .comdinner2024-feat-text2 {
+        display: none;
+      }
 
-  .radiantfall2024-feat-text2 {
-    display: none;
-  } */
+      @media only screen and (max-width: 1200px) {
+        .comdinner2024-feat-text1  {
+            max-width: 90%;
+          }
+      }
+    
+      @media only screen and (max-width: 992px) {
+        .comdinner2024-feat-text1  {
+            max-width: 95%;
+          }
+      }
+    
+    
+      @media only screen and (max-width: 576px) {
+        #twmc-featbanner--comdinner2024 {
+          height: 550px;
+          padding: 1.5rem 0 2rem;
+        }
+    
+        .comdinner2024-feat-text1 {
+          display: none;
+        }
+    
+        .comdinner2024-feat-text2 {
+          display: block;
+          width: 50%;
+          max-height: max-content;
+        }
+      }
+    
+      @media only screen and (max-width:450px) {
+        #twmc-featbanner--comdinner2024 {
+          height: 550px;
+          padding: 1.2rem 0 1rem;
+        }
+    
+        .comdinner2024-feat-text2 {
+          width: 60%;
+        }
+      }
 
-  @media only screen and (max-width: 576px) {
-    #twmc-featbanner--comdinner2024 {
-      height: 550px;
-      padding: 2.5rem 0;
-    }
-
-    /* .radiantfall2024-feat-text1 {
-      display: none;
-    }
-
-    .radiantfall2024-feat-text2 {
-      display: block;
-      width: 80%;
-    } */
-  }
-
-  @media only screen and (max-width:400px) {
-    #twmc-featbanner--comdinner2024 {
-      height: 550px;
-      padding: 3.5rem 0 2.5rem;
-    }
-
-    /* .radiantfall2024-feat-text2 {
-      display: block;
-      width: 90%;
-    } */
-  }
-  /* END OF HERO/FEATURE BANNER */
+      @media only screen and (max-width:400px) {
+        .comdinner2024-feat-text2 {
+          width: 70%;
+        }
+      }
+      /* End of text img */
+/* END OF HERO/FEATURE BANNER */
 
 
 /* RESTAURANTS */
@@ -12877,6 +13092,7 @@ padding: 1.7rem 2rem;
 .twmc-comdinner2024--ribbon {
     background-color: #A2A29E;
     background-size: cover;
+    background-position: center center;
     /* height: 200px; */
     height: 250px;
     border-top-left-radius: 8px;
@@ -12902,9 +13118,15 @@ padding: 1.7rem 2rem;
     padding: 1.5rem;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 1440px) {
     .twmc-comdinner2024--ribbon {
-        height: 250px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .twmc-comdinner2024--ribbon {
+        height: 350px;
     }
 }
 
@@ -12971,6 +13193,7 @@ a.twmc-comdinner2024-card--address:focus {
 .twmc-comdinner2024-seats--text {
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.3;
 }
 
 /* flex */
