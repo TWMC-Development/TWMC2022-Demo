@@ -75,7 +75,7 @@ iframe {
 						{% assign itunesAudio = message.ContentChannel | Attribute:'iTunesAudioLink','RawValue' %}
 						{% assign itunesVideo = message.ContentChannel | Attribute:'iTunesVideoLink','RawValue' %}
 
-						<a href="/series/{{ messageSeriesSlug }}/{{ message.PrimarySlug }}" class="btn btn-white" target="_blank">View Series</a>
+						<a href="/series/{{ messageSeriesSlug }}/{{ message.PrimarySlug }}" class="btn btn-white" target="_blank">Ver Serie</a>
 
 						{% assign files = message | Attribute:'Files','RawValue' %}
 
@@ -94,7 +94,7 @@ iframe {
 						{% endattributematrix %}
 
 						{% if messageAudioUrl != "" %}
-						<a href="{{ messageAudioUrl }}" class="btn btn-traditional twmc-btn__right"><i class="fas fa-headphones twmc-icon-listen"></i><span class="twmc-mlxs">Listen</span></a>
+						<a href="{{ messageAudioUrl }}" class="btn btn-traditional twmc-btn__right"><i class="fas fa-headphones twmc-icon-listen"></i><span class="twmc-mlxs">Escucha</span></a>
 						{% endif %}
 					</div>
 

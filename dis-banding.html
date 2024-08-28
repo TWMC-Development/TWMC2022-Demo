@@ -293,22 +293,76 @@
     <!-- End of Hero -->
 
     <!-- Intro -->
+    <style>
+      .dis-banding-intro-text {
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .dis-banding-intro-text2 {
+        text-align: left;
+      }
+
+      .dis-banding-testimony-textwrapper {
+        width: 100%;
+        text-align: center;
+        /* text-align: justify; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 1rem;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .dis-banding-intro-text {
+          text-align: center;
+        }
+
+        .dis-banding-intro-text2 {
+          text-align: center;
+          /* margin-top: 1.5rem; */
+        }
+
+        .dis-banding-testimony-textwrapper > h4.twmc-h4 {
+          margin-top: 1.7rem;
+        }
+      }
+    </style>
+
     <section id="twmc-homegroups24--intro" class="adultdisc-hero">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+            <div class="adultdisc-hero--video-wrapper">
+              <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+              <div class="embed-container">
+                  <iframe src="https://player.vimeo.com/video/993055670" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="adultdisc-hero--text-wrapper mt-4 mb-6">
+              <p class="twmc-p dis-banding-intro-text">Banding at The Woodlands Methodist Church is a practice aimed at nurturing spiritual growth and community among its members. These small groups, inspired by John Wesley’s vision, provide a space for three to five same-gendered people to gather weekly and share their spiritual journeys, support one another in prayer and encourage personal introspection. By cultivating an environment of openness and accountability, banding helps members deepen their relationship with God and each other. It’s a foundational aspect of our church’s commitment to nurturing faith and encouraging genuine connections within our community.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimony -->
+        <div class="row mt-1">
           <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
             <div class="adultdisc-flex-container--2-col">
               <!-- Video -->
               <div class="adultdisc-flex-item--2-col adultdisc-hero--video-wrapper">
                 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
                 <div class="embed-container">
-                    <iframe src="https://player.vimeo.com/video/945930868" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                    <iframe src="https://player.vimeo.com/video/991742145" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                 </div>
               </div>
 
               <!-- Text -->
-              <div class="adultdisc-flex-item--2-col adultdisc-hero--text-wrapper">
-                <p class="twmc-p adultdisc-hero--text">Banding at The Woodlands Methodist Church is a practice aimed at nurturing spiritual growth and community among its members. These small groups, inspired by John Wesley’s vision, provide a space for three to five same-gendered people to gather weekly and share their spiritual journeys, support one another in prayer and encourage personal introspection. By cultivating an environment of openness and accountability, banding helps members deepen their relationship with God and each other. It’s a foundational aspect of our church’s commitment to nurturing faith and encouraging genuine connections within our community.</p>
+              <div class="adultdisc-flex-item--2-col adultdisc-hero--text-wrapper dis-banding-testimony-textwrapper">
+                <h4 class="twmc-h4 dis-banding-intro-text2">Why Banding Matters</h4>
+                <p class="twmc-p dis-banding-intro-text2 mb-0"><i>"We know that there was a reason why we were there. We know that God was delivering a message to us."</i></p>
+                <p class="twmc-p dis-banding-intro-text2 mb-0"><i>"You will grow in your walk with Christ as a result of this process. I promise you that."</i></p>
               </div>
 
             </div>
@@ -326,7 +380,7 @@
             <h4 class="twmc-h4 text-white twmc-cta--content-text">
               Join a banding group and grow deeper in faith together through shared journeys and supportive prayer. Discover the joy of genuine community and spiritual growth.
             </h4>
-            <a href="#" class="twmc--btn twmc--btn--white twmc--btn--small twmc-cta--content-button" target="_blank">Register now</a>
+            <a href="https://www.thewoodlandsmethodist.org/join-band" class="twmc--btn twmc--btn--white twmc--btn--small twmc-cta--content-button" target="_blank">Register now</a>
           </div>
         </div>
       </div>
@@ -338,476 +392,110 @@
     <!-- Toggle -->
     <section id="section-toggle-template" class="py-6">
       <div class="container">
-          <div class="row">
-            
-            <div class="col-sm-12">
-              <h3 class="twmc-h3">FAQ</h3>
-              <!-- Toggle nav -->
-              <div class="nav-pills--twmctoggle">
-                <ul class="nav nav-pills mt-4 mb-1 nav-pills--twmctoggle-ul">
-                  <li class="active"><a data-toggle="pill" href="#bdtoggle-tab1" class="twmc--btn--toggle-nav">The Woodlands</a></li>
-                  <li><a data-toggle="pill" href="#bdtoggle-tab2" class="twmc--btn--toggle-nav">Woodforest</a></li>
-                  <li><a data-toggle="pill" href="#bdtoggle-tab3" class="twmc--btn--toggle-nav">Montgomery</a></li>
-                </ul>
+        <div class="row">
+          
+          <div class="col-sm-12">
+            <h3 class="twmc-h3">FAQ</h3>
+              <!-- Panel group -->
+              <div class="panel-group" id="accordion-bdtwmc-faq" role="tablist" aria-multiselectable="true">
+                <!-- Q1 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-bdtwmc-faq1">
+                        <h4 class="panel-title twmc-panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq1" aria-expanded="false" aria-controls="collapse-bdtwmc-faq1" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">How do I sign-up?</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-bdtwmc-faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-hbdtwmc-faq1">
+                        <div class="panel-body twmc-panel-body">
+                          <p class="twmc-p mb-1">
+                            Simply fill out the <a href="https://www.thewoodlandsmethodist.org/join-band" target="_blank" class="faq-text-link--trad">banding registration form</a>. This works if you already have your group members, have one group member but need additional, or are looking to start a brand-new group. After filling out the form, our team will reach out to you to set up your first meeting.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-bdtwmc-faq2">
+                        <h4 class="panel-title twmc-panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq2" aria-expanded="false" aria-controls="collapse-faq2" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">What is the basic format of a meeting?</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-bdtwmc-faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq2">
+                        <div class="panel-body twmc-panel-body">
+                          <p class="twmc-p">
+                            Banding groups of 3-5 same-gendered people meet weekly. Meetings open with prayer, and then each person answers three basic questions: How is it with your soul? What are your struggles and successes? How might the Spirit and Scriptures be speaking in your life?
+                          </p>
+                          <p class="twmc-p">After each person shares, one person prays for the person who just shared. If and when members are ready to go deeper, they can consider two additional questions: Do you have any sin that you want to confess? Are there any secrets or hidden things you would like to share?</p>
+                          <p class="twmc-p">Continue until each person has had a chance to work through the questions and has been prayed for. Groups can then close the meeting in prayer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-bdtwmc-faq3">
+                        <h4 class="panel-title twmc-panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq3" aria-expanded="false" aria-controls="collapse-bdtwmc-faq3" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">What should I consider when forming a group?</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-bdtwmc-faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq3">
+                        <div class="panel-body twmc-panel-body">
+                          <p class="twmc-p">
+                            There are seven commitments to consider when forming a banding group:
+                            <ol class="ml-4">
+                              <li>Respect the clock: Do your best to share within 15 minutes.</li>
+                              <li>Challenge by choice: You have permission to skip a question at any time.</li>
+                              <li>No cross talk: Don’t give advice or interrupt.</li>
+                              <li>One Counselor (come, Holy Spirit): Listen and pay attention to how the Holy Spirit might prompt you to pray.</li>
+                              <li>Comfort with empathy: Hold space for others with open hearts. Rather than offering pity or sympathy, show up and tune in — bless, encourage and build up.</li>
+                              <li>Community of grace: When someone confesses sin, pardon by saying, “In the name of Jesus Christ, you are forgiven.” If someone shares a secret, thank them for their courage and never judge.</li>
+                              <li>Strictly confidential: Never share another person’s comments outside of the group.</li>
+                            </ol>
+                          </p>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
-              <!-- End of toggle nav -->
+              <!-- End of panel group -->
 
-
-              <!-- Tab Content -->
-              <div class="tab-content tab-content--twmctoggle">
-
-                  <!-- Tab 1 -->
-                  <div id="bdtoggle-tab1" class="twmctoggle-tab tab-pane fade in active">
-                    <h3 class="twmc-h3 mt-1 mb-3 text-uppercase">The Woodlands</h3>
-                    
-                    <p class="twmc-p mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae doloremque esse pariatur mollitia, eligendi ab officiis reprehenderit necessitatibus impedit! Incidunt, enim facilis. Vel ad nesciunt similique debitis laboriosam minus distinctio eum quas. Inventore culpa aspernatur alias non illo molestiae ut porro facilis.</p>
-
-                    <!-- Panel group -->
-                    <div class="panel-group" id="accordion-bdtwmc-faq" role="tablist" aria-multiselectable="true">
-                      <!-- Q1 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdtwmc-faq1">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq1" aria-expanded="false" aria-controls="collapse-bdtwmc-faq1" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q1</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdtwmc-faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq1">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p mb-1">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est consectetur ab illum cupiditate iste consequuntur dolorem? Animi reiciendis quod voluptate necessitatibus amet!
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q2 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdtwmc-faq2">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq2" aria-expanded="false" aria-controls="collapse-faq2" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q2</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdtwmc-faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq2">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa praesentium ipsam voluptates dolores qui voluptatibus assumenda accusantium accusamus rem, iusto dolorem id impedit numquam, repellendus dolor optio tenetur voluptate rerum reiciendis, tempore modi!
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q3 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdtwmc-faq3">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq3" aria-expanded="false" aria-controls="collapse-bdtwmc-faq3" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q3</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdtwmc-faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq3">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus saepe nihil incidunt unde dolorem, tenetur rerum dolore facilis, magni laudantium facere aliquid explicabo. </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Q4 -->
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading-bdtwmc-faq4">
-                            <h4 class="panel-title twmc-panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq4" aria-expanded="false" aria-controls="collapse-bdtwmc-faq4" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q4</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse-bdtwmc-faq4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq4">
-                            <div class="panel-body twmc-panel-body">
-                              <p class="twmc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi minus qui quae mollitia quibusdam sed rerum ducimus error ut nobis, ab officia deserunt optio eligendi. Dignissimos quam consequuntur quidem eveniet ad? </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Q5 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdtwmc-faq5">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq5" aria-expanded="false" aria-controls="collapse-bdtwmc-faq5" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q5</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdtwmc-faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq5">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel a vitae dolorem architecto voluptas voluptatem beatae eligendi, maxime ipsum facilis consectetur esse. Tempore, aperiam vel! Vel beatae ea adipisci possimus, doloribus amet sit placeat. </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q6 -->
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading-bdtwmc-faq6">
-                            <h4 class="panel-title twmc-panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq6" aria-expanded="false" aria-controls="collapse-faq6" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q6</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse-bdtwmc-faq6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq6">
-                            <div class="panel-body twmc-panel-body">
-                              <p class="twmc-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nihil libero, vero rerum porro nesciunt veritatis autem tempore dolor fugiat cum sunt, explicabo quasi laudantium corrupti nemo, enim magni fuga consequatur distinctio. Dolorum, nisi. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Q7 -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="heading-bdtwmc-faq7">
-                          <h4 class="panel-title twmc-panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq7" aria-expanded="false" aria-controls="collapse-bdtwmc-faq7" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q7</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                              </a>
-                          </h4>
-                      </div>
-                      <div id="collapse-bdtwmc-faq7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq7">
-                          <div class="panel-body twmc-panel-body">
-                            <p class="twmc-p mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic similique minima, accusamus quis incidunt sequi nisi sed, nemo voluptas reiciendis perspiciatis molestiae modi eos ducimus alias amet sint necessitatibus optio, aliquid facilis temporibus? Ullam, ducimus? </p>
-                          </div>
-                      </div>
-                    </div>
-
-                    <!-- Q8 -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="heading-bdtwmc-faq8">
-                          <h4 class="panel-title twmc-panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion-bdtwmc-faq" href="#collapse-bdtwmc-faq8" aria-expanded="false" aria-controls="collapse-bdtwmc-faq8" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q8</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                              </a>
-                          </h4>
-                      </div>
-                      <div id="collapse-bdtwmc-faq8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdtwmc-faq8">
-                          <div class="panel-body twmc-panel-body">
-                            <p class="twmc-p mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed minima optio fuga perferendis recusandae nemo dolore explicabo animi commodi atque tempore, totam culpa adipisci blanditiis. Maxime architecto incidunt, fuga deleniti aliquam ab quam.</p>
-                          </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <!-- End of panel group -->
-
-                    <p class="twmc-p"><strong>Any questions? {[ emailform email:'mcovell@twmc.org' contactname:'Contact us' class:'faq-text-link--trad' ]}.</strong></p>
-                    
-                        
-                            
-                  </div>
-                  <!-- End of Tab1 -->
-
-                  <!-- Tab2 -->
-                  <div id="bdtoggle-tab2" class="twmctoggle-tab tab-pane fade">
-                    <h3 class="twmc-h3 mt-1 mb-3 text-uppercase">Woodforest</h3>
-                    
-                    <p class="twmc-p mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae doloremque esse pariatur mollitia, eligendi ab officiis reprehenderit necessitatibus impedit! Incidunt, enim facilis. Vel ad nesciunt similique debitis laboriosam minus distinctio eum quas. Inventore culpa aspernatur alias non illo molestiae ut porro facilis.</p>
-
-                    <!-- Panel group -->
-                    <div class="panel-group" id="accordion-bdcaw-faq" role="tablist" aria-multiselectable="true">
-                      <!-- Q1 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcaw-faq1">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq1" aria-expanded="false" aria-controls="collapse-bdcaw-faq1" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q1</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcaw-faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq1">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p mb-1">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est consectetur ab illum cupiditate iste consequuntur dolorem? Animi reiciendis quod voluptate necessitatibus amet!
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q2 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcaw-faq2">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq2" aria-expanded="false" aria-controls="collapse-bdcaw-faq2" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q2</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcaw-faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq2">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa praesentium ipsam voluptates dolores qui voluptatibus assumenda accusantium accusamus rem, iusto dolorem id impedit numquam, repellendus dolor optio tenetur voluptate rerum reiciendis, tempore modi!
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q3 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcaw-faq3">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq3" aria-expanded="false" aria-controls="collapse-bdcaw-faq3" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q3</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcaw-faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq3">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus saepe nihil incidunt unde dolorem, tenetur rerum dolore facilis, magni laudantium facere aliquid explicabo. </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Q4 -->
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading-bdcaw-faq4">
-                            <h4 class="panel-title twmc-panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq4" aria-expanded="false" aria-controls="collapse-bdcaw-faq4" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q4</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse-bdcaw-faq4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq4">
-                            <div class="panel-body twmc-panel-body">
-                              <p class="twmc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi minus qui quae mollitia quibusdam sed rerum ducimus error ut nobis, ab officia deserunt optio eligendi. Dignissimos quam consequuntur quidem eveniet ad? </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Q5 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcaw-faq5">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq5" aria-expanded="false" aria-controls="collapse-bdcaw-faq5" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q5</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcaw-faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq5">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel a vitae dolorem architecto voluptas voluptatem beatae eligendi, maxime ipsum facilis consectetur esse. Tempore, aperiam vel! Vel beatae ea adipisci possimus, doloribus amet sit placeat. </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q6 -->
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading-bdcaw-faq6">
-                            <h4 class="panel-title twmc-panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq6" aria-expanded="false" aria-controls="collapse-bdcaw-faq6" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q6</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse-bdcaw-faq6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq6">
-                            <div class="panel-body twmc-panel-body">
-                              <p class="twmc-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nihil libero, vero rerum porro nesciunt veritatis autem tempore dolor fugiat cum sunt, explicabo quasi laudantium corrupti nemo, enim magni fuga consequatur distinctio. Dolorum, nisi. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Q7 -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="heading-bdcaw-faq7">
-                          <h4 class="panel-title twmc-panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq7" aria-expanded="false" aria-controls="collapse-bdcaw-faq7" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q7</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                              </a>
-                          </h4>
-                      </div>
-                      <div id="collapse-bdcaw-faq7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq7">
-                          <div class="panel-body twmc-panel-body">
-                            <p class="twmc-p mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic similique minima, accusamus quis incidunt sequi nisi sed, nemo voluptas reiciendis perspiciatis molestiae modi eos ducimus alias amet sint necessitatibus optio, aliquid facilis temporibus? Ullam, ducimus? </p>
-                          </div>
-                      </div>
-                    </div>
-
-                    <!-- Q8 -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="heading-bdcaw-faq8">
-                          <h4 class="panel-title twmc-panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion-bdcaw-faq" href="#collapse-bdcaw-faq8" aria-expanded="false" aria-controls="collapse-bdcaw-faq8" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q8</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                              </a>
-                          </h4>
-                      </div>
-                      <div id="collapse-bdcaw-faq8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcaw-faq8">
-                          <div class="panel-body twmc-panel-body">
-                            <p class="twmc-p mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed minima optio fuga perferendis recusandae nemo dolore explicabo animi commodi atque tempore, totam culpa adipisci blanditiis. Maxime architecto incidunt, fuga deleniti aliquam ab quam.</p>
-                          </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <!-- End of panel group -->
-
-                    <p class="twmc-p"><strong>Any questions? {[ emailform email:'mcovell@twmc.org' contactname:'Contact us' class:'faq-text-link--trad' ]}.</strong></p>
-
-                  </div>
-                  <!-- End of Tab2 -->
-
-                  <!-- Tab 3 -->
-                  <div id="bdtoggle-tab3" class="twmctoggle-tab tab-pane fade">
-                    <h3 class="twmc-h3 mt-1 mb-3 text-uppercase">Montgomery</h3>
-                    
-                    <p class="twmc-p mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae doloremque esse pariatur mollitia, eligendi ab officiis reprehenderit necessitatibus impedit! Incidunt, enim facilis. Vel ad nesciunt similique debitis laboriosam minus distinctio eum quas. Inventore culpa aspernatur alias non illo molestiae ut porro facilis.</p>
-
-                    <!-- Panel group -->
-                    <div class="panel-group" id="accordion-bdcam-faq" role="tablist" aria-multiselectable="true">
-                      <!-- Q1 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcam-faq1">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq1" aria-expanded="false" aria-controls="collapse-bdcam-faq1" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q1</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcam-faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq1">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p mb-1">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est consectetur ab illum cupiditate iste consequuntur dolorem? Animi reiciendis quod voluptate necessitatibus amet!
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q2 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcam-faq2">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq2" aria-expanded="false" aria-controls="collapse-bdcam-faq2" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q2</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcam-faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq2">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa praesentium ipsam voluptates dolores qui voluptatibus assumenda accusantium accusamus rem, iusto dolorem id impedit numquam, repellendus dolor optio tenetur voluptate rerum reiciendis, tempore modi!
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q3 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcam-faq3">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq3" aria-expanded="false" aria-controls="collapse-bdcam-faq3" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q3</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcam-faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq3">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus saepe nihil incidunt unde dolorem, tenetur rerum dolore facilis, magni laudantium facere aliquid explicabo. </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Q4 -->
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading-bdcam-faq4">
-                            <h4 class="panel-title twmc-panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq4" aria-expanded="false" aria-controls="collapse-bdcam-faq4" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q4</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse-bdcam-faq4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq4">
-                            <div class="panel-body twmc-panel-body">
-                              <p class="twmc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi minus qui quae mollitia quibusdam sed rerum ducimus error ut nobis, ab officia deserunt optio eligendi. Dignissimos quam consequuntur quidem eveniet ad? </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Q5 -->
-                      <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-bdcam-faq5">
-                              <h4 class="panel-title twmc-panel-title">
-                                  <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq5" aria-expanded="false" aria-controls="collapse-bdcam-faq5" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q5</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                  </a>
-                              </h4>
-                          </div>
-                          <div id="collapse-bdcam-faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq5">
-                              <div class="panel-body twmc-panel-body">
-                                <p class="twmc-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel a vitae dolorem architecto voluptas voluptatem beatae eligendi, maxime ipsum facilis consectetur esse. Tempore, aperiam vel! Vel beatae ea adipisci possimus, doloribus amet sit placeat. </p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <!-- Q6 -->
-                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading-bdcam-faq6">
-                            <h4 class="panel-title twmc-panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq6" aria-expanded="false" aria-controls="collapse-bdcam-faq6" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q6</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse-bdcam-faq6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq6">
-                            <div class="panel-body twmc-panel-body">
-                              <p class="twmc-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nihil libero, vero rerum porro nesciunt veritatis autem tempore dolor fugiat cum sunt, explicabo quasi laudantium corrupti nemo, enim magni fuga consequatur distinctio. Dolorum, nisi. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Q7 -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="heading-bdcam-faq7">
-                          <h4 class="panel-title twmc-panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq7" aria-expanded="false" aria-controls="collapse-bdcam-faq7" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q7</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                              </a>
-                          </h4>
-                      </div>
-                      <div id="collapse-bdcam-faq7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq7">
-                          <div class="panel-body twmc-panel-body">
-                            <p class="twmc-p mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic similique minima, accusamus quis incidunt sequi nisi sed, nemo voluptas reiciendis perspiciatis molestiae modi eos ducimus alias amet sint necessitatibus optio, aliquid facilis temporibus? Ullam, ducimus? </p>
-                          </div>
-                      </div>
-                    </div>
-
-                    <!-- Q8 -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="heading-bdcam-faq8">
-                          <h4 class="panel-title twmc-panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion-bdcam-faq" href="#collapse-bdcam-faq8" aria-expanded="false" aria-controls="collapse-bdcam-faq8" class="collapsed twmc-panel-title__link"><span class="twmc-panel-title__text faq-text-link--trad">Q8</span><i class="fa-regular fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
-                              </a>
-                          </h4>
-                      </div>
-                      <div id="collapse-bdcam-faq8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-bdcam-faq8">
-                          <div class="panel-body twmc-panel-body">
-                            <p class="twmc-p mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed minima optio fuga perferendis recusandae nemo dolore explicabo animi commodi atque tempore, totam culpa adipisci blanditiis. Maxime architecto incidunt, fuga deleniti aliquam ab quam.</p>
-                          </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <!-- End of panel group -->
-
-                    <p class="twmc-p"><strong>Any questions? {[ emailform email:'mcovell@twmc.org' contactname:'Contact us' class:'faq-text-link--trad' ]}.</strong></p>
-
-                  </div>
-                  <!-- End of tab 3 -->
-                  
-              </div>
-
-              <!-- fontawesome v6 -->
-              <script src="https://kit.fontawesome.com/0283da34b5.js" crossorigin="anonymous"></script>
-
-
-              <script>
-                $(document).ready(function(){
-                    // When any accordion panel is shown
-                    $('.panel.panel-default').on('shown.bs.collapse', function (e) {
-                        // Target the specific panel that was opened and change its icon to 'minus'
-                        var panelHeading = $(e.target).prev('.panel-heading');
-                        panelHeading.find('.fa-plus').removeClass('fa-plus').addClass('fa-minus');
-                    });
+              <p class="twmc-p"><strong>Any questions? {[ emailform email:'tward@twmc.org' contactname:'Contact us' class:'faq-text-link--trad' ]}.</strong></p>
                 
-                    // When any accordion panel is hidden
-                    $('.panel.panel-default').on('hidden.bs.collapse', function (e) {
-                        // Target the specific panel that was closed and change its icon to 'plus'
-                        var panelHeading = $(e.target).prev('.panel-heading');
-                        panelHeading.find('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
-                    });
-                });
-            </script>
-              <!-- End of Tab Content -->
-            </div>
             
+
+            <!-- fontawesome v6 -->
+            <script src="https://kit.fontawesome.com/0283da34b5.js" crossorigin="anonymous"></script>
+
+
+            <script>
+              $(document).ready(function(){
+                  // When any accordion panel is shown
+                  $('.panel.panel-default').on('shown.bs.collapse', function (e) {
+                      // Target the specific panel that was opened and change its icon to 'minus'
+                      var panelHeading = $(e.target).prev('.panel-heading');
+                      panelHeading.find('.fa-plus').removeClass('fa-plus').addClass('fa-minus');
+                  });
+              
+                  // When any accordion panel is hidden
+                  $('.panel.panel-default').on('hidden.bs.collapse', function (e) {
+                      // Target the specific panel that was closed and change its icon to 'plus'
+                      var panelHeading = $(e.target).prev('.panel-heading');
+                      panelHeading.find('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+                  });
+              });
+           </script>
+            <!-- End of Tab Content -->
           </div>
-      </div>
-    </section>
-    <!-- End of Toggle -->
+          
+        </div>
+    </div>
+  </section>
+  <!-- End of Toggle -->
     <!-- End of FAQ -->
     
     

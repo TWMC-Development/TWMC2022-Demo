@@ -2480,11 +2480,11 @@ a.twmc-flex-item--3-col-adv.twmc-home-cta-adv__link:focus {
     }
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     .twmc--btn--connect {
         display: inline;
     }
-}
+} */
 
 /* Button hero scroll down arrow */
 .twmc-scroll-arrow__link {
@@ -6511,6 +6511,7 @@ a > img.twmc-home-intro__services-img2:focus {
 .grow__card-description > p {
     overflow: hidden;
     display: -webkit-box;
+    line-clamp: 5;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
@@ -9675,3 +9676,5 @@ img.img-responsive.twmc-facilities__map-img:focus {
 }
 
 /* ===== END OF GROW - GATHER 2023 SEARCH =====  */
+
+

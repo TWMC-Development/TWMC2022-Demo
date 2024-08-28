@@ -992,6 +992,10 @@ a.icon-button-white > i:focus {
     background-color: var(--color-light-grey-snow);
 }
 
+.background-lightgrey4 {
+    background-color: #eaeaea;
+}
+
 .background-periwinkle-light {
     background-color: var(--color-periwinkle-light);
 }

@@ -12197,325 +12197,7 @@ p.twmc-prayerconf2024-date {
 /* ===== End of MEN - Mens Conference 2024 ===== */
 
 
-/* ====== RADIANT FALL 2024 ===== */
-/* TYPOGRAPHY */
-.radiantfall2024-text--green {
-    color: #254C52;
-}
 
-.radiantfall2024-textlink--green {
-    color: #0D5565;
-}
-
-.radiantfall2024-textlink--green:hover,
-.radiantfall2024-textlink--green:focus {
-    color: #4A8F8A;
-}
-
-.radiantfall2024-textlink--lightgreen {
-    color: #4A8F8A;
-}
-
-.radiantfall2024-textlink--lightgreen:hover,
-.radiantfall2024-textlink--lightgreen:focus {
-    color: #6EA5A1;
-}
-
-
-.radiantfall2024-tag--green {
-    display: inline-block;
-    color: #333;
-    font-size: .7rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-align: center !important;
-    text-decoration: none;
-    text-transform: uppercase;
-    vertical-align: middle;
-    background-color: #DBE9D6;
-    border: 1px solid #DBE9D6;
-    border-radius: .25rem;
-    padding: .3rem .55rem .2rem;
-    letter-spacing: 1px;
-    cursor: not-allowed;
-}
-/* END OF TYPOGRAPHY */
-
-/* BUTTON */
-.twmc--btn--radiant2024 {
-    border: 2px solid #254C52;
-    background-color: #254C52;
-    color: #EBEEE9;
-    font-weight: 700;
-
-    transition: all .3s ease-in-out;
-}
-
-.twmc--btn--radiant2024:hover,
-.twmc--btn--radiant2024:focus {
-    border-color: #254C52;
-    background-color: rgba(37, 76, 82, 0.2);
-    text-decoration: none;
-    color: #254C52;
-
-    transform: scale(1.01);
-}
-
-.twmc--btn--radiant2024-outline {
-    border: 2px solid #254C52;
-    background-color: transparent;
-    color: #254C52;
-    font-weight: 700;
-
-    transition: all .3s ease-in-out;
-}
-
-.twmc--btn--radiant2024-outline:hover,
-.twmc--btn--radiant2024-outline:focus {
-    border-color: #254C52;
-    background-color: rgba(37, 76, 82, 0.1);
-    text-decoration: none;
-    color: #254C52;
-
-    transform: scale(1.01);
-}
-/* END OF BUTTON */
-
-/* FEATURE BANNER */
-#twmc-featbanner--radiantfall2024 {
-    /* background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png"); */
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
-    text-align: center;
-    background-position: right center;
-    background-size: cover;
-
-    height: 650px;
-    padding: 5.5rem 0 4.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .twmc-featbanner--radiantfall2024-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Text img */
-  .radiantfall2024-feat-text1 {
-    max-width: 100%;
-  }
-
-  .radiantfall2024-feat-text2 {
-    display: none;
-  }
-
-  @media only screen and (max-width: 576px) {
-    #twmc-featbanner--radiantfall2024 {
-      height: 550px;
-      padding: 2.5rem 0;
-    }
-
-    .radiantfall2024-feat-text1 {
-      display: none;
-    }
-
-    .radiantfall2024-feat-text2 {
-      display: block;
-      width: 80%;
-    }
-  }
-
-  @media only screen and (max-width:400px) {
-    #twmc-featbanner--radiantfall2024 {
-      height: 550px;
-      padding: 3.5rem 0 2.5rem;
-    }
-
-    .radiantfall2024-feat-text2 {
-      display: block;
-      width: 90%;
-    }
-  }
-  /* End of text img */
-/* END OF FEATURE BANNER */
-
-
-/* HERO */
-
-/* END OF HERO */
-
-
-/* INTRO + SCHEDULE */
-#twmc-radiant2024--intro-schedule {
-    /* background: linear-gradient(180deg, rgba(248, 244, 233, 0.7), rgba(255, 255, 255, 1) 70.71%); */
-    background: linear-gradient(180deg, rgba(235, 238, 233, 0.7), rgba(255, 255, 255, 1) 70.71%);
-}
-
-#modalRadiant {
-    width: 700px;
-    margin-left: -350px;
-}
-
-@media only screen and (max-width: 768px) {
-    #modalRadiant {
-        width: 90%;
-        margin-left: -45%;
-    }
-}
-
-.twmc-modal-body-radiant2024 {
-    padding: 1.5rem 2rem;
-    background-color: #E4EDF3;
-    color: #254C52;
-    min-height: max-content !important;
-    max-height: 70vh;
-    overflow-y: auto;
-}
-
-.twmc-modal-header-radiant2024 {
-    background-color: #254C52;
-    color: #EBEEE9;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
- /* Flex */
- .twmc-radiantfall2024--flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
-    justify-content: center;
-}
-
-.twmc-radiantfall2024--flex-item {
-    flex-basis: 49%;
-    overflow: visible;
-    margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 992px) {
-    .twmc-radiantfall2024--flex-item {
-        flex-basis: 100%;
-    }
-}
-/* End of flex */
-
-/* Card */
-.twmc-radiantfall2024--card {
-background-color: #FAF9F2;
-padding: 1.7rem 2rem;
-}
-/* End of Card */
-/* END OF INTRO + SCHEDULE */
-
-
-/* CURRENT SERIES */
-#twmc-radiant2024--serries {
-     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(210, 226, 213, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_OceanBG_A10.jpg");
-    background-position: center center;
-    background-size: cover;
-
-}
-
-/* Flex */
-.twmc-radiant2024--flex3col-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2%;
-
-}
-
-.twmc-radiant2024--flex3col-item {
-    flex-basis: 32%;
-    overflow: visible;
-    margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 1200px) {
-    .twmc-radiant2024--flex3col-item {
-        flex-basis: 49%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .twmc-radiant2024--flex3col-item {
-        flex-basis: 100%;
-    }
-}
-/* End of flex */
-
-/* Cards */
-.twmc-radiant2024-ribbon-card--wrapper {
-    background-color: #fff;
-    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
-}
-
-.twmc-radiant2024--ribbon {
-    background-color: #A2A29E;
-    background-size: cover;
-}
-
-.twmc-ribbon-card--wrapper {
-    background-color: #fff;
-    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
-}
-
-.twmc-radiant2024-ribbon-card--inner-wrapper {
-    padding: 1.5rem 1.5rem 1.9rem;
-}
-
-.twmc-ribbon-card--content {
-    background-color: rgba(243, 243, 243, .5);
-    padding: 1.5rem;
-}
-
-@media only screen and (max-width: 576px) {
-    .twmc-mensconf2024--ribbon {
-        height: 250px;
-    }
-}
-
-.twmc-mensconf2024--ribbon-inner {
-    margin: 0;
-}
-/* End of cards */
-
-.twmc-icon-wrapper2 {
-    width: 25px;
-    display: inline-block;
-    text-align: center;
-}
-/* END OF CURRENT SERIES */
-
-/* RADIANT MOMS OF SPECIAL NEEDS */
-#twmc-radiant2024--momspecialneeds {
-    /* background-color: #E5E8E1; */
-    background-color: #DFE6E2;
-    background-color: #E5EBE8;
-}
-/* END OF RADIANT MOMS OF SPECIAL NEEDS */
-
-/* INFO */
-#twmc-radiant2024--info {
-    background-color: #254C52;
-    color: #EBEEE9;
-}
-
-.twmc-radiant2024--info-card {
-    background-color: rgba(235,238,233, 0.1);
-    border: 1px solid #EBEEE9;
-    border-radius: 8px;
-    padding: 1.5rem 1.5rem 1.2rem;
-}
-
-/* END OF INFO */
-
-/* ====== END OF RADIANT FALL 2024 ===== */
 
 
 /* ===== HAR - COMMUNITY DINNER 2024 ===== */
@@ -12809,6 +12491,203 @@ a.twmc-comdinner2024-card--address:focus {
 /* ===== END OF HAR - COMMUNITY DINNER 2024 ===== */
 
 
+/* ===== SERVE IT UP 2024 ===== */
+#twmc--serveitup2024-hero {
+    background-color: #8FA191;
+    /* background-image: linear-gradient(to bottom, rgba(184, 67, 13, 0.3), rgba(0, 0, 0, .2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/MIS_Serve+It+Up+Feature+Banner+BG.png"); */
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/MIS_Serve+It+Up+Feature+Banner+BG.png");
+    text-align: center; 
+    text-align: center;
+    background-position: top right;
+}
+
+.hero--img__text-wrapper > img.twmc--serveitup2024-hero--text-img {
+    max-width: 60% !important;
+}
+
+@media only screen and (max-width: 992px) {
+    #twmc--serveitup2024-hero {
+        background-position: center center;
+    }
+
+    .hero--img__text-wrapper > img.twmc--serveitup2024-hero--text-img {
+        max-width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #twmc--serveitup2024-hero {
+        background-position: center left;
+    }
+}
+
+/* Typography */
+.twmc-icon-wrapper3 {
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.twmc-serveitup2024--text {
+    /* color: #58725D; */
+    color: #58725D;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+
+
+.twmc-textcard-info {
+    font-size: .9rem !important;
+    line-height: 1.5;
+}
+
+.twmc-textcard-desc {
+    font-size: .95rem !important;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-textcard-info {
+        font-size: .8rem !important;
+    }
+
+    .twmc-textcard-desc {
+        font-size: .85rem !important;
+    }
+    
+
+}
+
+.text-link--trad {
+    color: var(--color-traditional);
+}
+
+.text-link--trad:hover,
+.text-link--trad:focus {
+    color: #9f4f54;
+}
+
+/* End of typography */
+
+/* Tags | Buttons */
+.twmc--btn--tag-grey {
+    display: inline-block;
+    color: #333;
+    font-size: .53rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: var(--color-light-grey2);
+    border: 1px solid var(--color-light-grey2);
+    border-radius: .25rem;
+    padding: .3rem .45rem .2rem;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.twmc--btn--tag-tan {
+    display: inline-block;
+    color: #333;
+    font-size: .53rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: #F3E4DD;
+    border: 1px solid #F3E4DD;
+    border-radius: .25rem;
+    padding: .3rem .45rem .2rem;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+/* End of Tags | Buttons */
+
+/* Flex Serve It Up */
+.grids--flex-container-siu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.grids--flex-item--siu {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .grids--flex-container-siu {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .grids--flex-item--siu {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grids--flex-container-siu {
+        gap: 0;
+    }
+
+    .grids--flex-item--siu {
+        flex-basis: 100%;
+    }
+}
+
+.twmc-card-float {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: 5px 10px 20px #ccc;
+    background-color: var(--color-white);
+}
+
+/* End of Flex Serve It Up */
+
+/* Slot Counter */
+.twmc-seats-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4%;
+
+}
+
+.twmc-seats-flex-item {
+    flex-basis: 48%;
+}
+
+.twmc-comdinner2024-seats--num {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.twmc-comdinner2024-seats--text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* Endo of Counter */
+
+/* ===== END OF SERVE IT UP 2024 ===== */
+
+
 /* ===== SINGLE LIFE - EVENTS CALENDAR ===== */
 /* HERO */
 #twmc-singlelife--hero {
@@ -12854,4 +12733,736 @@ a.twmc-comdinner2024-card--address:focus {
 /* END OF HERO */
 
 
-/* ===== SINGLE LIFE - EVENTS CALENDAR ===== */
+
+/* ===== END OF SINGLE LIFE - EVENTS CALENDAR ===== */
+
+
+/* ====== RADIANT FALL 2024 ===== */
+/* TYPOGRAPHY */
+.radiantfall2024-text--green {
+    color: #254C52;
+}
+
+.radiantfall2024-textlink--green {
+    color: #0D5565;
+}
+
+.radiantfall2024-textlink--green:hover,
+.radiantfall2024-textlink--green:focus {
+    color: #4A8F8A;
+}
+
+.radiantfall2024-textlink--lightgreen {
+    color: #4A8F8A;
+}
+
+.radiantfall2024-textlink--lightgreen:hover,
+.radiantfall2024-textlink--lightgreen:focus {
+    color: #6EA5A1;
+}
+
+
+.radiantfall2024-tag--green {
+    display: inline-block;
+    color: #333;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: #DBE9D6;
+    border: 1px solid #DBE9D6;
+    border-radius: .25rem;
+    padding: .3rem .55rem .2rem;
+    letter-spacing: 1px;
+    cursor: not-allowed;
+}
+/* END OF TYPOGRAPHY */
+
+/* BUTTON */
+.twmc--btn--radiant2024 {
+    border: 2px solid #254C52;
+    background-color: #254C52;
+    color: #EBEEE9;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--radiant2024:hover,
+.twmc--btn--radiant2024:focus {
+    border-color: #254C52;
+    background-color: rgba(37, 76, 82, 0.2);
+    text-decoration: none;
+    color: #254C52;
+
+    transform: scale(1.01);
+}
+
+.twmc--btn--radiant2024-outline {
+    border: 2px solid #254C52;
+    background-color: transparent;
+    color: #254C52;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--radiant2024-outline:hover,
+.twmc--btn--radiant2024-outline:focus {
+    border-color: #254C52;
+    background-color: rgba(37, 76, 82, 0.1);
+    text-decoration: none;
+    color: #254C52;
+
+    transform: scale(1.01);
+}
+/* END OF BUTTON */
+
+/* FEATURE BANNER */
+#twmc-featbanner--radiantfall2024 {
+    /* background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png"); */
+    background-color: #E5EDE3;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_FeatureBannerBG.png");
+    text-align: center;
+    background-position: right center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5.5rem 0 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--radiantfall2024-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Text img */
+  .radiantfall2024-feat-text1 {
+    max-width: 100%;
+  }
+
+  .radiantfall2024-feat-text2 {
+    display: none;
+  }
+
+  @media only screen and (max-width: 576px) {
+    #twmc-featbanner--radiantfall2024 {
+      height: 550px;
+      padding: 2.5rem 0;
+    }
+
+    .radiantfall2024-feat-text1 {
+      display: none;
+    }
+
+    .radiantfall2024-feat-text2 {
+      display: block;
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width:400px) {
+    #twmc-featbanner--radiantfall2024 {
+      height: 550px;
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .radiantfall2024-feat-text2 {
+      display: block;
+      width: 90%;
+    }
+  }
+  /* End of text img */
+/* END OF FEATURE BANNER */
+
+
+/* INTRO + SCHEDULE */
+#twmc-radiant2024--intro-schedule {
+    /* background: linear-gradient(180deg, rgba(248, 244, 233, 0.7), rgba(255, 255, 255, 1) 70.71%); */
+    background: linear-gradient(180deg, rgba(235, 238, 233, 0.7), rgba(255, 255, 255, 1) 70.71%);
+}
+
+#modalRadiant {
+    width: 700px;
+    margin-left: -350px;
+}
+
+@media only screen and (max-width: 768px) {
+    #modalRadiant {
+        width: 90%;
+        margin-left: -45%;
+    }
+}
+
+.twmc-modal-body-radiant2024 {
+    padding: 1.5rem 2rem;
+    background-color: #E4EDF3;
+    color: #254C52;
+    min-height: max-content !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.twmc-modal-header-radiant2024 {
+    background-color: #254C52;
+    color: #EBEEE9;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ /* Flex */
+ .twmc-radiantfall2024--flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.twmc-radiantfall2024--flex-item {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-radiantfall2024--flex-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Card */
+.twmc-radiantfall2024--card {
+background-color: #FAF9F2;
+padding: 1.7rem 2rem;
+}
+/* End of Card */
+/* END OF INTRO + SCHEDULE */
+
+
+/* CURRENT SERIES */
+#twmc-radiant2024--serries {
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(210, 226, 213, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_RadiantFall2024_OceanBG_A10.jpg");
+    background-position: center center;
+    background-size: cover;
+
+}
+
+/* Flex */
+.twmc-radiant2024--flex3col-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+.twmc-radiant2024--flex3col-item {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .twmc-radiant2024--flex3col-item {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-radiant2024--flex3col-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Cards */
+.twmc-radiant2024-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+}
+
+.twmc-radiant2024--ribbon {
+    background-color: #A2A29E;
+    background-size: cover;
+}
+
+.twmc-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-radiant2024-ribbon-card--inner-wrapper {
+    padding: 1.5rem 1.5rem 1.9rem;
+}
+
+.twmc-ribbon-card--content {
+    background-color: rgba(243, 243, 243, .5);
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc-mensconf2024--ribbon {
+        height: 250px;
+    }
+}
+
+.twmc-mensconf2024--ribbon-inner {
+    margin: 0;
+}
+/* End of cards */
+
+.twmc-icon-wrapper2 {
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+/* END OF CURRENT SERIES */
+
+/* RADIANT MOMS OF SPECIAL NEEDS */
+#twmc-radiant2024--momspecialneeds {
+    /* background-color: #E5E8E1; */
+    background-color: #DFE6E2;
+    background-color: #E5EBE8;
+}
+/* END OF RADIANT MOMS OF SPECIAL NEEDS */
+
+/* INFO */
+#twmc-radiant2024--info {
+    background-color: #254C52;
+    color: #EBEEE9;
+}
+
+.twmc-radiant2024--info-card {
+    background-color: rgba(235,238,233, 0.1);
+    border: 1px solid #EBEEE9;
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1.2rem;
+}
+
+/* END OF INFO */
+
+/* ====== END OF RADIANT FALL 2024 ===== */
+
+
+/* ===== QUEST FALL 2024 =====*/
+/* TYPOGRAPHY */
+.questfall2024-text--light {
+    color: #EBEEE9;
+}
+
+.questfall2024-text--dark {
+    color: #1F1B1A;
+}
+
+.questfall2024-textlink--dark {
+    color: #766a5d;
+}
+
+.questfall2024-textlink--dark:hover,
+.questfall2024-textlink--dark:focus {
+    color: #a99d8e;
+}
+
+.questfall2024-tag--tan {
+    display: inline-block;
+    color: #333;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: #dad2ca;
+    border: 1px solid #dad2ca;
+    border-radius: .25rem;
+    padding: .3rem .55rem .2rem;
+    letter-spacing: 1px;
+    cursor: not-allowed;
+}
+
+.faq-text-link--quest2024 {
+    color: #766a5d;
+}
+
+.faq-text-link--quest2024:hover,
+.faq-text-link--quest2024:focus {
+    color: #988b7d;
+}
+/* END OF TYPOGRAPHY */
+
+/* BUTTON */
+.twmc--btn--quest2024 {
+    border: 2px solid #564b3e;
+    background-color: #564b3e;
+    color: #f3f0ed;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--quest2024:hover,
+.twmc--btn--quest2024:focus {
+    border-color: #564b3e;
+    background-color: rgba(249, 247, 246, 0.1);
+    text-decoration: none;
+    color: #564b3e;
+    transform: scale(1.01);
+}
+
+.twmc--btn--quest2024-outline {
+    border: 2px solid #1F1B1A;
+    background-color: transparent;
+    color: #1F1B1A;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--quest2024-outline:hover,
+.twmc--btn--quest2024-outline:focus {
+    border-color: #1F1B1A;
+    background-color: rgba(31, 27, 26, 0.1);
+    text-decoration: none;
+    color: #1F1B1A;
+
+    transform: scale(1.01);
+}
+/* END OF BUTTON */
+
+/* FEATURE BANNER */
+#twmc-featbanner--questfall2024 {
+    background-color: #000;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_mens/MEN_Quest+Fall+Feature+Banner+BG.png");
+    text-align: left;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.twmc-hero--text-wrapper {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-hero--text-wrapper > img {
+    width: 60%;
+    height: auto;
+    margin-right: auto;
+    margin-left: 7%;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-hero--text-wrapper > img {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    #twmc-featbanner--questfall2024 {
+        background-image: linear-gradient(to right, rgba(26, 26, 26, 0), rgba(26, 26, 26, 0.3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MEN_JonTyson_FeatureBanner.jpg");
+    
+        background-position: right center;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #twmc-featbanner--questfall2024,
+    .twmc-hero--text-wrapper {
+        height: 450px;
+    }
+
+    .twmc-hero--text-wrapper > img {
+        width: 90%;
+    }
+
+}
+
+/* END OF FEATURE BANNER */
+
+/* INTRO + SCHEDULE */
+#twmc-quest2024--intro-schedule {
+    /* background: linear-gradient(180deg, rgba(243, 240, 237, 0.4), rgba(255, 255, 255, 1) 70.71%); */
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(187, 174, 159, 0.4));
+    
+}
+
+#modalQuest {
+    width: 700px;
+    margin-left: -350px;
+}
+
+@media only screen and (max-width: 768px) {
+    #modalQuest {
+        width: 90%;
+        margin-left: -45%;
+    }
+}
+
+.twmc-modal-body-quest2024 {
+    padding: 1.5rem 2rem;
+    background-color: #f3f0ed;
+    color: #333;
+    min-height: max-content !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.twmc-modal-header-quest2024 {
+    background-color: #1F1B1A;
+    color: #f3f0ed;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ /* Flex */
+ .twmc-questfall2024--flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.twmc-questfall2024--flex-item {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twmc-questfall2024--flex-item {
+        flex-basis: 100%;
+    }
+}
+/* End of flex */
+
+/* Card */
+.twmc-questfall2024--card {
+    background-color: #f3f0ed;
+    padding: 1.7rem 2rem;
+}
+/* End of Card */
+/* END OF INTRO + SCHEDULE */
+
+
+/* LATEST MESSAGES */
+#twmc-quest2024--serries {
+    background-color: #fff;
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1), rgba(187, 174, 159, 0.3) 50%), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_mens/MEN_Quest+Fall+Feature+Banner+BG+Splatter+Horizontal.png"); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1),  rgba(255, 255, 255, 0.7) 50%), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_mens/MEN_Quest+Fall+Feature+Banner+BG+Splatter+Horizontal.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Flex */
+.twmc-quest2024--flex3col-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2%;
+
+}
+
+.twmc-quest2024--flex3col-item {
+   flex-basis: 32%;
+   overflow: visible;
+   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+   .twmc-quest2024--flex3col-item {
+       flex-basis: 49%;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .twmc-quest2024--flex3col-item {
+       flex-basis: 100%;
+   }
+}
+/* End of flex */
+
+/* Cards */
+.twmc-quest2024-ribbon-card--wrapper {
+   background-color: #fff;
+   box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+}
+
+.twmc-quest2024--ribbon {
+   background-color: #A2A29E;
+   background-size: cover;
+}
+
+.twmc-ribbon-card--wrapper {
+   background-color: #fff;
+   box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+
+.twmc-quest2024-ribbon-card--inner-wrapper {
+   padding: 1.5rem 1.5rem 1.9rem;
+}
+
+.twmc-ribbon-card--content {
+   background-color: rgba(243, 243, 243, .5);
+   padding: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+   .twmc-quest2024--ribbon {
+       height: 250px;
+   }
+}
+
+.twmc-quest2024--ribbon-inner {
+   margin: 0;
+}
+/* End of cards */
+
+.twmc-icon-wrapper2 {
+   width: 25px;
+   display: inline-block;
+   text-align: center;
+}
+/* END OF LATEST MESSAGES */
+
+
+/* ARCHIVES */
+#twmc-questarchives {
+    /* background-color: #254C52; */
+    background-color: #1F1B1A;
+    /* color: #EBEEE9; */
+}
+/* END OF ARCHIVES */
+
+
+
+/* ===== END OF QUEST FALL 2024 =====*/
+
+
+/* ===== CONFIRMATION 2024 ===== */
+/* Flex */
+.twmc-confirmation--flex3col-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+
+}
+
+.twmc-confirmation--flex3col-item {
+    flex-basis: 32%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .twmc-confirmation--flex3col-item {
+        flex-basis: 49%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-confirmation--flex3col-item {
+        flex-basis: 100%;
+    }
+}
+/* End of Flex */
+
+.twmc-confirmation--info-card {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1.2rem;
+}
+
+.twmc-confirmation--info-card-text {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-top: 0.3rem;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.hr-lightgrey {
+    border-top: 3mm ridge rgba(184, 184, 184, 0.6);
+}
+
+.background-lightgrey4 {
+    background-color: #eaeaea;
+}
+
+.highlight-yellow {
+    background-color: #F3FEB8;
+    max-width: max-content;
+    padding: 0 3px;
+}
+
+.highlight-orange {
+    background-color: #fbcebb;
+    max-width: max-content;
+    padding: 0 3px;
+}
+/* ===== END OF CONFIRMATION 2024 ===== */
+
+
+/* ===== NEXTGEN KIDS ====== */
+/* Flex */
+.twmc-ngkids--flex2col-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+
+}
+
+.twmc-ngkids--flex2col-item {
+    flex-basis: 49%;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .twmc-ngkids--flex2col-item {
+        flex-basis: 100%;
+    }
+}
+/* End of Flex */
+
+.twmc-ngkids--info-card {
+    background-color: rgba(240, 240, 240, 0.3);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.2rem 1.2rem 1rem;
+}
+
+.twmc-ngkids--info-card-text {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-top: 0.3rem;
+}
+
+/* ===== END OF NEXTGEN KIDS ====== */

@@ -674,6 +674,50 @@
 
 /* End of CTA - Foundation Partner */
 
+/* Foundation Partners List */
+#twmc-foundation-partners-list {
+    background-color: #eee;
+  }
+
+  .fp-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1%;
+
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+  }
+
+  .fp-flex-item {
+    flex-basis: 32.6666667%;
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 1250px) {
+    .fp-flex-item {
+      flex-basis: 49.5%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .fp-flex-container {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .fp-flex-item {
+      width: 100%;
+    }
+  }
+
+  .red-border--top-bottom {
+    border-top: 5px solid #862633;
+    border-bottom: 5px solid #862633;
+  }
+/* End of Foundation Partners List */
 /* ===== END OF FOUNDATION 2024 ===== */
 
 
