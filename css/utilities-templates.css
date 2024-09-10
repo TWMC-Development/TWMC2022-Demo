@@ -551,6 +551,7 @@
     background-color: var(--color-traditional);
     color: #fff;
     padding: 11px 30px 10px;
+    /* padding: 11px 20px 10px; */
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -561,6 +562,7 @@
     background-color: #d1d1d1;
     color: var(--color-dark-grey2);
     padding: 11px 30px 10px;
+    /* padding: 11px 20px 10px; */
     margin-right: 3px;
     font-size: 0.8rem;
     font-weight: 700;
@@ -589,25 +591,45 @@ ul.nav-pills--twmctoggle-connectblock3-ul {
   justify-content: flex-start;
 }
 
+@media only screen and (max-width:1360px) {
+  .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a,
+  .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a:focus,
+  .nav-pills--twmctoggle-connectblock3 .nav-pills > li > a {
+      padding: 11px 20px 10px;
+  }
+}
+
+
+@media only screen and (max-width:1300px) {
+  .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a,
+  .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a:focus,
+  .nav-pills--twmctoggle-connectblock3 .nav-pills > li > a {
+      /* padding: 11px 15px 10px; */
+      padding: 11px 15px 10px;
+      font-size: 0.75rem;
+  }
+}
+
 @media only screen and (max-width:1100px) {
   .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a,
   .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a:focus,
   .nav-pills--twmctoggle-connectblock3 .nav-pills > li > a {
-      padding: 11px 15px 10px;
+      /* padding: 11px 15px 10px; */
+      padding: 11px 12px 10px;
       font-size: 0.7rem;
   }
 }
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:1000px) {
   .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a,
   .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a:focus,
   .nav-pills--twmctoggle-connectblock3 .nav-pills > li > a {
       padding: 11px 10px 10px;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
   }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:870px) {
   ul.nav-pills--twmctoggle-connectblock3-ul {
     width: 100%;
     flex-direction: column;
@@ -630,6 +652,12 @@ ul.nav-pills--twmctoggle-connectblock3-ul {
 
   .tab-content--twmctoggle-connectblock3 {
     border-radius: 0 0 4px 4px;
+  }
+
+  .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a,
+  .nav-pills--twmctoggle-connectblock3 > .nav-pills > li.active > a:focus,
+  .nav-pills--twmctoggle-connectblock3 .nav-pills > li > a {
+      font-size: 0.7rem;
   }
 }
 /* =====End of Toggle Tab V3 ===== */

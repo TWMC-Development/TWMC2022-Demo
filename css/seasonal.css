@@ -12688,17 +12688,17 @@ a.twmc-comdinner2024-card--address:focus {
 /* ===== END OF SERVE IT UP 2024 ===== */
 
 
-/* ===== SINGLE LIFE - EVENTS CALENDAR ===== */
+/* ===== SINGLE LIFE - GATHER IN COMMUNITY ===== */
 /* HERO */
 #twmc-singlelife--hero {
-    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_formation/DIS_Banding_FeatureBanner_BKG.png"); */
-    background-color: #ddd;
+    background-color: #87948C;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_singlelife/DIS_Single+Life_Gather+in+Community_FeatureBannerBG.png");
     text-align: center;
-    background-position: bottom right;
+    background-position: center;
     background-size: cover;
 
     height: 650px;
-    padding: 5rem 0;
+    padding: 6rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12706,10 +12706,11 @@ a.twmc-comdinner2024-card--address:focus {
 }
 
 .twmc-featbanner--singlelife-wrapper {
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .twmc-featbanner--singlelife-wrapper > img {
@@ -12734,7 +12735,7 @@ a.twmc-comdinner2024-card--address:focus {
 
 
 
-/* ===== END OF SINGLE LIFE - EVENTS CALENDAR ===== */
+/* ===== END OF SINGLE LIFE - GATHER IN COMMUNITY ===== */
 
 
 /* ====== RADIANT FALL 2024 ===== */
