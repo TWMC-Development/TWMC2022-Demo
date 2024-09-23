@@ -1,0 +1,158 @@
+#twmc-advent2024--hero {
+    z-index: 3;
+}
+
+svg #twinkle {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.group {
+    transform: translate(42.5px, 42.5px);
+}
+path {
+    transform: translate(-42.50px,-42.50px);
+}
+.large {
+  opacity: 0;
+	animation: large 3s linear infinite;
+}
+.large-2 {
+  opacity: 0;
+	animation: large-2 3s linear infinite;
+}
+.small {
+  opacity: 0;
+	animation: small 3s linear infinite;
+}
+
+@keyframes large {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	16.667% {
+		opacity: 1;
+	}
+	33.333% {
+		opacity: 0;
+		transform: rotate(360deg) scale(1.5);
+	}
+  100% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+}
+@keyframes large-2 {
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) scale(0);
+	}
+	16.667% {
+		opacity: 1;
+	}
+	33.333% {
+		opacity: 0;
+		transform: rotate(405deg) scale(1.1);
+	}
+  100% {
+		opacity: 0;
+		transform: rotate(45deg) scale(0);
+	}
+}
+@keyframes small {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	16.667% {
+		opacity: 1;
+	}
+	33.333% {
+		opacity: 0;
+		transform: rotate(-360deg) scale(1.5);
+	}
+  100% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+}
+
+/* TWINKLE 2 */
+/* Apply absolute positioning to the second SVG container */
+svg#twinkle2-container {
+    position: absolute;
+    top: 25%; /* Position 25% from the top of the parent section */
+    right: 25%; /* Position 25% from the right of the parent section */
+    z-index: 4;
+  }
+  
+  /* Remove unnecessary transformations */
+  svg #twinkle2 {
+    position: relative;
+    z-index: 4;
+  }
+  
+  /* Ensure internal styling remains the same for animation */
+  .large2, .large2-2, .small2 {
+    opacity: 0;
+    animation: large 3s linear infinite;
+  }
+  
+  @keyframes large {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0);
+    }
+    16.667% {
+      opacity: 1;
+    }
+    33.333% {
+      opacity: 0;
+      transform: rotate(360deg) scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0);
+    }
+  }
+  
+  @keyframes large-2 {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) scale(0);
+    }
+    16.667% {
+      opacity: 1;
+    }
+    33.333% {
+      opacity: 0;
+      transform: rotate(405deg) scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) scale(0);
+    }
+  }
+  
+  @keyframes small {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0);
+    }
+    16.667% {
+      opacity: 1;
+    }
+    33.333% {
+      opacity: 0;
+      transform: rotate(-360deg) scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0);
+    }
+  }
+  

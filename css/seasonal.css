@@ -41,6 +41,31 @@
     margin-top: 7rem !important;
 }
 
+.btn-featbanner-white {
+    background-color: white;
+    color: #333;
+    border: 2px solid white;
+    border-radius: 9.5px;
+    padding: .5rem 1.2rem;
+    font-size: .8rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    min-width: 175px;
+    max-width: max-content;
+    text-transform: uppercase;
+}
+
+.btn-featbanner-white:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    color: white;
+}
+
 /* ===== END OF UTILITIES */
 
 /* ===== FEATURE BANNERS ===== */
@@ -8883,6 +8908,24 @@ a.text-rhythms:focus {
 
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.twmc--btn--tag-serveday2024-b {
+    display: inline-block;
+    color: #333;
+    font-size: .53rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: #e3e9e3;
+    border: 1px solid #e3e9e3;
+    border-radius: .25rem;
+    padding: .3rem .45rem .2rem;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+}
 /* End of Buttons */
 
 /* Cards */
@@ -11244,8 +11287,8 @@ p.twmc-prayerconf2024-date {
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    /* justify-content: space-between; */
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-start;
 }
 
 .twmc-nextgensports--flex-item {
@@ -12592,6 +12635,24 @@ a.twmc-comdinner2024-card--address:focus {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.twmc--btn--tag-grey2 {
+    display: inline-block;
+    color: #f2f2f2;
+    font-size: .53rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: #3e3d3c;
+    border: 1px solid #3e3d3c;
+    border-radius: .25rem;
+    padding: .3rem .45rem .2rem;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+}
+
 .twmc--btn--tag-tan {
     display: inline-block;
     color: #333;
@@ -13467,3 +13528,741 @@ padding: 1.7rem 2rem;
 }
 
 /* ===== END OF NEXTGEN KIDS ====== */
+
+/* ===== Dessert Worship 2024 ===== */
+/* HERO */
+#twmc-dessertworship2024-hero {
+    /* background-image: linear-gradient(to bottom, rgba(72, 66, 61, .4), rgba(72, 66, 61, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_formation/DIS_HeroImage_1270x600.png"); */
+    background-color: #5E001C;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png");
+    text-align: center;
+    background-position: top center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-featbanner--dessertworship2024-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .twmc-featbanner--dessertworship2024-wrapper > img {
+    max-width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    #twmc-dessertworship2024-hero {
+      background-position: top left;
+    }
+
+    .twmc-featbanner--dessertworship2024-wrapper {
+        align-items: flex-start;
+    }
+
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        max-width: 55%; 
+        margin-left: 500px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        max-width: 55%; 
+        margin-left: 450px;
+        margin-bottom: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        max-width: 50%; 
+        margin-left: 470px;
+        margin-bottom: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 1030px) {
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        max-width: 45%; 
+        margin-left: 490px;
+        margin-bottom: 5rem;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    #twmc-dessertworship2024-hero {
+      background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2.png");
+      background-position: bottom center;
+    }
+
+    .twmc-featbanner--dessertworship2024-wrapper {
+      align-items: center;
+    }
+
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        max-width: 80%; 
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #twmc-dessertworship2024-hero {
+        height: 450px;
+        padding: 4rem 0;
+    }
+  }
+  /* END OF HERO */
+
+  /* INTRO */
+  #twmc-dessertworship2024-intro {
+    border-top: 20px solid #700D19;
+  }
+
+  .dessertworship2024-speaker {
+    display: none;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .dessertworship2024-speaker {
+        display: block;
+    }
+
+    .dessertworship2024-speaker > img {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 6px solid #700D19;
+        outline: 3px solid #d7a64d;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .dessertworship2024-speaker > img {
+        width: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .dessertworship2024-speaker > img {
+        width: 60%;
+    }
+  }
+
+  /* END OF INTRO */
+
+  /* Buttons */
+  .btn-dessertworship2024 {
+    background-color: #700D19;
+    color: #f9f9f9;
+    border: 2px solid #700D19;
+    border-radius: 9.5px;
+    padding: .5rem 1.2rem;
+    font-size: .8rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+
+    margin-top: 0.5rem;
+    min-width: 175px;
+    max-width: max-content;
+    text-transform: uppercase;
+  }
+
+  .btn-dessertworship2024:hover,
+  .btn-dessertworship2024:focus {
+      background-color: rgba(244, 232, 231, 0.1);
+      transform: scale(1.02);
+      color: #700D19;
+  }
+
+  .dessertworship2024--btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (min-width: 1500px) {
+        .dessertworship2024--btn-wrapper {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .dessertworship2024--btn-wrapper {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        /* .btn-trans-hero {
+            width: 150px;
+        } */
+      }
+
+    @media only screen and (max-width:768px) {
+        .dessertworship2024--btn-wrapper {
+            gap: 1%;
+        }
+
+        .btn-dessertworship2024 {
+            margin-top: 10px;
+        }
+    }        
+  /* End of Buttons */
+
+  /* Flex */
+  .twmc-mensconf2024-flex-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2%;
+  }
+
+  .twmc-mensconf2024-flex-item {
+      flex-basis: 49%;
+      overflow: visible;
+  }
+
+  @media only screen and (max-width: 768px) {
+      .twmc-mensconf2024-flex-container {
+          gap: 0;
+      }
+
+      .twmc-mensconf2024-flex-item {
+          flex-basis: 100%;
+      }
+  }
+  /* Enf of Flex */
+
+  /* Card */
+  /* no paddings card */
+  .twmc-dessertworship2024-ribbon-card--wrapper {
+      background-color: #fff;
+      box-shadow: 0 2px 20px rgb(209 158 58 / 15%);
+      border: 3px solid #58001E;
+      background-color: #FEFBF7;
+      background-color: #f7f7f8;
+  }
+
+  .twmc-dessertworship2024--ribbon {
+      background-color: #64051A;
+      background-size: cover;
+      background-position: center center;
+      height: 50px;
+      background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2.png'); background-position: top center;
+  }
+
+  .twmc-dessertworship2024--ribbon-inner {
+      margin: 0;
+  }
+  
+  .twmc-dessertworship2024-ribbon-card--inner-wrapper {
+      padding: 1rem 1.5rem 1.9rem;
+      text-align: left;
+  }
+
+  /* End of card */
+
+  /* FAQ */ 
+  #twmc-dessertworship2024-faq {
+    background-color: #F7F7F8;
+
+    border-top: 7px solid #d7a64d;
+    outline: 20px solid #700D19;
+  }
+
+  .dw-parkinglots-img {
+    width: 70%;
+  }
+  /* END OF FAQ */
+/* ===== Dessert Worship 2024 ===== */
+
+
+/* ===== Mission Conference 2025 ===== */
+/* HERO */
+#twmc-misconf2025-hero {
+    /* background-image: linear-gradient(to bottom, rgba(72, 66, 61, .4), rgba(72, 66, 61, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_formation/DIS_HeroImage_1270x600.png"); */
+    background-color: #7CA082;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/MIS_Conference_FeatureBanner_BG.png");
+    text-align: center;
+    background-position: top center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-featbanner--misconf2025-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-featbanner--misconf2025-wrapper > img {
+  max-width: 80%;
+  /* margin-bottom: 2rem; */
+}
+
+@media only screen and (max-width: 1200px) {
+  .twmc-featbanner--misconf2025-wrapper > img {
+      max-width: 90%;
+  }
+
+  #twmc-misconf2025-hero {
+    padding: 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #twmc-misconf2025-hero {
+      height: 450px;
+      padding: 4rem 0;
+  }
+}
+
+  
+  /* END OF HERO */
+
+  /* BUTTONS */
+  .twmc--btn--miscon2025 {
+      border: 2px solid #6A8A6F;
+      background-color: #6A8A6F;
+      /* color: #fff; */
+      color: #FAEFE6;
+      transition: all .3s ease-in-out;
+      font-weight: 700;
+      padding: 0.7rem 1rem 0.6rem;
+  }
+
+  .twmc--btn--miscon2025:hover,
+  .twmc--btn--miscon2025:focus {
+    border: 2px solid #6A8A6F;
+      background-color: rgba(106, 138, 111, 0.2);
+      color: #6A8A6F;
+      padding: 0.7rem 1rem 0.6rem;
+      transform: scale(1.02);
+  }
+
+  .confhero-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .confhero-btn-wrapper a {
+    flex-basis: max-content;
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .twmc--btn--miscon2025-tan {
+        border: 2px solid #FAEFE6;
+        background-color: #FAEFE6;
+        color: #527157;
+        transition: all .3s ease-in-out;
+        font-weight: 700;
+        padding: 0.7rem 1rem 0.6rem;
+    }
+
+    .twmc--btn--miscon2025-tan:hover,
+    .twmc--btn--miscon2025-tan:focus {
+    border: 2px solid #FAEFE6;;
+        background-color: rgba(250, 239, 230, 0.2);
+        color: #FAEFE6;;
+        padding: 0.7rem 1rem 0.6rem;
+        transform: scale(1.02);
+    }
+
+    @media only screen and (max-width: 576px) {
+        .twmc--btn--miscon2025-tan {
+            padding: 0.5rem 0.6rem;
+            font-size: 0.7rem;
+        }
+
+        .confhero-btn-wrapper {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .confhero-btn-wrapper a {
+            margin-bottom: 4px;
+        }
+    }
+
+    .twmc--btn--miscon-white {
+        border: 2px solid #fff;
+        background-color: #fff;
+        /* color: #fff; */
+        color: #333;
+        transition: all .3s ease-in-out;
+        font-weight: 600;
+        padding: 0.7rem 1rem 0.6rem;
+    }
+  
+    .twmc--btn--miscon-white:hover,
+    .twmc--btn--miscon-white5:focus {
+      border: 2px solid #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        padding: 0.7rem 1rem 0.6rem;
+        transform: scale(1.02);
+    }
+
+    @media only screen and (max-width: 576px) {
+        .twmc--btn--miscon-white {
+            padding: 0.5rem 0.6rem;
+            font-size: 0.7rem;
+        }
+    }
+
+  /* END OF BUTTONS */
+
+  /* INTRO */
+  #twmc-misconf2025--intro {
+    background-color: #fcf7f1;
+  }
+
+  /* END OF INTRO */
+
+  /* COUNTER - REACH */
+  #twmc-misconf2025--win {
+    background-color: #6A8A6F;
+      background-image: linear-gradient(to bottom, rgba(106, 138, 111, 0.7), rgba(106, 138, 111, .7)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/ben-white-TlBF3ZUVTvE-unsplash-lg.jpg");
+      text-align: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: scroll;
+  }
+
+
+  @media only screen and (max-width: 576px) {
+      #twmc-misconf2025--win {
+          background-position: center right;
+      }
+  }
+
+  /* END OF COUNTER - REACH */
+
+  /* E-NEWS */
+  #twmc-misconf2025--cta {
+    background-color: #6A8A6F;
+    background-image: linear-gradient(to bottom,rgba(106, 138, 111, 0.7), rgba(106, 138, 111, 0.7)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/natalia-blauth-5WNGdoxL8Vg-unsplash-lg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  /* END OF E-NEWS */
+
+  /* COUNTER - DIS */
+  #twmc-misconf2025--disciple {
+    background-color: #6A8A6F;
+        background-image: linear-gradient(to bottom, rgba(106, 138, 111, 0.7), rgba(106, 138, 111, .7)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/getty-images-RwfGlB-4vVQ-unsplash.jpg");
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+  /* END OF COUNTER - DIS */
+
+  /* COUNTER - HELP */
+  #twmc-misconf2025--help {
+    background-color: #6A8A6F;
+    background-image: linear-gradient(to bottom, rgba(106, 138, 111, 0.8), rgba(106, 138, 111, 0.8)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/WGO+723+Children+laughing+during+story+V2+RESIZED.jpg");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+/* COUNTER - HELP */
+
+/* STORIES */
+.twmc-misconf2025--story-card1 {
+    background-color: #fff;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-top: -2rem;
+    padding: 5rem 0 6rem;
+}
+
+.twmc-misconf2025--story-card2 {
+    background-color: #FAF0E6;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-top: -2rem;
+    padding: 5rem 0
+}
+
+.twmc-misconf2025--story-card3 {
+    background-color: #b9c8bb;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-top: -2rem;
+    padding: 5rem 0
+}
+
+/* END OF STORIES */
+
+/* CARDS */
+.twmc-card-transparent2 {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.twmc-counter-num2 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 0.7rem;
+}
+
+.miscon-card-boxshadow1 {
+    background-color: #333;
+    box-shadow: 5px 10px 20px #aaa;
+}
+
+.miscon-card-boxshadow2 {
+    background-color: #333;
+    box-shadow: 5px 10px 20px #9a9188;
+}
+
+.miscon-card-boxshadow2-1 {
+    background-color: #BDB6AE;
+    box-shadow: 5px 10px 20px #9a9188;
+}
+
+.miscon-card-boxshadow3 {
+    background-color: #333;
+    box-shadow: 5px 10px 20px #6A8A6F;
+}
+/* END OF CARD */
+
+/* ===== End of Mission Conference 2025 ===== */
+
+/* ===== Missions Page 2025 ===== */
+/* HERO */
+#twmc-mis2025-hero {
+    /* background-image: linear-gradient(to bottom, rgba(72, 66, 61, .4), rgba(72, 66, 61, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_formation/DIS_HeroImage_1270x600.png"); */
+    background-color: #7CA082;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/MIS_Conference_FeatureBanner_BG.png");
+    text-align: center;
+    background-position: top center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-featbanner--mis2025-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-featbanner--mis2025-wrapper > img {
+  max-width: 70%;
+  /* margin-bottom: 2rem; */
+}
+
+@media only screen and (max-width: 1200px) {
+  .twmc-featbanner--mis2025-wrapper > img {
+      max-width: 80%;
+  }
+
+  #twmc-mis2025-hero {
+    padding: 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .twmc-featbanner--mis2025-wrapper > img {
+      max-width: 90%;
+  }
+
+
+  #twmc-mis2025-hero {
+      height: 450px;
+      padding: 4rem 0;
+  }
+}
+
+/* ===== Missions Page 2025 ===== */
+
+/* ===== Advent 2024 ===== */
+
+#twmc-advent2024--hero {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/RSD+Background.png");
+    background-color: #19261C;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+
+    /* height: 650px; */
+    height: 700px;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-advent2024--hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twmc-advent2024--hero-wrapper > img {
+    height: 600px;
+
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+  .cov-hero--title {
+    color: #fff;
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .cov-hero--subtitle {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .cov-hero--title {
+      font-size: 5.5rem;
+    }
+
+    .cov-hero--subtitle {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    #twmc-advent2024--hero {
+      height: 85vh;
+      padding: 2.5rem 0;
+    }
+
+    .twmc-advent2024--hero-wrapper > img {
+        max-width: 60%;
+    }
+
+    .cov-hero--title {
+      font-size: 4.5rem;
+    }
+
+    .cov-hero--subtitle {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #twmc-advent2024--hero {
+        height: 450px;
+        padding: 2rem 0;
+    }
+
+    .twmc-advent2024--hero-wrapper > img {
+      max-width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .twmc-advent2024--hero-wrapper > img {
+      max-width: 20%;
+    }
+
+    .cov-hero--title {
+      font-size: 4rem;
+    }
+
+    .cov-hero--subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+
+/* .hero--img-tagline-wrapper-lg.twmc-advent2024--hero-text {
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* .hero--img-tagline-wrapper-lg.twmc-advent2024--hero-text > img.img-responsive-center {
+    max-width: 70%;
+}
+
+@media only screen and (min-width: 1400px) {
+    .hero--img-tagline-wrapper-lg.twmc-advent2024--hero-text > img.img-responsive-center {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero--img-tagline-wrapper-lg.twmc-advent2024--hero-text > img.img-responsive-center {
+        max-width: 90%;
+    }
+} */
+
+@media only screen and (max-width: 575px) {
+    #twmc-advent2024--hero,
+    .hero--img-tagline-wrapper-lg.twmc-advent2024--hero-text {
+        height: 450px;
+    }
+}
+/* END OF HERO */
+
+/* ===== End of Advent 2024 ===== */

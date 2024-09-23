@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextGen 56</title>
+    <title>Disaster Relief - Francine</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -273,295 +273,555 @@
     <!-- Add margin below navbar, remove if needed -->
     <section class="margin-below-navbar"></section>
 
-    <style>
-       #twmc-56-hero {
-        /* background-image: linear-gradient(to bottom, rgba(0, 125, 182, 0.4), rgba(255, 255, 255, .7),rgba(255, 255, 255, .65), rgba(0, 125, 182, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen-56/56-Confirmation2-2000W.jpg"); */
-        background-image: linear-gradient(to bottom, rgba(0, 125, 182, 0.4), rgba(255, 255, 255, .7),rgba(255, 255, 255, .65), rgba(0, 125, 182, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen-56/56-Confirmation2-2000W--Compressed.jpg");
+    <!-- OPT1 -->
+  <section style="background-color: #333; color: #fff;">
+    <div class="container text-center" >
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="twmc-h1">OPT 1: CTA Simple</h1>
+        </div>
+      </div>
+    </div>     
+   </section>
 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: scroll;
-        height: 650px;
+   <!-- CTA -->
+  <style>
+    #twmc-cta-francine {
+      background-image: url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, .15)), url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-attachment: scroll;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      padding: 1rem 0;
+      text-align: center;
+      height: max-content;
+    }
+
+    .twmc--btn-misquiz {
+      width: 210px;
+    }
+
+    .francine-container-3col {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1%;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .francine-item-3col {
+      flex-basis: 32%;
+      /* border: 1px solid #fff; */
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.6rem 0.8rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .francine-container-3col {
+        gap: 0;
       }
 
-      .twmc-56-hero--img {
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        /* margin-top: 2rem; */
+      .francine-item-3col {
+        flex-basis: 100%;
+        margin-bottom: 0.6rem;
+        padding: 0.5rem;
+      }
+    }
+
+    /* Typography */
+    .p-francince {
+      font-weight: 800;
+      font-size: 1.8em;
+    }
+
+    .p-francince2 {
+      font-weight: 800;
+      font-size: 1.3em;
+    }
+
+    .a-francine {
+      color: #fbeaea;
+      transition: all .3s ease-in-out;
+    }
+
+    .a-francine:hover,
+    .a-francine:focus {
+      color: #fef6f6;
+      opacity: 0.6;
+    }
+
+    /* Simple wrapper */
+    .francine-simple-wrapper {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: 1300px) {
+      .francine-simple-wrapper {
+        width: 60%;
+      }
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .francine-simple-wrapper {
+        width: 70%;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      .francine-simple-wrapper {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .francine-simple-wrapper {
+        width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .francine-simple-wrapper {
+        width: 95%;
+      }
+    }
+
+    /* CTA Wrapper */
+    .francine-cta-wrapper {
+      text-align: left;
+      display: flex;
+      gap: 1%;
+      align-items: center;
+    }
+
+    .francine-cta-itemleft {
+      flex-basis: 49%;
+    }
+
+    @media only screen and (max-width: 576px) {
+      .francine-cta-wrapper {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .francine-cta-itemleft {
+        flex-basis: 100%;
+        text-align: center;
+      }
+
+      .francine-cta-itemright {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+  </style>
+
+  <section id="twmc-cta-francine" >
+    <div class="container-fluid text-white">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 francine-cta-wrapper">
+          <div class="francine-cta-itemleft">
+            <h5 class="twmc-h5 mt-2 mb-1">As Tropical Storm Francine looks to become a hurricane in the Gulf, we are preparing for action.</h5>
+            <h4 class="twmc-h4 mt-0 mb-2">What can you do? </h4>
+
+            
+          </div>
+          
+
+          <div class="francine-simple-wrapper francine-cta-itemright">
+            <h5 class="twmc-h5 mb-0 text-small mt-0"><span class="p-francince2">Pray</span> for our Louisiana neighbors, as they are looking at a direct hit.</h5>
+            <h5 class="twmc-h5 my-0 text-small"><a href="/givetodisasterrelief" class="a-francine" target="_blank"><span class="p-francince2">Give</span> to our Disaster Relief Fund, as we seek to help our neighbors. &rarr;</a></h5>
+            <h5 class="twmc-h5 my-0 text-small"><a href="https://www.signupgenius.com/go/9040C49A4A628A20-49830447-disaster#/" class="a-francine" target="_blank"><span class="p-francince2">Serve</span> If the track of the storm changes and we are in need of donations and volunteers, click on our “volunteer”  page to lend a hand. &rarr;</a></h5>
+            <h5 class="twmc-h5 text-small mb-1">Thank you for being a generous church as we seek to help those in need!
+            </h5>
+          </div>
+          
+         
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="twmc-cta-francine" >
+    <div class="container-fluid text-white">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h5 class="twmc-h5 mt-2 mb-1">As Tropical Storm Francine looks to become a hurricane in the Gulf, we are preparing for action.</h5>
+          <h4 class="twmc-h4 mt-0 mb-2">What can you do? </h4>
+
+          <div class="francine-simple-wrapper">
+            <h5 class="twmc-h5 mb-0 text-small mt-0"><span class="p-francince2">Pray</span> for our Louisiana neighbors, as they are looking at a direct hit.</h5>
+            <h5 class="twmc-h5 my-0 text-small"><a href="/givetodisasterrelief" class="a-francine" target="_blank"><span class="p-francince2">Give</span> to our Disaster Relief Fund, as we seek to help our neighbors. &rarr;</a></h5>
+            <h5 class="twmc-h5 my-0 text-small"><a href="https://www.signupgenius.com/go/9040C49A4A628A20-49830447-disaster#/" class="a-francine" target="_blank"><span class="p-francince2">Serve</span> If the track of the storm changes and we are in need of donations and volunteers, click on our “volunteer”  page to lend a hand. &rarr;</a></h5>
+          </div>
+          
+          <h5 class="twmc-h5">Thank you for being a generous church as we seek to help those in need!
+          </h5>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+   <section class="hero--video-section">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/header_poster.jpg">
+        <source src="https://player.vimeo.com/external/554479144.sd.mp4?s=1218405d21c5c4826b0a22f0c097bc84cfc82cce&amp;profile_id=165" data-src="https://player.vimeo.com/external/554479144.sd.mp4?s=1218405d21c5c4826b0a22f0c097bc84cfc82cce&amp;profile_id=165" type="video/mp4">
+    </video>
+
+    <div class="container hero--video__text-wrapper">
+        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/Headline_Web_ChurchEverday800.png" alt="" class="img-responsive">
+      </div>
+  </section>
+
+  
+
+  <!-- Featurette -->
+  <section id="twmc-home-cta-adv" class="twmc-cta3 twmc-home-cta-feat">
+    <div class="twmc-container">
+        <div class="twmc-flex-container--3-col-feat">
+            <a href="#" class="twmc-flex-item--3-col-feat twmc-home-cta-feat__link">
+                <img src="https://images.unsplash.com/photo-1612396504363-5f384c8e65a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="twmc-home-cta-adv__img">
+                <div class="twmc-home-cta-adv__text">
+                    <h4 class="twmc-h4">Heading 1</h4>
+                    <p class="twmc-p-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, tempora quo! Dolorem nam placeat et?</p>
+                </div>
+            </a>
+
+            <a href="#" class="twmc-flex-item--3-col-feat twmc-home-cta-feat__link">
+                <img src="https://images.unsplash.com/photo-1612396504363-5f384c8e65a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="twmc-home-cta-adv__img">
+                <div class="twmc-home-cta-adv__text">
+                    <h4 class="twmc-h4">Heading 2</h4>
+                    <p class="twmc-p-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ipsam ullam aut voluptatum asperiores iusto?</p>
+                </div>
+            </a>
+
+            <a href="#" class="twmc-flex-item--3-col-feat twmc-home-cta-feat__link">
+                <img src="https://images.unsplash.com/photo-1612396504363-5f384c8e65a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="twmc-home-cta-adv__img">
+                <div class="twmc-home-cta-adv__text">
+                    <h4 class="twmc-h4">Heading 3</h4>
+                    <p class="twmc-p-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio labore vero earum.</p>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</section>
+<!-- End of Featurette -->
+  <!-- End of CTA -->
+
+  <!-- END OF OPT 1 -->
+
+    <!-- OPT 2 -->
+    <style>
+
+      #francine-hero {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .3)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/noah-silliman-i2J9jnvaAbU-unsplash.jpg");
+        text-align: center;
+        background-position: center center;
+        background-size: cover;
+
+        height: 650px;
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        color: #fef6f6;
+    }
+
+    .francine-hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       @media only screen and (max-width: 768px) {
-        #twmc-56-hero {
-          height: 450px;
-          background-image: linear-gradient(to bottom, rgba(0, 125, 182, 0.4), rgba(255, 255, 255, .7),rgba(255, 255, 255, .65), rgba(0, 125, 182, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen-56/56-Confirmation2-mobile.jpg");
-          background-position: center bottom;
-        }
-      
-        .twmc-56-hero--img {
-          width: 80%;
-          height: auto;
+        .francine-hero-wrapper > img {
+            width: 90%;
         }
       }
+
+      @media only screen and (max-width: 576px) {
+        #francine-hero {
+            height: 500px;
+            padding: 3rem 0;
+        }
+      }
+
+      /* Flex */
+      .francine-container-3col {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 1%;
+          justify-content: space-between;
+          align-items: stretch;
+        }
+
+        .francine-item-3col {
+          flex-basis: 32%;
+          /* border: 1px solid #fff; */
+          border-radius: 8px;
+          background-color: rgba(255, 255, 255, 0.1);
+          padding: 0.6rem 0.8rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+          .francine-container-3col {
+            gap: 0;
+          }
+
+          .francine-item-3col {
+            flex-basis: 100%;
+            margin-bottom: 0.6rem;
+            padding: 0.5rem;
+          }
+        }
+
+        /* Typography */
+        .p-francince {
+          font-weight: 800;
+          font-size: 1.8em;
+        }
+
+        .a-francine {
+          color: #fbeaea;
+          transition: all .3s ease-in-out;
+        }
+
+        .a-francine:hover,
+        .a-francine:focus {
+          color: #fce3e3;
+          opacity: 0.8;
+        }
     </style>
 
     <!-- Hero -->
-    <div id="twmc-56-hero" class="py-6">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 text-center mb-4">
-                <img class="img-responsive twmc-56-hero--img" src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen-56/CHI_56_Logo_CMYK_Text.png" alt="">
-              </div>
-          </div>
-      </div>
-    </div>
-    <!-- End of Hero -->
-
-    <!-- Intro -->
-    <section class="twmc-intro">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2">
-                <div class="row">
-                  <!-- Intro description -->
-                  <div class="col-md-6 twmc-intro__description">
-                    <p class="twmc-p twmc-mbxs">Welcome to 56 Ministry! This is home for 5th and 6th graders at The Woodlands Methodist Church. We strive to create a Christ-centered, safe and fun environment for students. Middle school kids are at such a transitional age, going from young children to teenagers. We want to help guide and shepherd our students to know Christ during this formative age. We gather each week in the Family Life Center for Sunday Service, 9:30 and 11:00 a.m., and Wednesday Bible Study, 5:30 – 7:00 p.m. We would love to see you there!</p>
-                  </div>
-  
-                  <!-- Contact -->
-                  <div class="col-md-6 twmc-intro__contact-container-bootstrap">
-                    <div class="twmc-intro__contact-header">
-                      <h3 class="twmc-h3 twmc-myzero">Contact</h3>
-                    </div>
-  
-                    <div class="twmc-intro__contact-body"> 
-                        <div class="twmc-intro__contact-info">
-                            <i class="fas fa-pen-square fa-2x twmc-icon__traditional" aria-hidden="true"></i>
-                            <p>{[ emailform class:'a-traditional twmc-mlxs' email:'jkropinak@twmc.org' contactname:'John Kropinak (Confirmation) ' ]}</p>
-                        </div>
-
-                        <div class="twmc-intro__contact-info">
-                          <i class="fas fa-pen-square fa-2x twmc-icon__traditional" aria-hidden="true"></i>
-                          <p>{[ emailform class:'a-traditional twmc-mlxs' email:'mpierce@twmc.org' contactname:'Meagan Pierce (56)' ]}</p>
-                        </div>
-
-                        <div class="twmc-intro__contact-info">
-                          <i class="fab fa-facebook-square fa-2x twmc-icon__traditional" aria-hidden="true"></i>
-                          <p><a href="https://www.facebook.com/56ministry" class="a-traditional twmc-mlxs" target="_blank">Like us on Facebook</a></p>
-                        </div>
-
-                        <div class="twmc-intro__contact-info">
-                          <i class="fab fa-instagram-square fa-2x twmc-icon__traditional" aria-hidden="true"></i>
-                          <p><a href="https://www.instagram.com/56ministry/" class="a-traditional twmc-mlxs" target="_blank">Follow us on Instagram</a></p>
-                        </div>
-                        
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-    </section>
-      <!-- End of Intro -->
-
-   
-    <!-- E-news -->
-    <section class="twmc-cta twmc-cta__traditional-enews py-5">
-      <div class="container-fluid">
+     <section style="background-color: #333; color: #fff;">
+      <div class="container text-center" >
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-            
-            <div class="twmc-flex-container--cta2-enews">
-              <div class="twmc-flex-item--cta2-enews--left">
-                <h3 class="twmc-h3 mt-0">56’s e-News</h3>
-                <p class="twmc-p">Subscribe to the free ministry e-News! Get weekly updates about 5th and 6th graders’ activities sent to your inbox.</p>
-              </div>
+          <div class="col-sm-12">
+            <h1 class="twmc-h1">OPT 2: HERO</h1>
+          </div>
+        </div>
+      </div>     
+     </section>
+
+    <section id="francine-hero">
+      <div class="container francine-hero-wrapper">
+          <!-- <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_nextgen-56/NXTGEN+56_Club+56_FeatureBannerTEXT.png" alt="Grow In Your Faith" class="img-responsive"> -->
+
+          <h5 class="twmc-h5 mt-2 mb-1">As Tropical Storm Francine looks to become a hurricane in the Gulf, we are preparing for action.</h5>
+                <h4 class="twmc-h4 mt-0 mb-3">What can you do? </h4>
   
-              <div class="twmc-flex-item--cta2-enews--right">
-                <a href="https://mailchi.mp/twmc.org/56-ministry" class="twmc--btn twmc--btn--white-enews">Subscribe Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of E-news -->
-
-    <!-- Feature Banner -->
-    <!-- Summer Splash 2024 -->
-    <div id="twmc-chi__summersplash-featurebanner">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 text-center">
-                  <div class="twmc-feature-banner-1col__img-md twmc-mtzero ">
-                      <img class="twmc-feature-banner__img twmc-mbxs" src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/CHI_SummerSplash_FeatureBanner_Text.png" alt="">
-                      <h4 class="twmc-summersplash2023--h4 twmc-letspac-1">Summer fun is on the way! NextGen Kids, NextGen 56 and Recreation Ministry have an amazing summer planned. Register and join us for exciting camps and activities. Don’t miss out on good fun with great friends!</h4>
+                <div class="francine-container-3col">
+                  <div class="francine-item-3col">
+                    <h5 class="twmc-h5 my-0"><span class="p-francince">Pray</span></h5>
+                    <h5 class="twmc-h5 mt-1 text-small">for our Louisiana neighbors, as they are looking at a direct hit. </h5>
                   </div>
-                  <a class="twmc--btn twmc-btn-summersplash2023--yellow twmc-letspac-2 mt-3" href="/summersplash" target="_blank"><strong>Learn more</strong></a>
-                  
-              </div>
-          </div>
-
-      </div>
-    </div>
-    <!-- End of Summer Splash -->
-    <!-- End of Feature Banner -->
-
-    <!-- Connect Block -->
-    <section class="py-6" style="height: 300px; background-color: white;">
-      <div class="container">
-        <div class="row col-sm-12">
-          <h2>CONNECT BLOCK</h2>
-        </div>
-      </div>
-    </section>
-    <!-- Connect Block -->
-
-    
-    <!-- Info -->
-      <section id="children-info" class="py-6 background-lightgrey2">
-        <div class="container-fluid twmc-p">
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <div class="twmc-section__info">
-                        <h2 class="twmc-h2 mb-3">Resources</h2>
-                        <!-- Panel group -->
-                        <div class="panel-group" id="accordion-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" role="tablist" aria-multiselectable="true">
-                            <!-- Overview -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading1-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <h4 class="panel-title twmc-h4">
-                                        <a class="accordion-button" role="button" data-toggle="collapse" data-parent="#accordion-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" href="#collapse1-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" aria-expanded="true" aria-controls="collapse1">Overview</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <div class="panel-body twmc-panel-body">
-                                        <p class="twmc-p">We want to reach and teach your children in such a way that they have the greatest opportunity to become devoted followers of Jesus. In NextGen 56 Sunday school, your kids will worship, learn and have fun at their own level.</p>
-                                        <p class="twmc-p">Volunteers are the backbone of NextGen 56 Ministry at The Woodlands Methodist Church. All of our volunteers go through a background check and a training process. We encourage our families to partner with us so that we are able to assist you in developing your child’s spiritual formation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Sunday school -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading2-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <h4 class="panel-title twmc-h4">
-                                        <a class="accordion-button" role="button" data-toggle="collapse" data-parent="#accordion-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" href="#collapse2-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" aria-expanded="false" aria-controls="collapse2">Sunday School</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <div class="panel-body py-4 twmc-panel-body">
-                                        <p class="twmc-p mb-0"><b>Sunday School Times</b><br></p>
-                                        <p class="twmc-p">Sundays &verbar; 9:30 and 11:00 a.m.</p>
-                                        
-                                        <p class="twmc-p mb-0"><b>Meeting Location</b></p>
-                                        <p class="twmc-p">Family Life Center across from Main Building</p>
-                                        
-                                        <p class="twmc-p mb-0"><b>Check In</b></p>
-                                        <p class="twmc-p">56 students can check themselves in at the computers close to their meeting areas.</p>
-                                       
-                                        <p class="twmc-p mb-0"><b>Meeting Format</b></p>
-                                        <p class="twmc-p">Each age group meets in a large group for worship and the main lesson and then they break up into small groups for discussion and activities.</p>
-                                        
-                                        <p class="twmc-p mb-0"><b>Children with Special Needs</b></p>
-                                        <p class="twmc-p">We have Sunday school classes for children with special needs in preschool through sixth grade on the Main Campus and in the Loft Building.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                           
-                            <!-- 56 (5th and 6th grade ) -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading7-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <h4 class="panel-title twmc-h4">
-                                        <a class="accordion-button" role="button" data-toggle="collapse" data-parent="#accordion-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" href="#collapse7-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" aria-expanded="false" aria-controls="collapse7">56 (5th and 6th grade)</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse7-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <div class="panel-body py-4 twmc-panel-body">
-                                        <p class="twmc-p twmc-traditional__text"><em><b>The Woodlands Campus only</b></em></p>
-                                        <p class="twmc twmc-mts"><b>Sunday Mornings</b></p>
-                                        <p class="twmc-p">Sunday service for 5th and 6th grade is held in the Family Life Center at 9:30 and 11:00 a.m. Each week, we prepare a faith-based game, live worship and a lesson for our students. Our goal as a ministry on Sunday mornings is to create a safe and Jesus-centered environment for students to thrive. We want students to build their relationships with God, forge a community with their peers, and have fun while doing so.</p>
-                                        
-                                        <p class="twmc-p twmc-mts"><b>Roots Bible Study</b></p>
-                                        <p class="twmc-p">Wednesday night Bible study, called Roots, meets from 5:30 – 7:00 p.m. in the Family Life Center each Wednesday. Each week, we have dinner, live worship, a lesson and small group time. This setting cultivates a closer relationship with Christ and further strengthens one’s faith.</p>
-                                        <p class="twmc-p">If want to join the Supper Club for your student to receive dinner at Roots, click the link below.
-                                          If you have any questions, please contact <a href="mailto:mpierce@twmc.org">Meagan Pierce </a> or <a href="mailto:khaueter@twmc.org">Kylee Haueter </a>.</p>
-                                        
-                                        <a href="https://www.thewoodlandsmethodist.org/group-detail/288634" class="twmc--btn twmc--btn--traditional mb-2" target="_blank" referrerpolicy="origin">Roots Supper Club</a><br>
-                                           
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Confirmation (6th grade) -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading8-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <h4 class="panel-title twmc-h4">
-                                        <a class="accordion-button" role="button" data-toggle="collapse" data-parent="#accordion-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" href="#collapse8-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" aria-expanded="false" aria-controls="collapse8">Confirmation (6th grade)</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse8-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <div class="panel-body twmc-panel-body">
-                                        <p class="twmc-p twmc-mtxs">Confirmation is a big step in your child’s personal faith journey, preparing him or her for a life of discipleship and Christian service. Our confirmation program prepares your sixth grader to claim the Christian faith as his or her own. We typically have around 220 confirmands each year and celebrate 60 baptisms.</p>
-                        
-                                        <p class="twmc-p">The confirmation journey follows the school year calendar, beginning in August and ending in May. Classes meet on Sunday mornings at 9:30 or 11:15 a.m. at the Family Life Center on The Woodlands Campus and 12:30 &ndash; 1:00 p.m. in the Gymnasium at the Woodforest Campus. Within a small group, your student will develop a spiritual foundation while building valuable relationships with the other students and the adult leaders of their group.</p>
-                                        
-                                        <p class="twmc-p">In addition to weekly classes, your student will participate in service projects within the church and our community, as well as have the opportunity to attend both a fall and spring retreat which includes parents.</p>
-                                        
-                                        <p class="twmc-p mt-4"><a class="twmc--btn twmc--btn--traditional" href="https://www.thewoodlandsmethodist.org/confirmation">Find Out More and Register for Confirmation</a></p>
-                                        
-                                        <p class="twmc-p">If you have any questions, please contact <a>{[ emailform email:'jkropinak@twmc.org' contactname:' John Kropinak' ]}</a>.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Special Blessings -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading9-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <h4 class="panel-title twmc-h4">
-                                        <a class="accordion-button" role="button" data-toggle="collapse" data-parent="#accordion-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" href="#collapse9-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" aria-expanded="false" aria-controls="collapse9">Special Blessings</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse9-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9-id-5f25203d-9fe0-4ba3-9b3a-c8c1b692c7b2">
-                                    <div class="panel-body twmc-panel-body">
-                                        <p class="twmc-p twmc-mtxs">Special Blessings shares the love of Christ and serves children with special needs in preschool through sixth grade. Special Blessings Sunday school is offered at 9:30 and 11:15 a.m. for students in Pre-K – 6th grade on the Main Campus and at the Loft Building. Additional worship, social and recreational opportunities are offered for Special Blessings students and their families throughout the year.</p>
-                            
-                                        <p class="twmc-p">If you have any questions, please contact  <a>{[ emailform email:'kmanning@twmc.org' contactname:'Kelli Manning' ]}</a>, Children’s Special Needs Coordinator.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!-- End of panel group -->
-
-                        <!-- Learn more -->
-                        <h5 class="twmc-h5">Find out more about our other NextGen Ministries:  
-                          <br><a href="https://www.thewoodlandsmethodist.org/children" class="a-traditional" target="_blank">NextGen Kids (Pre-K &ndash; 4th Grade)</a>
-                          <!-- <br><a href="https://www.thewoodlandsmethodist.org/56" class="a-traditional" target="_blank">NextGen 56 (5th and 6th Grade)</a> -->
-                          <br><a href="https://www.thewoodlandsmethodist.org/students" class="a-traditional" target="_blank">NextGen Students (7th &ndash; 12th Grade)</a>
-                        </h5>
-                        <!-- End of Learn more -->
-    
-                    </div>
+                  <div class="francine-item-3col">
+                    <a href="/givetodisasterrelief" target="_blank" class="a-francine">
+                      <h5 class="twmc-h5 my-0"><span class="p-francince">Give</span></h5>
+                      <h5 class="twmc-h5 mt-1 text-small">to our Disaster Relief Fund, as we seek to help our neighbors. &rarr;</h5>
+                    </a>
+                  </div>
+                  <div class="francine-item-3col">
+                    <a href="https://www.signupgenius.com/go/9040C49A4A628A20-49830447-disaster#/" target="_blank" class="a-francine">
+                      <h5 class="twmc-h5 my-0"><span class="p-francince">Serve</span></h5>
+                      <h5 class="twmc-h5 mt-1 mb-2 text-small">If the track of the storm changes and we are in need of donations and volunteers, click on our “volunteer” page to lend a hand. &rarr;</h5>
+                    </a>
+                  </div>
                 </div>
-            </div>
+                <h5 class="twmc-h5 mt-3">Thank you for being a generous church as we seek to help those in need!
+                </h5>
+      </div>
+    </section>
+
+    <!-- End of Hero -->
+     <!-- END OF OPT 2 -->
+
+    <!-- CTA | OPT 3 -->
+    <section style="background-color: #333; color: #fff;">
+      <div class="container text-center" >
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="twmc-h1">OPT 3: CTA 3 Cols</h1>
+          </div>
+        </div>
+      </div>     
+     </section>
+
+     <section class="hero--video-section">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/header_poster.jpg">
+          <source src="https://player.vimeo.com/external/554479144.sd.mp4?s=1218405d21c5c4826b0a22f0c097bc84cfc82cce&amp;profile_id=165" data-src="https://player.vimeo.com/external/554479144.sd.mp4?s=1218405d21c5c4826b0a22f0c097bc84cfc82cce&amp;profile_id=165" type="video/mp4">
+      </video>
+
+      <div class="container hero--video__text-wrapper">
+          <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/Headline_Web_ChurchEverday800.png" alt="" class="img-responsive">
         </div>
     </section>
-    <!-- End of Info -->
 
+     <!-- Disaster Response: Francine -->
+     <style>
+      #twmc-cta-francine {
+        /* background-color: #D15609;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, .15)), url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"); */
+
+        background-color: #6A8A6F;
+        background-image: linear-gradient(to bottom,rgba(106, 138, 111, 0.7), rgba(106, 138, 111, 0.7)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_missions/natalia-blauth-5WNGdoxL8Vg-unsplash-lg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: scroll;
+
+        padding: 1.2rem 0;
+        text-align: center;
+        height: max-content;
+      }
+
+      .twmc--btn-misquiz {
+        width: 210px;
+      }
+
+      .francine-container-3col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1%;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      .francine-item-3col {
+        flex-basis: 32%;
+        /* border: 1px solid #fff; */
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.6rem 0.8rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .francine-container-3col {
+          gap: 0;
+        }
+
+        .francine-item-3col {
+          flex-basis: 100%;
+          margin-bottom: 0.6rem;
+          padding: 0.5rem;
+        }
+      }
+
+      /* Typography */
+      .p-francince {
+        font-weight: 800;
+        font-size: 1.8em;
+      }
+
+      .a-francine {
+        color: #fff;
+        transition: all .3s ease-in-out;
+      }
+
+      .a-francine:hover,
+      .a-francine:focus {
+        color: #fef6f6;
+        opacity: 0.6;
+      }
+    </style>
+
+    <section id="twmc-cta-francine" >
+      <div class="container-fluid text-white">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <h5 class="twmc-h5 mt-2 mb-1">As our Louisiana neighbors recover from Hurricane Francine,</h5>
+            <h4 class="twmc-h4 mt-0 mb-3 text-uppercase">What can you do? </h4>
+
+            <div class="francine-container-3col">
+              <div class="francine-item-3col">
+                <h5 class="twmc-h5 my-0"><span class="p-francince">Pray</span></h5>
+                <h5 class="twmc-h5 mt-1 text-small">for our Louisiana neighbors, especially our Trinity Conference churches. </h5>
+              </div>
+              <div class="francine-item-3col">
+                <a href="/givetodisasterrelief" target="_blank" class="a-francine">
+                  <h5 class="twmc-h5 my-0"><span class="p-francince">Give</span></h5>
+                  <h5 class="twmc-h5 mt-1 text-small">to our Disaster Relief Fund, as we seek to help our neighbors. &rarr;</h5>
+                </a>
+              </div>
+              <div class="francine-item-3col">
+                <a href="https://www.signupgenius.com/go/9040C49A4A628A20-49830447-disaster#/" target="_blank" class="a-francine">
+                  <h5 class="twmc-h5 my-0"><span class="p-francince">Serve</span></h5>
+                  <h5 class="twmc-h5 mt-1 mb-2 text-small">If the need arises for donations and volunteers, click on our “volunteer” page to lend a hand. &rarr;</h5>
+                </a>
+              </div>
+            </div>
+            <h5 class="twmc-h5 mt-3">Thank you for being a generous church as we seek to help those in need!
+            </h5>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Disaster Response: Francine -->
+
+    <!-- End of CTA | OPT 3 -->
+     
+     <!-- Featurette -->
+     <section id="twmc-home-cta-adv" class="twmc-cta3 twmc-home-cta-feat">
+      <div class="twmc-container">
+          <div class="twmc-flex-container--3-col-feat">
+              <a href="#" class="twmc-flex-item--3-col-feat twmc-home-cta-feat__link">
+                  <img src="https://images.unsplash.com/photo-1612396504363-5f384c8e65a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="twmc-home-cta-adv__img">
+                  <div class="twmc-home-cta-adv__text">
+                      <h4 class="twmc-h4">Heading 1</h4>
+                      <p class="twmc-p-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, tempora quo! Dolorem nam placeat et?</p>
+                  </div>
+              </a>
+
+              <a href="#" class="twmc-flex-item--3-col-feat twmc-home-cta-feat__link">
+                  <img src="https://images.unsplash.com/photo-1612396504363-5f384c8e65a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="twmc-home-cta-adv__img">
+                  <div class="twmc-home-cta-adv__text">
+                      <h4 class="twmc-h4">Heading 2</h4>
+                      <p class="twmc-p-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ipsam ullam aut voluptatum asperiores iusto?</p>
+                  </div>
+              </a>
+
+              <a href="#" class="twmc-flex-item--3-col-feat twmc-home-cta-feat__link">
+                  <img src="https://images.unsplash.com/photo-1612396504363-5f384c8e65a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="twmc-home-cta-adv__img">
+                  <div class="twmc-home-cta-adv__text">
+                      <h4 class="twmc-h4">Heading 3</h4>
+                      <p class="twmc-p-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio labore vero earum.</p>
+                  </div>
+              </a>
+              
+          </div>
+      </div>
+  </section>
+  <!-- End of Featurette -->
+   <!-- End of OPT 3-->
+
+
+  
+
+
+  <!-- Content -->
+  <section class="py-6" style="background-color: #f6f6f6; height: 700px;">
+    
+  </section>
+  <!-- End of Content -->
+
+    
   <!-- Footer -->
   <section class="footer-wrapper-twmc py-5">
     <div class="container-fluid">
