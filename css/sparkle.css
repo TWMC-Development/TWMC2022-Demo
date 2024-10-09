@@ -2,13 +2,34 @@
     z-index: 3;
 }
 
+.adv-hero-img {
+  position: absolute;
+  top: 250px;
+  z-index: 2;
+
+  height: 550px;
+  width: auto;
+}
+
+svg#twinkle-container {
+  position: absolute;
+  top: 62%;
+  right: 45%; 
+  z-index: 5;
+}
+
 svg #twinkle {
+	position: relative;
+  z-index: 5;
+}
+
+/* svg #twinkle {
 	position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 4;
-}
+  z-index: 5;
+} */
 
 .group {
     transform: translate(42.5px, 42.5px);
@@ -85,23 +106,75 @@ path {
 /* Apply absolute positioning to the second SVG container */
 svg#twinkle2-container {
     position: absolute;
-    top: 25%; /* Position 25% from the top of the parent section */
-    right: 25%; /* Position 25% from the right of the parent section */
-    z-index: 4;
+    top: 35.5%; /* Position 25% from the top of the parent section */
+    right: 31.5%; /* Position 25% from the right of the parent section */
+    z-index: 5;
+    
   }
   
   /* Remove unnecessary transformations */
   svg #twinkle2 {
     position: relative;
-    z-index: 4;
+    z-index: 5;
   }
   
   /* Ensure internal styling remains the same for animation */
+ 
+
   .large2, .large2-2, .small2 {
     opacity: 0;
     animation: large 3s linear infinite;
+    animation-delay: 0.4s;
+  }
+/* 
+  .large3, .large3-2, .small3 {
+    opacity: 0;
+    animation: large 3s linear infinite;
+    animation-delay: 0.8s;
+  } */
+
+  .large3 {
+    opacity: 0;
+    animation: large 3s linear infinite;
+    animation-delay: 0.8s;
+  }
+  .large3-2 {
+    opacity: 0;
+    animation: large-2 3s linear infinite;
+    animation-delay: 0.8s;
+  }
+  .small3 {
+    opacity: 0;
+    animation: small 3s linear infinite;
+    animation-delay: 0.8s;
+  }
+
+  .large4, .large4-2, .small4 {
+    opacity: 0;
+    animation: large 3s linear infinite;
+    animation-delay: 1.2s;
+  }
+/* 
+  
+
+  /* TWINKLE 3 */
+  svg#twinkle3-container {
+    position: absolute;
+    top: 27.5%; 
+    right: 61.5%;
+    z-index: 5;
   }
   
+  /* TWINKLE 4 */
+  svg#twinkle4-container {
+    position: absolute;
+    top: 48%; 
+    right: 61%;
+    z-index: 5;
+  }
+
+
+/*   
   @keyframes large {
     0% {
       opacity: 0;
@@ -156,3 +229,4 @@ svg#twinkle2-container {
     }
   }
   
+   */

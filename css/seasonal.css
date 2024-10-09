@@ -18,8 +18,20 @@
     --navy: #324665;
     --lavender: #aea2ca;
     --white: #ffffff;
-    }
 
+    /* Missions Conference 2025 */
+    --miscon25--green: #6A8A6F;
+    --miscon25--lightgreen: #91a994;
+
+     /* Advent 2024 */
+     --color-advent24-gold: #D9A44D;
+     --color-advent24-gold2: #C6A357
+
+}
+
+
+
+   
 /* ===== UTILITIES ===== */
 .twmc-mt3 {
     margin-top: 3rem !important;
@@ -13532,9 +13544,9 @@ padding: 1.7rem 2rem;
 /* ===== Dessert Worship 2024 ===== */
 /* HERO */
 #twmc-dessertworship2024-hero {
-    /* background-image: linear-gradient(to bottom, rgba(72, 66, 61, .4), rgba(72, 66, 61, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_formation/DIS_HeroImage_1270x600.png"); */
     background-color: #5E001C;
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png");
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png"); */
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG1b.png");
     text-align: center;
     background-position: top center;
     background-size: cover;
@@ -13559,7 +13571,24 @@ padding: 1.7rem 2rem;
     margin-bottom: 2rem;
   }
 
+  @media only screen and (min-width: 1400px) {
+    .twmc-featbanner--dessertworship2024-wrapper > img {
+        max-width: 55%; 
+        margin-left: 600px;
+    }
+
+    .container.twmc-featbanner--dessertworship2024-wrapper {
+        width: 1300px !important;
+    }
+  }
+
+
   @media only screen and (max-width: 1300px) {
+
+    #twmc-dessertworship2024-hero {
+        background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png")
+    } 
+
     #twmc-dessertworship2024-hero {
       background-position: top left;
     }
@@ -13601,8 +13630,9 @@ padding: 1.7rem 2rem;
 
   @media only screen and (max-width: 992px) {
     #twmc-dessertworship2024-hero {
-      background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2.png");
-      background-position: bottom center;
+      /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2.png"); */
+      background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2b.png");
+      background-position: bottom right;
     }
 
     .twmc-featbanner--dessertworship2024-wrapper {
@@ -13663,6 +13693,18 @@ padding: 1.7rem 2rem;
     .dessertworship2024-speaker > img {
         width: 60%;
     }
+  }
+
+  .dw-intro-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .dw-intro-text {
+        font-size: 1.1rem !important;
+    }
+    
   }
 
   /* END OF INTRO */
@@ -13793,8 +13835,16 @@ padding: 1.7rem 2rem;
   }
 
   .dw-parkinglots-img {
-    width: 70%;
+    width: 60%;
   }
+
+  @media only screen and (max-width: 768px) {
+    .dw-parkinglots-img {
+        width: 80%;
+      }
+  }
+
+  
   /* END OF FAQ */
 /* ===== Dessert Worship 2024 ===== */
 
@@ -13848,6 +13898,41 @@ padding: 1.7rem 2rem;
 
   
   /* END OF HERO */
+
+  /* TYPOGRAPHY */
+    /* Missions 2025 */
+    a.a-missions25 {
+        background-image: linear-gradient(
+            to right,
+            var(--miscon25--lightgreen),
+            var(--miscon25--lightgreen) 50%,
+            var(--miscon25--green) 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 1px 0;
+        position: relative;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a.a-missions25:before {
+        content: '';
+        background: var(--miscon25--lightgreen);
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+  /* END OF TYPOGRAPHY */
 
   /* BUTTONS */
   .twmc--btn--miscon2025 {
@@ -14130,17 +14215,19 @@ padding: 1.7rem 2rem;
 /* ===== Missions Page 2025 ===== */
 
 /* ===== Advent 2024 ===== */
-
+/* HERO */
 #twmc-advent2024--hero {
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/RSD+Background.png");
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/Advent+Feature+Banner+BG.png");
+    /* background-image: linear-gradient(45deg, rgba(239, 240, 158, .15), rgba(40, 63, 43, 0.3), rgba(239, 240, 158, .15)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/Advent+Feature+Banner+BG.png"); */
     background-color: #19261C;
     text-align: center;
     background-position: center center;
     background-size: cover;
 
     /* height: 650px; */
-    height: 700px;
+    height: 800px;
     padding: 2rem 0;
+    /* padding: 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14154,12 +14241,15 @@ padding: 1.7rem 2rem;
     justify-content: center;
 }
 
-.twmc-advent2024--hero-wrapper > img {
-    height: 600px;
+/* .adv-hero-img {
+    position: absolute;
+    top: 190px;
+    z-index: 2;
+  
+    height: 500px;
+    width: auto;
+  } */
 
-    margin-top: 5rem;
-    margin-bottom: 0;
-}
 
   .cov-hero--title {
     color: #fff;
@@ -14265,4 +14355,515 @@ padding: 1.7rem 2rem;
 }
 /* END OF HERO */
 
+
+/* INTRO */
+.twmc-advent2024--intro p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* END OF INTRO */
+
+/* TYPOGRAPHY */
+.twmc-advent2024--p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.twmc-advent24--green {
+    color: #4B6147;
+    /* color: #527157; */
+    /* color: #263725; */
+}
+
+.twmc-advent24--gold {
+    /* color: #E3C588; */
+    color: #C6A357;
+}
+
+.twmc-advent24-gold-dark {
+    color: #a48a50;
+}
+
+.twmc-advent24-gold-dark2 {
+    color: #90773f;
+}
+
+
+/* END OF TYPOGRAPHY */
+
+/* BUTTONS */
+.twmc--btn--advent2024 {
+    border: 2px solid #4B6147;
+    background-color: #4B6147;
+    /* color: #fff; */
+    color: #fefef6;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    padding: 0.7rem 1rem 0.6rem;
+}
+
+.twmc--btn--advent2024:hover,
+.twmc--btn--advent2024:focus {
+  border: 2px solid #4B6147;
+    background-color: rgba(106, 138, 111, 0.2);
+    color: #4B6147;
+    padding: 0.7rem 1rem 0.6rem;
+    transform: scale(1.02);
+}
+
+.twmc--btn--advent2024-yellow {
+    border: 2px solid #f1f1a7;
+    background-color: #f1f1a7;
+    /* color: #fff; */
+    color: #4B6147;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    padding: 0.7rem 1rem 0.6rem;
+}
+
+.twmc--btn--advent2024-yellow:hover,
+.twmc--btn--advent2024-yellow:focus {
+  border: 2px solid #f1f1a7;
+    background-color: rgba(239, 240, 158, 0.2);
+    color: #f1f1a7;
+    padding: 0.7rem 1rem 0.6rem;
+    transform: scale(1.02);
+}
+
+.twmc--btn--advent2024-gold {
+    border: 2px solid #C6A357;
+    background-color: #C6A357;
+    /* color: #fff; */
+    color: #333;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    padding: 0.7rem 1rem 0.6rem;
+}
+
+.twmc--btn--advent2024-gold:hover,
+.twmc--btn--advent2024-gold:focus {
+  border: 2px solid #C6A357;
+    background-color: rgba(239, 240, 158, 0.2);
+    color: #C6A357;
+    padding: 0.7rem 1rem 0.6rem;
+    transform: scale(1.02);
+}
+
+
+/* END OF BUTTONS */
+
+
+/* EVENTS */
+.twmc-advent2024--events {
+    padding: 5rem 0;
+    /* background: linear-gradient(#abb4ab, #d4d9d4, #fbf9dc, #fff); */
+    background: linear-gradient(#F4F8F4, #dbe0dc, #fbf9dc, #fff);
+    
+}
+
+.card-advent2024-transparent {
+    background-color: rgba(244, 248, 244, 0.4);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+.card-advent2024-stars {
+    /* background-color: rgba(244, 248, 244, 0.2); */
+    background-color: rgba(197, 162, 86, .08);
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_patterns-stock/pattern-stars--gold2-40A.png");
+    background-size: cover;
+    background-position: center; */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card-advent2024-stars2 {
+    background-color: rgba(122, 159, 127, .07);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+
+.card-advent2024-red {
+    background-color: #FAF4F4;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+}
+
+.twmc-advent24--events-info {
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 0.2rem;
+}
+/* END OF EVENTS */
+
+/* SERVICES */
+.twmc-advent2024--services {
+    padding: 5rem 0;
+    /* background: linear-gradient(#F4F8F4, #FDFDED, #DCC6C7); */
+    background: linear-gradient(#F4F8F4, #dbe0dc, #fbf9dc, #fff);
+    
+}
+
+.twmc-advent24__card {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_patterns-stock/pattern-stars--gold-30A.png");
+    background-size: cover;
+    background-position: center;
+
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+}
+/* END OF SERVICES */
+
 /* ===== End of Advent 2024 ===== */
+
+
+/* ===== Staff Appreciation 2024 ===== */
+/* HERO */
+#twmc-staffapp24--hero {
+    background-color: #443E3F;
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/BUS_StaffAppreciation_FeatureBanner_1270x600_compressed.jpg");
+    /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/BUS_StaffAppreciation_FeatureBanner_1270x600+copy.jpg "); */
+
+    
+    text-align: center;
+    background-position: left center;
+    background-size: cover;
+
+    height: 650px;
+    padding: 5.5rem 0 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twmc-staffapp24--hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Text img */
+  .staffapp24-textimg {
+    max-width: 90%;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    #twmc-staffapp24--hero {
+      height: 800px;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    #twmc-staffapp24--hero {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/BUS_StaffAppreciation_FeatureBanner_1270x600_compressed.jpg");
+    }
+  }
+
+
+  @media only screen and (max-width: 576px) {
+    #twmc-staffapp24--hero {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/BUS_StaffAppreciation_FeatureBanner_1270x600_compressed.jpg");
+      height: 550px;
+      padding: 2.5rem 0;
+    }
+  }
+
+  @media only screen and (max-width:400px) {
+    #twmc-staffapp24--hero {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/BUS_StaffAppreciation_FeatureBanner_1270x600_compressed.jpg");
+      height: 550px;
+      padding: 3.5rem 0 2.5rem;
+    }
+  }
+  /* End of text img */
+/* END OF HERO */
+
+/* TYPOGRAPHY */
+.text-staffapp24 {
+    color: #D44F60;
+}
+/* END OF TYPOGRAPHY */
+
+/* BUTTON */
+.twmc--btn--outline-traditional {
+    border: 2px solid #862633;
+    background-color: transparent;
+    color: #862633;
+    font-weight: 700;
+
+    transition: all .3s ease-in-out;
+}
+
+.twmc--btn--outline-traditional:hover,
+.twmc--btn--outline-traditional:focus {
+    border-color: #990003;
+    background-color: rgba(250, 234, 230, 0.3);
+    text-decoration: none;
+    color: #990003;
+
+    transform: scale(1.01);
+}
+
+.twmc--btn--stapp2024{
+    border: 2px solid #FCF49B;
+    background-color: #FCF49B; 
+     color: #231a00;
+    /* border: 2px solid #FCF49B;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FCF49B; */
+    text-decoration: none;
+   
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    padding: 0.7rem 1rem 0.6rem;
+}
+
+.twmc--btn--stapp2024:hover,
+.twmc--btn--stapp2024:focus {
+    border: 2px solid #FCF49B;
+    background-color: rgba(106, 138, 111, 0.2);
+    color: #FCF49B;
+    /* background-color: rgba(252, 244, 155, 0.3);
+    color: #e3db84; */
+    padding: 0.7rem 1rem 0.6rem;
+    transform: scale(1.02);
+}
+
+.twmc--btn--stapp2024-red {
+    border: 2px solid #d44f60;
+    background-color: #d44f60; 
+     color: #fff;
+    /* border: 2px solid #FCF49B;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FCF49B; */
+    text-decoration: none;
+   
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    padding: 0.7rem 1rem 0.6rem;
+}
+
+.twmc--btn--stapp2024-red:hover,
+.twmc--btn--stapp2024-red:focus {
+    border: 2px solid #FCF49B;
+    background-color: rgba(106, 138, 111, 0.2);
+    color: #FCF49B;
+    /* background-color: rgba(252, 244, 155, 0.3);
+    color: #e3db84; */
+    padding: 0.7rem 1rem 0.6rem;
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 576px) {
+    .twmc--btn--stapp2024 {
+        padding: 0.5rem 0.7rem 0.4rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+
+/* END OF BUTTON */
+
+/* CONTENT */
+.twmc-staffapp24-content {
+    padding: 5rem 0;
+    background: linear-gradient(#F9F2EE,  #fbf9dc, #fff);
+}
+
+@media only screen and (min-width: 1400px) {
+    .twmc-staffapp24-content {
+        padding: 7rem 0;
+    }
+  }
+
+.twmc-staffapp24-ribbon-card--wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+    border-radius: 8px;
+}
+
+.twmc-staffapp24--ribbon {
+    background-color: #fff;
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Staff Images */
+/* Zach Anderson */
+.twmc-staffapp24--ribbon1 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon1:hover,
+.twmc-staffapp24--ribbon1:focus,
+.twmc-staffapp24--ribbon1.hover {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+
+/* Coleen Pierce */
+.twmc-staffapp24--ribbon2 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon2:hover,
+.twmc-staffapp24--ribbon2:focus,
+.twmc-staffapp24--ribbon2.hover  {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+
+/* Whitney Mertz */
+.twmc-staffapp24--ribbon3 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon3:hover,
+.twmc-staffapp24--ribbon3:focus,
+.twmc-staffapp24--ribbon3.hover  {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+
+/* Ashley Goad */
+.twmc-staffapp24--ribbon4 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon4:hover,
+.twmc-staffapp24--ribbon4:focus,
+.twmc-staffapp24--ribbon4.hover  {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+
+/* Aaron Laird */
+.twmc-staffapp24--ribbon5 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon5:hover,
+.twmc-staffapp24--ribbon5:focus,
+.twmc-staffapp24--ribbon5.hover  {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+
+
+/* Whitney Mertz */
+.twmc-staffapp24--ribbon18 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon18:hover,
+.twmc-staffapp24--ribbon18:focus,
+.twmc-staffapp24--ribbon18.hover  {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+
+/* Zach Anderson */
+.twmc-staffapp24--ribbon19 {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900A.png");
+    transition: all .3s ease-in-out;
+}
+
+.twmc-staffapp24--ribbon19:hover,
+.twmc-staffapp24--ribbon19:focus,
+.twmc-staffapp24--ribbon19.hover  {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_bus-staffappreciation2024/20240912-Zack+Anderson-Staff+Appreciation+600x900B.png");
+}
+/* End of Staff Images */
+
+.twmc-staffapp24--ribbon-inner {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    height: 170px;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 1440px) {
+    .twmc-staffapp24--ribbon {
+        height: 550px;
+    }
+}
+.twmc-staffapp24--ribbon-inner {
+    margin: 0;
+    /* height: 150px; */
+}
+
+@media only screen and (max-width: 992px) {
+  .twmc-staffapp24--ribbon {
+        height: 550px;
+    }
+}
+
+.twmc-staffapp24-card--name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.twmc-staffapp24-card--title {
+    font-size: 16px;
+    line-height: 1.2;
+    
+}
+  
+
+
+/* Modal */
+.twmc-modal-header-staffapp24 {
+    background-color: #fdf5a4;
+    background-color: #e3db84;
+    color: #333;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.twmc-modal-body-staffapp24 {
+    padding: 1.5rem 2rem 2.5rem;
+    background-color: #f2f2f2;
+    color: #333;
+    min-height: max-content !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.twmc-modal-body-staffapp24-text {
+    line-height: 1.3;
+}
+
+.twmc-modal-body-staffapp24-question {
+    color: #827D4F;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+    margin-top: 1.2rem;
+}
+/* End of Modal */
+
+
+
+
+/* END OF CONTENT */
+
+
+/* ===== End of Staff Appreciation 2024 ===== */

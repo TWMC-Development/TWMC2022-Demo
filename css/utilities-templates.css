@@ -768,3 +768,179 @@ ul.nav-pills--twmctoggle-nextgensports-ul {
   }
 }
 /* ===== End of NextGen Sports Toggle ==== */
+
+
+/* ===== Advent Toggle ===== */
+  /* Nav */
+  .twmc--btn--toggle-nav-advent {
+    /* min-width: 200px; */
+    max-width: max-content;
+    
+  }
+
+  .nav-pills--twmctoggleadvent {
+    text-align: center;
+    width: 100%;
+  }
+
+  ul.nav-pills--twmctoggleadvent-ul {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 1%; */
+
+    /* large bar */
+    background-color: rgba(75, 97, 71, 0.1);
+    border-radius: 20px;
+  }
+
+  .twmctoggleadvent-navtitle {
+    color: #4B6147;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0.8rem 1.3rem 0.7rem;
+  }
+
+  .nav-pills--twmctoggleadvent-ul > li > a {
+    /* border-radius: 4px 4px 0 0; */
+    padding: 0.8rem 1.3rem 0.7rem;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+  }
+
+  .nav-pills--twmctoggleadvent-ul > li > a:hover {
+    backdrop-filter: sepia(0.1);
+    border: 3px solid rgba(75, 97, 71, 0.3);
+  }
+
+  .nav-pills--twmctoggleadvent > .nav-pills > li.active > a,
+  .nav-pills--twmctoggleadvent > .nav-pills > li.active > a:focus {
+      border: 3px solid rgba(75, 97, 71, 0.3);
+      background-color: transparent;
+      backdrop-filter: sepia(0.1);
+      color: #4B6147;
+      padding: 0.8rem 1.3rem 0.7rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      min-width: 180px;
+      max-width: 100%;
+  }
+
+  .nav-pills--twmctoggleadvent .nav-pills > li > a {
+    color: #565656;
+    background-color: transparent;
+    padding: 0.8rem 1.3rem 0.7rem;
+    margin-right: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-width: 180px;
+    max-width: 100%;
+  }
+
+  .nav-pills--twmctoggleadvent ul.nav.nav-pills > li {
+      margin-left: 0 !important;
+  }
+  /* End of Nav */
+
+  /* Content*/
+  .tab-content--twmctoggleadvent {
+    max-width: 100%;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .tab-content--twmctoggleadvent2 {
+    max-width: 100%;
+    padding-top: 2rem;
+  }
+
+  /* @media only screen and (max-width:992px) {
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a,
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a:focus,
+    .nav-pills--twmctoggleadvent .nav-pills > li > a {
+        padding: 0.7rem 0.9rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .twmctoggleadvent-navtitle {
+      font-size: 0.8;
+      padding: 0.8rem 1.3rem 0.7rem;
+    }
+  } */
+
+  /* @media only screen and (max-width:992px) {
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a,
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a:focus,
+    .nav-pills--twmctoggleadvent .nav-pills > li > a {
+        padding: 11px 5px 10px;
+        font-size: 0.7rem;
+    }
+  } */
+
+  @media only screen and (max-width:1124px) {
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a,
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a:focus,
+    .nav-pills--twmctoggleadvent .nav-pills > li > a,
+    .twmctoggleadvent-navtitle {
+        /* padding: 9px 2px 8px; */
+        font-size: 0.7rem;
+        min-width: 150px;
+    }
+  }
+
+  @media only screen and (max-width:992px) {
+    ul.nav-pills--twmctoggleadvent-ul {
+      width: 40%;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+    }
+
+    .twmc--btn--toggle-nav-advent {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a,
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a:focus,
+    .nav-pills--twmctoggleadvent .nav-pills > li > a {
+        padding: 9px 20px 8px;
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .nav-pills--twmctoggleadvent .nav-pills > li:first-child {
+      margin-top: 0.7rem;
+    }
+
+    .nav-pills--twmctoggleadvent .nav-pills > li:last-child {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    ul.nav-pills--twmctoggleadvent-ul {
+      min-width: 70%;
+    }
+
+    /* .nav-pills--twmctoggleadvent > .nav-pills > li.active > a,
+    .nav-pills--twmctoggleadvent > .nav-pills > li.active > a:focus,
+    .nav-pills--twmctoggleadvent .nav-pills > li > a {
+        min-width: 100%;
+    } */
+
+    /* .twmc--btn--toggle-nav-advent {
+      width: 100%;
+      max-width: 100%;
+    } */
+  }
+/* ===== End of Advent Toggle ===== */
