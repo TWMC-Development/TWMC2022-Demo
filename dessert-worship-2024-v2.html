@@ -286,7 +286,8 @@
       /* HERO */
       #twmc-dessertworship2024-featbanner {
           background-color: #5E001C;
-          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png");
+          /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png"); */
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG1b.png");
           text-align: center;
           background-position: top center;
           background-size: cover;
@@ -315,14 +316,17 @@
         /* margin-bottom: 2rem; */
       }
 
+      @media only screen and (min-width: 1400px) {
+        .container.featbanner--dw2024-wrapper {
+            width: 1300px !important;
+        }
+      }
+
       @media only screen and (max-width: 1300px) {
         #twmc-dessertworship2024-featbanner {
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBannerBG.png");
           background-position: top left;
         }
-
-        /* .featbanner--dw2024-wrapper {
-            align-items: flex-start;
-        } */
 
         .featbanner--dw2024-btn-wrapper > img,
         .featbanner--dw2024-btn-wrapper > a {
@@ -357,8 +361,9 @@
 
       @media only screen and (max-width: 992px) {
         #twmc-dessertworship2024-featbanner {
-          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2.png");
-          background-position: bottom center;
+           /* background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2.png"); */
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_FeatureBanner_BG2b.png");
+          background-position: bottom right;
         }
 
         .featbanner--dw2024-wrapper{
@@ -375,13 +380,6 @@
           margin-right: auto;
           max-width: 80%;
         }
-
-        /* .featbanner--dw2024-btn-wrapper > img,
-        .featbanner--dw2024-btn-wrapper > a {
-            max-width: 90%; 
-            margin-left: auto;
-            margin-right: auto;
-        } */
       }
 
       @media only screen and (max-width: 768px) {
@@ -411,8 +409,6 @@
           <a href="/dessertworship" class="twmc--btn twmc--btn--miscon-white mt-3">Learn more</a>
         </div>
           
-    
-          
       </div>
     </section>
 
@@ -432,7 +428,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 text-center">
-            <p class="twmc-p">Celebrate the arrival of the season on Thursday, December 5, with an evening of fellowship, powerful worship and an uplifting message. The evening begins with dessert and charcuterie catered by Graze Craze, followed by a message from author, speaker and Bible study teacher Jennifer Rothschild. Limited child care available.</p>
+            <p class="twmc-p dw-intro-text">Celebrate the arrival of the season on Thursday, December 5, with an evening of fellowship, powerful worship and an uplifting message. The evening begins with dessert and charcuterie catered by Graze Craze, followed by a message from author, speaker and Bible study teacher Jennifer Rothschild. Limited child care available.</p>
 
             <div class="dessertworship2024-speaker mt-4 mb-3">
               <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/_featurebanners2024/WOM_DessertandWorship_Rothschild.png" alt="Jennifer Rothschild" class="img-responsive">
@@ -452,20 +448,24 @@
                   <div class="twmc-dessertworship2024--ribbon-inner"></div>
                   </div>
                   <div class="twmc-dessertworship2024-ribbon-card--inner-wrapper">
-                    <h3 class="twmc-h3 mt-2">Dessert and Worship/Speaker</h3>
-                    <p class="twmc-p">
+                    <h3 class="twmc-h3 mt-2">Dessert and Worship Tickets</h3>
+                    <p class="twmc-p mb-1">
                       <span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Thursday, December 5, 2024
                       <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-cupcake" aria-hidden="true"></i></span>Dessert &verbar; 6:00 p.m. &verbar; <a href="https://maps.app.goo.gl/9WCtsPZjBqeJvjPD9" class="a-traditional" target="_blank">The Woodlands Campus</a>
                       <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-microphone" aria-hidden="true"></i></span>Speaker &verbar; 7:30 p.m. &verbar; <a href="https://maps.app.goo.gl/9WCtsPZjBqeJvjPD9" class="a-traditional" target="_blank">Sanctuary </a>
-                      <br><span class="twmc-icon-wrapper2"><i class="fa-duotone fa-solid fa-ticket" aria-hidden="true"></i></span>VIP Group &ndash; $525
-                      <br><span class="twmc-icon-wrapper2"><i class="fa-duotone fa-solid fa-ticket" aria-hidden="true"></i></span>VIP Individual &ndash; $75
-                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>Dessert and Worship/Speaker Group &ndash; $280
-                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>Dessert and Worship/Speaker Individual &ndash; $40 
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-duotone fa-solid fa-ticket" aria-hidden="true"></i></span>VIP<sup style="color: grey;" class="text-small">1</sup> Table of 8 &ndash; $525
+                      <br><span class="twmc-icon-wrapper2"  class="text-small"><i class="fa-duotone fa-solid fa-ticket" aria-hidden="true"></i></span>VIP<sup style="color: grey;"  class="text-small">1</sup> Individual &ndash; $75
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>Dessert and Worship<sup style="color: grey;"  class="text-small">2</sup> Table of 8 &ndash; $280
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>Dessert and Worship<sup style="color: grey;"  class="text-small">2</sup> Individual &ndash; $40 
                     </p>
+
+                    <p class="twmc-p text-small mt-0"><em>
+                      <sup style="color: grey;">1</sup> VIP &mdash; Individual or Table of 8: Ticket includes a private room for dessert, signed book, meet and greet with Jennifer, and reserved seating in the Sanctuary.
+                      <br><sup style="color: grey;">2</sup> Dessert and Worship &mdash; Individual or Table of 8: Ticket includes a reserved seat in a designated room for dessert and entry to the worship/speaker event in the Sanctuary.
+                    </em></p>
 
                     <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=5493&EventOccurrenceID=" class="btn btn-dessertworship2024" target="_blank">VIP Tickets</a>
                     <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=5494&EventOccurrenceID=" class="btn btn-dessertworship2024" target="_blank">Dessert and Worship Tickets</a>
-                    <a href="https://thewoodlandsmethodist.org/Registration/2024christmasdessertandworshipchildcare" class="btn btn-dessertworship2024" target="_blank">Child care</a>
                   </div>
               </div>
               <!-- End of Dessert Worship -->
@@ -476,15 +476,18 @@
                   <div class="twmc-dessertworship2024--ribbon-inner"></div>
                   </div>
                   <div class="twmc-dessertworship2024-ribbon-card--inner-wrapper">
-                    <h3 class="twmc-h3 mt-2">Worship/Speaker</h3>
-                    <p class="twmc-p">
+                    <h3 class="twmc-h3 mt-2">Worship/Speaker Only Tickets</h3>
+                    <p class="twmc-p mb-1">
                       <span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Thursday, December 5, 2024
                       <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-microphone" aria-hidden="true"></i></span>Speaker &verbar; 7:30 p.m. &verbar; <a href="https://maps.app.goo.gl/9WCtsPZjBqeJvjPD9" class="a-traditional" target="_blank">Sanctuary </a>
-                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>Worship/Speaker Individual &ndash; $25
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span>Worship/Speaker Only<sup style="color: grey;">3</sup> Individual &ndash; $25
                     </p>
 
-                    <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=5492&EventOccurrenceID=" class="btn btn-dessertworship2024" target="_blank">Speaker Only Tickets</a>
-                    <a href="https://thewoodlandsmethodist.org/Registration/2024christmasdessertandworshipchildcare" class="btn btn-dessertworship2024" target="_blank">Child care</a>
+                    <p class="twmc-p text-small mt-0"><em>
+                      <sup style="color: grey;">3</sup> Worship/Speaker Only &mdash; Individual: Ticket provides entrance to the worship/speaker event in the Sanctuary. 
+                    </em></p>
+
+                    <a href="https://thewoodlandsmethodist.org/Registration?RegistrationInstanceId=5492&EventOccurrenceID=" class="btn btn-dessertworship2024" target="_blank">Worship/Speaker Only Tickets</a>
                   </div>
               </div>
               <!-- End of Worship -->
@@ -589,7 +592,10 @@
                   <div id="dw-faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdw-faq5">
                       <div class="panel-body twmc-panel-body">
                         <p class="twmc-p my-1">Parking lots B, C, D, E, F, and G on the east side of the church are the closest to the Sanctuary where Jennifer Rothschild will be speaking. Follow the signage posted in the parking lots.</p>
-                        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_map/CON_CampusMapParking.png" alt="parking lots map" class="img-responsive mt-2 dw-parkinglots-img">
+                        <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_map/CON_CampusMapParking.png" target="_blank">
+                          <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_map/CON_CampusMapParking.png" alt="parking lots map" class="img-responsive mt-2 dw-parkinglots-img">
+                        </a>
+                        
                       </div>
                   </div>
               </div>
@@ -725,7 +731,7 @@
               </div>
               <div id="dw-faq14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdw-faq14">
                   <div class="panel-body twmc-panel-body">
-                    <p class="twmc-p my-1">Limited child care will be available for children 6 months &ndash; 12 years old. Use <a href="https://thewoodlandsmethodist.org/Registration/2024christmasdessertandworshipchildcare" target="_blank" class="a-traditional">this link</a> to register your children. </p>
+                    <p class="twmc-p my-1">Limited child care will be available for children 6 months &ndash; 12 years old for those who purchase VIP and Dessert and Worship tickets.</p>
                   </div>
               </div>
             </div>

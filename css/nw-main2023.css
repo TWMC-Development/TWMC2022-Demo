@@ -53,6 +53,10 @@
 	--color-canary-yellow-dark: #f6a91b;
     --color-canary-yellow-light: #FDF8DE;
 
+     /* Advent 2024 */
+     --color-advent24-gold: #D9A44D;
+     --color-advent24-gold2: #C6A357
+
 }
 
 /* ===== END OF VARIABLES ===== */
@@ -192,7 +196,7 @@ a.a-traditional {
     transition: all 0.3s ease-in-out;
 }
 
-a.a-traditional:before {
+a.a-traditional::before {
     content: '';
     background: var(--color-traditional-light);
     display: block;
@@ -349,6 +353,37 @@ a.a-woodforest-dark {
 a.a-woodforest-dark:before {
     content: '';
     background: var(--color-woodforest-dark-b);
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Advent 2024 */
+a.a-advent24-gold {
+    background-image: linear-gradient(
+        to right,
+        var(--color-advent24-gold),
+        var(--color-advent24-gold) 50%,
+        var(--color-advent24-gold2) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 1px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+a.a-advent24-gold::before {
+    content: '';
+    background: var(--color-advent24-gold);
     display: block;
     position: absolute;
     bottom: -1px;

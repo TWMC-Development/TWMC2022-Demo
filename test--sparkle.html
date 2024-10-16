@@ -274,7 +274,7 @@
     <!-- Hero -->
     <section id="twmc-advent2024--hero">
       <!-- svg1 -->
-      <svg width="150" height="150" viewBox="0 0 100 100">
+      <svg id="twinkle-container" width="150" height="150" viewBox="0 0 150 150">
         <symbol id="twinkle" viewBox="0 0 100 100">
           <g class="group" opacity="0.8">
             <g class="large">
@@ -290,7 +290,7 @@
             </g>
           </g>
         </symbol>
-        <use xlink:href="#twinkle" x="0" y="0" width="100" height="100" />
+        <use class="twinkle1" xlink:href="#twinkle" x="0" y="0" width="100" height="100" />
       </svg>
 
       <!-- svg2 -->
@@ -310,11 +310,52 @@
             </g>
           </g>
         </symbol>
-        <use xlink:href="#twinkle2" x="0" y="0" width="100" height="100" />
+        <use class="twinkle2" xlink:href="#twinkle2" x="0" y="0" width="100" height="100" />
       </svg>
+
+      <!-- svg3 -->
+      <svg id="twinkle3-container" width="110" height="110" viewBox="0 0 110 110">
+        <symbol id="twinkle3" viewBox="0 0 110 110">
+          <g class="group" opacity="0.8">
+            <g class="large3">
+              <path id="large3" d="M41.25,40 L42.5,10 L43.75,40 L45, 41.25 L75,42.5 L45,43.75
+                        L43.75,45 L42.5,75 L41.25,45 L40,43.75 L10,42.5 L40,41.25z " fill="white" />
+            </g>
+            <g class="large3-2" transform="rotate(45)">
+              <use xlink:href="#large2" />
+            </g>
+            <g class="small3">
+              <path id="small3" d="M41.25,40 L42.5,25 L43.75,40 L45,41.25 L60,42.5 L45,43.75
+                              L43.75,45 L42.5,60 L41.25,45 L40,43.75 L25,42.5 L40,41.25z" fill="#FDF998" />
+            </g>
+          </g>
+        </symbol>
+        <use class="twinkle3" xlink:href="#twinkle3" x="0" y="0" width="100" height="100" />
+      </svg>
+
+      <!-- svg4 -->
+      <svg id="twinkle4-container" width="100" height="100" viewBox="0 0 100 100">
+        <symbol id="twinkle4" viewBox="0 0 100 100">
+          <g class="group" opacity="0.8">
+            <g class="large4">
+              <path id="large4" d="M41.25,40 L42.5,10 L43.75,40 L45, 41.25 L75,42.5 L45,43.75
+                        L43.75,45 L42.5,75 L41.25,45 L40,43.75 L10,42.5 L40,41.25z " fill="white" />
+            </g>
+            <g class="large4-2" transform="rotate(45)">
+              <use xlink:href="#large4" />
+            </g>
+            <g class="small2">
+              <path id="small2" d="M41.25,40 L42.5,25 L43.75,40 L45,41.25 L60,42.5 L45,43.75
+                              L43.75,45 L42.5,60 L41.25,45 L40,43.75 L25,42.5 L40,41.25z" fill="#FDF998" />
+            </g>
+          </g>
+        </symbol>
+        <use class="twinkle4" xlink:href="#twinkle2" x="0" y="0" width="100" height="100" />
+      </svg>
+
     <div>
       <div class="container twmc-advent2024--hero-wrapper">
-        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/RSD+Logo.png" alt="" class="img-responsive">
+        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/RSD+Logo2.png" alt="" class="img-responsive adv-hero-img">
       </div>
     </div>        
   </section>
