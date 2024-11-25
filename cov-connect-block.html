@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAR - Revelation Weekly Notes</title>
+    <title>COV Connect Block</title>
 
      <!-- Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
         <a href="/woodforest" class="navbar-top-flex-item navbar-top-link">Woodforest</a>
         <a href="/montgomery" class="navbar-top-flex-item navbar-top-link">Montgomery</a>
         <a href="/espanol" class="navbar-top-flex-item navbar-top-link">Español</a>    
-        <a href="/creekside" class="navbar-top-flex-item navbar-top-link">Creekside <sup class="text-traditional">New!</sup></a>   
+        <a href="/creekside" class="navbar-top-flex-item navbar-top-link">Creekside</a>   
       </div>
 
       <div class="mobile-dropdown-menu navbar-top-flex-container">
@@ -51,7 +51,7 @@
             <li><a href="/woodforest" class="navbar-top-flex-item">Woodforest</a></li>
             <li><a href="/montgomery" class="navbar-top-flex-item">Montgomery</a></li>
             <li><a href="/espanol" class="navbar-top-flex-item">Español</a></li>
-            <li><a href="/creekside" class="navbar-top-flex-item">Creekside <sup class="text-traditional">New!</sup></a></li>
+            <li><a href="/creekside" class="navbar-top-flex-item">Creekside</a></li>
           </ul>
         </div>
       </div>
@@ -148,6 +148,7 @@
                     <a href="/students" class="megamenu-link">NextGen Students (Ages 12-18)</a>
                     <!-- <a href="#" class="megamenu-link">NextGen College</a> -->
                     <p> NextGen College (Ages 18-23)</p>
+                    <a href="/nextgen-sports" class="megamenu-link">NextGen Sports</a>
                   </div>
                   <!-- End of Services Connect -->
     
@@ -232,6 +233,7 @@
               <a href="/students" class="megamenu-link">NextGen Students (Ages 12-18)</a>
               <!-- <a href="#" class="megamenu-link">NextGen College</a> -->
               <p> NextGen College (Ages 18-23)</p>
+              <a href="/nextgen-sports" class="megamenu-link">NextGen Sports</a>
             </div>
             <!-- End of Services Connect -->
 
@@ -268,148 +270,285 @@
     <!-- Add margin below navbar, remove if needed -->
     <section class="margin-below-navbar"></section>
 
+    <!-- [lava code: {[hero2023]} ] -->
+    <!-- Hero - Video | 800H  -->
+    <style>
+      /* Hero Video */
+      .hero--video-section-800h {
+          height: 800px;
+          text-align: center;
+          position: relative;
+      }
 
+      .hero--video-section-800h > video {
+          width: 100%;
+          height: 800px;
+          object-fit: cover;
+          z-index: 11;
+      }
 
-    <!-- Revelation Weekly Notes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+      .hero--video__text-wrapper-800h {
+          z-index: 12;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
 
-     <style>
-      #har-rev-notes {
-        background-color: #FCFBF7;
-        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_Revelation-Notes-TXT.jpg"); */
-        text-align: center;
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        background-size: contain;
+          height: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+      }
+
+      .hero--video__text-wrapper-800h > img.img-responsive {
+          max-width: 100%;
+      }
+
+      @media only screen and (max-width: 576px) {
+          .hero--video-section-800h,
+          .hero--video-section-800h > video,
+          .hero--video__text-wrapper-800h {
+              height: 550px;
+          }
+
+          .hero--video-section-800h > video {
+                width: 100%;
+                height: 550px;
+                object-fit: cover;
+            }
+
+            .hero--video__text-wrapper-800h > img.img-responsive {
+                max-width: 100%;
+                width: 95%;
+            }
+      }
+    </style>
+
+    <section class="hero--video-section-800h">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/header_poster.jpg">
+        <source src="https://player.vimeo.com/progressive_redirect/playback/868865769/rendition/720p/file.mp4?loc=external&signature=08f201bcaeb42d85ce548a7886fce14662874b14d0ef0b1db7413045fd17e457" type="video/mp4">
+      </video>
+
+      <div class="container hero--video__text-wrapper-800h">
+        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/Headline_Web_ChurchEverday800.png" alt="" class="img-responsive">
+      </div>
+    </section>
+    <!-- End of Hero - Video | 800H -->
+
+  
+
+    <!-- Hero - Video [lava code: {[hero2023]} ] -->
+    <section id="campus-closed" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p class="campus-closed--text">All Campuses Opening at Noon, Friday, May 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero--video-section">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/header_poster.jpg">
+          <source src="https://player.vimeo.com/external/554479144.sd.mp4?s=1218405d21c5c4826b0a22f0c097bc84cfc82cce&amp;profile_id=165" data-src="https://player.vimeo.com/external/554479144.sd.mp4?s=1218405d21c5c4826b0a22f0c097bc84cfc82cce&amp;profile_id=165" type="video/mp4">
+      </video>
+
+      <div class="container hero--video__text-wrapper">
+          <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/Headline_Web_ChurchEverday800.png" alt="" class="img-responsive">
+        </div>
+    </section>
+    <!-- End of Hero - Video -->
+
+    <!-- CTA Orange Banner -->
+    <style>
+      /* CTA Campus closed */
+      #campus-closed {
+        background-color: #E0794D;
         
       }
 
-      #har-rev-notes img {
-        height: 80px;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .har-rev-text {
-        font-family: "Shadows Into Light", cursive;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.2;
-        letter-spacing: 1px;
-      }
-
-      .btn-har-rev {
-        font-family: "Shadows Into Light", cursive;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1.2;
-        letter-spacing: 1px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-      }
-
-      .har-rev-notes-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1%;
-      }
-
-      @media only screen and (max-width: 400px) {
-        .btn-har-rev {
-          min-width: 120px;
+       .twmc-cta--transition2024-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
         }
+
+        .twmc-cta--transition2024-wrapper a.btn.btn-trans-hero {
+          margin: 0 auto;
+        }
+
+        .twmc-cta--transition2024 {
+          padding: 2.2rem 0;
+          text-align: center;
+          background-color: var(--color-traditional);
+          /* background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/_new_WOR_VenueTransition_Hero_2000x800.jpg'); */
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/_new_WOR_VenueTransition_Hero_2000x800.jpg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: #f2f2f2;
       }
-    
-     </style>
 
-    <section id="har-rev-notes" class="py-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_Revelation-Notes-TXT2.jpg" alt="Revelation Logo" class="img-responsive mt-1">
-            <p class="har-rev-text mt-0">Weekly Notes Download</p>
+      .twmc-cta--transition2024-wrapper {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+      }
 
-            <div class="har-rev-notes-container">
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK01.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 1</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK02.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 2</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK03.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 3</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK04.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 4</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK05.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 5</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK06.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 6</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK07.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 7</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK08.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 8</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK09.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 9</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK10.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 10</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK11.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 11</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK12.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 12</a>
-              <a href="#" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 13</a>
-              <a href="#" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 14</a>
-            </div>
-          </div>
+      .btn-trans-hero {
+          background-color: white;
+          color: #333;
+          border: 2px solid #333;
+          border-radius: 9.5px;
+          padding: .5rem 1.2rem;
+          font-size: .8rem;
+          font-weight: 700;
+          transition: all 0.3s ease-in-out;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0.5rem;
+          min-width: 175px;
+          max-width: max-content;
+          text-transform: uppercase;
+        }
 
-          
-        </div>
-      </div>
-    </section>
-    <!-- End of Revelation Weekly Notes -->
+      .btn-trans-hero:hover {
+          background-color: #eee;
+          transform: scale(1.02);
+          color: #333;
+      }
+
+      @media only screen and (max-width:768px) {
+          .btn-trans-hero {
+              margin-top: 10px;
+          }
+      }
 
 
-
-    <!-- Latest Message -->
-    <style>
-      #har-rev-latestmessage {
-        background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_Revelation+Latest+Message+Screenshot.png");
-        background-position: center;
-        background-size: cover;
-        height: 600px;
+      .twmc-cta--transition2024-wrapper a.btn.btn-trans-hero {
+        margin: 0 auto;
       }
     </style>
-    <section id="har-rev-latestmessage" class="py-6">
+
+    <section id="campus-closed" class="py-4">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
 
+          <div class="col-sm-12  align-center twmc-cta--transition2024-wrapper">
+            <h4 class="twmc-h4 mb-2 text-white">
+              Starting August 11, Traditional worship and Harvest Contemporary worship, along with The Church at Woodforest, will have an updated worship schedule.
+            </h4>
+            <a href="/worship" class="btn btn-trans-hero mb-2" target="_blank">Check Updated Schedule</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- End of Latest Message -->
+    <!-- End of CTA orange banner -->
+
+    <!-- CTA Transition -->
+    <style>
+      .twmc-cta--transition2024 {
+          padding: 2.2rem 0;
+          text-align: center;
+          background-color: var(--color-traditional);
+          /* background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/_new_WOR_VenueTransition_Hero_2000x800.jpg'); */
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_seasonal/_worship/_new_WOR_VenueTransition_Hero_2000x800.jpg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: #f2f2f2;
+      }
+
+      .twmc-cta--transition2024-wrapper {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .btn-trans-hero {
+          background-color: white;
+          color: #333;
+          border: 2px solid #333;
+          border-radius: 9.5px;
+          padding: .5rem 1.2rem;
+          font-size: .8rem;
+          font-weight: 700;
+          transition: all 0.3s ease-in-out;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0.5rem;
+          min-width: 175px;
+          max-width: max-content;
+          text-transform: uppercase;
+        }
+
+      .btn-trans-hero:hover {
+          background-color: #eee;
+          transform: scale(1.02);
+          color: #333;
+      }
+
+      @media only screen and (max-width:768px) {
+          .btn-trans-hero {
+              margin-top: 10px;
+          }
+      }
 
 
-    <!-- Rev -->
-    <section id="har-rev-notes" class="py-5">
-      <div class="container-fluid">
+      .twmc-cta--transition2024-wrapper a.btn.btn-trans-hero {
+        margin: 0 auto;
+      }
+    </style>
+    <section class="twmc-cta--transition2024" >
+      <div class="twmc-container">
         <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_Revelation-Notes-TXT2.jpg" alt="Revelation Logo" class="img-responsive mt-1">
-            <p class="har-rev-text mt-0">Weekly Notes Download</p>
-
-            <div class="har-rev-notes-container">
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK01.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 1</a>
-              <a href="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/DIGITAL+Sketch+Note+WK02.pdf" class="btn btn-trans-hero btn-har-rev" target="_blank">Week 2</a>
-            </div>
+          <div class="col-sm-12 align-center twmc-cta--transition2024-wrapper">
+            <h4 class="twmc-h4 mb-2">
+              Starting August 11, Traditional worship and Harvest Contemporary worship, along with The Church at Woodforest, will have an updated worship schedule.
+            </h4>
+            <a href="/worship" class="btn btn-trans-hero" target="_blank">Check Updated Schedule</a>
           </div>
-
-          
         </div>
       </div>
     </section>
+    <!-- End of CTA transition -->
 
-    <!-- End of Rev -->
 
-  
-  
-    
-    
-    <section style="height: 800px; background-color: cornflowerblue;">
-
+    <!-- Hero - Home Image -->
+    <section id="twmc-hero__home-misconference2023">
+      <div class="container-fluid hero--img__text-wrapper">
+        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_header-banner/MIS_ConferenceHeaderBannerTEXT3.png" alt="Until The Whole World Knows" class="img-responsive">
+      </div>
     </section>
+
+    <section id="montgomery--home-hero-img" class="hero--img__align-center">
+      <div class="container-fluid hero--img__text-wrapper">
+        <h2 class="mt-0">Be a part of something bigger than yourself.
+
+        </h2>
+      </div>
+    </section>
+    <!-- End of Hero - Home Image-->
+
+    
+    
+      <section style="height: 800px; background-color: cornflowerblue;">
+
+      </section>
 
 
 
@@ -528,7 +667,7 @@
               <a href="/facilities" class="footer-flex-item footer-link">Facilities</a>
               <a href="/employment" class="footer-flex-item footer-link">Employment</a>
               <a href="/cafe" class="footer-flex-item footer-link">Fireside Cafe</a>
-              <a href="/safari-stop" class="footer-flex-item footer-link">Safari Stop</a>
+              <a href="/indoor-playgrounds" class="footer-flex-item footer-link">Indoor Playgrounds</a>
               <a href="/funerals" class="footer-flex-item footer-link">Funerals &amp; Memorial Services</a>
 
               <a href="/help" class="footer-flex-item footer-link">Find Help &amp; Support</a>

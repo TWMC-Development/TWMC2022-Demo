@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvest - Community Dinner 2024</title>
+    <title>Volunteer Sign Up 2024</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -275,156 +275,454 @@
     <!-- Add margin below navbar, remove if needed -->
     <section class="margin-below-navbar"></section>
 
+    <style>
+      /* HERO */
+      #twmc-volsignup24-hero {
+          /* background-image: linear-gradient(to bottom, rgba(72, 66, 61, .4), rgba(72, 66, 61, 0.4)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_formation/DIS_HeroImage_1270x600.png"); */
+          background-color: #182B22;
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/2024/Advent+Feature+Banner_volunteersBG.png");
+          text-align: center;
+          background-position: top center;
+          background-size: cover;
 
-    <!-- Feature Banner -->
-   
-    <!-- End of Feature Banner -->
+          height: 650px;
+          padding: 6rem 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
 
+      .twmc-featbanner--volsignup24-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .twmc-featbanner--volsignup24-wrapper > img {
+        max-width: 70%;
+        margin-right: 1rem;
+        /* margin-bottom: 2rem; */
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .twmc-featbanner--volsignup24-wrapper > img {
+            max-width: 80%;
+        }
+
+        #twmc-volsignup24-hero {
+          padding: 5rem 0;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        #twmc-volsignup24-hero {
+          background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/Advent+Feature+Banner_MobileSize_Compressed.png");
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        .twmc-featbanner--volsignup24-wrapper > img {
+            max-width: 90%;
+        }
+
+
+        #twmc-volsignup24-hero {
+            height: 450px;
+            padding: 4rem 0;
+        }
+      }
+      /* End of Hero */
+
+      /*  */
+      #twmc-volsignup24--list {
+          background-color: #E5E8E1;
+          /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(237, 240, 237, 0.6) 70.71%); */
+          background: linear-gradient(#F4F8F4, #dbe0dc, #fbf9dc, #fff);;
+      }
+
+      /* Flex */
+      .twmc-volsignup24--flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2%;
+
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .twmc-volsignup24--flex-item {
+          flex-basis: 32%;
+          overflow: visible;
+          margin-bottom: 1.5rem;
+      }
+
+      @media only screen and (max-width: 1900px) {
+        .twmc-volsignup24--flex-container {
+          width: 90%;
+        }
+      }
+
+      /* @media only screen and (max-width: 1800px) {
+        .twmc-volsignup24--flex-container {
+          width: 100%;
+        }
+      } */
+
+      @media only screen and (max-width: 1200px) {
+        .twmc-volsignup24--flex-item {
+            flex-basis: 49%;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+          .twmc-volsignup24--flex-item {
+              flex-basis: 100%;
+          }
+      }
+      /* End of flex */
+
+
+      /* Cards */
+      /* ===== LG Cards ===== */
+        .connect25-cardlg-ribbon-card--wrapper {
+            background-color: #fff;
+            box-shadow: 0 2px 20px rgb(111 148 79 / 15%);
+            border-radius: 15px;
+        }
+
+        .connect25-cardlg--ribbon {
+            background-color: #A2A29E;
+            background-size: cover;
+            background-position: center center;
+            /* height: 350px; */
+            width: 100%; 
+            aspect-ratio: 4 / 3;  
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .twmc-ribbon-card--wrapper {
+            background-color: #fff;
+            box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+        }
+
+        .connect25-cardlg-ribbon-card--inner-wrapper {
+            padding: 1.5rem;
+            text-align: left;
+            /* min-height: 340px; */
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .twmc-ribbon-card--content {
+            background-color: rgba(243, 243, 243, .5);
+            padding: 1.5rem;
+        }
+
+        
+        .connect25-cardlg--ribbon-inner {
+            margin: 0;
+        }
+
+        .connect25-cardlg-card--title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1;
+            color: #3b5037;
+        }
+    /* End of Cards */
+
+
+    /* Buttons */
+    .connect25-cardlg--btn-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .twmc--btn--black3 {
+      background-color: #000;
+      color: #fff;
+      border: 2px solid #000;
+      border-radius: 9.5px;
+      padding: .5rem 1rem;
+      font-size: .8rem;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+      min-width: 180px;
+      max-width: max-content;
+      /* max-width: 255px; */
+    }
+
+    .twmc--btn--black3:hover,
+    .twmc--btn--black3:focus {
+      background-color: rgba(256, 256, 256, 0.5);
+      transform: scale(1.02);
+      color: #000;
+    }
+
+    .twmc--btn--advent2 {
+      background-color: #000;
+      border: 2px solid #4B6147;
+      background-color: #4B6147;
+      color: #fefef6;
+      padding: .5rem 1rem;
+      font-size: .8rem;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+      min-width: 180px;
+      max-width: max-content;
+      /* max-width: 255px; */
+    }
+
+    .twmc--btn--advent2:hover,
+    .twmc--btn--advent2:focus {
+      border: 2px solid #4B6147;
+      background-color: rgba(106, 138, 111, 0.2);
+      color: #4B6147;
+      transform: scale(1.02);
+    }
+
+    /* End of Buttons */
+    </style>
 
     <!-- Hero -->
-    <section id="twmc-featbanner--comdinner2024">
-      <div class="container twmc-featbanner--comdinner2024-wrapper">
-
-        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_CommunityDinner_TextOverlay.png" alt="Grow In Your Faith" class="img-responsive comdinner2024-feat-text1">
-        <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/HAR_CommunityDinner_TextMobile.png" alt="Grow In Your Faith" class="img-responsive comdinner2024-feat-text2">
+    <section id="twmc-volsignup24-hero">
+      <div class="container twmc-featbanner--volsignup24-wrapper">
+          <img src="https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/2024/Advent+Feature+Banner_volunteers_Text.png" alt="Chirstmas Service Volunteers" class="img-responsive twmc-volsignup24-hero-img">
       </div>
     </section>
-    <!-- End of hero -->
+    <!-- End of Hero -->
 
 
     <!-- Content -->
-    <!-- Restaurants -->
-    <section id="twmc-comdinner2024--restaurants" class="py-6">
+    <!-- List -->
+    <section id="twmc-volsignup24--list" class="py-6">
       <div class="container-fluid">
         <!-- Intro -->
         <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <h3 class="twmc-h3 twmc-comdinner2024--text-orangedark text-uppercase text-center mb-4">What are Harvest Community Dinners</h3>
-            <p class="twmc-p">Each week, we spend time together in worship on Sunday mornings. While we love getting to worship together, we also need to get to know one another. That’s why we are excited to host our first-ever Harvest Community Dinners.</p>
-            <p class="twmc-p">Join us on Sunday, July 28, as we gather at restaurants around our community for dinner. We desire to be in this community together, and what better way to get to know each other than around a table. Sign up below for one of your favorite restaurants, and we will match you with other Harvesters for a dinner together. We can’t wait to see you at the table!</p>
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <!-- <h3 class="twmc-h3 twmc-comdinner2024--text-orangedark text-uppercase text-center mb-4">What are Harvest Community Dinners</h3> -->
+            <p class="twmc-p">Christmas Eve brings many visitors through our doors, often for the first time. We would love for you to help us create a welcoming atmosphere for everyone by volunteering during these special services. Help us share the joy of the season with our church family and community.</p>
+            <p class="twmc-p">Volunteer opportunities are listed below. Select the position where you would like to serve, and sign up for a time.</p>
           </div>
         </div>
 
         <!-- List -->
+        <style>
+          .twmc--btn--tag-darkgrey {
+            display: inline-block;
+            color: #333;
+            font-size: .53rem;
+            font-weight: 700;
+            line-height: 1.5;
+            text-align: center !important;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: middle;
+            background-color: #d1d1d1;
+            border: 1px solid #d1d1d1;
+            border-radius: .25rem;
+            padding: .3rem .45rem .2rem;
+            letter-spacing: 2px;
+            cursor: not-allowed;
+            margin-bottom: 0.25rem;
+            margin-right: 0.25rem;
+
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+          }
+
+          .twmc--btn--tag-darkgrey-sm {
+            display: inline-block;
+            color: #333;
+            font-size: .5rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-align: center !important;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: middle;
+            background-color: #d1d1d1;
+            border: 1px solid #d1d1d1;
+            border-radius: .25rem;
+            padding: .3rem .35rem .2rem;
+            letter-spacing: 0.5px;
+            cursor: not-allowed;
+            margin-bottom: 0.25rem;
+            margin-right: 0.25rem;
+
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+          }
+
+        </style>
         <div class="row mt-5">
+
           <div class="col-sm-10 col-sm-offset-1 text-center">
-            <h3 class="twmc-h3 twmc-comdinner2024--text-orangedark text-uppercase text-center mb-4">Restaurants List</h3>
-            <p class="twmc-comdinner2024--restaurant-subtitle mb-4">
-              Price per person: 
-              <br>$=10-20 | $$=21-30 | $$$=31-40
-            </p>
 
             <!-- Flex -->
-            <div class="twmc-comdinner2024--flex3col-container">
-
-              <div class="twmc-comdinner2024--flex3col-item twmc-comdinner2024-ribbon-card--wrapper">
-                <div class="twmc-comdinner2024--ribbon twmc-comdinner2024--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/Bellagreen2.jpg');">
-                  <div class="twmc-comdinner2024--ribbon-inner"></div>
+            <div class="twmc-volsignup24--flex-container">
+              <!-- HAR -->
+              <div class="twmc-volsignup24--flex-item connect25-cardlg-ribbon-card--wrapper twmc-pbsmall">
+                <div class="connect25-cardlg--ribbon connect25-cardlg--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_podcast/podcast-harvest.jpg');">
+                  <div class="connect25-cardlg--ribbon-inner"></div>
                 </div>
-                  <div class="twmc-comdinner2024-ribbon-card--inner-wrapper">
-                    <p class="twmc-comdinner2024-card--title mb-1 mt-2"><strong>Bellagreen</strong></p>
-                    <a href="https://order.bellagreen.com/menu/woodlands" class="twmc-comdinner2024-card--address" target="_blank"><p>2501 Research Forest Dr, The Woodlands</p></a>
-                    
 
-                    <p class="mb-0 mt-2"><strong>
-                      <span class="twmc-card-icon--inline">
-                        <span class="twmc-icon-wrapper"><i class="fa-light fa-calendar-check twmc-card-icon-md mb-0 mt-1"></i></span><span class="twmc-card-icon--inline-text ml-2">August 10, 2024 &verbar; 7:00 p.m.</span>
-                      </span>
-                      <span class="twmc-card-icon--inline">
-                        <span class="twmc-icon-wrapper"><i class="fa-light fa-money-bill twmc-card-icon-md mb-0 mt-1"></i></span><span class="twmc-card-icon--inline-text ml-2">$$</span>
-                      </span> 
+                <div class="connect25-cardlg-ribbon-card--inner-wrapper">
+                  <div>
+                    <p class="twmc--btn--tag-darkgrey mt-2 mb-2"><span>The Woodlands Campus</span></p>
+                    <p class="connect25-cardlg-card--title mb-3 text-uppercase"><strong>Harvest Contemporary Worship</strong></p>
+
+                    <p class="twmc-p twmc-advent24--events-info"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Monday, December 23
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>6:00 p.m.
                     </strong></p>
 
-                    <!-- <p class="twmc-comdinner2024-card--desc mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum laudantium, totam ad ut placeat corporis aut fugiat dolores quis expedita sed inventore.</p> -->
-
-                    <div class="twmc-seats-flex-container mt-2">
-                      <div class="twmc-seats-flex-item">
-                        <p class="twmc-comdinner2024-seats--num mb-0">24</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Total seats available</p>
-                      </div>
-                      <div class="twmc-seats-flex-item">
-                        <p class="twmc-comdinner2024-seats--num mb-0">10</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Seats reserved</p>
-                      </div>
-                    </div>
-
-                    <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1717621561515&key=GRP&app=resvlink" class="twmc--btn twmc--btn--comdinner2024-outline twmc--btn--small mt-3 mb-3" target="_blank" referrerpolicy="origin">Reserve here</a>
+                    <p class="twmc-p twmc-advent24--events-info mt-1"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Tuesday, December 24
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>1:00, 3:00 and 5:00 p.m.
+                    </strong></p>
                   </div>
+
+                  <div class="connect25-cardlg--btn-wrapper mt-3">
+                    <a href="https://www.signupgenius.com/go/10C0F4EAAAD23A4FA7-53145287-harvest#/" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Communion Sign Up</a>
+                    <a href="https://www.signupgenius.com/go/10C0F4EAAAD23A4FA7-53144667-christmas#/" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Usher Sign Up</a>
+                    <a href="https://www.signupgenius.com/go/10C0F4EAAAD23A4FA7-53144744-christmas#/" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Greeter Sign Up</a>
+                    
+                  </div>
+
+                </div>   
               </div>
 
-              <div class="twmc-comdinner2024--flex3col-item twmc-comdinner2024-ribbon-card--wrapper">
-                <div class="twmc-comdinner2024--ribbon twmc-comdinner2024--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/Bellagreen2.jpg');">
-                  <div class="twmc-comdinner2024--ribbon-inner"></div>
-                  </div>
-                  <div class="twmc-comdinner2024-ribbon-card--inner-wrapper">
-                    <p class="twmc-comdinner2024-card--title mb-1 mt-2"><strong>Bellagreen</strong></p>
-                    <a href="https://order.bellagreen.com/menu/woodlands" class="twmc-comdinner2024-card--address" target="_blank"><p>2501 Research Forest Dr, The Woodlands</p></a>
-                    
+              <!-- LOFT -->
+              <div class="twmc-volsignup24--flex-item connect25-cardlg-ribbon-card--wrapper twmc-pbsmall">
+                <div class="connect25-cardlg--ribbon connect25-cardlg--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_podcast/podcast-loft.jpg');">
+                  <div class="connect25-cardlg--ribbon-inner"></div>
+                </div>
 
-                    <p class="mb-0 mt-2"><strong>
-                      <span class="twmc-card-icon--inline">
-                        <span class="twmc-icon-wrapper"><i class="fa-light fa-calendar-check twmc-card-icon-md mb-0 mt-1"></i></span><span class="twmc-card-icon--inline-text ml-2">August 10, 2024 &verbar; 7:00 p.m.</span>
-                      </span>
-                      <span class="twmc-card-icon--inline">
-                        <span class="twmc-icon-wrapper"><i class="fa-light fa-money-bill twmc-card-icon-md mb-0 mt-1"></i></span><span class="twmc-card-icon--inline-text ml-2">$$</span>
-                      </span> 
+                <div class="connect25-cardlg-ribbon-card--inner-wrapper">
+                  <div>
+                    <p class="twmc--btn--tag-darkgrey mt-2 mb-2"><span>The Woodlands Campus</span></p>
+                    <p class="connect25-cardlg-card--title mb-3 text-uppercase"><strong>Loft Modern Worship</strong></p>
+
+                    <p class="twmc-p twmc-advent24--events-info"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Monday, December 23
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>4:00 and 6:00 p.m.
                     </strong></p>
 
-                    <!-- <p class="twmc-comdinner2024-card--desc mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum laudantium, totam ad ut placeat corporis aut fugiat dolores quis expedita sed inventore.</p> -->
-
-                    <div class="twmc-seats-flex-container mt-2">
-                      <div class="twmc-seats-flex-item">
-                        <p class="twmc-comdinner2024-seats--num mb-0">24</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Seats available</p>
-                      </div>
-                      <div class="twmc-seats-flex-item">
-                        <p class="twmc-comdinner2024-seats--num mb-0">10</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Seats reserved</p>
-                      </div>
-                    </div>
-
-                    <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1717621561515&key=GRP&app=resvlink" class="twmc--btn twmc--btn--comdinner2024-outline twmc--btn--small mt-3 mb-3" target="_blank" referrerpolicy="origin">Reserve here</a>
-                  </div>
-              </div>
-
-              <div class="twmc-comdinner2024--flex3col-item twmc-comdinner2024-ribbon-card--wrapper">
-                <div class="twmc-comdinner2024--ribbon twmc-comdinner2024--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_harvest/Bellagreen2.jpg');">
-                  <div class="twmc-comdinner2024--ribbon-inner"></div>
-                  </div>
-                  <div class="twmc-comdinner2024-ribbon-card--inner-wrapper">
-                    <p class="twmc-comdinner2024-card--title mb-1 mt-2"><strong>Bellagreen</strong></p>
-                    <a href="https://order.bellagreen.com/menu/woodlands" class="twmc-comdinner2024-card--address" target="_blank"><p>2501 Research Forest Dr, The Woodlands</p></a>
-                    
-
-                    <p class="mb-0 mt-2"><strong>
-                      <span class="twmc-card-icon--inline">
-                        <span class="twmc-icon-wrapper"><i class="fa-light fa-calendar-check twmc-card-icon-md mb-0 mt-1"></i></span><span class="twmc-card-icon--inline-text ml-2">August 10, 2024 &verbar; 7:00 p.m.</span>
-                      </span>
-                      <span class="twmc-card-icon--inline">
-                        <span class="twmc-icon-wrapper"><i class="fa-light fa-money-bill twmc-card-icon-md mb-0 mt-1"></i></span><span class="twmc-card-icon--inline-text ml-2">$$</span>
-                      </span> 
+                    <p class="twmc-p twmc-advent24--events-info mt-1"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Tuesday, December 24
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>3:00, 5:00 and 7:00 p.m. 
                     </strong></p>
-
-                    <!-- <p class="twmc-comdinner2024-card--desc mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum laudantium, totam ad ut placeat corporis aut fugiat dolores quis expedita sed inventore.</p> -->
-
-                    <div class="twmc-seats-flex-container mt-2">
-                      <div class="twmc-seats-flex-item">
-                        <p class="twmc-comdinner2024-seats--num mb-0">24</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Seats available</p>
-                      </div>
-                      <div class="twmc-seats-flex-item">
-                        <p class="twmc-comdinner2024-seats--num mb-0">10</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Seats reserved</p>
-                      </div>
-                    </div>
-
-                    <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1717621561515&key=GRP&app=resvlink" class="twmc--btn twmc--btn--comdinner2024-outline twmc--btn--small mt-3 mb-3" target="_blank" referrerpolicy="origin">Reserve here</a>
                   </div>
+
+                  <div class="connect25-cardlg--btn-wrapper mt-3">
+                    <a href="https://www.signupgenius.com/go/10C0C48A5AC22AAF4C34-53256195-loft" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Communion Sign Up</a>
+                    <a href="https://www.signupgenius.com/go/10C0C48A5AC22AAF4C34-53258046-loft" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Greeter Sign Up</a>
+                  </div>
+
+                </div>   
+
               </div>
 
-              
-              
-              
+              <!-- TRAD -->
+              <div class="twmc-volsignup24--flex-item connect25-cardlg-ribbon-card--wrapper twmc-pbsmall">
+                <div class="connect25-cardlg--ribbon connect25-cardlg--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_podcast/podcast-traditional.jpg');">
+                  <div class="connect25-cardlg--ribbon-inner"></div>
+                </div>
+
+                <div class="connect25-cardlg-ribbon-card--inner-wrapper">
+                  <div>
+                    <p class="twmc--btn--tag-darkgrey mt-2 mb-2"><span>The Woodlands Campus</span></p>
+                    <p class="connect25-cardlg-card--title mb-3 text-uppercase"><strong>Traditional Worship</strong></p>
+
+                    <p class="twmc-p twmc-advent24--events-info mt-1"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Tuesday, December 24
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>7:00, 9:00 and 11:00 p.m. 
+                    </strong></p>
+                  </div>
+
+                  <div class="connect25-cardlg--btn-wrapper mt-3">
+                    <a href="https://www.signupgenius.com/go/10C0F4EAAAD23A4FA7-52253885-christmas#/" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Usher/Greeter Sign Up</a>
+                  </div>
+
+                </div>   
+              </div>
+
+              <!-- Woodforest -->
+              <div class="twmc-volsignup24--flex-item connect25-cardlg-ribbon-card--wrapper twmc-pbsmall">
+                <div class="connect25-cardlg--ribbon connect25-cardlg--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_podcast/podcast-woodforest.jpg');">
+                  <div class="connect25-cardlg--ribbon-inner"></div>
+                </div>
+
+                <div class="connect25-cardlg-ribbon-card--inner-wrapper">
+                  <div>
+                    <p class="twmc--btn--tag-darkgrey mt-2 mb-2"><span>Woodforest Campus</span></p>
+                    <p class="connect25-cardlg-card--title mb-3 text-uppercase"><strong>Family Worship</strong></p>
+
+                    <p class="twmc-p twmc-advent24--events-info mt-1"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Tuesday, December 24
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>1:00, 3:00 and 5:00 p.m.
+                    </strong></p>
+                  </div>
+
+                  <div class="connect25-cardlg--btn-wrapper mt-3">
+                    <a href="https://www.signupgenius.com/go/5080E44A5AA2AA4FA7-53217438-christmas#/" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Hospitality Host Sign Up</a>
+                  </div>
+
+                </div>   
+              </div>
+
+              <!-- Montgomery -->
+              <div class="twmc-volsignup24--flex-item connect25-cardlg-ribbon-card--wrapper twmc-pbsmall">
+                <div class="connect25-cardlg--ribbon connect25-cardlg--ribbon1 py-2" style="background-image: url('https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_advent/2024/CAM_venue2024.jpg');">
+                  <div class="connect25-cardlg--ribbon-inner"></div>
+                </div>
+
+                <div class="connect25-cardlg-ribbon-card--inner-wrapper">
+                  <div>
+                    <p class="twmc--btn--tag-darkgrey mt-2 mb-2"><span>Montgomery Campus</span></p>
+                    <p class="connect25-cardlg-card--title mb-3 text-uppercase"><strong>Contemporary Worship</strong></p>
+
+                    <p class="twmc-p twmc-advent24--events-info mt-1"><strong>
+                      <span class="twmc-icon-wrapper2"><i class="fa-solid fa-star-christmas" aria-hidden="true"></i></span>Christmas Eve Service
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-calendar-alt" aria-hidden="true"></i></span>Tuesday, December 24
+                      <br><span class="twmc-icon-wrapper2"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>6:00 p.m. 
+                    </strong></p>
+                  </div>
+
+                  <div class="connect25-cardlg--btn-wrapper mt-3">
+                    <a href="https://www.signupgenius.com/go/10C0A48A9A82BA4FAC43-53256790-christmas#/" class="btn twmc--btn--advent2 text-uppercase" target="_blank">Volunteer Sign Up</a>
+                  </div>
+
+                </div>   
+              </div>
+
+
 
             </div>
             <!-- End of flex -->
@@ -432,7 +730,7 @@
         </div>
       </div>
     </section>
-    <!-- End of Restaurants -->
+    <!-- End of List -->
 
 
     <!-- End of Content -->
