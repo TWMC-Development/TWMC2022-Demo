@@ -1,4 +1,4 @@
-# Requirements for the Code
+# Requirements for Dynamic Faculty
 
 ## Dynamic Filtering of Staff Members
 - **Staff Grouping**: Each staff member belongs to a specific group (e.g., Pastor, Administration, Music).
