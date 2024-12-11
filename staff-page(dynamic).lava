@@ -92,8 +92,15 @@
                           </p>
                           {% endif %}
                           {% if staff_member | Attribute: 'Phone' %}
-                          <p class="twmc-p twmc-staff__details-phone">{{ staff_member | attribute: 'Phone' }}</p>
+                          <p class="twmc-p twmc-staff__details-phone">{{ staff_member | Attribute: 'Phone' }}</p>
                           {% endif %}
+
+                          {% assign report_to = staff_member | Attribute: 'Report'%}
+                          {% if report_to != '' and report_to != null %}
+                            <p class="twmc-p twmc-staff__details-title" style="font-size: 0.75rem;">
+                              Reports to: <span class="twmc-pastors__name">{{ report_to }}</span>
+                            </p>
+                            {% endif %}
                         </div>
                       </div>
                       {% endif %}
