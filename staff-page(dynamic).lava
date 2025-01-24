@@ -1,4 +1,4 @@
-<!-- Pastors -->
+<!-- Staff Page -->
 <section id="staff-pastors" style="padding-bottom: 0">
   <div class="container">
     <div class="row">
@@ -9,12 +9,9 @@
       <!-- Dynamic Pastor Cards -->
       <div class="col-sm-12">
         <div class="twmc-flex-container--4-col twmc-flex-pastors">
-          {% comment %}
-          <pre>{{ Items | ToJSON }}</pre> {% endcomment %}
+
           {% for person in Items %}
-
           {% if person | Attribute:'Group' == 'Pastor' %}
-
           <div class="twmc-flex-item--4-col twmc-pastors">
             <figure>
               <a href="{{ person | Attribute:'Link' }}" class="twmc-pastors__link" referrerpolicy="origin"
@@ -28,7 +25,6 @@
                 </figcaption>
               </a>
             </figure>
-
             <div class="twmc-pastors__name-title-container">
               <p class="twmc-p twmc-pastors__name">{{ person.Title }}</p>
               <p class="twmc-p twmc-pastors__title">{{ person | Attribute:'Position' }}</p>
@@ -52,10 +48,125 @@
           <!-- Panel group -->
           <div class="panel-group" id="accordion-staff" role="tablist" aria-multiselectable="true">
 
-            {% assign groups = 'Administration,Adults 55 Plus,Bristol House,Caring,Children of The Woodlands,Church Multiplication,Connecting,Covenant Church at Creekside,Creative Services,Discipleship,Facilities,Finance,Fireside Books,Fireside Cafe,Harvest,Loft,Marriage,Men,Missions,Music,NextGen Kids,NextGen Students,Nursery,Recreation,Senior Pastor,Singles,Special Needs,The Church at Montgomery,The Church at Woodforest,The Woodlands Methodist School,Women,Worship,Young Adults' | Split:',' %}
+            <!-- Hardcoded Administration -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="heading-Administration">
+                <h4 class="panel-title twmc-panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-staff" href="#collapse-Administration"
+                    aria-expanded="false" aria-controls="collapse-Administration"
+                    class="collapsed twmc-panel-title__link">
+                    <span class="twmc-panel-title__text">Administration</span>
+                    <i class="fas fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-Administration" class="panel-collapse collapse" role="tabpanel"
+                aria-labelledby="heading-Administration">
+                <div class="panel-body twmc-panel-body">
+                  <div class="twmc-staff__list">
+                    <div class="twmc-flex-container--2-col-accordion twmc-staff__details">
 
+                      <!-- Hardcoded Admin Group 1 -->
+                      <div class="twmc-flex-item--2-col-accordion twmc-staff__group">
+                        <!-- Rev. Drew Essen -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium  twmc-staff__details-name twmc-mbzero"><strong>Rev. Drew Essen
+                            </strong></p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">Executive Pastor</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'sguthrie@twmc.org' contactname:'Contact Rev. Drew Essen ' ]}</a>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-phone">(281) 466-8677</p>
+                        </div>
+
+                        <!-- Shelley Guthrie -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium  twmc-staff__details-name twmc-mbzero"><strong>Shelley
+                              Guthrie</strong></p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">Assistant to the Executive Pastor</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'sguthrie@twmc.org' contactname:'Contact Shelley Guthrie' ]}</a>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-phone">(281) 466-8677</p>
+                        </div>
+
+                        <!-- Julia Jordan -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium  twmc-staff__details-name twmc-mbzero"><strong>Julia Jordan</strong>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">Project Manager</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'jjordan@twmc.org' contactname:'Contact Julia Jordan' ]}</a>
+                          </p>
+                        </div>
+
+                        <!-- Ruth Witchet -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium  twmc-staff__details-name twmc-mbzero"><strong>Ruth Witchet</strong>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">Receptionist</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'rwitchet@twmc.org' contactname:'Contact Ruth Witchet' ]}</a>
+                          </p>
+                        </div>
+
+                      </div>
+
+                      <!-- Hardcoded Admin Group 2 -->
+                      <div class="twmc-flex-item--2-col-accordion twmc-staff__group">
+                        <!-- Joanie Scott -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Joanie Scott</strong>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Director</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'jscott@twmc.org' contactname:'Contact Joanie Scott' ]}</a>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-phone">(281) 466-8165</p>
+                        </div>
+
+                        <!-- Connie Kelley  -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Connie Kelley</strong>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Generalist</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'ckelley@twmc.org' contactname:'Contact Connie Kelley' ]}</a>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-phone">(281) 297-5954</p>
+                        </div>
+
+                        <!-- Sarah Lewis -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Sarah Lewis</strong></p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Administrator</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'slewis@twmc.org' contactname:'Contact Sarah Lewis' ]}</a>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-phone">(281) 466-8675</p>
+                        </div>
+
+                        <!-- Victoria Wood -->
+                        <div class="mb-3">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Victoria Wood</strong>
+                          </p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Administrative Assistant</p>
+                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                            <a>{[ emailform email:'vwood@twmc.org' contactname:'Contact Victoria Wood' ]}</a>
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Hardcoded Administration -->
+
+            <!-- Dynamic Panels for Other Groups -->
+            {% assign groups = 'Adults 55 Plus,Bristol House,Caring,Children of The Woodlands,Church Multiplication,Connecting,Covenant Church at Creekside,Creative Services,Discipleship,Facilities,Finance,Fireside Books,Fireside Cafe,Harvest,Loft,Marriage,Men,Missions,Music,NextGen Kids,NextGen Students,Nursery,Recreation,Senior Pastor,Singles,Special Needs,The Church at Montgomery,The Church at Woodforest,The Woodlands Methodist School,Women,Worship,Young Adults' | Split:',' %}
             {% for group in groups %}
-            <!-- Dynamic Panel -->
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="heading-{{ group | Replace:' ','-' }}">
                 <h4 class="panel-title twmc-panel-title">
@@ -72,46 +183,34 @@
                 <div class="panel-body twmc-panel-body">
                   <div class="twmc-staff__list">
                     <div class="twmc-flex-container--2-col-accordion twmc-staff__details">
-
-
-
                       {% for staff_member in Items %}
-                        {% assign member_group = staff_member | Attribute: 'Group' | Downcase | Strip %}
-                        {% assign panel_group = group | Downcase | Strip %}
-                        {% if member_group contains panel_group %}
-                      <div class="twmc-flex-item--2-col-accordion twmc-staff__group">
+                      {% assign member_group = staff_member | Attribute:'Group' | Downcase | Strip %}
+                      {% assign panel_group = group | Downcase | Strip %}
+                      {% if member_group contains panel_group %}
+                      <div class="twmc-flex-item--2-col-accordion  ">
                         <div class="mb-3">
                           <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero">
                             <strong>{{ staff_member.Title }}</strong>
                           </p>
-                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">{{ staff_member | Attribute: "Position" }}
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">{{ staff_member | Attribute:'Position' }}
                           </p>
-                          {% if staff_member | Attribute: 'Email' %}
+                          {% if staff_member | Attribute:'Email' %}
                           <p class="twmc-p twmc-staff__details-email twmc-mbzero">
-                            <a>{[ emailform email:'{{ staff_member | Attribute: 'Email' }}' contactname:'Contact {{ staff_member.Title }}' ]}</a>
+                            <a>{[ emailform email:'{{ staff_member | Attribute:'Email' }}' contactname:'Contact {{ staff_member.Title }}' ]}</a>
                           </p>
                           {% endif %}
-                          {% if staff_member | Attribute: 'Phone' %}
-                          <p class="twmc-p twmc-staff__details-phone">{{ staff_member | Attribute: 'Phone' }}</p>
+                          {% if staff_member | Attribute:'Phone' %}
+                          <p class="twmc-p twmc-staff__details-phone">{{ staff_member | Attribute:'Phone' }}</p>
                           {% endif %}
-
-                          {% assign report_to = staff_member | Attribute: 'Report'%}
-                          {% if report_to != '' and report_to != null %}
-                            <p class="twmc-p twmc-staff__details-title" style="font-size: 0.75rem;">
-                              Reports to: <span class="twmc-pastors__name">{{ report_to }}</span>
-                            </p>
-                            {% endif %}
                         </div>
                       </div>
                       {% endif %}
                       {% endfor %}
-
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- End of Dynamic Panel -->
             {% endfor %}
           </div>
         </div>
