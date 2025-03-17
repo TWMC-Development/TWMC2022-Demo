@@ -147,7 +147,7 @@
                         </div>
 
                         <!-- First Last -->
-                        <div class="mb-3 Hidden">
+                        <div class="mb-3 hidden">
                           <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>First Last</strong>
                           </p>
                           <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Administrative Assistant</p>
