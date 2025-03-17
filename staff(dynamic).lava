@@ -15,7 +15,7 @@
           <div class="twmc-flex-item--4-col twmc-pastors">
             <figure>
               <a href="{{ person | Attribute:'Link' }}" class="twmc-pastors__link" referrerpolicy="origin"
-                target="{{ person | Attribute:'Target' or '_self' }}">
+                target="_self">
                 <div class="twmc-pastors__img-container">
                   <img src="{{ person | Attribute:'Image','Url' }}" alt="{{ person.Title }}"
                     class="twmc-pastors__img" />
@@ -113,14 +113,14 @@
                       </div>
 
                       <!-- Hardcoded Admin Group 2 -->
-                      <div class="twmc-flex-item--2-col-accordion twmc-staff__group">
-                        <!-- Joanie Scott -->
-                        <div class="mb-3">
-                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Joanie Scott</strong>
+                      <div class="twmc-flex-item--2-col-accordion twmc-staff__group ">
+                        <!-- First Last -->
+                        <div class="mb-3 hidden">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>First Last</strong>
                           </p>
                           <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Director</p>
                           <p class="twmc-p twmc-staff__details-email twmc-mbzero">
-                            <a>{[ emailform email:'jscott@twmc.org' contactname:'Contact Joanie Scott' ]}</a>
+                            <a>{[ emailform email:'First Last@twmc.org' contactname:'Contact First Last' ]}</a>
                           </p>
                           <p class="twmc-p twmc-staff__details-phone">(281) 466-8165</p>
                         </div>
@@ -136,23 +136,23 @@
                           <p class="twmc-p twmc-staff__details-phone">(281) 297-5954</p>
                         </div>
 
-                        <!-- Sarah Lewis -->
-                        <div class="mb-3">
-                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Sarah Lewis</strong></p>
+                        <!-- First Last -->
+                        <div class="mb-3 hidden">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>First Last</strong></p>
                           <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Administrator</p>
                           <p class="twmc-p twmc-staff__details-email twmc-mbzero">
-                            <a>{[ emailform email:'slewis@twmc.org' contactname:'Contact Sarah Lewis' ]}</a>
+                            <a>{[ emailform email:'First Last@twmc.org' contactname:'Contact First Last' ]}</a>
                           </p>
                           <p class="twmc-p twmc-staff__details-phone">(281) 466-8675</p>
                         </div>
 
-                        <!-- Victoria Wood -->
-                        <div class="mb-3">
-                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Victoria Wood</strong>
+                        <!-- First Last -->
+                        <div class="mb-3 Hidden">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>First Last</strong>
                           </p>
                           <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Administrative Assistant</p>
                           <p class="twmc-p twmc-staff__details-email twmc-mbzero">
-                            <a>{[ emailform email:'vwood@twmc.org' contactname:'Contact Victoria Wood' ]}</a>
+                            <a>{[ emailform email:'First Last@twmc.org' contactname:'Contact First Last' ]}</a>
                           </p>
                         </div>
                       </div>
