@@ -1,3 +1,6 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <!-- Staff Page -->
 <section id="staff-pastors" style="padding-bottom: 0">
   <div class="container">
@@ -11,26 +14,37 @@
         <div class="twmc-flex-container--4-col twmc-flex-pastors">
 
           {% for person in Items %}
-          {% if person | Attribute:'Group' == 'Pastor' %}
-          <div class="twmc-flex-item--4-col twmc-pastors">
-            <figure>
-              <a href="{{ person | Attribute:'Link' }}" class="twmc-pastors__link" referrerpolicy="origin"
-                target="_self">
-                <div class="twmc-pastors__img-container">
-                  <img src="{{ person | Attribute:'Image','Url' }}" alt="{{ person.Title }}"
-                    class="twmc-pastors__img" />
+            {% assign groups = person | Attribute:'Group' | Split: ',' %}
+            {% assign is_pastor = false %}
+
+            {% for group in groups %}
+              {% assign group = group | Strip %}
+              {% if group == 'Pastor' %}
+                {% assign is_pastor = true %}
+              {% endif %}
+            {% endfor %}
+
+            {% if is_pastor %}
+
+              <div class="twmc-flex-item--4-col twmc-pastors">
+                <figure>
+                  <a href="{{ person | Attribute:'Link' }}" class="twmc-pastors__link" referrerpolicy="origin"
+                    target="_self">
+                    <div class="twmc-pastors__img-container">
+                      <img src="{{ person | Attribute:'Image','Url' }}" alt="{{ person.Title }}"
+                        class="twmc-pastors__img" />
+                    </div>
+                    <figcaption class="twmc-pastors__caption">
+                      {{ person | Attribute:'Caption' or '&nbsp;' }}
+                    </figcaption>
+                  </a>
+                </figure>
+                <div class="twmc-pastors__name-title-container">
+                  <p class="twmc-p twmc-pastors__name">{{ person.Title }}</p>
+                  <p class="twmc-p twmc-pastors__title">{{ person | Attribute:'Position' }}</p>
                 </div>
-                <figcaption class="twmc-pastors__caption">
-                  {{ person | Attribute:'Caption' or '&nbsp;' }}
-                </figcaption>
-              </a>
-            </figure>
-            <div class="twmc-pastors__name-title-container">
-              <p class="twmc-p twmc-pastors__name">{{ person.Title }}</p>
-              <p class="twmc-p twmc-pastors__title">{{ person | Attribute:'Position' }}</p>
-            </div>
-          </div>
-          {% endif %}
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -165,7 +179,7 @@
             <!-- End of Hardcoded Administration -->
 
             <!-- Dynamic Panels for Other Groups -->
-            {% assign groups = 'Adults 55 Plus,Bristol House,Caring,Children of The Woodlands,Church Multiplication,Connecting,Covenant Church at Creekside,Creative Services,Discipleship,Facilities,Finance,Fireside Books,Fireside Cafe,Harvest,Loft,Marriage,Men,Missions,Music,NextGen Kids,NextGen Students,Nursery,Recreation,Senior Pastor,Singles,Special Needs,The Church at Montgomery,The Church at Woodforest,The Woodlands Methodist School,Women,Worship,Young Adults' | Split:',' %}
+            {% assign groups = 'Adults 55,Bristol House,Caring,Children of The Woodlands,Church Multiplication,Connecting,Covenant Church at Creekside,Creative Services,Discipleship,Facilities,Finance,Fireside Books,Fireside Cafe,Harvest,Loft,Marriage,Men,Missions,Music,NextGen Kids,NextGen Students,Nursery,Recreation,Senior Pastor,Singles,Special Needs,The Church at Montgomery,The Church at Woodforest,The Woodlands Methodist School,Women,Worship,Young Adults' | Split:',' %}
             {% for group in groups %}
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="heading-{{ group | Replace:' ','-' }}">
@@ -173,7 +187,17 @@
                   <a role="button" data-toggle="collapse" data-parent="#accordion-staff"
                     href="#collapse-{{ group | Replace:' ','-' }}" aria-expanded="false"
                     aria-controls="collapse-{{ group | Replace:' ','-' }}" class="collapsed twmc-panel-title__link">
-                    <span class="twmc-panel-title__text">{{ group }}</span>
+                    <span class="twmc-panel-title__text">
+                      {% if group and group == 'Adults 55' %}
+                      Adults 55+
+                      {% comment %}
+                      {% assign group = "Adults 55+" %}
+                      {{ group }}
+                      {% endcomment %}
+                    {% else %}
+                      {{ group }}
+                    {% endif %}
+                    </span>
                     <i class="fas fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
                   </a>
                 </h4>
@@ -184,6 +208,8 @@
                   <div class="twmc-staff__list">
                     <div class="twmc-flex-container--2-col-accordion twmc-staff__details">
                       {% for staff_member in Items %}
+                       {% assign showOnPage = staff_member | Attribute: 'showOnPage'%}
+                        show on page: {{ showOnPage }}
                       {% assign member_group = staff_member | Attribute:'Group' | Downcase | Strip %}
                       {% assign panel_group = group | Downcase | Strip %}
                       {% if member_group contains panel_group %}
