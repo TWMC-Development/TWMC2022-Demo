@@ -190,10 +190,6 @@
                     <span class="twmc-panel-title__text">
                       {% if group and group == 'Adults 55' %}
                       Adults 55+
-                      {% comment %}
-                      {% assign group = "Adults 55+" %}
-                      {{ group }}
-                      {% endcomment %}
                     {% else %}
                       {{ group }}
                     {% endif %}
@@ -202,35 +198,35 @@
                   </a>
                 </h4>
               </div>
-              <div id="collapse-{{ group | Replace:' ','-' }}" class="panel-collapse collapse" role="tabpanel"
-                aria-labelledby="heading-{{ group | Replace:' ','-' }}">
+              <div id="collapse-{{ group | Replace:' ','-' }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ group | Replace:' ','-' }}">
                 <div class="panel-body twmc-panel-body">
                   <div class="twmc-staff__list">
                     <div class="twmc-flex-container--2-col-accordion twmc-staff__details">
                       {% for staff_member in Items %}
-                       {% assign showOnPage = staff_member | Attribute: 'showOnPage'%}
-                        show on page: {{ showOnPage }}
-                      {% assign member_group = staff_member | Attribute:'Group' | Downcase | Strip %}
-                      {% assign panel_group = group | Downcase | Strip %}
-                      {% if member_group contains panel_group %}
-                      <div class="twmc-flex-item--2-col-accordion  ">
-                        <div class="mb-3">
-                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero">
-                            <strong>{{ staff_member.Title }}</strong>
-                          </p>
-                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">{{ staff_member | Attribute:'Position' }}
-                          </p>
-                          {% if staff_member | Attribute:'Email' %}
-                          <p class="twmc-p twmc-staff__details-email twmc-mbzero">
-                            <a>{[ emailform email:'{{ staff_member | Attribute:'Email' }}' contactname:'Contact {{ staff_member.Title }}' ]}</a>
-                          </p>
+                          {% assign member_group = staff_member | Attribute:'Group' | Downcase | Strip %}
+                          {% assign panel_group = group | Downcase | Strip %}
+                          {% if member_group contains panel_group %}
+                            {% assign show_on_page = staff_member | Attribute: 'ShowOnPage'%}
+                             {% if show_on_page == 'Yes'%}
+                          <div class="twmc-flex-item--2-col-accordion  ">
+                            <div class="mb-3">
+                              <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero">
+                                <strong>{{ staff_member.Title }}</strong>
+                              </p>
+                              <p class="twmc-p twmc-staff__details-title twmc-mbzero">{{ staff_member | Attribute:'Position' }}
+                              </p>
+                              {% if staff_member | Attribute:'Email' %}
+                              <p class="twmc-p twmc-staff__details-email twmc-mbzero">
+                                <a>{[ emailform email:'{{ staff_member | Attribute:'Email' }}' contactname:'Contact {{ staff_member.Title }}' ]}</a>
+                              </p>
+                              {% endif %}
+                              {% if staff_member | Attribute:'Phone' %}
+                              <p class="twmc-p twmc-staff__details-phone">{{ staff_member | Attribute:'Phone' }}</p>
+                              {% endif %}
+                            </div>
+                          </div>
                           {% endif %}
-                          {% if staff_member | Attribute:'Phone' %}
-                          <p class="twmc-p twmc-staff__details-phone">{{ staff_member | Attribute:'Phone' }}</p>
-                          {% endif %}
-                        </div>
-                      </div>
-                      {% endif %}
+                        {% endif %}
                       {% endfor %}
                     </div>
                   </div>
