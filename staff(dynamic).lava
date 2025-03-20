@@ -1,5 +1,3 @@
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <!-- Staff Page -->
 <section id="staff-pastors" style="padding-bottom: 0">
@@ -13,7 +11,8 @@
       <div class="col-sm-12">
         <div class="twmc-flex-container--4-col twmc-flex-pastors">
 
-          {% for person in Items %}
+          {% assign sortedPastors = Items | Sort:'Priority' %}
+          {% for person in sortedPastors %}
             {% assign groups = person | Attribute:'Group' | Split: ',' %}
             {% assign is_pastor = false %}
 
@@ -25,14 +24,11 @@
             {% endfor %}
 
             {% if is_pastor %}
-
               <div class="twmc-flex-item--4-col twmc-pastors">
                 <figure>
-                  <a href="{{ person | Attribute:'Link' }}" class="twmc-pastors__link" referrerpolicy="origin"
-                    target="_self">
+                  <a href="{{ person | Attribute:'Link' }}" class="twmc-pastors__link" referrerpolicy="origin" target="_blank">
                     <div class="twmc-pastors__img-container">
-                      <img src="{{ person | Attribute:'Image','Url' }}" alt="{{ person.Title }}"
-                        class="twmc-pastors__img" />
+                      <img src="{{ person | Attribute:'Image','Url' }}" alt="{{ person.Title }}" class="twmc-pastors__img" />
                     </div>
                     <figcaption class="twmc-pastors__caption">
                       {{ person | Attribute:'Caption' or '&nbsp;' }}
@@ -51,7 +47,6 @@
     </div>
   </div>
 </section>
-<!-- End of Pastors -->
 
 <!-- Staff page accordion -->
 <section id="staff-info" class="twmc-connect">
@@ -59,10 +54,9 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="twmc-section__info">
-          <!-- Panel group -->
           <div class="panel-group" id="accordion-staff" role="tablist" aria-multiselectable="true">
 
-            <!-- Hardcoded Administration -->
+                          <!-- Hardcoded Administration -->
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="heading-Administration">
                 <h4 class="panel-title twmc-panel-title">
@@ -179,6 +173,7 @@
             <!-- End of Hardcoded Administration -->
 
             <!-- Dynamic Panels for Other Groups -->
+
             {% assign groups = 'Adults 55,Bristol House,Caring,Children of The Woodlands,Church Multiplication,Connecting,Covenant Church at Creekside,Creative Services,Discipleship,Facilities,Finance,Fireside Books,Fireside Cafe,Harvest,Loft,Marriage,Men,Missions,Music,NextGen Kids,NextGen Students,Nursery,Recreation,Senior Pastor,Singles,Special Needs,The Church at Montgomery,The Church at Woodforest,The Woodlands Methodist School,Women,Worship,Young Adults' | Split:',' %}
             {% for group in groups %}
             <div class="panel panel-default">
@@ -189,10 +184,10 @@
                     aria-controls="collapse-{{ group | Replace:' ','-' }}" class="collapsed twmc-panel-title__link">
                     <span class="twmc-panel-title__text">
                       {% if group and group == 'Adults 55' %}
-                      Adults 55+
-                    {% else %}
-                      {{ group }}
-                    {% endif %}
+                        Adults 55+
+                      {% else %}
+                        {{ group }}
+                      {% endif %}
                     </span>
                     <i class="fas fa-plus twmc-accordion-plus-minus twmc-panel-title__icon"></i>
                   </a>
@@ -202,19 +197,19 @@
                 <div class="panel-body twmc-panel-body">
                   <div class="twmc-staff__list">
                     <div class="twmc-flex-container--2-col-accordion twmc-staff__details">
-                      {% for staff_member in Items %}
-                          {% assign member_group = staff_member | Attribute:'Group' | Downcase | Strip %}
-                          {% assign panel_group = group | Downcase | Strip %}
-                          {% if member_group contains panel_group %}
-                            {% assign show_on_page = staff_member | Attribute: 'ShowOnPage'%}
-                             {% if show_on_page == 'Yes'%}
-                          <div class="twmc-flex-item--2-col-accordion  ">
+                      {% assign sortedStaff = Items | SortBy:'Title' %}
+                      {% for staff_member in sortedStaff %}
+                        {% assign member_group = staff_member | Attribute:'Group' | Downcase | Strip %}
+                        {% assign panel_group = group | Downcase | Strip %}
+                        {% if member_group contains panel_group %}
+                          {% assign show_on_page = staff_member | Attribute: 'ShowOnPage' %}
+                          {% if show_on_page == 'Yes' %}
+                          <div class="twmc-flex-item--2-col-accordion">
                             <div class="mb-3">
                               <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero">
                                 <strong>{{ staff_member.Title }}</strong>
                               </p>
-                              <p class="twmc-p twmc-staff__details-title twmc-mbzero">{{ staff_member | Attribute:'Position' }}
-                              </p>
+                              <p class="twmc-p twmc-staff__details-title twmc-mbzero">{{ staff_member | Attribute:'Position' }}</p>
                               {% if staff_member | Attribute:'Email' %}
                               <p class="twmc-p twmc-staff__details-email twmc-mbzero">
                                 <a>{[ emailform email:'{{ staff_member | Attribute:'Email' }}' contactname:'Contact {{ staff_member.Title }}' ]}</a>
@@ -240,3 +235,6 @@
     </div>
   </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
