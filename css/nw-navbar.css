@@ -286,6 +286,31 @@
     text-decoration: none !important;
 }
 
+/* Updated Jan2025 - Added Times&Locations shrink the font size and padding */
+@media only screen and (max-width: 1140px) {
+    .navbar-bottom-link {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .navbar-bottom-link:hover,
+    .navbar-bottom-link:focus {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-bottom-link {
+        font-size: 0.85rem;
+    }
+
+    .navbar-bottom-link:hover,
+    .navbar-bottom-link:focus {
+        font-size: 0.85rem;
+    }
+}
+
 /* Mega menu */
 .navbar-bottom-megamenu {
     background-color: var(--color-white);

@@ -6898,6 +6898,7 @@ p.twmc-p {
 
 /* Hero */
 #twmc__reb-forge2024 {
+    background-color: #010101;
     background-image: url("https://twmc-png.s3.us-east-2.amazonaws.com/REB_FORGE+Feature+Banner+BG.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14507,8 +14508,8 @@ a.advent-menu--flex-item:focus {
 }
 
 .twmc--btn--advent2024-gold {
-    border: 2px solid #C6A357;
-    background-color: #C6A357;
+    border: 2px solid #e4d784 !important;
+    background-color: #e4d784 !important;
     /* color: #fff; */
     color: #333;
     transition: all .3s ease-in-out;
@@ -14518,9 +14519,9 @@ a.advent-menu--flex-item:focus {
 
 .twmc--btn--advent2024-gold:hover,
 .twmc--btn--advent2024-gold:focus {
-  border: 2px solid #C6A357;
-    background-color: rgba(239, 240, 158, 0.2);
-    color: #C6A357;
+    border: 2px solid #e4d784 !important;
+    background-color: rgba(239, 240, 158, 0.2) !important;
+    color: #e4d784 !important;
     padding: 0.7rem 1rem 0.6rem;
     transform: scale(1.02);
 }
@@ -15256,7 +15257,43 @@ a.advent-menu--flex-item:focus {
       padding: 4rem 0;
   }
 }
-/* End of Hero */
+/* END OF HERO */
+
+/* HEADER CTA */
+#twmc-give24-cta {
+    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_feature-banners/jacob-n_wJFKg43xE-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    padding: 3rem 0;
+  }
+
+  .give24-cta-text {
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .give24-cta-text {
+        font-size: 32px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .give24-cta-text {
+        font-size: 28px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .give24-cta-text {
+        font-size: 22px;
+    }
+  }
+
+
+/* END OF HEADER CTA */
 
 /* Button defaults */
 .twmc--btn--black {
@@ -15381,6 +15418,109 @@ a.advent-menu--flex-item:focus {
       font-size: .7rem;
   }
 }
+
+/* Buttons 2025 */
+.give24-hero--btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 1500px) {
+  .give24-hero--btn-wrapper {
+      width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+    .give24-hero--btn-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .give24-hero--btn-wrapper {
+        gap: 1%;
+    }
+}
+
+.twmc--btn-white25 {
+    background-color: #fff;
+    color: #6e0c21;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    min-width: 175px;
+    max-width: 255px;
+    text-transform: uppercase;
+  }
+
+  .twmc--btn-white25:hover,
+  .twmc--btn-white25:focus {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #6e0c21;
+  }
+
+  .twmc--btn-trad25 {
+    background-color: #862633;
+    color: #fff;
+    border: 2px solid #862633;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    min-width: 175px;
+    max-width: 255px;
+    text-transform: uppercase;
+  }
+
+  .twmc--btn-trad25:hover,
+  .twmc--btn-trad25:focus {
+    transform: scale(1.02);
+    background-color: rgba(134, 38, 51, 0.95);
+    color: #fff;
+  }
+
+
+  
+  @media only screen and (max-width: 992px) {
+    .twmc--btn-white25 {
+        width: 200px;
+        margin-top: .5rem;
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .twmc--btn-white25 {
+        margin-top: 10px;
+        width: 150px;
+        padding: .4rem 0.7rem;
+        font-size: .7rem;
+    }
+  }
 /* End of buttons */
 
 /* Typography */
@@ -15397,14 +15537,7 @@ a.advent-menu--flex-item:focus {
 
 /* INTRO */
 #twmc-give24-intro {
-    background-color: #fff;
-    background-image: url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_give/twmc-give-bg1.png");
-    
-    text-align: center;
-    background-position: bottom center;
-    background-size: cover;
-
-    /* padding: 6rem 0; */
+    background-color: #f7f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15412,13 +15545,30 @@ a.advent-menu--flex-item:focus {
 
 }
 
+.give24-verse-wrapper {
+    text-align: center;
+    margin-top: 2.3rem;
+  }
+
+  .give24-verse {
+    /* font-family: "Montserrat", sans-serif; */
+    line-height: 1.4;
+  }
+
 /* END OF INTRO */
 
 
 /* GENEROSITY */
 #twmc-give24-generosity {
-  padding: 4rem 0 5.5rem;
+  padding: 5rem 0 5.5rem;
   background: linear-gradient(#FFFFFF, #EFEFEF, #FFFFFF);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/mission_conf_2023/avel-chucklanov.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+
+  
 }
 
  /* Flex */
@@ -15442,7 +15592,11 @@ a.advent-menu--flex-item:focus {
     justify-content: center; 
 }
 
-@media only screen and (max-width: 992px) {
+.give24-gen--video {
+    background-color: #333;
+}
+
+@media only screen and (max-width: 1400px) {
   .give24-flex-container--2-col {
       flex-direction: column;
       gap: 0;
@@ -15450,14 +15604,31 @@ a.advent-menu--flex-item:focus {
 
   .give24-flex-item--2-col {
       flex-basis: 100%;
-      width: 80%;
+      width: 90%;
       margin-right: auto;
       margin-left: auto;
   }
 
-  /* .give24-gen--video {
-    height: 400px;
-  } */
+  .give24-col--blurbs {
+    margin-top: 2rem;
+  }
+
+  .give24-flex-video {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .give24-col--blurbs {
+        margin-top: 1rem;
+    }
+
+    .give24-flex-video {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -15478,7 +15649,7 @@ a.advent-menu--flex-item:focus {
   }
 
   #twmc-give24-generosity {
-    padding: 2rem 0 4.5rem;
+    padding: 3.5rem 0 4.5rem;
   }
 }
 /* END OF GENEROSITY */
@@ -15548,7 +15719,6 @@ a.advent-menu--flex-item:focus {
 /* WAYS TO GIVE */
 #twmc-give24-waystogive {
 padding: 5.5rem 0;
-/* background: linear-gradient(#FFFFFF, #EFEFEF, #FFFFFF); */
 background-color: #E9E9E9;
 }
 
@@ -15580,17 +15750,19 @@ line-height: 1.4;
 /* END OF WAYS TO GIVE */
 
 
+/* FAQ */
+#twmc-give24-faq {
+    background: linear-gradient(#fcfcfb, #FFFFFF, #fcfcfb);
+  }
+/* END OF FAQ */
+
+
 /* RESOURCES */
 #twmc-give24-resources {
     background-color: #111;
+    background-color: #4f0006;
     padding: 5rem 0;
   }
-
-  /* .give24-resources--img {
-    height: 500px;
-    width: auto;
-    object-fit: cover;
-  } */
   
   .give24-resources--text {
     margin-top: 0;
