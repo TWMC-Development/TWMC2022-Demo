@@ -122,14 +122,14 @@
                       <!-- Hardcoded Admin Group 2 -->
                       <div class="twmc-flex-item--2-col-accordion twmc-staff__group ">
                         <!-- First Last -->
-                        <div class="mb-3 hidden">
-                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>First Last</strong>
+                        <div class="mb-3">
+                          <p class="twmc-p-medium twmc-staff__details-name twmc-mbzero"><strong>Victoria Wood</strong>
                           </p>
-                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">HR Director</p>
+                          <p class="twmc-p twmc-staff__details-title twmc-mbzero">Director of Staff Development</p>
                           <p class="twmc-p twmc-staff__details-email twmc-mbzero">
-                            <a>{[ emailform email:'First Last@twmc.org' contactname:'Contact First Last' ]}</a>
+                            <a>{[ emailform email:'vwood@twmc.org' contactname:'Contact Victoria Wood' ]}</a>
                           </p>
-                          <p class="twmc-p twmc-staff__details-phone">(281) 466-8165</p>
+                          <!--<p class="twmc-p twmc-staff__details-phone">(281) 466-8165</p>-->
                         </div>
 
                         <!-- Connie Kelley  -->
