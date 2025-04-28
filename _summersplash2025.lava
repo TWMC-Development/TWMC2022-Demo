@@ -7,16 +7,17 @@
                     <br>NextGen Ministries
                 </h2>
                 <h4 class="twmc-h4 summersplash25-intro-title">
-                    Age levels are for the upcoming 2025-2026 school year. Children must be age listed as of September 1, 2025. Children can attend activities on any campus — The Woodlands, Woodforest, Montgomery or Creekside — but they may participate in only one VBS. Campus locations are noted on each activity.
-                </h4>
+              Summer fun is on the way! NextGen Kids, Recreation Ministry and NextGen 56 have an amazing summer planned for your children. Register for the camps and activities listed below. Don’t miss out on good fun with great friends!
+            </h4>
 
-                <div class="mt-4 summersplash25-intro2">
-                    <h3 class="twmc-h3 mt-0">Registration Opens March 3</h3>
-                    <p class="twmc-p mb-0">
-                        <em>Age levels are for the upcoming 2025-2026 school year. Children must be age listed as of
-                            September 1, 2025.</em>
-                    </p>
-                </div>
+            <div class="mt-5 mb-3 summersplash25-intro2">
+              <h3 class="twmc-h3 mt-0">Registration Opens March 3</h3>
+              <p class="twmc-p mb-0">
+                <em>Age levels are for the upcoming 2025-2026 school year. Children must be age listed as of September 1, 2025.</em>
+              </p>
+            </div>
+
+            <h5 class="twmc-h5 summersplash25-intro-title mb-5">Children can attend activities on any campus — The Woodlands, Woodforest, Montgomery or Creekside — but they may participate in only one VBS. Campus locations are noted on each activity. </h5>
 
             </div>
         </div>
@@ -53,11 +54,14 @@
     {% assign AvailableSlots2 = item | Attribute: 'NumberOfAvailableSlots2' %}
     {% assign campusClass = '' %}
 
-    <!-- Slots1 !need to adjust the count error! -->
+    <!-- Slots 1 -->
     {% assign regCount = 0 %}
-    {% registrationregistrant where:'OnWaitList == false' expression:'Registration.RegistrationInstanceId == RegistrationId' count:'true' %}
-        {% assign regCount = count | Minus: 1 %}
-    {% endregistrationregistrant %}
+    {% if RegistrationId != empty %}
+        {% assign regIdInt = RegistrationId | AsInteger %}
+        {% registrationregistrant where:'OnWaitList == false' expression:'Registration.RegistrationInstanceId == {{ regIdInt }}' count:'true' %}
+            {% assign regCount = count %}
+        {% endregistrationregistrant %}
+    {% endif %}
     {% assign slotsLeft = AvailableSlots | Minus: regCount %}
 
 
@@ -104,10 +108,11 @@
                             {% assign CampusBtnColor = 'summersplash25-btn-yellow' %}
                         {% endif %}
 
+                        <p class="{{ CampusClass }} mb-1"><span>{{ CampusTag }}</span></p>
                         <p class="twmc-p mb-0">
                             <strong class="summersplash25---card-title {{ CampusTextColor }}">{{ item.Title }}</strong>
                         </p>
-                        <p class="{{ CampusClass }} mb-0"><span>{{ CampusTag }}</span></p>
+
                     {% endfor %}
                 {% endif %}
                 <!-- End of Campus Title &  tag -->
@@ -217,10 +222,11 @@
                             {% assign CampusBtnColor = 'summersplash25-btn-montgomery' %}
                         {% endif %}
 
+                        <p class="{{ CampusClass }} mb-1"><span>{{ CampusTag }}</span></p>
                         <p class="twmc-p mb-0">
                             <strong class="summersplash25---card-title {{ CampusTextColor }}">{{ item.Title }}</strong>
                         </p>
-                        <p class="{{ CampusClass }} mb-0"><span>{{ CampusTag }}</span></p>
+
                     {% endfor %}
                 {% endif %}
                 <!-- End of Campus Title &  tag -->
@@ -329,10 +335,11 @@
                             {% assign CampusBtnColor = 'summersplash25-btn-montgomery' %}
                         {% endif %}
 
+                        <p class="{{ CampusClass }} mb-1"><span>{{ CampusTag }}</span></p>
                         <p class="twmc-p mb-0">
                             <strong class="summersplash25---card-title {{ CampusTextColor }}">{{ item.Title }}</strong>
                         </p>
-                        <p class="{{ CampusClass }} mb-0"><span>{{ CampusTag }}</span></p>
+
                     {% endfor %}
                 {% endif %}
                 <!-- End of Campus Title &  tag -->
@@ -473,9 +480,8 @@
                 <!-- events -->
                 <div class="summersplash25-flex-container">
                 {{ MonthJulyAugust }}
-                </div
+                </div>
             </div>
         </div>
-
     </div>
 </section>
