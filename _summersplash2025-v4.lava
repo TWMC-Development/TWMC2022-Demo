@@ -156,7 +156,11 @@
                             <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
                         {% endif %}
                         <!-- Reg btn -->
+                        {% if slotsLeft > 0 %}
                         <a href="{{ RegistrationLink }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText }}</a>
+                        {% else %}
+                            Registration Closed
+                        {% endif %}
                     </div>
                     {% else %}
                     <div class="summersplash25-slots-btn mb-3 mt-4">
@@ -165,28 +169,28 @@
                 {% endif %}
 
                 {% if RegistrationLink2 %}
-                <div class="summersplash25-slots-btn2 mb-3">
-                    <!-- Slots2 -->
-                    {% if AvailableSlots2 != null and AvailableSlots2 != '' %}
-                        <p class="twmc-comdinner2024-seats--num mb-0">{% if slotsLeft2 <= 0 %} 0 {% else %} {{ slotsLeft2 }} {% endif %}</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
-                    {% endif %}
+                    <div class="summersplash25-slots-btn2 mb-3">
+                        <!-- Slots2 -->
+                        {% if AvailableSlots2 != null and AvailableSlots2 != '' %}
+                            <p class="twmc-comdinner2024-seats--num mb-0">{% if slotsLeft2 <= 0 %} 0 {% else %} {{ slotsLeft2 }} {% endif %}</p>
+                            <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
 
-                    <!-- Registration Button 2 -->
-                    {% if ButtonText2 != null and ButtonText2 != '' %}
-                        <a href="{{ RegistrationLink2 }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText2 }}</a>
-                    {% endif %}
-                </div>
+                            <!-- Registration Button 2 -->
+                            {% if ButtonText2 != null and ButtonText2 != '' %}
+                                {% if slotsLeft2 > 0%}
+                                <a href="{{ RegistrationLink2 }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText2 }}</a>
+                                {% else %}
+                                Registration Closed
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
                 {% else %}
-                <div class="summersplash25-slots-btn mb-3 mt-4">
-                    <p class="summersplash25-btn-inactive">Registration closed</p>
-                </div>
-            {% endif %}
-
-
-
+                    <div class="summersplash25-slots-btn mb-3 mt-4">
+                        <p class="summersplash25-btn-inactive">Registration closed</p>
+                    </div>
+                {% endif %}
                 <!-- End of Slots & Registration links -->
-
 
             </div>
             <!-- End of flex-item -->
@@ -270,37 +274,41 @@
                             <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
                         {% endif %}
                         <!-- Reg btn -->
+                        {% if slotsLeft > 0 %}
                         <a href="{{ RegistrationLink }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText }}</a>
+                        {% else %}
+                            Registration Closed
+                        {% endif %}
                     </div>
                     {% else %}
                     <div class="summersplash25-slots-btn mb-3 mt-4">
                         <p class="summersplash25-btn-inactive">Registration closed</p>
                     </div>
-
                 {% endif %}
 
                 {% if RegistrationLink2 %}
-                <div class="summersplash25-slots-btn2 mb-3">
-                    <!-- Slots2 -->
-                    {% if AvailableSlots2 != null and AvailableSlots2 != '' %}
-                        <p class="twmc-comdinner2024-seats--num mb-0">{% if slotsLeft2 <= 0 %} 0 {% else %} {{ slotsLeft2 }} {% endif %}</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
-                    {% endif %}
+                    <div class="summersplash25-slots-btn2 mb-3">
+                        <!-- Slots2 -->
+                        {% if AvailableSlots2 != null and AvailableSlots2 != '' %}
+                            <p class="twmc-comdinner2024-seats--num mb-0">{% if slotsLeft2 <= 0 %} 0 {% else %} {{ slotsLeft2 }} {% endif %}</p>
+                            <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
 
-                    <!-- Registration Button 2 -->
-                    {% if ButtonText2 != null and ButtonText2 != '' %}
-                        <a href="{{ RegistrationLink2 }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText2 }}</a>
-                    {% endif %}
-                </div>
+                            <!-- Registration Button 2 -->
+                            {% if ButtonText2 != null and ButtonText2 != '' %}
+                                {% if slotsLeft2 > 0%}
+                                <a href="{{ RegistrationLink2 }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText2 }}</a>
+                                {% else %}
+                                Registration Closed
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
                 {% else %}
-                <div class="summersplash25-slots-btn mb-3 mt-4">
-                    <p class="summersplash25-btn-inactive">Registration closed</p>
-                </div>
+                    <div class="summersplash25-slots-btn mb-3 mt-4">
+                        <p class="summersplash25-btn-inactive">Registration closed</p>
+                    </div>
                 {% endif %}
-
                 <!-- End of Slots & Registration links -->
-
-
             </div>
             <!-- End of flex-item -->
 
@@ -385,36 +393,41 @@
                             <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
                         {% endif %}
                         <!-- Reg btn -->
+                        {% if slotsLeft > 0 %}
                         <a href="{{ RegistrationLink }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText }}</a>
+                        {% else %}
+                            Registration Closed
+                        {% endif %}
                     </div>
                     {% else %}
                     <div class="summersplash25-slots-btn mb-3 mt-4">
                         <p class="summersplash25-btn-inactive">Registration closed</p>
                     </div>
-
                 {% endif %}
 
                 {% if RegistrationLink2 %}
-                <div class="summersplash25-slots-btn2 mb-3">
-                    <!-- Slots2 -->
-                    {% if AvailableSlots2 != null and AvailableSlots2 != '' %}
-                        <p class="twmc-comdinner2024-seats--num mb-0">{% if slotsLeft2 <= 0 %} 0 {% else %} {{ slotsLeft2 }} {% endif %}</p>
-                        <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
-                    {% endif %}
+                    <div class="summersplash25-slots-btn2 mb-3">
+                        <!-- Slots2 -->
+                        {% if AvailableSlots2 != null and AvailableSlots2 != '' %}
+                            <p class="twmc-comdinner2024-seats--num mb-0">{% if slotsLeft2 <= 0 %} 0 {% else %} {{ slotsLeft2 }} {% endif %}</p>
+                            <p class="twmc-comdinner2024-seats--text mt-0">Registration spots available</p>
 
-                    <!-- Registration Button 2 -->
-                    {% if ButtonText2 != null and ButtonText2 != '' %}
-                        <a href="{{ RegistrationLink2 }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText2 }}</a>
-                    {% endif %}
-                </div>
+                            <!-- Registration Button 2 -->
+                            {% if ButtonText2 != null and ButtonText2 != '' %}
+                                {% if slotsLeft2 > 0%}
+                                <a href="{{ RegistrationLink2 }}" class="twmc--btn twmc--btn--small {{ CampusBtnColor }} twmc-letspac-2" target="_blank">{{ ButtonText2 }}</a>
+                                {% else %}
+                                Registration Closed
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
                 {% else %}
-                <div class="summersplash25-slots-btn mb-3 mt-4">
-                    <p class="summersplash25-btn-inactive">Registration closed</p>
-                </div>
-            {% endif %}
-
+                    <div class="summersplash25-slots-btn mb-3 mt-4">
+                        <p class="summersplash25-btn-inactive">Registration closed</p>
+                    </div>
+                {% endif %}
                 <!-- End of Slots & Registration links -->
-
 
             </div>
             <!-- End of flex-item -->
