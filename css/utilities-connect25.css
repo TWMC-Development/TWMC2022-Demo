@@ -10,6 +10,7 @@
 
 .connect25--flex-item {
     flex-basis: 23.5%;
+    width: 23.5%;
     overflow: visible;
     margin-bottom: 1.5rem;
 }
@@ -21,7 +22,14 @@
 
     .connect25--flex-item {
         flex-basis: 31.33%;
+        width: 31.33%;
     }
+}
+
+@media only screen and (max-width: 1700px) {
+  .connect25--flex-container {
+    gap: 2%;
+  }
 }
 
 /* @media only screen and (max-width: 1500px) {
@@ -46,6 +54,7 @@
 
     .connect25--flex-item {
         flex-basis: 49%;
+        width: 49%;
     }
 }
 
@@ -71,7 +80,8 @@
     }
 
     .connect25--flex-item {
-        flex-basis: 100%
+        flex-basis: 100%;
+        width: 100%;
     }
 }
 
@@ -917,3 +927,33 @@ box-shadow: 0 2px 20px rgb(134 38 51 / 10%);
 }
 
 /* ===== End of Connect Block Multicampus ===== */
+
+ /* ==== Tweaks ===== */
+.connect25--tag-redgrey {
+    margin-right: 0;
+}
+
+.post-type-container {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.post-type-delineator {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1.5;
+    margin-right: 0.25rem;
+}
+
+.post-type-delineator-sm {
+    margin-bottom: 0.0rem;
+}
+
+/* EF updates Jun 2, 2025 */
+.post-type-container {
+  flex-wrap: wrap;
+}
+
+ /* ==== End of Tweaks ===== */
