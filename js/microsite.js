@@ -15,9 +15,9 @@
  });
 
 //  FAQ Accordion
- $('.panel').on('show.bs.collapse', function (e) {debugger;
-   $(this).find('.ms-accordion-plus-minus').removeClass('fas fa-plus').addClass('fas fa-minus');
+$('.panel').on('show.bs.collapse', function (e) {
+    $(this).find('.ms-accordion-plus-minus').removeClass('fas fa-plus').addClass('fas fa-minus');
 });
-$('.panel').on('hide.bs.collapse', function (e) {debugger;
-   $(this).find('.ms-accordion-plus-minus').removeClass('fas fa-minus').addClass('fas fa-plus');
+$('.panel').on('hide.bs.collapse', function (e) {
+    $(this).find('.ms-accordion-plus-minus').removeClass('fas fa-minus').addClass('fas fa-plus');
 });

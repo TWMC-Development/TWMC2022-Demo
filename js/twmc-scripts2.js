@@ -42,9 +42,9 @@ window.onload = function () {
 
 
 // Accordion Panel
-$('.panel').on('show.bs.collapse', function (e) {debugger;
+$('.panel').on('show.bs.collapse', function (e) {
     $(this).find('.twmc-accordion-plus-minus').removeClass('fas fa-plus').addClass('fas fa-minus');
- });
- $('.panel').on('hide.bs.collapse', function (e) {debugger;
+});
+ $('.panel').on('hide.bs.collapse', function (e) {
     $(this).find('.twmc-accordion-plus-minus').removeClass('fas fa-minus').addClass('fas fa-plus');
  });

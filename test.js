@@ -12,13 +12,13 @@ function consoleStyler(color, background, fontSize, txt) {
 // Task 2: Build another console log message generator
 function celebrateStyler(reason) {
     var fontStyle = "color: tomato; font-size: 50px";
-    
+
     if (reason == "birthday") {
         console.log(`%cHappy birthday`, fontStyle);
     } else if (reason == "champions") {
         console.log(`%cCongrats on the title!`, fontStyle);
     } else {
-        console.log(message, style);
+        console.log(`%c${reason}`, fontStyle);
     }
 }
 
@@ -34,4 +34,4 @@ function styleAndCelebrate(color, background, fontSize, txt, reason) {
 
 // Call styleAndCelebrate
 // Call styleAndCelebrate
-styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
+styleAndCelebrate('#ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
