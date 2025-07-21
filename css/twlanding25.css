@@ -46,6 +46,38 @@ a:hover::before {
 /* ============================= */
 
 
+/* ===== BUTTON ===== */
+/* ================== */
+.tw25-btn-outline-whtsm {
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: .4rem 0.7rem;
+    font-size: .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: .25rem;
+    transition: all .3s ease-in-out;
+}
+
+.tw25-btn-outline-whtsm:hover,
+.tw25-btn-outline-whtsm:focus {
+    border: 2px solid transparent;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, .2) !important;
+    color: #fff;
+    text-decoration: none;
+
+    transform: scale(1.02);
+}
+
+/* ===== END OF BUTTON ===== */
+/* ========================= */
+
+
  /* ===== HERO ===== */
  /* ================ */
  #thewoodlands25-hero {
@@ -114,7 +146,7 @@ a:hover::before {
   }
 
   .tw25-imgnav-bgesp {
-    background-color: rgb(134, 38, 51);
+    background-color: #872633;
     background-image: linear-gradient(to bottom, rgba(134, 38, 51, 0.8), rgba(134, 38, 51, 0.8)), url("https://rockrms-assets.s3.us-east-2.amazonaws.com/images/_day0/20240505-ESP-3-800w.jpg");
     background-size: cover;
     background-position: center;
@@ -124,6 +156,10 @@ a:hover::before {
   .tw25-imgnav-item {
     flex-basis: 100%;
     min-height: 200px;
+    /* border-top: 4px solid #2C0C11;
+    border-bottom: 4px solid #2C0C11;
+    border-left: 2px solid #2C0C11;
+    border-right: 2px solid #2C0C11; */
   }
 
   @media only screen and (min-width: 768px) {
@@ -216,6 +252,7 @@ a:hover::before {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 5px;
+    background-color: #2C0C11;
 }
 
 .tw25-flex-item--3col-box {
